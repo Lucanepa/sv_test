@@ -1,1 +1,78 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-size: 0.92rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 0.92rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 0.92rem;
+        }
+        
+        .menu-item {
+            display: block;
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            margin: 15px auto;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.92rem;
+            transition: background-color 0.3s;
+        }
+        
+        .menu-item:hover {
+            background: #0056b3;
+        }
+        
+        .menu-item:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz System</h1>
+        <p class="subtitle">Choose your quiz mode:</p>
+        
+        <a href="card_game.html" class="menu-item">Card Game</a>
+        <a href="test_feedback.html" class="menu-item">Test Feedback</a>
+        <a href="test_real.html" class="menu-item">Real Test</a>
+    </div>
+</body>
+</html>

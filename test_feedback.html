@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Feedback - Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-size: 0.92rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        h1 {
+            color: white;
+            font-size: 0.92rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.92rem;
+        }
+        
+        .test-controls {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #1e7e34;
+        }
+        
+        .test-container {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .question-list {
+            flex: 1;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .question-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .question-indicator {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            background: white;
+        }
+        
+        .question-indicator:hover {
+            border-color: #007bff;
+            background: #f0f8ff;
+        }
+        
+        .question-indicator.current {
+            border-color: #007bff;
+            background: #e3f2fd;
+            color: #007bff;
+        }
+        
+        .question-indicator.answered {
+            border-color: #28a745;
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .question-indicator.answered.correct {
+            background: #c3e6cb;
+        }
+        
+        .question-indicator.answered.incorrect {
+            background: #f5c6cb;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        
+        .question-card {
+            flex: 2;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+        }
+        
+        .question-prefix {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 0.92rem;
+        }
+        
+        .question-text {
+            font-size: 0.92rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .diagram {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .answers {
+            margin: 20px 0;
+        }
+        
+        .answer-option {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.92rem;
+        }
+        
+        .answer-option:hover {
+            border-color: #007bff;
+            background: #f0f8ff;
+        }
+        
+        .answer-option.selected {
+            border-color: #007bff;
+            background: #e3f2fd;
+        }
+        
+        .answer-option.correct {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+        
+        .answer-option.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+        }
+        
+        .answer-text {
+            color: #333;
+            font-size: 0.92rem;
+        }
+        
+        .feedback {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+        
+        .feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .results {
+            text-align: center;
+            color: white;
+            margin: 20px 0;
+            font-size: 0.92rem;
+        }
+        
+        .score-display {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+        
+        <div class="header">
+            <h1>Test Feedback Mode</h1>
+            <p class="subtitle">Take a 25-question test with immediate feedback</p>
+        </div>
+        
+        <div class="test-controls">
+            <button class="btn btn-primary" onclick="startNewTest()">Start New Test</button>
+            <button class="btn btn-success" onclick="showResults()">Show Results</button>
+        </div>
+        
+        <div class="test-container">
+            <div class="question-list">
+                <h3 style="margin-bottom: 15px; font-size: 0.92rem;">Question Overview</h3>
+                <div class="question-grid" id="question-grid"></div>
+            </div>
+            
+            <div class="question-card" id="question-card">
+                <div class="question-prefix" id="question-prefix"></div>
+                <div class="question-text" id="question-text">Click "Start New Test" to begin</div>
+                <img id="diagram" class="diagram hidden" alt="Question diagram">
+                <div class="answers" id="answers"></div>
+                <div class="feedback hidden" id="feedback"></div>
+            </div>
+        </div>
+        
+        <div class="results hidden" id="results">
+            <div class="score-display">
+                <h2 style="margin-bottom: 15px; font-size: 0.92rem;">Test Results</h2>
+                <div id="score-display"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentTestQuestions = [];
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        
+        async function loadQuestions() {
+            try {
+                const response = await fetch('questions_with_diagrams_updated.json');
+                const data = await response.json();
+                
+                // Process questions to handle continuation questions
+                questions = processQuestionsForTest(data);
+                
+                // Don't start automatically, wait for user to click "Start New Test"
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                document.getElementById('question-text').textContent = 'Error loading questions. Please refresh the page.';
+            }
+        }
+        
+        function processQuestionsForTest(originalQuestions) {
+            const processedQuestions = [];
+            const processedLinks = new Set();
+            
+            originalQuestions.forEach(question => {
+                // Skip if this question has already been processed as part of a link group
+                if (processedLinks.has(question.question_number)) {
+                    return;
+                }
+                
+                // Check if this question has a link (e.g., "59.1")
+                if (question.link) {
+                    const baseLink = Math.floor(question.link); // Get the base number (e.g., 59 from 59.1)
+                    const linkSequence = question.link - baseLink; // Get the decimal part (e.g., 0.1 from 59.1)
+                    
+                    // Find all questions in this link sequence
+                    const linkedQuestions = originalQuestions.filter(q => 
+                        q.link && Math.floor(q.link) === baseLink
+                    ).sort((a, b) => a.link - b.link); // Sort by link value (59.1, 59.2, etc.)
+                    
+                    // Add all linked questions as separate entries
+                    linkedQuestions.forEach(linkedQ => {
+                        processedQuestions.push({
+                            ...linkedQ,
+                            is_linked: true,
+                            link_group: baseLink,
+                            link_order: linkedQ.link - baseLink,
+                            prefix: `PARTE ${Math.round((linkedQ.link - baseLink) * 10 + 1)}:`
+                        });
+                        processedLinks.add(linkedQ.question_number);
+                    });
+                } else {
+                    // Check if this question is referenced by a future linked question
+                    const isReferenced = originalQuestions.find(q => 
+                        q.link && Math.floor(q.link) === question.question_number
+                    );
+                    
+                    if (!isReferenced) {
+                        // Only add if not already added as part of a link group
+                        processedQuestions.push({
+                            ...question,
+                            is_linked: false,
+                            link_group: null,
+                            link_order: null,
+                            prefix: ''
+                        });
+                    }
+                }
+            });
+            
+            return processedQuestions;
+        }
+        
+        function startNewTest() {
+            // Reset test state
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            
+            // Select 25 random questions
+            const shuffled = shuffleArray([...questions]);
+            let selectedQuestions = shuffled.slice(0, 25);
+            
+            // Automatically include linked questions for any selected questions that have links
+            const questionsToAdd = [];
+            const addedLinkGroups = new Set();
+            
+            selectedQuestions.forEach(question => {
+                if (question.is_linked && !addedLinkGroups.has(question.link_group)) {
+                    // Find all questions in this link group
+                    const linkedQuestions = questions.filter(q => 
+                        q.is_linked && q.link_group === question.link_group
+                    );
+                    
+                    // Add all linked questions that aren't already in the selection
+                    linkedQuestions.forEach(linkedQ => {
+                        if (!selectedQuestions.find(q => q.question_number === linkedQ.question_number)) {
+                            questionsToAdd.push(linkedQ);
+                        }
+                    });
+                    
+                    addedLinkGroups.add(question.link_group);
+                }
+            });
+            
+            // Add the linked questions to the selection
+            currentTestQuestions = [...selectedQuestions, ...questionsToAdd];
+            
+            // Update question grid
+            updateQuestionGrid();
+            
+            // Show first question
+            showQuestion(0);
+            
+            // Hide results
+            document.getElementById('results').classList.add('hidden');
+        }
+        
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+        
+        function updateQuestionGrid() {
+            const grid = document.getElementById('question-grid');
+            grid.innerHTML = '';
+            
+            currentTestQuestions.forEach((question, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = 'question-indicator';
+                indicator.textContent = index + 1;
+                indicator.onclick = () => showQuestion(index);
+                
+                if (index === currentQuestionIndex) {
+                    indicator.classList.add('current');
+                }
+                
+                if (userAnswers[index]) {
+                    indicator.classList.add('answered');
+                    // Check if answer is correct
+                    const isCorrect = checkAnswerCorrectness(index);
+                    if (isCorrect !== null) {
+                        indicator.classList.add(isCorrect ? 'correct' : 'incorrect');
+                    }
+                }
+                
+                grid.appendChild(indicator);
+            });
+        }
+        
+        function showQuestion(index) {
+            currentQuestionIndex = index;
+            const question = currentTestQuestions[index];
+            
+            // Update question prefix
+            const prefixElement = document.getElementById('question-prefix');
+            if (question.prefix) {
+                prefixElement.textContent = question.prefix;
+                prefixElement.style.display = 'block';
+            } else {
+                prefixElement.style.display = 'none';
+            }
+            
+            // Update question text
+            document.getElementById('question-text').textContent = question.question;
+            
+            // Update diagram
+            const diagramElement = document.getElementById('diagram');
+            if (question.image_url) {
+                diagramElement.src = question.image_url;
+                diagramElement.classList.remove('hidden');
+            } else {
+                diagramElement.classList.add('hidden');
+            }
+            
+            // Update answers
+            const answersContainer = document.getElementById('answers');
+            answersContainer.innerHTML = '';
+            
+            Object.entries(question.answers).forEach(([key, value]) => {
+                const answerDiv = document.createElement('div');
+                answerDiv.className = 'answer-option';
+                answerDiv.dataset.answer = key;
+                
+                const text = document.createElement('span');
+                text.className = 'answer-text';
+                text.textContent = `${key}) ${value}`;
+                
+                answerDiv.appendChild(text);
+                
+                // Check if this answer was previously selected
+                if (userAnswers[index] && userAnswers[index].includes(key)) {
+                    answerDiv.classList.add('selected');
+                }
+                
+                answerDiv.addEventListener('click', () => {
+                    answerDiv.classList.toggle('selected');
+                    const selectedAnswers = [];
+                    document.querySelectorAll(`.answer-option.selected`).forEach(option => {
+                        selectedAnswers.push(option.dataset.answer);
+                    });
+                    userAnswers[index] = selectedAnswers;
+                    updateQuestionGrid();
+                });
+                
+                answersContainer.appendChild(answerDiv);
+            });
+            
+            // Show feedback if question was answered
+            const feedbackElement = document.getElementById('feedback');
+            if (userAnswers[index]) {
+                showFeedback(index);
+            } else {
+                feedbackElement.classList.add('hidden');
+            }
+            
+            // Update question grid
+            updateQuestionGrid();
+        }
+        
+        function showFeedback(questionIndex) {
+            const question = currentTestQuestions[questionIndex];
+            const selectedAnswers = userAnswers[questionIndex] || [];
+            const correctAnswers = question.correct;
+            
+            const isCorrect = selectedAnswers.length === correctAnswers.length &&
+                selectedAnswers.every(answer => correctAnswers.includes(answer));
+            
+            // Mark answers as correct/incorrect
+            document.querySelectorAll('.answer-option').forEach(option => {
+                const answerKey = option.dataset.answer;
+                if (selectedAnswers.includes(answerKey)) {
+                    option.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+                if (correctAnswers.includes(answerKey)) {
+                    option.classList.add('correct');
+                }
+            });
+            
+            // Show feedback message
+            const feedbackElement = document.getElementById('feedback');
+            feedbackElement.classList.remove('hidden');
+            
+            if (isCorrect) {
+                feedbackElement.textContent = 'Correct!';
+                feedbackElement.className = 'feedback correct';
+            } else {
+                feedbackElement.textContent = `Incorrect. Correct answers: ${correctAnswers.join(', ')}`;
+                feedbackElement.className = 'feedback incorrect';
+            }
+        }
+        
+        function checkAnswerCorrectness(questionIndex) {
+            const question = currentTestQuestions[questionIndex];
+            const selectedAnswers = userAnswers[questionIndex];
+            
+            if (!selectedAnswers) return null;
+            
+            const correctAnswers = question.correct;
+            return selectedAnswers.length === correctAnswers.length &&
+                selectedAnswers.every(answer => correctAnswers.includes(answer));
+        }
+        
+        function showResults() {
+            const resultsContainer = document.getElementById('results');
+            const scoreDisplay = document.getElementById('score-display');
+            
+            let correctCount = 0;
+            let totalAnswered = 0;
+            
+            currentTestQuestions.forEach((question, index) => {
+                if (userAnswers[index]) {
+                    totalAnswered++;
+                    if (checkAnswerCorrectness(index)) {
+                        correctCount++;
+                    }
+                }
+            });
+            
+            const score = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            
+            scoreDisplay.innerHTML = `
+                <p style="font-size: 0.92rem; margin-bottom: 10px;">Questions answered: ${totalAnswered}/25</p>
+                <p style="font-size: 0.92rem; margin-bottom: 10px;">Correct answers: ${correctCount}</p>
+                <p style="font-size: 0.92rem; margin-bottom: 10px;">Score: ${score}%</p>
+                <p style="font-size: 0.92rem; margin-bottom: 10px;">
+                    Performance: 
+                    ${score >= 90 ? 'Excellent (90%+)' : 
+                      score >= 80 ? 'Very Good (80%+)' : 
+                      score >= 66 ? 'Good (66%+)' : 'Needs Improvement (<66%)'}
+                </p>
+            `;
+            
+            resultsContainer.classList.remove('hidden');
+        }
+        
+        // Load questions when page loads
+        loadQuestions();
+    </script>
+</body>
+</html>
