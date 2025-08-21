@@ -384,6 +384,7 @@
         
         function displayQuestion(question) {
             // Reset UI state
+            document.getElementById('check-btn').classList.remove('hidden');
             document.getElementById('check-btn').disabled = false;
             document.getElementById('next-btn').classList.add('hidden');
             document.getElementById('feedback').classList.add('hidden');
@@ -487,9 +488,9 @@
             // Mark question as answered
             answeredQuestions.add(question.question_number);
             
-            // Show next button
+            // Hide check button and show next button
+            document.getElementById('check-btn').classList.add('hidden');
             document.getElementById('next-btn').classList.remove('hidden');
-            document.getElementById('check-btn').disabled = true;
             
             updateSessionInfo();
         }
