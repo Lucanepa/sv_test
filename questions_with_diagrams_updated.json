@@ -816,7 +816,8 @@
       "c"
     ],
     "image_url": "diagram 59.png",
-    "link": 59.1
+    "linked_to": 59,
+    "link_order": 1
   },
   {
     "question_number": 60,
@@ -829,7 +830,8 @@
     "correct": [
       "b"
     ],
-    "link": 59.2
+    "linked_to": 59,
+    "link_order": 2
   },
   {
     "question_number": 61,
@@ -904,7 +906,8 @@
       "d",
       "e"
     ],
-    "link": 65.1
+    "linked_to": 65,
+    "link_order": 1
   },
   {
     "question_number": 66,
@@ -919,7 +922,8 @@
       "b",
       "d"
     ],
-    "link": 65.2
+    "linked_to": 65,
+    "link_order": 2
   },
   {
     "question_number": 67,
@@ -1278,7 +1282,8 @@
     "correct": [
       "b"
     ],
-    "link": 92.1
+    "linked_to": 92,
+    "link_order": 1
   },
   {
     "question_number": 93,
@@ -1299,7 +1304,9 @@
       "a",
       "f",
       "j"
-    ] ,"link": 92.2
+    ],
+    "linked_to": 92,
+    "link_order": 2
   },
   {
     "question_number": 94,
@@ -1310,7 +1317,9 @@
     },
     "correct": [
       "b"
-    ], "link": 94.1
+    ],
+    "linked_to": 94,
+    "link_order": 1
   },
   {
     "question_number": 95,
@@ -1322,7 +1331,9 @@
     },
     "correct": [
       "a"
-    ], "link": 94.2
+    ],
+    "linked_to": 94,
+    "link_order": 2
   },
   {
     "question_number": 96,
@@ -1335,7 +1346,9 @@
     "correct": [
       "a",
       "c"
-    ], "link": 94.3
+    ],
+    "linked_to": 94,
+    "link_order": 3
   },
   {
     "question_number": 97,
@@ -1394,7 +1407,9 @@
     },
     "correct": [
       "c"
-    ], "link": 101.1
+    ],
+    "linked_to": 101,
+    "link_order": 1
   },
   {
     "question_number": 102,
@@ -1406,7 +1421,9 @@
     },
     "correct": [
       "b"
-    ], "link": 101.2
+    ],
+    "linked_to": 101,
+    "link_order": 2
   },
   {
     "question_number": 103,
@@ -1418,7 +1435,9 @@
     },
     "correct": [
       "b"
-    ], "link": 103.1
+    ],
+    "linked_to": 103,
+    "link_order": 1
   },
   {
     "question_number": 104,
@@ -1430,7 +1449,9 @@
     },
     "correct": [
       "b"
-    ], "link": 103.2
+    ],
+    "linked_to": 103,
+    "link_order": 2
   },
   {
     "question_number": 105,
@@ -1709,7 +1730,9 @@
     },
     "correct": [
       "d"
-    ], "link": 126.1
+    ],
+    "linked_to": 126,
+    "link_order": 1
   },
   {
     "question_number": 127,
@@ -1720,7 +1743,9 @@
     },
     "correct": [
       "b"
-    ], "link": 126.1
+    ],
+    "linked_to": 126,
+    "link_order": 2
   },
   {
     "question_number": 128,
@@ -2633,7 +2658,8 @@
     "correct": [
       "b"
     ],
-    "link": 199.1
+    "linked_to": 199,
+    "link_order": 1
   },
   {
     "question_number": 200,
@@ -2646,7 +2672,8 @@
     "correct": [
       "b"
     ],
-    "link": 199.2
+    "linked_to": 199,
+    "link_order": 2
   },
   {
     "question_number": 201,
@@ -3236,5 +3263,417 @@
       "a",
       "d"
     ]
+  },
+  {
+    "question_number": 248,
+    "question": "La squadra A serve. La squadra B riceve con il palleggiatore in posizione 6. L’opposto della squadra B fa un passo e si posiziona con un piede sulla linea centrale al momento del servizio. In questo modo, tocca anche il campo avversario, ma senza ostacolare i giocatori della squadra A. Qual è la decisione corretta dell'arbitro?",
+    "answers": {
+      "a": "Gli arbitri non interrompono il gioco perché non ci sono falli.",
+      "b": "Gli arbitri interrompono il gioco e decidono che la squadra B ha commesso un fallo perché un giocatore della squadra B (l’opposto) tocca il campo avversario al momento del servizio.",
+      "c": "Gli arbitri non interrompono il gioco. La squadra B ha commesso un fallo, ma poiché i giocatori della squadra A non sono ostacolati nelle loro azioni, questo non deve essere penalizzato (\"keep the ball flying\")."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 249,
+    "question": "La squadra A vuole effettuare una doppia sostituzione. Un giocatore entra nell'area di sostituzione pronto a giocare, mentre il secondo giocatore sta ancora cercando la paletta corretta. Poco prima che la prima sostituzione sia completata, anche il secondo giocatore entra nell'area di sostituzione, pronto a giocare. Come devono reagire gli arbitri?",
+    "answers": {
+      "a": "Il 2° arbitro autorizza entrambe le sostituzioni. Poiché il secondo sostituto era pronto prima che la prima sostituzione fosse completata, non c'è stato alcun ritardo. In questo caso, gli arbitri devono interpretare le regole con un po’ di buon senso.",
+      "b": "Il 2° arbitro respinge entrambe le sostituzioni perché i due sostituti non sono entrati contemporaneamente nella zona di sostituzione. Il 1° arbitro sanziona la squadra A per ritardo.",
+      "c": "Il 2° arbitro autorizza solo la prima sostituzione; la seconda sostituzione viene respinta senza conseguenze perché il secondo sostituto non era pronto a giocare al momento della richiesta.",
+      "d": "Il 2° arbitro autorizza solo la prima sostituzione; la seconda viene rifiutata perché il secondo sostituto non era pronto a giocare al momento della richiesta. Il 1° arbitro sanziona la squadra A per il ritardo."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 250,
+    "question": "La squadra B chiede una sostituzione. Questa viene respinta dal 2° arbitro perché il sostituto è entrato nella zona di sostituzione con una paletta di sostituzione errata. Poiché la squadra B aveva già ricevuto un avvertimento per ritardo di gioco, ora è stata sanzionata dal 1° arbitro con una penalità per ritardo di gioco. Di conseguenza, la squadra B chiede un'altra sostituzione prima del fischio d'inizio. Come devono reagire gli arbitri?",
+    "answers": {
+      "a": "Gli arbitri respingono la seconda richiesta di sostituzione. Il secondo arbitro fa indicare una richiesta impropria sul referto di gara.",
+      "b": "Gli arbitri respingono la seconda richiesta di sostituzione. Il 1° arbitro assegna nuovamente una penalità per ritardo di gioco.",
+      "c": "Gli arbitri autorizzano la sostituzione.",
+      "d": "Gli arbitri respingono la seconda richiesta di sostituzione senza ulteriori conseguenze."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 251,
+    "question": "La squadra A chiede un time-out dopo che una richiesta di sostituzione è già stata respinta nella stessa interruzione di gioco e la squadra è già stata sanzionata con un avvertimento per ritardo. Come devono reagire gli arbitri?",
+    "answers": {
+      "a": "L'arbitro autorizza il time-out.",
+      "b": "Gli arbitri respingono la richiesta di time-out. Il 2° arbitro marca una richiesta impropria sul referto di gara.",
+      "c": "Gli arbitri respingono la richiesta di time-out senza ulteriori conseguenze.",
+      "d": "Gli arbitri respingono la richiesta di time-out. Il 1° arbitro assegna una penalizzazione per ritardo di gioco."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 252,
+    "question": "Come deve reagire il 1° arbitro quando un capitano chiede di controllare le posizioni dei giocatori della squadra avversaria?",
+    "answers": {
+      "a": "La prima risposta avviene solo col gesto della mano. Alle domande successive si può rispondere a voce.",
+      "b": "Risponde e indica se le posizioni della squadra avversaria sono corrette o meno.",
+      "c": "Il 1° arbitro non deve rispondere. Il capitano può solo chiedere di controllare le posizioni della propria squadra.",
+      "d": "Fornisce informazioni dettagliate sulle posizioni avversarie."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 253,
+    "question": "Il capitano della squadra si infortuna prima del sorteggio. Qual è la procedura corretta per nominare un nuovo capitano?",
+    "answers": {
+      "a": "È troppo tardi per nominare un nuovo capitano della squadra. L'allenatore può nominare un \"capitano generale della partita\" che svolge le funzioni del capitano della squadra e che firma il referto di gara dopo la partita.",
+      "b": "L'allenatore può nominare altri due giocatori come co-capitani. Entrambi i giocatori vengono segnati sul referto di gara cerchiando i loro nomi.",
+      "c": "È troppo tardi per nominare un nuovo capitano. L'allenatore svolge le funzioni del capitano durante la partita e firma il referto di gara al posto del capitano.",
+      "d": "L'allenatore può nominare un altro giocatore come nuovo capitano della squadra. Una striscia di nastro adesivo viene incollata sotto il numero sul davanti della maglia e il numero sul referto di gara viene cerchiato."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 254,
+    "question": "Una giocatrice pensa di aver notato una macchia bagnata sul pavimento. Chiama l'assistente dell'allenatore sulla linea laterale vicino alla panchina della squadra per aiutarla a trovare la macchia, impedendo al primo arbitro di fischiare immediatamente la ripresa della partita. Cosa deve fare il primo arbitro?",
+    "answers": {
+      "a": "Deve dare istruzioni al 2° arbitro di dire al capitano di informare l'assistente allenatore di tornare alla panchina.",
+      "b": "Dovrebbe lasciare la squadra a sé stessa e non fare nulla.",
+      "c": "Dovrebbe informare personalmente l'assistente allenatore di tornare alla panchina della squadra.",
+      "d": "Deve informare l'assistente dell'allenatore tramite il capitano per tornare alla panchina.",
+      "e": "Dovrebbe imporre una sanzione alla squadra per il ritardo di gioco."
+    },
+    "correct": [
+      "d",
+      "e"
+    ]
+  },
+  {
+    "question_number": 255,
+    "question": "Dopo la battuta, il refertista segnala che la squadra A ha un giocatore non corretto al servizio. Cosa succede?",
+    "answers": {
+      "a": "Tutti i punti vinti con il giocatore al servizio sbagliato vengono annullati. La squadra A corregge la formazione e ruota. La squadra B riceve un punto e il diritto di servire e non ruota.",
+      "b": "Tutti i punti vinti dal giocatore al servizio sbagliato sono annullati. La squadra A corregge la formazione e mantiene il diritto di servire. La squadra B non effettua la rotazione.",
+      "c": "Tutti i punti vinti con il giocatore al servizio sbagliato vengono annullati. La squadra A ruota di una posizione. La squadra B riceve un punto e il diritto di servire e ruota di una posizione.",
+      "d": "Tutti i punti vinti con il giocatore al servizio sbagliato vengono annullati. La squadra A corregge la formazione. La squadra B riceve un punto e il diritto di servire e ruota di una posizione."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 256,
+    "question": "Il giocatore A è presente nella formazione, ma si infortuna immediatamente prima della partita. Cosa succede dopo?",
+    "answers": {
+      "a": "La situazione viene trattata come una normale sostituzione. Dopo che il 2° arbitro ha controllato il tagliando della formazione, l'allenatore richiede la sostituzione con l’apposito gesto ufficiale al 2° arbitro, che ripete il gesto ufficiale. La sostituzione viene registrata sul foglio di gara.",
+      "b": "La sostituzione del giocatore A avviene in campo all'inizio della partita. Prima del servizio, il capitano in gioco deve richiedere un time-out e l'allenatore deve segnalare la sostituzione direttamente al segnapunti, che annota tutto sul referto di gara.",
+      "c": "La squadra del giocatore A inizia la partita con solo cinque giocatori in campo. La sostituzione può essere richiesta dall'allenatore solo dopo che è stata completata almeno un’azione di gioco. La sostituzione viene poi effettuata come di consueto.",
+      "d": "Il giocatore A può essere sostituito da qualsiasi giocatore non elencato nel tagliando della formazione. L'allenatore può chiedere al segnapunti di effettuare la sostituzione sul referto di gara prima del primo servizio. Informare il 2° arbitro è facoltativo."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 257,
+    "question": "Prima del terzo set, il secondo arbitro fischia il rientro in campo delle squadre. Una squadra non reagisce. Questa squadra non ha ancora ricevuto una sanzione per ritardo. Come devono reagire gli arbitri?",
+    "answers": {
+      "a": "Fischia di nuovo e poi ancora una volta. Se la squadra non reagisce al terzo fischio, il primo arbitro deve assegnare una penalità per ritardo di gioco (cartellino rosso sul polso).",
+      "b": "Assegnare una penalizzazione per ritardo di gioco (cartellino rosso).",
+      "c": "Il 2° arbitro va dalla squadra per ricordarle di tornare in campo. Se la squadra non risponde, il 2° arbitro impone un avvertimento per ritardo di gioco (cartellino giallo sul polso).",
+      "d": "Il 1° arbitro impone una \"sanzione per ritardo di gioco\" (avvertimento). Se la squadra continua a non reagire, il 1° arbitro deve comminare un'ulteriore sanzione per ritardo (penalizzazione)."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 258,
+    "question": "Il libero era in campo per il giocatore A ed è stato espulso per il set. Ci sono tre modi per continuare la partita. Quale dei seguenti suggerimenti NON è un modo per continuare la partita?",
+    "answers": {
+      "a": "Se la squadra ha un solo libero, il giocatore A può tornare in campo. La squadra può continuare a giocare senza libero.",
+      "b": "Se la squadra ha due liberi, può decidere di espellere il secondo libero (non espulso) per il resto della partita, permettendo al libero (espulso) in carica di continuare a giocare nel set.",
+      "c": "Se la squadra ha due liberi, il secondo libero può essere rimpiazzato immediatamente per il libero espulso.",
+      "d": "Se la squadra ha un solo libero, può ridesignare immediatamente un nuovo libero tra i giocatori che non sono attualmente in campo (ad eccezione del rimpiazzo del libero). Il libero ridesignato non può giocare per il resto della partita."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 259,
+    "question": "Il giocatore A rincorre la palla sugli spalti dal suo lato del campo. Poco prima del contatto con il pallone, uno spettatore si alza e prende la palla. Qual è l'azione corretta dell'arbitro e perché?",
+    "answers": {
+      "a": "Fischio. Fallo. Un giocatore non deve mai entrare nell'area degli spettatori.",
+      "b": "Fischio e gesto \"out\" (gesto #15). I giocatori non hanno priorità fuori dall’area di gioco quando giocano la palla.",
+      "c": "Fischio. Doppio fallo. Ci sono influenze esterne.",
+      "d": "Fischio. Fallo. Il giocatore non può lasciare la zona libera per giocare una palla nell'area degli spettatori."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 260,
+    "question": "Il palleggiatore A si estende oltre il bordo superiore della rete verso il lato avversario e alza la palla a un compagno di squadra. Cosa deve decidere l'arbitro?",
+    "answers": {
+      "a": "Si tratta di un fallo perché un giocatore deve toccare la palla dal proprio lato al di sopra del bordo superiore della rete (tranne quando mura).",
+      "b": "Si tratta di un fallo in ogni caso, poiché ai giocatori non è consentito raggiungere l'area di gioco dell'avversario (anche se la palla non viene toccata).",
+      "c": "Niente. Questo gioco della palla è conforme alle regole, poiché il giocatore A sta cercando di alzare e non attaccare.",
+      "d": "Niente. Giocare la palla in questo modo è conforme alle regole, poiché non c'è contatto con la squadra avversaria."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 261,
+    "question": "Il giocatore A, un centrale, salta a rete per murare e tocca la parte superiore della rete nel tentativo di muro. Non c'è contatto con la palla. Cosa dovrebbe accadere e perché?",
+    "answers": {
+      "a": "Non si tratta di un fallo di rete, poiché un giocatore che mura può toccare la rete durante il gioco.",
+      "b": "Non si tratta di un fallo di rete perché il giocatore A non tocca la palla.",
+      "c": "Si tratta di un fallo di invasione a rete del giocatore A (che tocca la rete durante un'azione in cui cerca di giocare la palla).",
+      "d": "Si tratta di un fallo di invasione a rete da parte del giocatore A, poiché i giocatori non hanno mai il diritto di toccare la parte superiore della rete."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 262,
+    "question": "Un giocatore della formazione iniziale è stato sostituito e successivamente torna in campo. Poco dopo si infortuna e non è più in grado di continuare a giocare. Chi può sostituire questo giocatore?",
+    "answers": {
+      "a": "Qualsiasi giocatore che non è in campo, tranne il libero o il suo rimpiazza.",
+      "b": "Il libero o il giocatore che attualmente lo rimpiazza.",
+      "c": "Nessun giocatore. La squadra deve continuare a giocare con soli cinque giocatori.",
+      "d": "Qualsiasi giocatore che non è attualmente in campo."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 263,
+    "question": "La squadra A sostituisce il giocatore A con il giocatore B. Allo stesso tempo, l'allenatore indica che il giocatore C deve rimpiazzare il libero. Cosa devono decidere gli arbitri?",
+    "answers": {
+      "a": "Consentire la sostituzione oppure il rimpiazzo. L’altra azione può essere eseguita alla fine del turno successivo.",
+      "b": "Se una sostituzione o un rimpiazzo avvengono contemporaneamente, l'unico giocatore che può essere rimpiazzato al libero è il giocatore appena sostituito. L'arbitro deve consentire al giocatore B di rimpiazzare il libero.",
+      "c": "Entrambe le cose sono possibili: sostituzione e rimpiazzo.",
+      "d": "Consentire la sostituzione o il rimpiazzo e imporre alla squadra A una sanzione per ritardo di gioco. L’altra azione può essere eseguita alla fine del turno successivo."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 264,
+    "question": "La squadra A dimentica di rimpiazzare il libero quando ruota in posizione IV. Dopo tre punti, l'arbitro si accorge che il libero è illegalmente in campo. Quali delle seguenti conseguenze sono corrette di questa situazione?",
+    "answers": {
+      "a": "Punto e servizio per l'avversario.",
+      "b": "I punti vinti dalla squadra A con la formazione sbagliata vengono annullati.",
+      "c": "Espulsione del libero.",
+      "d": "La formazione deve essere corretta."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 265,
+    "question": "Nell’intervallo tra due set, il 1° arbitro sanziona a un giocatore della squadra A con un cartellino rosso per comportamento scorretto. La squadra A ha il primo servizio del set successivo. Cosa succede ora?",
+    "answers": {
+      "a": "La squadra A inizia il set sullo 0:0 e conserva il diritto di servire.",
+      "b": "La squadra A inizia il set sullo 0:1 e perde il diritto di servire.",
+      "c": "La squadra A inizia il set sullo 0:1 e conserva il diritto di servire.",
+      "d": "La squadra A inizia il set sullo 0:2 e conserva il diritto di servire."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 266,
+    "question": "Una squadra gioca con due liberi. Un libero viene espulso. Dopo diverse azioni di gioco, il libero rimanente viene dichiarato inabile a giocare. Quale(i) affermazione(i) NON è(sono) corretta(e)?",
+    "answers": {
+      "a": "Il libero che non è più in grado di giocare può essere ridesignato con un nuovo libero. Solo i giocatori che non hanno ancora partecipato a una sostituzione possono essere ridesignati come liberi.",
+      "b": "L'allenatore non è autorizzato a ridesignare alcun giocatore come libero, poiché il giocatore espulso può giocare di nuovo nel set successivo. Nel 5° set è consentita una ridesignazione.",
+      "c": "L'allenatore ridesigna immediatamente il rimpiazzato del libero, che non è più idoneo a giocare, come nuovo libero."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 267,
+    "question": "Il giocatore #8 viene formalmente avvertito (cartellino giallo) nel 2° set per un comportamento lievemente scorretto. Nel 4° set, il giocatore #2 della stessa squadra mostra un comportamento simile. Qual è la procedura?",
+    "answers": {
+      "a": "Al giocatore #2 viene dato un avvertimento verbale perché non ha ancora ricevuto un cartellino giallo, e una squadra non può ricevere due cartellini gialli in una sola partita.",
+      "b": "Il giocatore #2 riceve un cartellino giallo per lieve condotta scorretta.",
+      "c": "Il giocatore #2 viene penalizzato (cartellino rosso) per ripetute lievi condotte scorrette da parte della stessa squadra."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 268,
+    "question": "Una palla vola sotto il bordo inferiore della rete tra il palo e il prolungamento dell'antenna verso il campo avversario. Quale/i affermazione/i è/sono corretta/e?",
+    "answers": {
+      "a": "Un giocatore può entrare nell'area avversaria per rigiocare il pallone che ha attraversato completamente lo spazio inferiore della rete, purché riesca a raggiungere il pallone senza oltrepassare la linea centrale.",
+      "b": "Se la palla ha attraversato completamente lo spazio inferiore della rete, mostrare il gesto #22 (\"passaggio della palla al di sotto della rete\").",
+      "c": "Se la palla ha attraversato completamente lo spazio inferiore della rete, la palla è \"fuori\" (gesto #15)."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 269,
+    "question": "Un giocatore della squadra A attacca una palla che si trova direttamente sopra il bordo superiore della rete. Contemporaneamente, il muro della squadra B tocca la palla senza superare la rete. Dopo il contatto simultaneo, la palla cade nella zona libera della squadra B. Come deve decidere il 1° arbitro?",
+    "answers": {
+      "a": "La squadra B vince il punto, poiché il fallo è attribuito alla squadra A (la palla cade nella zona libera della squadra B).",
+      "b": "Replay (doppio fallo) perché la palla è stata oggetto di contatto simultaneo e prolungato sopra il bordo superiore della rete.",
+      "c": "Un giocatore che blocca non può toccare la palla prima o contemporaneamente all’attacco; quindi, la squadra A vince il punto."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 270,
+    "question": "Un pallone viene giocato da un giocatore della squadra A e poi tocca un membro dello staff della squadra A. Quale gesto deve essere mostrato?",
+    "answers": {
+      "a": "Gesto palla toccata (#24).",
+      "b": "Gesto palla fuori (#15)."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 270,
+    "link_order": 1
+  },
+  {
+    "question_number": 271,
+    "question": "Prosegue la domanda precedente: Quale gesto deve essere usato quando la palla tocca un membro dello staff della squadra avversaria B?",
+    "answers": {
+      "a": "Gesto palla toccata (#24).",
+      "b": "Gesto palla fuori (#15)."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 270,
+    "link_order": 2
+  },
+  {
+    "question_number": 272,
+    "question": "Quale arbitro fischia per mandare le squadre in campo prima dell'inizio di un set in una partita di NLA?",
+    "answers": {
+      "a": "Prima del 1° e del 5° set il 1° arbitro, altrimenti il 2° arbitro.",
+      "b": "In ogni caso, il 2° arbitro.",
+      "c": "In ogni caso, il 1° arbitro.",
+      "d": "Prima del 1° set nessuno degli arbitri, lo speaker chiama i giocatori in campo; prima del 2°-5° set il 2° arbitro."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 273,
+    "question": "Nel 3° set con il punteggio di 17:9 e servizio per la squadra A, il giocatore #11 della squadra A entra nella zona di sostituzione. Esce il giocatore #3, che è stato utilizzato fin dall'inizio del set. In quel momento, il segnapunti nota che il giocatore #3 non è iscritto a referto. Inoltre, si nota che il giocatore #3 è stato sostituito nel 1 ° set al punteggio di 19:11 e sostituito di nuovo al punteggio di 24:19. Questo set è stato vinto dalla squadra A con punteggio di 25:21. Inoltre, c'è stato un avvertimento per ritardo di gioco indirizzato alla squadra A. Il 2 ° set è stato vinto dalla squadra A senza che il giocatore #3 fosse utilizzato. Come dovrebbe affrontare la situazione il collegio arbitrale?",
+    "answers": {
+      "a": "Il 1° set viene rivalutato: la squadra B lo vince con punteggio 25:19. Il risultato del 2° set rimane invariato. Nell'attuale 3° set, la squadra B guadagna un punto ed il diritto a servire, i punti realizzati dalla squadra A nel 3° set vengono annullati. Punteggio nel 3° set: 10:0 per la squadra B. Servizio alla squadra B.",
+      "b": "Il 1° set viene rivalutato: la squadra B lo vince con punteggio 25:0. Il risultato del 2° set rimane invariato. Nell'attuale 3° set, i punti realizzati fino a quel momento dalla squadra A vengono annullati. Punteggio nel 3° set: 9:0 per la squadra B. Servizio alla squadra B.",
+      "c": "Poiché la squadra A ha utilizzato un giocatore che non era sul referto della squadra, perde la partita 0:3 (0:25 per ogni set).",
+      "d": "Il 1° set viene rivalutato: la squadra B lo vince con 25:19. Il risultato del 2° set rimane invariato. Nell'attuale 3° set, i punti realizzati fino a quel momento dalla squadra A vengono annullati. Inoltre, la squadra A sarà sanzionata per ritardo di gioco. Punteggio nel 3° set: 10:0 per la squadra B. Servizio alla squadra B."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 274,
+    "question": "Durante un’azione nel primo set, un giocatore della squadra A si infortuna gravemente. Quale/i affermazione/i è/sono corretta/e?",
+    "answers": {
+      "a": "L'arbitro interrompe il gioco e l’azione viene ripetuta.",
+      "b": "Un giocatore sostituito in via eccezionale non può più prendere parte alla partita.",
+      "c": "Il trattamento medico all'interno dell'area di gioco deve essere completato al massimo entro 3 minuti. Dopodiché, il trattamento continua al di fuori dell'area di gioco.",
+      "d": "Un giocatore infortunato deve essere sostituito in via eccezionale. Se questa è la prima sostituzione effettuata dalla squadra A, la squadra può effettuare altre sei sostituzioni."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 275,
+    "question": "Nel terzo set di una partita, il punteggio è di 8:8. Dopo un’azione, due giocatori avversari hanno una discussione sotto rete, che induce il primo arbitro a sanzionare entrambi i giocatori per condotta maleducata. Come dovrebbe essere comminata la sanzione secondo le regole?",
+    "answers": {
+      "a": "Il 1° arbitro chiama a sé entrambi i capitani e assegna per primo la sanzione al giocatore della squadra in ricezione.",
+      "b": "Il 1° arbitro chiama a sé entrambi i capitani e dà per primo la sanzione al giocatore della squadra al servizio.",
+      "c": "Il 1° arbitro mostra il cartellino rosso a entrambi i giocatori contemporaneamente, senza rivolgersi direttamente ai capitani o ai due giocatori.",
+      "d": "Il 1° arbitro chiama entrambi i giocatori da sanzionare e dà la sanzione prima al giocatore della squadra al servizio.",
+      "e": "Il 1° arbitro chiama entrambi i giocatori da penalizzare e infligge la penalità prima al giocatore della squadra in ricezione."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 276,
+    "question": "Il palleggio con le dita rivolte verso l’alto è una tecnica giudicata dal 1° arbitro. Quali delle seguenti affermazioni sono corrette?",
+    "answers": {
+      "a": "Il 1° arbitro non giudica una palla in base alla sua rotazione.",
+      "b": "Il 1° arbitro valuta automaticamente una palla rotante come” doppia”.",
+      "c": "Il 1° arbitro non consente (fischia) tocchi coi quali la palla viene trattenuta e/o lanciata.",
+      "d": "Il 1° arbitro fischia solo se c'è stato un chiaro doppio tocco."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 277,
+    "question": "Alla fine di un’azione, il capitano si avvicina al 1° arbitro per chiedergli informazioni sulla gestione della palla durante la partita. La risposta del 1° arbitro deve essere inizialmente:",
+    "answers": {
+      "a": "Dopo una breve spiegazione, emettere un richiamo verbale.",
+      "b": "Allontanare il giocatore e sanzionarlo con un cartellino rosso.",
+      "c": "Dopo una breve spiegazione, viene mostrato un cartellino giallo per lieve condotta scorretta.",
+      "d": "Dopo una breve spiegazione, chiedere al giocatore di riprendere il gioco, poiché le questioni relative alla gestione della palla sono interamente a giudizio del 1° arbitro."
+    },
+    "correct": [
+      "d"
+    ],
+    "linked_to": 277,
+    "link_order": 1
+  },
+  {
+    "question_number": 278,
+    "question": "Prosegue la domanda precedente: Dopo il capitano, un altro giocatore è venuto a discutere con il primo arbitro. Quale risposta deve dare il primo arbitro?",
+    "answers": {
+      "a": "Ammonire il giocatore, verbalmente o con un cartellino giallo.",
+      "b": "Si rifiuta di ascoltarlo.",
+      "c": "Imporre una sanzione per ritardo di gioco.",
+      "d": "Chiedere al giocatore di riprendere il gioco, poiché la gestione del pallone è interamente a giudizio dell'arbitro."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 277,
+    "link_order": 2
   }
 ]

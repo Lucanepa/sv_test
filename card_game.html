@@ -79,6 +79,7 @@
             color: #007bff;
             margin-bottom: 10px;
             font-size: 0.92rem;
+            display: none;
         }
         
         .diagram {
@@ -242,12 +243,8 @@
         
         <div class="header">
             <h1>Card Game Mode</h1>
-            <p class="subtitle">Practice with random questions one at a time</p>
         </div>
         
-        <div class="session-info" id="session-info">
-            Questions answered: 0 / 0
-        </div>
         
         <div class="card" id="question-card">
             <div class="question-prefix" id="question-prefix"></div>
@@ -295,37 +292,51 @@
             const processedQuestions = [];
             const processedLinks = new Set();
             
+            // First, group all linked questions by their base question
+            const linkGroups = new Map();
+            
+            originalQuestions.forEach(question => {
+                if (question.linked_to) {
+                    const baseNumber = question.linked_to;
+                    if (!linkGroups.has(baseNumber)) {
+                        linkGroups.set(baseNumber, []);
+                    }
+                    linkGroups.get(baseNumber).push(question);
+                }
+            });
+            
+            // Sort each link group by link_order
+            linkGroups.forEach((questions, baseNumber) => {
+                questions.sort((a, b) => a.link_order - b.link_order);
+            });
+            
+            // Now process questions in the correct order
             originalQuestions.forEach(question => {
                 // Skip if this question has already been processed as part of a link group
                 if (processedLinks.has(question.question_number)) {
                     return;
                 }
                 
-                // Check if this question has a link (e.g., "59.1")
-                if (question.link) {
-                    const baseLink = Math.floor(question.link); // Get the base number (e.g., 59 from 59.1)
-                    const linkSequence = question.link - baseLink; // Get the decimal part (e.g., 0.1 from 59.1)
+                // Check if this question is linked to another question
+                if (question.linked_to) {
+                    const baseNumber = question.linked_to;
+                    const linkedQuestions = linkGroups.get(baseNumber);
                     
-                    // Find all questions in this link sequence
-                    const linkedQuestions = originalQuestions.filter(q => 
-                        q.link && Math.floor(q.link) === baseLink
-                    ).sort((a, b) => a.link - b.link); // Sort by link value (59.1, 59.2, etc.)
-                    
-                    // Add all linked questions as separate entries
+                    // Add all linked questions in order
                     linkedQuestions.forEach(linkedQ => {
                         processedQuestions.push({
                             ...linkedQ,
                             is_linked: true,
-                            link_group: baseLink,
-                            link_order: linkedQ.link - baseLink,
-                            prefix: `PARTE ${Math.round((linkedQ.link - baseLink) * 10 + 1)}:`
+                            link_group: baseNumber,
+                            link_order: linkedQ.link_order,
+                            prefix: ''
                         });
                         processedLinks.add(linkedQ.question_number);
                     });
                 } else {
                     // Check if this question is referenced by a future linked question
                     const isReferenced = originalQuestions.find(q => 
-                        q.link && Math.floor(q.link) === question.question_number
+                        q.linked_to === question.question_number
                     );
                     
                     if (!isReferenced) {
@@ -351,12 +362,40 @@
             
             // Create a new random selection of questions
             const availableQuestions = questions.filter(q => !answeredQuestions.has(q.question_number));
-            currentSessionQuestions = shuffleArray([...availableQuestions]);
+            let selectedQuestions = shuffleArray([...availableQuestions]);
+            
+            // Process the selection to ensure linked groups stay together
+            const processedQuestions = [];
+            const processedLinkGroups = new Set();
+            
+            selectedQuestions.forEach(question => {
+                // If this question is part of a link group and we haven't processed it yet
+                if (question.is_linked && !processedLinkGroups.has(question.link_group)) {
+                    // Find all questions in this link group
+                    const linkGroupQuestions = questions.filter(q => 
+                        q.is_linked && q.link_group === question.link_group
+                    );
+                    
+                    // Add all questions from this link group in order
+                    linkGroupQuestions.forEach(linkedQ => {
+                        processedQuestions.push(linkedQ);
+                    });
+                    
+                    processedLinkGroups.add(question.link_group);
+                } else if (!question.is_linked) {
+                    // Add non-linked questions normally
+                    processedQuestions.push(question);
+                }
+                // Skip linked questions that are already part of a processed group
+            });
+            
+            currentSessionQuestions = processedQuestions;
             
             if (currentSessionQuestions.length === 0) {
                 // All questions have been answered, start fresh
                 answeredQuestions.clear();
-                currentSessionQuestions = shuffleArray([...questions]);
+                startNewSession();
+                return;
             }
             
             showRandomQuestion();
@@ -419,20 +458,19 @@
             const answersContainer = document.getElementById('answers');
             answersContainer.innerHTML = '';
             
-            Object.entries(question.answers).forEach(([key, value]) => {
+            // Create array of answer entries and shuffle them
+            const answerEntries = Object.entries(question.answers);
+            const shuffledAnswers = shuffleArray([...answerEntries]);
+            
+            shuffledAnswers.forEach(([key, value]) => {
                 const answerDiv = document.createElement('div');
                 answerDiv.className = 'answer-option';
                 answerDiv.dataset.answer = key;
-                
-                const label = document.createElement('span');
-                label.className = 'answer-label';
-                label.textContent = `${key})`;
                 
                 const text = document.createElement('span');
                 text.className = 'answer-text';
                 text.textContent = value;
                 
-                answerDiv.appendChild(label);
                 answerDiv.appendChild(text);
                 
                 answerDiv.addEventListener('click', () => {
@@ -508,8 +546,7 @@
         function updateSessionInfo() {
             const totalQuestions = currentSessionQuestions.length;
             const answeredCount = Math.min(currentQuestionIndex, totalQuestions);
-            document.getElementById('session-info').textContent = 
-                `Questions answered: ${answeredCount} / ${totalQuestions}`;
+         
         }
         
         // Load questions when page loads
