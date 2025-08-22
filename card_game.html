@@ -20,6 +20,7 @@
         
         .container {
             max-width: 800px;
+            width: auto;
             margin: 0 auto;
             padding: 20px;
         }
@@ -46,6 +47,8 @@
         .back-button:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+        
+
         
         h1 {
             color: white;
@@ -236,6 +239,7 @@
 <body>
     <div class="container">
         <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+
         
         <div class="header">
             <h1>Card Game Mode</h1>
@@ -272,8 +276,31 @@
         
         async function loadQuestions() {
             try {
-                const response = await fetch('questions_with_diagrams_updated.json');
-                const data = await response.json();
+                // Try to load from localStorage first (cached data)
+                const cachedQuestions = localStorage.getItem('offlineQuestions');
+                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
+                
+                let data;
+                
+                if (cachedQuestions && cachedDiagrams) {
+                    // Use cached data
+                    data = JSON.parse(cachedQuestions);
+                    
+                    // Replace image URLs with cached base64 data
+                    const diagrams = JSON.parse(cachedDiagrams);
+                    data.forEach(question => {
+                        if (question.image_url && diagrams[question.image_url]) {
+                            question.image_url = diagrams[question.image_url];
+                        }
+                    });
+                    
+                    console.log('✅ Using cached questions and diagrams');
+                } else {
+                    // Fallback to server if no cached data
+                    const response = await fetch('questions_with_diagrams_updated.json');
+                    data = await response.json();
+                    console.log('✅ Loaded questions from server');
+                }
                 
                 // Process questions to handle continuation questions
                 questions = processQuestionsForCardGame(data);
@@ -281,9 +308,14 @@
                 startNewSession();
             } catch (error) {
                 console.error('Error loading questions:', error);
-                document.getElementById('question-text').textContent = 'Error loading questions. Please refresh the page.';
+                const questionText = document.getElementById('question-text');
+                if (questionText) {
+                    questionText.textContent = 'Error loading questions';
+                }
             }
         }
+        
+
         
         function processQuestionsForCardGame(originalQuestions) {
             const processedQuestions = [];

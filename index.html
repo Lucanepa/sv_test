@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -23,13 +23,21 @@
         
         .container {
             max-width: 800px;
-            width: 90%;
+            width: 100%;
             background: rgba(255, 255, 255, 0.95);
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
             backdrop-filter: blur(10px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+                width: calc(100% - 40px);
+            }
         }
         
         h1 {
@@ -96,6 +104,8 @@
             margin-right: 10px;
             border-radius: 2px;
         }
+        
+
     </style>
 </head>
 <body>
@@ -106,5 +116,52 @@
         <a href="test_real.html" class="menu-item">🎯 Test Mode</a>
         <a href="check_question.html" class="menu-item">🔍 Check Questions</a>
     </div>
+    
+    <script>
+        // Auto-cache questions and diagrams when page loads
+        window.addEventListener('load', async () => {
+            try {
+                // Check if we already have cached data
+                const cachedQuestions = localStorage.getItem('offlineQuestions');
+                
+                if (!cachedQuestions) {
+                    // Fetch and cache questions and diagrams automatically
+                    const response = await fetch('questions_with_diagrams_updated.json');
+                    const data = await response.json();
+                    
+                    // Save questions to localStorage
+                    localStorage.setItem('offlineQuestions', JSON.stringify(data));
+                    
+                    // Save diagrams as base64 for offline access
+                    const diagrams = {};
+                    for (const question of data) {
+                        if (question.image_url) {
+                            try {
+                                const imgResponse = await fetch(question.image_url);
+                                const imgBlob = await imgResponse.blob();
+                                const base64 = await blobToBase64(imgBlob);
+                                diagrams[question.image_url] = base64;
+                            } catch (imgError) {
+                                console.warn('Could not cache diagram for question:', question.question_number);
+                            }
+                        }
+                    }
+                    
+                    localStorage.setItem('offlineDiagrams', JSON.stringify(diagrams));
+                    console.log('✅ Questions and diagrams automatically cached for offline use');
+                }
+            } catch (error) {
+                console.warn('Could not auto-cache data:', error);
+            }
+        });
+        
+        function blobToBase64(blob) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.readAsDataURL(blob);
+            });
+        }
+    </script>
 </body>
 </html>

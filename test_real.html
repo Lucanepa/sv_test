@@ -27,6 +27,7 @@
         
         .container {
             max-width: 1200px;
+            width: auto;
             margin: 0 auto;
             padding: 20px;
         }
@@ -34,6 +35,7 @@
         .header {
             text-align: center;
             margin-bottom: 30px;
+            margin-top: 60px;
         }
         
         .back-button {
@@ -54,10 +56,13 @@
             background: rgba(255, 255, 255, 0.3);
         }
         
+
+        
         h1 {
             color: white;
             font-size: 0.8rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            margin-top: 0;
         }
         
         .subtitle {
@@ -239,8 +244,10 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 20px auto;
             backdrop-filter: blur(10px);
+            max-width: 600px;
+            text-align: center;
         }
         
         .performance-rating {
@@ -269,16 +276,35 @@
             border: 1px solid #ffeaa7;
         }
         
-                 .performance-rating.needs-improvement {
-             background: #f8d7da;
-             color: #721c24;
-             border: 1px solid #f5c6cb;
-         }
-         
-         .question-controls {
-             margin-top: 20px;
-             text-align: center;
-         }
+                         .performance-rating.needs-improvement {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .results-actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .results-actions .btn {
+            margin: 0 10px;
+            padding: 15px 30px;
+            font-size: 0.9rem;
+        }
+        
+        .score-display p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .question-controls {
+            margin-top: 20px;
+            text-align: center;
+        }
          
         .navigation-controls {
             margin-top: 15px;
@@ -445,6 +471,7 @@
 <body>
     <div class="container">
         <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+
         
         <div class="header">
             <h1>SKK Test Mode</h1>
@@ -452,10 +479,10 @@
         
         <div class="test-controls">
             <button class="btn btn-primary" onclick="startNewTest()">Start New Test</button>
-            <button class="btn btn-success" onclick="finishTest()">Finish Test</button>
+            <button class="btn btn-success" id="finish-test-btn" onclick="finishTest()" disabled>Finish Test</button>
         </div>
         
-        <div class="test-container">
+        <div class="test-container" id="test-container">
             <div class="question-list">
                 <h3 style="margin-bottom: 15px; font-size: 0.92rem;">Question Overview</h3>
                 <div class="question-grid" id="question-grid"></div>
@@ -481,6 +508,11 @@
                 <h2 style="margin-bottom: 15px; font-size: 0.92rem;">Test Results</h2>
                 <div id="score-display"></div>
                 <div id="performance-rating" class="performance-rating"></div>
+                
+                <div class="results-actions">
+                    <button class="btn btn-primary" onclick="reviewTest()">Review Test</button>
+                    <button class="btn btn-success" onclick="startNewTest()">New Test</button>
+                </div>
             </div>
         </div>
     </div>
@@ -493,8 +525,31 @@
         
         async function loadQuestions() {
             try {
-                const response = await fetch('questions_with_diagrams_updated.json');
-                const data = await response.json();
+                // Try to load from localStorage first (cached data)
+                const cachedQuestions = localStorage.getItem('offlineQuestions');
+                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
+                
+                let data;
+                
+                if (cachedQuestions && cachedDiagrams) {
+                    // Use cached data
+                    data = JSON.parse(cachedQuestions);
+                    
+                    // Replace image URLs with cached base64 data
+                    const diagrams = JSON.parse(cachedDiagrams);
+                    data.forEach(question => {
+                        if (question.image_url && diagrams[question.image_url]) {
+                            question.image_url = diagrams[question.image_url];
+                        }
+                    });
+                    
+                    console.log('✅ Using cached questions and diagrams');
+                } else {
+                    // Fallback to server if no cached data
+                    const response = await fetch('questions_with_diagrams_updated.json');
+                    data = await response.json();
+                    console.log('✅ Loaded questions from server');
+                }
                 
                 // Process questions to handle continuation questions
                 questions = processQuestionsForTest(data);
@@ -503,7 +558,20 @@
                 startNewTest();
             } catch (error) {
                 console.error('Error loading questions:', error);
-                document.getElementById('question-text').textContent = 'Error loading questions. Please refresh the page.';
+                const questionText = document.getElementById('question-text');
+                if (questionText) {
+                    questionText.textContent = 'Error loading questions. Please refresh the page or check your internet connection.';
+                }
+            }
+        }
+        
+        function updateStatusIndicator(isOffline) {
+            const statusIcon = document.getElementById('status-icon');
+            
+            if (isOffline) {
+                statusIcon.textContent = '📵';
+            } else {
+                statusIcon.textContent = '📶';
             }
         }
         
@@ -661,8 +729,17 @@
             // Show first question
             showQuestion(0);
             
-            // Hide results
-            document.getElementById('results').classList.add('hidden');
+            // Hide results and show test interface
+            const resultsContainer = document.getElementById('results');
+            const testContainer = document.getElementById('test-container');
+            
+            if (resultsContainer) {
+                resultsContainer.classList.add('hidden');
+            }
+            
+            if (testContainer) {
+                testContainer.classList.remove('hidden');
+            }
             
             // Initialize navigation buttons
             const prevBtn = document.getElementById('prev-btn');
@@ -679,6 +756,14 @@
             } else {
                 nextBtn.style.opacity = '1';
                 nextBtn.style.cursor = 'pointer';
+            }
+            
+            // Enable Finish Test button
+            const finishBtn = document.getElementById('finish-test-btn');
+            if (finishBtn) {
+                finishBtn.disabled = false;
+                finishBtn.style.opacity = '1';
+                finishBtn.style.cursor = 'pointer';
             }
         }
         
@@ -830,9 +915,26 @@
         }
         
         function finishTest() {
+            // Check if test has started
+            if (!currentTestQuestions || currentTestQuestions.length === 0) {
+                alert('Please start a test first before finishing it.');
+                return;
+            }
+            
             const resultsContainer = document.getElementById('results');
+            const testContainer = document.getElementById('test-container');
             const scoreDisplay = document.getElementById('score-display');
             const performanceRating = document.getElementById('performance-rating');
+            
+            // Check if all required elements exist
+            if (!resultsContainer || !testContainer || !scoreDisplay || !performanceRating) {
+                console.error('Required elements not found for finishTest function');
+                console.log('resultsContainer:', resultsContainer);
+                console.log('testContainer:', testContainer);
+                console.log('scoreDisplay:', scoreDisplay);
+                console.log('performanceRating:', performanceRating);
+                return;
+            }
             
             let correctCount = 0;
             let totalAnswered = 0;
@@ -875,6 +977,8 @@
             performanceRating.className = `performance-rating ${ratingClass}`;
             performanceRating.textContent = ratingText;
             
+            // Hide test interface and show results
+            testContainer.classList.add('hidden');
             resultsContainer.classList.remove('hidden');
         }
         
@@ -914,6 +1018,24 @@
             
             // Update question grid to reflect the cleared answers
             updateQuestionGrid();
+        }
+        
+        function reviewTest() {
+            // Show test interface and hide results
+            const testContainer = document.getElementById('test-container');
+            const resultsContainer = document.getElementById('results');
+            
+            // Check if all required elements exist
+            if (!testContainer || !resultsContainer) {
+                console.error('Required elements not found for reviewTest function');
+                return;
+            }
+            
+            testContainer.classList.remove('hidden');
+            resultsContainer.classList.add('hidden');
+            
+            // Show the current question
+            showQuestion(currentQuestionIndex);
         }
         
         // Load questions when page loads
