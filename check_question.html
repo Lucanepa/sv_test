@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Questions - Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-size: 0.92rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        h1 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.92rem;
+        }
+        
+        .search-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        
+        .search-stats {
+            margin-top: 15px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .questions-container {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f8f9fa;
+        }
+        
+
+        
+        .question-linking {
+            background: #6c757d;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .question-linking.linked {
+            background: #28a745;
+        }
+        
+        .question-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .question-prefix {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            display: none;
+        }
+        
+        .diagram-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .diagram {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .answers-container {
+            margin: 20px 0;
+        }
+        
+        .answer-option {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: all 0.2s ease;
+            font-size: 0.92rem;
+            position: relative;
+        }
+        
+        .answer-option.correct {
+            border-color: #28a745;
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .answer-option.correct::before {
+            content: "✓";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .answer-text {
+            color: inherit;
+            font-size: 0.92rem;
+        }
+        
+        .linked-questions {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .linked-questions h4 {
+            color: #28a745;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .linked-question {
+            background: white;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #e9ecef;
+        }
+        
+        .linked-question .question-text {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .linked-question .answers-container {
+            margin: 10px 0;
+        }
+        
+        .linked-question .answer-option {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 0.85rem;
+        }
+        
+        .no-results {
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            margin-top: 50px;
+        }
+        
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            margin-top: 50px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+        
+        <div class="header">
+            <h1>Check Questions</h1>
+            <p class="subtitle">Search and review all questions with answers and diagrams</p>
+        </div>
+        
+        <div class="search-container">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="search-input" 
+                placeholder="Search questions by text, keywords, or content..."
+                autocomplete="off"
+            >
+            <div class="search-stats" id="search-stats">
+                Type to search through all questions...
+            </div>
+        </div>
+        
+        <div class="questions-container" id="questions-container">
+            <div class="loading">Loading questions...</div>
+        </div>
+    </div>
+
+    <script>
+        let allQuestions = [];
+        let filteredQuestions = [];
+        
+        async function loadQuestions() {
+            try {
+                const response = await fetch('questions_with_diagrams_updated.json');
+                const data = await response.json();
+                
+                // Process questions to handle continuation questions
+                allQuestions = processQuestionsForCheck(data);
+                filteredQuestions = [...allQuestions];
+                
+                displayQuestions();
+                updateSearchStats();
+                
+                // Set up search functionality
+                document.getElementById('search-input').addEventListener('input', handleSearch);
+                
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                document.getElementById('questions-container').innerHTML = 
+                    '<div class="no-results">Error loading questions. Please refresh the page.</div>';
+            }
+        }
+        
+        function processQuestionsForCheck(originalQuestions) {
+            const processedQuestions = [];
+            const processedLinks = new Set();
+            
+            // First, group all linked questions by their base question
+            const linkGroups = new Map();
+            
+            originalQuestions.forEach(question => {
+                if (question.linked_to) {
+                    const baseNumber = question.linked_to;
+                    if (!linkGroups.has(baseNumber)) {
+                        linkGroups.set(baseNumber, []);
+                    }
+                    linkGroups.get(baseNumber).push(question);
+                }
+            });
+            
+            // Sort each link group by link_order
+            linkGroups.forEach((questions, baseNumber) => {
+                questions.sort((a, b) => a.link_order - b.link_order);
+            });
+            
+            // Now process questions in the correct order
+            originalQuestions.forEach(question => {
+                // Skip if this question has already been processed as part of a link group
+                if (processedLinks.has(question.question_number)) {
+                    return;
+                }
+                
+                // Check if this question is linked to another question
+                if (question.linked_to) {
+                    const baseNumber = question.linked_to;
+                    const linkedQuestions = linkGroups.get(baseNumber);
+                    
+                    // Add all linked questions in order
+                    linkedQuestions.forEach(linkedQ => {
+                        processedQuestions.push({
+                            ...linkedQ,
+                            is_linked: true,
+                            link_group: baseNumber,
+                            link_order: linkedQ.link_order,
+                            prefix: '',
+                            linked_questions: linkedQuestions.filter(q => q.question_number !== linkedQ.question_number)
+                        });
+                        processedLinks.add(linkedQ.question_number);
+                    });
+                } else {
+                    // Check if this question is referenced by a future linked question
+                    const isReferenced = originalQuestions.find(q => 
+                        q.linked_to === question.question_number
+                    );
+                    
+                    if (!isReferenced) {
+                        // Only add if not already added as part of a link group
+                        processedQuestions.push({
+                            ...question,
+                            is_linked: false,
+                            link_group: null,
+                            link_order: null,
+                            prefix: '',
+                            linked_questions: []
+                        });
+                    }
+                }
+            });
+            
+            return processedQuestions;
+        }
+        
+        function handleSearch(event) {
+            const searchTerm = event.target.value.toLowerCase().trim();
+            
+            // Search immediately with every keystroke
+            if (searchTerm === '') {
+                filteredQuestions = [...allQuestions];
+            } else {
+                filteredQuestions = allQuestions.filter(question => {
+                    // Search in question text
+                    if (question.question.toLowerCase().includes(searchTerm)) {
+                        return true;
+                    }
+                    
+                    // Search in answers
+                    const answerText = Object.values(question.answers).join(' ').toLowerCase();
+                    if (answerText.includes(searchTerm)) {
+                        return true;
+                    }
+                    
+                    // Search in question number
+                    if (question.question_number.toString().includes(searchTerm)) {
+                        return true;
+                    }
+                    
+                    return false;
+                });
+            }
+            
+            displayQuestions();
+            updateSearchStats();
+        }
+        
+        function displayQuestions() {
+            const container = document.getElementById('questions-container');
+            
+            if (filteredQuestions.length === 0) {
+                container.innerHTML = '<div class="no-results">No questions found matching your search.</div>';
+                return;
+            }
+            
+            container.innerHTML = filteredQuestions.map(question => createQuestionHTML(question)).join('');
+        }
+        
+        function createQuestionHTML(question) {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
+            const highlightedQuestion = highlightSearchTerm(question.question, searchTerm);
+            
+            let answersHTML = '';
+            Object.entries(question.answers).forEach(([key, value]) => {
+                const isCorrect = question.correct.includes(key);
+                const highlightedAnswer = highlightSearchTerm(value, searchTerm);
+                const answerClass = isCorrect ? 'answer-option correct' : 'answer-option';
+                
+                answersHTML += `
+                    <div class="${answerClass}">
+                        <span class="answer-text">${highlightedAnswer}</span>
+                    </div>
+                `;
+            });
+            
+            let diagramHTML = '';
+            if (question.image_url) {
+                diagramHTML = `
+                    <div class="diagram-container">
+                        <img src="${question.image_url}" class="diagram" alt="Question diagram">
+                    </div>
+                `;
+            }
+            
+            let prefixHTML = '';
+            if (question.prefix) {
+                prefixHTML = `
+                    <div class="question-prefix">${question.prefix}</div>
+                `;
+            }
+            
+            let linkingHTML = '';
+            if (question.is_linked) {
+                linkingHTML = `
+                    <div class="question-linking linked">
+                        Linked Question (${question.link_order}/${question.linked_questions.length + 1})
+                    </div>
+                `;
+            } else if (question.linked_questions && question.linked_questions.length > 0) {
+                linkingHTML = `
+                    <div class="question-linking">
+                        Base Question (${question.linked_questions.length + 1} total)
+                    </div>
+                `;
+            }
+            
+            let linkedQuestionsHTML = '';
+            if (question.linked_questions && question.linked_questions.length > 0) {
+                linkedQuestionsHTML = `
+                    <div class="linked-questions">
+                        <h4>Linked Questions:</h4>
+                        ${question.linked_questions.map(linkedQ => {
+                            let linkedAnswersHTML = '';
+                            Object.entries(linkedQ.answers).forEach(([key, value]) => {
+                                const isCorrect = linkedQ.correct.includes(key);
+                                const answerClass = isCorrect ? 'answer-option correct' : 'answer-option';
+                                linkedAnswersHTML += `
+                                    <div class="${answerClass}">
+                                        <span class="answer-text">${value}</span>
+                                    </div>
+                                `;
+                            });
+                            
+                            return `
+                                <div class="linked-question">
+                                    <div class="question-text">${linkedQ.question}</div>
+                                    <div class="answers-container">${linkedAnswersHTML}</div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+            }
+            
+            return `
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="question-number">Question ${question.question_number}</div>
+                        ${linkingHTML}
+                    </div>
+                    
+                    ${prefixHTML}
+                    <div class="question-text">${highlightedQuestion}</div>
+                    ${diagramHTML}
+                    
+                    <div class="answers-container">
+                        ${answersHTML}
+                    </div>
+                    
+                    ${linkedQuestionsHTML}
+                </div>
+            `;
+        }
+        
+        function highlightSearchTerm(text, searchTerm) {
+            if (!searchTerm) return text;
+            
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            return text.replace(regex, '<span class="highlight">$1</span>');
+        }
+        
+        function updateSearchStats() {
+            const statsElement = document.getElementById('search-stats');
+            const searchTerm = document.getElementById('search-input').value.trim();
+            
+            if (searchTerm === '') {
+                statsElement.textContent = `Showing all ${filteredQuestions.length} questions`;
+            } else {
+                statsElement.textContent = `Found ${filteredQuestions.length} questions matching "${searchTerm}"`;
+            }
+        }
+        
+        // Load questions when page loads
+        loadQuestions();
+    </script>
+</body>
+</html>
