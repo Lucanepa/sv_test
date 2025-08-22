@@ -104,6 +104,15 @@
             background: #1e7e34;
         }
         
+        .btn-info {
+            background: #17a2b8;
+            color: white;
+        }
+        
+        .btn-info:hover {
+            background: #138496;
+        }
+        
         .btn-warning {
             background: #ffc107;
             color: #212529;
@@ -167,6 +176,18 @@
             color: white;
         }
         
+        .question-indicator.correct {
+            border-color: #28a745;
+            background: #28a745;
+            color: white;
+        }
+        
+        .question-indicator.incorrect {
+            border-color: #dc3545;
+            background: #dc3545;
+            color: white;
+        }
+        
         .question-card {
             flex: 2;
             background: white;
@@ -222,6 +243,23 @@
         .answer-option.selected {
             border-color: #007bff;
             background: #e3f2fd;
+        }
+        
+        .answer-option.correct-answer {
+            border-color: #28a745;
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .answer-option.incorrect-answer {
+            border-color: #dc3545;
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .answer-option.user-selected {
+            border-width: 3px;
+            font-weight: bold;
         }
         
         .answer-text {
@@ -510,7 +548,7 @@
                 <div id="performance-rating" class="performance-rating"></div>
                 
                 <div class="results-actions">
-                    <button class="btn btn-primary" onclick="reviewTest()">Review Test</button>
+                    <button class="btn btn-info" onclick="checkAnswers()">Check Answers</button>
                     <button class="btn btn-success" onclick="startNewTest()">New Test</button>
                 </div>
             </div>
@@ -522,6 +560,7 @@
         let currentTestQuestions = [];
         let currentQuestionIndex = 0;
         let userAnswers = {};
+        let isReviewMode = false;
         
         async function loadQuestions() {
             try {
@@ -646,6 +685,7 @@
             // Reset test state
             currentQuestionIndex = 0;
             userAnswers = {};
+            isReviewMode = false;
             
             // Create a set to track all selected question numbers to prevent duplicates
             const selectedQuestionNumbers = new Set();
@@ -794,6 +834,16 @@
                     indicator.classList.add('answered');
                 }
                 
+                // In review mode, show correct/incorrect answers
+                if (isReviewMode) {
+                    const isCorrect = checkAnswerCorrectness(index);
+                    if (isCorrect) {
+                        indicator.classList.add('correct');
+                    } else {
+                        indicator.classList.add('incorrect');
+                    }
+                }
+                
                 grid.appendChild(indicator);
             });
         }
@@ -847,41 +897,63 @@
                     answerDiv.classList.add('selected');
                 }
                 
-                // Add both click and touch events for better mobile support
-                const handleAnswerSelection = () => {
-                    const isCurrentlySelected = answerDiv.classList.contains('selected');
+                // In review mode, show correct/incorrect answers and highlight user selections
+                if (isReviewMode) {
+                    const isCorrect = question.correct.includes(key);
+                    const wasSelected = userAnswers[index] && userAnswers[index].includes(key);
                     
-                    if (isCurrentlySelected) {
-                        // Deselect the answer
-                        answerDiv.classList.remove('selected');
-                    } else {
-                        // Select the answer
-                        answerDiv.classList.add('selected');
+                    // Always show if user selected this answer (regardless of correctness)
+                    if (wasSelected) {
+                        answerDiv.classList.add('user-selected');
                     }
                     
-                    // Update user answers
-                    const selectedAnswers = [];
-                    document.querySelectorAll(`.answer-option.selected`).forEach(option => {
-                        selectedAnswers.push(option.dataset.answer);
-                    });
-                    userAnswers[index] = selectedAnswers;
+                    // Show correct/incorrect status
+                    if (isCorrect) {
+                        answerDiv.classList.add('correct-answer');
+                    } else if (wasSelected) {
+                        answerDiv.classList.add('incorrect-answer');
+                    }
                     
-                    // Update question grid
-                    updateQuestionGrid();
-                };
-                
-                // Add click event
-                answerDiv.addEventListener('click', handleAnswerSelection);
-                
-                // Add touch events for mobile
-                answerDiv.addEventListener('touchstart', (e) => {
-                    e.preventDefault(); // Prevent double-firing on mobile
-                });
-                
-                answerDiv.addEventListener('touchend', (e) => {
-                    e.preventDefault();
-                    handleAnswerSelection();
-                });
+                    // Disable selection in review mode
+                    answerDiv.style.pointerEvents = 'none';
+                    answerDiv.style.cursor = 'default';
+                } else {
+                    // Add both click and touch events for better mobile support (only in test mode)
+                    const handleAnswerSelection = () => {
+                        const isCurrentlySelected = answerDiv.classList.contains('selected');
+                        
+                        if (isCurrentlySelected) {
+                            // Deselect the answer
+                            answerDiv.classList.remove('selected');
+                        } else {
+                            // Select the answer
+                            answerDiv.classList.add('selected');
+                        }
+                        
+                        // Update user answers
+                        const selectedAnswers = [];
+                        document.querySelectorAll(`.answer-option.selected`).forEach(option => {
+                            selectedAnswers.push(option.dataset.answer);
+                        });
+                        userAnswers[index] = selectedAnswers;
+                        
+                        // Update question grid
+                        updateQuestionGrid();
+                    };
+                    
+                    // Add click event
+                    answerDiv.addEventListener('click', handleAnswerSelection);
+                    
+                    // Add touch events for mobile
+                    answerDiv.addEventListener('touchstart', (e) => {
+                        e.preventDefault(); // Prevent double-firing on mobile
+                    });
+                    
+                    answerDiv.addEventListener('touchend', (e) => {
+                        e.preventDefault();
+                        handleAnswerSelection();
+                    });
+                }
                 
                 answersContainer.appendChild(answerDiv);
             });
@@ -937,22 +1009,18 @@
             }
             
             let correctCount = 0;
-            let totalAnswered = 0;
             
+            // Count all 25 questions - unanswered questions count as incorrect
             currentTestQuestions.forEach((question, index) => {
-                if (userAnswers[index]) {
-                    totalAnswered++;
-                    if (checkAnswerCorrectness(index)) {
-                        correctCount++;
-                    }
+                if (checkAnswerCorrectness(index)) {
+                    correctCount++;
                 }
             });
             
-            const score = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            const score = Math.round((correctCount / 25) * 100);
             
             scoreDisplay.innerHTML = `
-                <p style="font-size: 0.92rem; margin-bottom: 10px;">Questions answered: ${totalAnswered}/25</p>
-                <p style="font-size: 0.92rem; margin-bottom: 10px;">Correct answers: ${correctCount}</p>
+                <p style="font-size: 0.92rem; margin-bottom: 10px;">Correct answers: ${correctCount}/25</p>
                 <p style="font-size: 0.92rem; margin-bottom: 10px;">Score: ${score}%</p>
             `;
             
@@ -1020,22 +1088,22 @@
             updateQuestionGrid();
         }
         
-        function reviewTest() {
-            // Show test interface and hide results
+
+        
+        function checkAnswers() {
+            // Enable review mode and show test interface
+            isReviewMode = true;
+            
             const testContainer = document.getElementById('test-container');
             const resultsContainer = document.getElementById('results');
             
-            // Check if all required elements exist
-            if (!testContainer || !resultsContainer) {
-                console.error('Required elements not found for reviewTest function');
-                return;
+            if (testContainer && resultsContainer) {
+                testContainer.classList.remove('hidden');
+                resultsContainer.classList.add('hidden');
+                
+                // Show the current question with answer checking
+                showQuestion(currentQuestionIndex);
             }
-            
-            testContainer.classList.remove('hidden');
-            resultsContainer.classList.add('hidden');
-            
-            // Show the current question
-            showQuestion(currentQuestionIndex);
         }
         
         // Load questions when page loads

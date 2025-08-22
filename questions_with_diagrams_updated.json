@@ -1798,13 +1798,11 @@
     "question_number": 131,
     "question": "La formazione iniziale dei giocatori che iniziano il set è la seguente (a partire dalla posizione 1): 1, 2, 3, 4, 5, 6. L'ultimo giocatore a servire è stato il",
     "answers": {
-      "n": "",
-      "a": "Corretto per quanto riguarda i giocatori davanti, errato per quanto riguarda i difensori",
+      "a": "Corretto per quanto riguarda i difensori, errato per quanto riguarda i giocatori davanti",
       "b": "Corretto per quanto riguarda i giocatori davanti, errato per quanto riguarda i difensori.",
       "c": "Corretto per quanto riguarda i giocatori davanti ed i difensori."
     },
     "correct": [
-      "n",
       "c"
     ],
     "image_url": "diagram_156.png"
