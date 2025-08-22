@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
         }
         
         .container {
@@ -24,10 +24,7 @@
             padding: 20px;
         }
         
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+
         
         .back-button {
             position: absolute;
@@ -39,7 +36,7 @@
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             backdrop-filter: blur(10px);
         }
         
@@ -47,16 +44,9 @@
             background: rgba(255, 255, 255, 0.3);
         }
         
-        h1 {
-            color: white;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
+
         
-        .subtitle {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.92rem;
-        }
+
         
         .search-container {
             background: rgba(255, 255, 255, 0.95);
@@ -72,7 +62,7 @@
             padding: 15px;
             border: 2px solid #e9ecef;
             border-radius: 8px;
-            font-size: 1rem;
+            font-size: 0.8rem;
             transition: border-color 0.2s ease;
         }
         
@@ -81,11 +71,7 @@
             border-color: #007bff;
         }
         
-        .search-stats {
-            margin-top: 15px;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
+
         
         .questions-container {
             display: grid;
@@ -129,7 +115,7 @@
         }
         
         .question-text {
-            font-size: 1rem;
+            font-size: 0.8rem;
             line-height: 1.6;
             color: #333;
             margin-bottom: 20px;
@@ -139,7 +125,7 @@
             font-weight: bold;
             color: #007bff;
             margin-bottom: 10px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             display: none;
         }
         
@@ -166,7 +152,7 @@
             padding: 15px;
             margin: 10px 0;
             transition: all 0.2s ease;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             position: relative;
         }
         
@@ -189,7 +175,7 @@
         
         .answer-text {
             color: inherit;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
         }
         
         .linked-questions {
@@ -203,7 +189,7 @@
         .linked-questions h4 {
             color: #28a745;
             margin-bottom: 10px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
         .linked-question {
@@ -215,7 +201,7 @@
         }
         
         .linked-question .question-text {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin-bottom: 10px;
         }
         
@@ -226,7 +212,7 @@
         .linked-question .answer-option {
             padding: 10px;
             margin: 5px 0;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
         
         .no-results {
@@ -254,22 +240,16 @@
     <div class="container">
         <button class="back-button" onclick="window.location.href='index.html'">Back</button>
         
-        <div class="header">
-            <h1>Check Questions</h1>
-            <p class="subtitle">Search and review all questions with answers and diagrams</p>
-        </div>
+
         
         <div class="search-container">
             <input 
                 type="text" 
                 class="search-input" 
                 id="search-input" 
-                placeholder="Search questions by text, keywords, or content..."
+                placeholder="Search..."
                 autocomplete="off"
             >
-            <div class="search-stats" id="search-stats">
-                Type to search through all questions...
-            </div>
         </div>
         
         <div class="questions-container" id="questions-container">
@@ -284,6 +264,7 @@
         async function loadQuestions() {
             try {
                 const response = await fetch('questions_with_diagrams_updated.json');
+          
                 const data = await response.json();
                 
                 // Process questions to handle continuation questions
@@ -291,7 +272,6 @@
                 filteredQuestions = [...allQuestions];
                 
                 displayQuestions();
-                updateSearchStats();
                 
                 // Set up search functionality
                 document.getElementById('search-input').addEventListener('input', handleSearch);
@@ -401,7 +381,6 @@
             }
             
             displayQuestions();
-            updateSearchStats();
         }
         
         function displayQuestions() {
@@ -517,16 +496,7 @@
             return text.replace(regex, '<span class="highlight">$1</span>');
         }
         
-        function updateSearchStats() {
-            const statsElement = document.getElementById('search-stats');
-            const searchTerm = document.getElementById('search-input').value.trim();
-            
-            if (searchTerm === '') {
-                statsElement.textContent = `Showing all ${filteredQuestions.length} questions`;
-            } else {
-                statsElement.textContent = `Found ${filteredQuestions.length} questions matching "${searchTerm}"`;
-            }
-        }
+
         
         // Load questions when page loads
         loadQuestions();
