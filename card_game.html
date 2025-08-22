@@ -351,9 +351,9 @@
                         const questionGroup = {
                             type: 'linked_group',
                             questions: linkedQuestions.map(linkedQ => ({
-                                ...linkedQ,
-                                is_linked: true,
-                                link_group: baseNumber,
+                            ...linkedQ,
+                            is_linked: true,
+                            link_group: baseNumber,
                                 link_order: linkedQ.link_order
                             })),
                             base_number: baseNumber
@@ -389,9 +389,9 @@
                         processedQuestions.push({
                             type: 'single',
                             question: {
-                                ...question,
-                                is_linked: false,
-                                link_group: null,
+                            ...question,
+                            is_linked: false,
+                            link_group: null,
                                 link_order: null
                             }
                         });
@@ -626,9 +626,9 @@
             } else {
                 // For single questions, check normally
                 const question = currentItem.question;
-                const correctAnswers = question.correct;
+            const correctAnswers = question.correct;
                 isCorrect = selectedAnswers.length === correctAnswers.length &&
-                    selectedAnswers.every(answer => correctAnswers.includes(answer));
+                selectedAnswers.every(answer => correctAnswers.includes(answer));
                 feedbackMessage = isCorrect ? 'Correct!' : `Incorrect. Correct answers: ${correctAnswers.join(', ')}`;
             }
             
@@ -652,7 +652,7 @@
                     currentItem.questions.forEach(q => {
                         answeredQuestions.add(q.question_number);
                     });
-                } else {
+            } else {
                     answeredQuestions.add(currentItem.question.question_number);
                 }
             }

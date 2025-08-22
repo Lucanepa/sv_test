@@ -691,13 +691,16 @@
             const selectedQuestionNumbers = new Set();
             const finalTestQuestions = [];
             
-            // First, shuffle all questions
-            const shuffled = shuffleArray([...questions]);
+            // Super randomized approach: shuffle all questions and pick the first 25 that fit
+            // This ensures maximum randomness from all 278 questions
+            const allShuffledQuestions = shuffleArray([...questions]);
+            
+            console.log(`🎲 Starting new test - shuffling all ${questions.length} questions with crypto-grade randomness`);
             
             // Process questions to ensure linked groups stay together and no duplicates
             let i = 0;
-            while (finalTestQuestions.length < 25 && i < shuffled.length) {
-                const question = shuffled[i];
+            while (finalTestQuestions.length < 25 && i < allShuffledQuestions.length) {
+                const question = allShuffledQuestions[i];
                 
                 // Skip if this question number is already selected
                 if (selectedQuestionNumbers.has(question.question_number)) {
@@ -749,6 +752,30 @@
                 i++;
             }
             
+            // If we still don't have 25 questions, fill with additional random questions
+            if (finalTestQuestions.length < 25) {
+                const remainingQuestions = questions.filter(q => 
+                    !selectedQuestionNumbers.has(q.question_number) && 
+                    !q.is_linked && 
+                    !questions.find(refQ => refQ.linked_to === q.question_number)
+                );
+                
+                const additionalShuffled = shuffleArray([...remainingQuestions]);
+                for (let j = 0; j < additionalShuffled.length && finalTestQuestions.length < 25; j++) {
+                    const question = additionalShuffled[j];
+                    if (!selectedQuestionNumbers.has(question.question_number)) {
+                        finalTestQuestions.push({
+                            ...question,
+                            is_linked: false,
+                            link_group: null,
+                            link_order: null,
+                            prefix: ''
+                        });
+                        selectedQuestionNumbers.add(question.question_number);
+                    }
+                }
+            }
+            
             // Sort questions to ensure linked groups appear consecutively
             finalTestQuestions.sort((a, b) => {
                 if (a.is_linked && b.is_linked && a.link_group === b.link_group) {
@@ -761,7 +788,8 @@
             
             currentTestQuestions = finalTestQuestions;
             
-
+            console.log(`🎯 New test started with ${finalTestQuestions.length} questions`);
+            console.log(`📊 Questions selected: ${finalTestQuestions.map(q => q.question_number).join(', ')}`);
             
             // Update question grid
             updateQuestionGrid();
@@ -809,10 +837,26 @@
         
         function shuffleArray(array) {
             const shuffled = [...array];
+            
+            // Use crypto.getRandomValues for true random noise if available
+            let randomValues;
+            try {
+                randomValues = new Uint32Array(shuffled.length);
+                crypto.getRandomValues(randomValues);
+            } catch (e) {
+                // Fallback to Math.random if crypto API not available
+                randomValues = new Uint32Array(shuffled.length);
+                for (let i = 0; i < shuffled.length; i++) {
+                    randomValues[i] = Math.floor(Math.random() * 0x100000000);
+                }
+            }
+            
+            // Fisher-Yates shuffle with true random values
             for (let i = shuffled.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
+                const j = randomValues[i] % (i + 1);
                 [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
             }
+            
             return shuffled;
         }
         
