@@ -24,6 +24,14 @@
             padding: 20px;
         }
         
+        .top-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
 
         
         .back-button {
@@ -38,6 +46,7 @@
             cursor: pointer;
             font-size: 0.8rem;
             backdrop-filter: blur(10px);
+            z-index: 1000;
         }
         
         .back-button:hover {
@@ -78,6 +87,116 @@
             gap: 20px;
         }
         
+        /* Mobile Back Button */
+        @media (max-width: 1023px) {
+            .top-section {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 15px;
+            }
+            
+            .back-button {
+                position: relative;
+                top: auto;
+                left: auto;
+                z-index: 1000;
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                margin-bottom: 0;
+                display: block;
+                align-self: flex-start;
+            }
+            
+            .search-container {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        
+        /* Desktop Enhancements */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 40px;
+            }
+            
+            .top-section {
+                justify-content: flex-start;
+                gap: 30px;
+            }
+            
+            .search-container {
+                max-width: 600px;
+                margin: 0;
+                flex: 1;
+            }
+            
+            .questions-container {
+                grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+                gap: 30px;
+            }
+            
+            .question-card {
+                padding: 35px;
+                font-size: 0.9rem;
+            }
+            
+            .question-text {
+                font-size: 0.9rem;
+                line-height: 1.7;
+            }
+            
+            .answer-option {
+                padding: 18px;
+                margin: 12px 0;
+                font-size: 0.9rem;
+            }
+            
+            .answer-text {
+                font-size: 0.9rem;
+            }
+            
+            .linked-questions h4 {
+                font-size: 0.9rem;
+            }
+            
+            .linked-question .question-text {
+                font-size: 0.9rem;
+            }
+            
+            .linked-question .answer-option {
+                font-size: 0.9rem;
+            }
+            
+            .search-input {
+                font-size: 0.9rem;
+                padding: 18px;
+            }
+            
+            .back-button {
+                font-size: 0.9rem;
+                padding: 12px 18px;
+            }
+        }
+        
+        /* Large Desktop Enhancements */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1600px;
+                padding: 50px;
+            }
+            
+            .questions-container {
+                grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+                gap: 40px;
+            }
+            
+            .question-card {
+                padding: 40px;
+            }
+        }
+        
         .question-card {
             background: white;
             border-radius: 15px;
@@ -88,6 +207,29 @@
         
         .question-card:hover {
             transform: translateY(-2px);
+        }
+        
+        /* Enhanced Desktop Hover Effects */
+        @media (min-width: 1024px) {
+            .question-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            }
+            
+            .answer-option:hover {
+                background: #e9ecef;
+                border-color: #007bff;
+                transform: translateX(5px);
+            }
+            
+            .search-input:hover {
+                border-color: #6c757d;
+            }
+            
+            .back-button:hover {
+                background: rgba(255, 255, 255, 0.4);
+                transform: translateY(-2px);
+            }
         }
         
         .question-header {
@@ -234,22 +376,39 @@
             padding: 2px 4px;
             border-radius: 3px;
         }
+        
+        /* Desktop Keyboard Navigation */
+        @media (min-width: 1024px) {
+            .search-input:focus {
+                border-color: #007bff;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+            }
+            
+            .question-card:focus-within {
+                outline: 2px solid #007bff;
+                outline-offset: 2px;
+            }
+            
+            .answer-option:focus {
+                outline: 2px solid #007bff;
+                outline-offset: 2px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
-        
-
-        
-        <div class="search-container">
-            <input 
-                type="text" 
-                class="search-input" 
-                id="search-input" 
-                placeholder="Search..."
-                autocomplete="off"
-            >
+        <div class="top-section">
+            <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="search-input" 
+                    placeholder="Search..."
+                    autocomplete="off"
+                >
+            </div>
         </div>
         
         <div class="questions-container" id="questions-container">
@@ -498,8 +657,46 @@
         
 
         
+        // Desktop-specific enhancements
+        function addDesktopEnhancements() {
+            if (window.innerWidth >= 1024) {
+                // Add keyboard shortcuts for desktop
+                document.addEventListener('keydown', function(e) {
+                    // Ctrl/Cmd + F to focus search
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+                        e.preventDefault();
+                        document.getElementById('search-input').focus();
+                    }
+                    
+                    // Escape to clear search
+                    if (e.key === 'Escape') {
+                        const searchInput = document.getElementById('search-input');
+                        if (searchInput.value) {
+                            searchInput.value = '';
+                            handleSearch({ target: searchInput });
+                        }
+                    }
+                });
+                
+                // Enhanced search input behavior for desktop
+                const searchInput = document.getElementById('search-input');
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        // On Enter, focus the first question card for keyboard navigation
+                        const firstCard = document.querySelector('.question-card');
+                        if (firstCard) {
+                            firstCard.focus();
+                        }
+                    }
+                });
+            }
+        }
+        
         // Load questions when page loads
         loadQuestions();
+        
+        // Add desktop enhancements after page loads
+        window.addEventListener('load', addDesktopEnhancements);
     </script>
 </body>
 </html>
