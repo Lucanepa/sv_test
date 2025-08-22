@@ -15,7 +15,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
+            overscroll-behavior: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        html {
+            overscroll-behavior: none;
+            -webkit-overflow-scrolling: touch;
         }
         
         .container {
@@ -39,7 +46,7 @@
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             backdrop-filter: blur(10px);
         }
         
@@ -49,13 +56,13 @@
         
         h1 {
             color: white;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             margin-bottom: 10px;
         }
         
         .subtitle {
             color: rgba(255, 255, 255, 0.8);
-            font-size: 0.92rem;
+            font-size: 0.8rem;
         }
         
         .test-controls {
@@ -68,7 +75,7 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             font-weight: 600;
             margin: 0 10px;
             transition: all 0.2s ease;
@@ -123,7 +130,7 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             font-weight: 600;
             transition: all 0.2s ease;
             background: white;
@@ -169,12 +176,12 @@
             font-weight: bold;
             color: #007bff;
             margin-bottom: 10px;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             display: none;
         }
         
         .question-text {
-            font-size: 0.92rem;
+            font-size: 0.8rem;
             margin-bottom: 20px;
             line-height: 1.6;
             color: #333;
@@ -200,7 +207,7 @@
             margin: 10px 0;
             cursor: pointer;
             transition: all 0.2s ease;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
         }
         
         .answer-option:hover {
@@ -225,7 +232,7 @@
         
         .answer-text {
             color: #333;
-            font-size: 0.92rem;
+            font-size: 0.8rem;
         }
         
         .feedback {
@@ -279,10 +286,46 @@
              gap: 10px;
          }
          
-         .navigation-controls .btn {
-             flex: 1;
-             max-width: 120px;
-         }
+                 .navigation-controls .btn {
+            flex: 1;
+            max-width: 120px;
+        }
+        
+        /* Mobile responsive design */
+        @media (max-width: 768px) {
+            .test-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .question-list {
+                order: 2;
+                max-height: none;
+            }
+            
+            .question-card {
+                order: 1;
+            }
+            
+            .question-grid {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 8px;
+            }
+            
+            .question-indicator {
+                width: 35px;
+                height: 35px;
+                font-size: 0.8rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -300,7 +343,7 @@
         
         <div class="test-container">
             <div class="question-list">
-                <h3 style="margin-bottom: 15px; font-size: 0.92rem;">Question Overview</h3>
+                <h3 style="margin-bottom: 15px; font-size: 0.8rem;">Question Overview</h3>
                 <div class="question-grid" id="question-grid"></div>
             </div>
             
@@ -419,46 +462,70 @@
             currentQuestionIndex = 0;
             userAnswers = {};
             
-            // First, do a "draft" to see which questions would be selected
+            // Create a set to track all selected question numbers to prevent duplicates
+            const selectedQuestionNumbers = new Set();
+            const finalTestQuestions = [];
+            
+            // First, shuffle all questions
             const shuffled = shuffleArray([...questions]);
-            let draftQuestions = shuffled.slice(0, 25);
             
-            // Check if any draft questions have linked questions
-            const questionsToAdd = [];
-            const addedLinkGroups = new Set();
-            
-            draftQuestions.forEach(question => {
-                if (question.is_linked && !addedLinkGroups.has(question.link_group)) {
-                    // Find all questions in this link group
-                    const linkedQuestions = questions.filter(q => 
+            // Process questions to ensure linked groups stay together and no duplicates
+            let i = 0;
+            while (finalTestQuestions.length < 25 && i < shuffled.length) {
+                const question = shuffled[i];
+                
+                // Skip if this question number is already selected
+                if (selectedQuestionNumbers.has(question.question_number)) {
+                    i++;
+                    continue;
+                }
+                
+                // If this is a linked question, add the entire group
+                if (question.is_linked) {
+                    const linkGroup = questions.filter(q => 
                         q.is_linked && q.link_group === question.link_group
                     );
                     
-                    // Add all linked questions that aren't already in the draft
-                    linkedQuestions.forEach(linkedQ => {
-                        if (!draftQuestions.find(q => q.question_number === linkedQ.question_number)) {
-                            questionsToAdd.push(linkedQ);
-                        }
-                    });
+                    // Check if we have space for the entire group
+                    if (finalTestQuestions.length + linkGroup.length <= 25) {
+                        // Add all questions in the link group
+                        linkGroup.forEach(linkedQ => {
+                            if (!selectedQuestionNumbers.has(linkedQ.question_number)) {
+                                finalTestQuestions.push({
+                                    ...linkedQ,
+                                    is_linked: true,
+                                    link_group: question.link_group,
+                                    link_order: linkedQ.link_order,
+                                    prefix: ''
+                                });
+                                selectedQuestionNumbers.add(linkedQ.question_number);
+                            }
+                        });
+                    }
+                } else {
+                    // Check if this question is referenced by a future linked question
+                    const isReferenced = questions.find(q => 
+                        q.linked_to === question.question_number
+                    );
                     
-                    addedLinkGroups.add(question.link_group);
+                    if (!isReferenced) {
+                        // Add non-linked question
+                        finalTestQuestions.push({
+                            ...question,
+                            is_linked: false,
+                            link_group: null,
+                            link_order: null,
+                            prefix: ''
+                        });
+                        selectedQuestionNumbers.add(question.question_number);
+                    }
                 }
-            });
-            
-            // Calculate how many extra questions we have
-            const totalQuestions = draftQuestions.length + questionsToAdd.length;
-            
-            if (totalQuestions > 25) {
-                // We have too many questions, need to reduce the initial selection
-                const excess = totalQuestions - 25;
-                draftQuestions = draftQuestions.slice(0, 25 - questionsToAdd.length);
+                
+                i++;
             }
             
-            // Now build the final test with exactly 25 questions
-            currentTestQuestions = [...draftQuestions, ...questionsToAdd];
-            
             // Sort questions to ensure linked groups appear consecutively
-            currentTestQuestions.sort((a, b) => {
+            finalTestQuestions.sort((a, b) => {
                 if (a.is_linked && b.is_linked && a.link_group === b.link_group) {
                     // Keep linked questions in order within their group
                     return a.link_order - b.link_order;
@@ -467,7 +534,9 @@
                 return 0;
             });
             
-            console.log('Final test questions (exactly 25):', currentTestQuestions.map(q => ({
+            currentTestQuestions = finalTestQuestions;
+            
+            console.log('Final test questions (exactly ' + currentTestQuestions.length + '):', currentTestQuestions.map(q => ({
                 number: q.question_number,
                 linked_to: q.linked_to,
                 link_order: q.link_order,
@@ -505,7 +574,7 @@
                     indicator.classList.add('current');
                 }
                 
-                if (userAnswers[index]) {
+                if (userAnswers[index] && userAnswers[index].length > 0) {
                     indicator.classList.add('answered');
                     // Check if answer is correct
                     const isCorrect = checkAnswerCorrectness(index);
@@ -569,14 +638,40 @@
                     answerDiv.classList.add('selected');
                 }
                 
-                answerDiv.addEventListener('click', () => {
-                    answerDiv.classList.toggle('selected');
+                // Add both click and touch events for better mobile support
+                const handleAnswerSelection = () => {
+                    const isCurrentlySelected = answerDiv.classList.contains('selected');
+                    
+                    if (isCurrentlySelected) {
+                        // Deselect the answer
+                        answerDiv.classList.remove('selected');
+                    } else {
+                        // Select the answer
+                        answerDiv.classList.add('selected');
+                    }
+                    
+                    // Update user answers
                     const selectedAnswers = [];
                     document.querySelectorAll(`.answer-option.selected`).forEach(option => {
                         selectedAnswers.push(option.dataset.answer);
                     });
                     userAnswers[index] = selectedAnswers;
+                    
+                    // Update question grid
                     updateQuestionGrid();
+                };
+                
+                // Add click event
+                answerDiv.addEventListener('click', handleAnswerSelection);
+                
+                // Add touch events for mobile
+                answerDiv.addEventListener('touchstart', (e) => {
+                    e.preventDefault(); // Prevent double-firing on mobile
+                });
+                
+                answerDiv.addEventListener('touchend', (e) => {
+                    e.preventDefault();
+                    handleAnswerSelection();
                 });
                 
                 answersContainer.appendChild(answerDiv);
