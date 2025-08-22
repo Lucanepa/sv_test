@@ -75,14 +75,7 @@
             margin-bottom: 20px;
             line-height: 1.6;
             color: #333;
-        }
-        
-        .question-prefix {
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 10px;
-            font-size: 0.92rem;
-            display: none;
+            white-space: pre-line;
         }
         
         .diagram {
@@ -178,7 +171,9 @@
             border-radius: 8px;
             font-size: 0.92rem;
             font-weight: 600;
-            text-align: center;
+            text-align: left;
+            white-space: pre-line;
+            line-height: 1.4;
         }
         
         .feedback.correct {
@@ -248,7 +243,6 @@
 
         
         <div class="card" id="question-card">
-            <div class="question-prefix" id="question-prefix"></div>
             <div class="question-text" id="question-text">Loading...</div>
             <img id="diagram" class="diagram hidden" alt="Question diagram">
             <div class="answers" id="answers"></div>
@@ -351,17 +345,39 @@
                     const baseNumber = question.linked_to;
                     const linkedQuestions = linkGroups.get(baseNumber);
                     
-                    // Add all linked questions in order
-                    linkedQuestions.forEach(linkedQ => {
-                        processedQuestions.push({
-                            ...linkedQ,
-                            is_linked: true,
-                            link_group: baseNumber,
-                            link_order: linkedQ.link_order,
-                            prefix: ''
+                    // Only process if we have multiple questions in the group
+                    if (linkedQuestions && linkedQuestions.length > 1) {
+                        // Add all linked questions in order as a single group
+                        const questionGroup = {
+                            type: 'linked_group',
+                            questions: linkedQuestions.map(linkedQ => ({
+                                ...linkedQ,
+                                is_linked: true,
+                                link_group: baseNumber,
+                                link_order: linkedQ.link_order
+                            })),
+                            base_number: baseNumber
+                        };
+                        
+                        processedQuestions.push(questionGroup);
+                        
+                        // Mark all questions in this group as processed
+                        linkedQuestions.forEach(linkedQ => {
+                            processedLinks.add(linkedQ.question_number);
                         });
-                        processedLinks.add(linkedQ.question_number);
-                    });
+                    } else {
+                        // Single question with self-reference, treat as regular question
+                        processedQuestions.push({
+                            type: 'single',
+                            question: {
+                                ...question,
+                                is_linked: false,
+                                link_group: null,
+                                link_order: null
+                            }
+                        });
+                        processedLinks.add(question.question_number);
+                    }
                 } else {
                     // Check if this question is referenced by a future linked question
                     const isReferenced = originalQuestions.find(q => 
@@ -371,11 +387,13 @@
                     if (!isReferenced) {
                         // Only add if not already added as part of a link group
                         processedQuestions.push({
-                            ...question,
-                            is_linked: false,
-                            link_group: null,
-                            link_order: null,
-                            prefix: ''
+                            type: 'single',
+                            question: {
+                                ...question,
+                                is_linked: false,
+                                link_group: null,
+                                link_order: null
+                            }
                         });
                     }
                 }
@@ -390,7 +408,16 @@
             currentQuestionIndex = 0;
             
             // Create a new random selection of questions
-            const availableQuestions = questions.filter(q => !answeredQuestions.has(q.question_number));
+            const availableQuestions = questions.filter(q => {
+                if (q.type === 'linked_group') {
+                    // For linked groups, check if any question in the group has been answered
+                    return !q.questions.some(linkedQ => answeredQuestions.has(linkedQ.question_number));
+                } else {
+                    // For single questions, check normally
+                    return !answeredQuestions.has(q.question.question_number);
+                }
+            });
+            
             let selectedQuestions = shuffleArray([...availableQuestions]);
             
             // Process the selection to ensure linked groups stay together
@@ -399,20 +426,12 @@
             
             selectedQuestions.forEach(question => {
                 // If this question is part of a link group and we haven't processed it yet
-                if (question.is_linked && !processedLinkGroups.has(question.link_group)) {
-                    // Find all questions in this link group
-                    const linkGroupQuestions = questions.filter(q => 
-                        q.is_linked && q.link_group === question.link_group
-                    );
-                    
-                    // Add all questions from this link group in order
-                    linkGroupQuestions.forEach(linkedQ => {
-                        processedQuestions.push(linkedQ);
-                    });
-                    
-                    processedLinkGroups.add(question.link_group);
-                } else if (!question.is_linked) {
-                    // Add non-linked questions normally
+                if (question.type === 'linked_group' && !processedLinkGroups.has(question.base_number)) {
+                    // Add the entire linked group
+                    processedQuestions.push(question);
+                    processedLinkGroups.add(question.base_number);
+                } else if (question.type === 'single') {
+                    // Add single questions normally
                     processedQuestions.push(question);
                 }
                 // Skip linked questions that are already part of a processed group
@@ -461,20 +480,95 @@
                 option.classList.remove('selected', 'correct', 'incorrect');
             });
             
-            // Display question prefix if it exists
-            const prefixElement = document.getElementById('question-prefix');
-            if (question.prefix) {
-                prefixElement.textContent = question.prefix;
-                prefixElement.style.display = 'block';
+            const questionText = document.getElementById('question-text');
+            const answersContainer = document.getElementById('answers');
+            const diagramElement = document.getElementById('diagram');
+            
+            if (question.type === 'linked_group') {
+                // Display linked question group
+                displayLinkedQuestionGroup(question);
             } else {
-                prefixElement.style.display = 'none';
+                // Display single question
+                displaySingleQuestion(question.question);
+            }
+        }
+        
+        function displayLinkedQuestionGroup(questionGroup) {
+            const questionText = document.getElementById('question-text');
+            const answersContainer = document.getElementById('answers');
+            const diagramElement = document.getElementById('diagram');
+            
+            // Build the combined question text with clear separation
+            let combinedText = '';
+            questionGroup.questions.forEach((q, index) => {
+                if (index === 0) {
+                    combinedText += `Question ${q.question_number}:\n${q.question}`;
+                } else {
+                    combinedText += `\n\n${'─'.repeat(50)}\n\nQuestion ${q.question_number} (continuation):\n${q.question}`;
+                }
+            });
+            
+            questionText.textContent = combinedText;
+            
+            // Show diagram if any question in the group has one
+            const questionWithDiagram = questionGroup.questions.find(q => q.image_url);
+            if (questionWithDiagram) {
+                diagramElement.src = questionWithDiagram.image_url;
+                diagramElement.classList.remove('hidden');
+            } else {
+                diagramElement.classList.add('hidden');
             }
             
+            // Display all answers from all questions in the group
+            answersContainer.innerHTML = '';
+            
+            // Add a note about linked questions
+            const noteDiv = document.createElement('div');
+            noteDiv.style.cssText = 'background: #e3f2fd; border-left: 4px solid #2196f3; padding: 10px; margin-bottom: 15px; border-radius: 4px; font-size: 0.85rem; color: #1976d2;';
+            noteDiv.textContent = `This is a linked question group with ${questionGroup.questions.length} questions. All questions must be answered correctly to proceed.`;
+            answersContainer.appendChild(noteDiv);
+            
+            // Collect all unique answers from all questions in the group
+            const allAnswers = new Map();
+            questionGroup.questions.forEach(q => {
+                Object.entries(q.answers).forEach(([key, value]) => {
+                    if (!allAnswers.has(key)) {
+                        allAnswers.set(key, value);
+                    }
+                });
+            });
+            
+            // Create array of answer entries and shuffle them
+            const answerEntries = Array.from(allAnswers.entries());
+            const shuffledAnswers = shuffleArray([...answerEntries]);
+            
+            shuffledAnswers.forEach(([key, value]) => {
+                const answerDiv = document.createElement('div');
+                answerDiv.className = 'answer-option';
+                answerDiv.dataset.answer = key;
+                
+                const text = document.createElement('span');
+                text.className = 'answer-text';
+                text.textContent = value;
+                
+                answerDiv.appendChild(text);
+                
+                answerDiv.addEventListener('click', () => {
+                    selectAnswer(key);
+                });
+                answersContainer.appendChild(answerDiv);
+            });
+        }
+        
+        function displaySingleQuestion(question) {
+            const questionText = document.getElementById('question-text');
+            const answersContainer = document.getElementById('answers');
+            const diagramElement = document.getElementById('diagram');
+            
             // Display question text
-            document.getElementById('question-text').textContent = question.question;
+            questionText.textContent = question.question;
             
             // Display diagram if available
-            const diagramElement = document.getElementById('diagram');
             if (question.image_url) {
                 diagramElement.src = question.image_url;
                 diagramElement.classList.remove('hidden');
@@ -483,7 +577,6 @@
             }
             
             // Display answers
-            const answersContainer = document.getElementById('answers');
             answersContainer.innerHTML = '';
             
             // Create array of answer entries and shuffle them
@@ -518,13 +611,26 @@
         }
         
         function checkAnswer() {
-            const question = currentSessionQuestions[currentQuestionIndex];
+            const currentItem = currentSessionQuestions[currentQuestionIndex];
             const selectedAnswers = Array.from(document.querySelectorAll('.answer-option.selected'))
                 .map(option => option.dataset.answer);
             
-            const correctAnswers = question.correct;
-            const isCorrect = selectedAnswers.length === correctAnswers.length &&
-                selectedAnswers.every(answer => correctAnswers.includes(answer));
+            let isCorrect = false;
+            let feedbackMessage = '';
+            
+            if (currentItem.type === 'linked_group') {
+                // For linked question groups, check if all questions in the group are answered correctly
+                const result = checkLinkedGroupAnswers(currentItem, selectedAnswers);
+                isCorrect = result.isCorrect;
+                feedbackMessage = result.feedback;
+            } else {
+                // For single questions, check normally
+                const question = currentItem.question;
+                const correctAnswers = question.correct;
+                isCorrect = selectedAnswers.length === correctAnswers.length &&
+                    selectedAnswers.every(answer => correctAnswers.includes(answer));
+                feedbackMessage = isCorrect ? 'Correct!' : `Incorrect. Correct answers: ${correctAnswers.join(', ')}`;
+            }
             
             // Mark selected answers as correct/incorrect
             document.querySelectorAll('.answer-option').forEach(option => {
@@ -532,29 +638,89 @@
                 if (selectedAnswers.includes(answerKey)) {
                     option.classList.add(isCorrect ? 'correct' : 'incorrect');
                 }
-                if (correctAnswers.includes(answerKey)) {
-                    option.classList.add('correct');
-                }
             });
             
             // Show feedback
             const feedbackElement = document.getElementById('feedback');
             feedbackElement.classList.remove('hidden');
+            feedbackElement.textContent = feedbackMessage;
+            feedbackElement.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
             
             if (isCorrect) {
-                feedbackElement.textContent = 'Correct!';
-                feedbackElement.className = 'feedback correct';
-            } else {
-                feedbackElement.textContent = `Incorrect. Correct answers: ${correctAnswers.join(', ')}`;
-                feedbackElement.className = 'feedback incorrect';
+                // Mark all questions in the group as answered
+                if (currentItem.type === 'linked_group') {
+                    currentItem.questions.forEach(q => {
+                        answeredQuestions.add(q.question_number);
+                    });
+                } else {
+                    answeredQuestions.add(currentItem.question.question_number);
+                }
             }
-            
-            // Mark question as answered
-            answeredQuestions.add(question.question_number);
             
             // Hide check button and show next button
             document.getElementById('check-btn').classList.add('hidden');
             document.getElementById('next-btn').classList.remove('hidden');
+        }
+        
+        function checkLinkedGroupAnswers(questionGroup, selectedAnswers) {
+            // For linked question groups, we need to check if the selected answers
+            // correctly answer all questions in the group
+            
+            const results = [];
+            let allCorrect = true;
+            
+            // Check each question individually
+            for (const question of questionGroup.questions) {
+                const correctAnswers = question.correct;
+                const questionAnswers = Object.keys(question.answers);
+                
+                // Find which answers from this question are selected
+                const selectedForThisQuestion = selectedAnswers.filter(answer => 
+                    questionAnswers.includes(answer)
+                );
+                
+                // Check if this question is answered correctly
+                const isQuestionCorrect = selectedForThisQuestion.length === correctAnswers.length &&
+                    correctAnswers.every(answer => selectedForThisQuestion.includes(answer));
+                
+                results.push({
+                    questionNumber: question.question_number,
+                    isCorrect: isQuestionCorrect,
+                    correctAnswers: correctAnswers
+                });
+                
+                if (!isQuestionCorrect) {
+                    allCorrect = false;
+                }
+            }
+            
+            // Check if no extra incorrect answers are selected
+            const allCorrectAnswers = new Set();
+            questionGroup.questions.forEach(q => {
+                q.correct.forEach(answer => allCorrectAnswers.add(answer));
+            });
+            
+            const hasNoIncorrect = selectedAnswers.every(answer => 
+                allCorrectAnswers.has(answer)
+            );
+            
+            // Build feedback message
+            let feedback = '';
+            if (allCorrect && hasNoIncorrect) {
+                feedback = 'Excellent! All questions in this group are answered correctly.';
+            } else {
+                feedback = 'Some questions are not answered correctly:\n';
+                results.forEach(result => {
+                    if (!result.isCorrect) {
+                        feedback += `\nQuestion ${result.questionNumber}: Incorrect. Correct answers: ${result.correctAnswers.join(', ')}`;
+                    }
+                });
+            }
+            
+            return {
+                isCorrect: allCorrect && hasNoIncorrect,
+                feedback: feedback
+            };
         }
         
         function nextQuestion() {
