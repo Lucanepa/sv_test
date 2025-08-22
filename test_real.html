@@ -288,10 +288,25 @@
             align-items: center;
         }
         
+        /* Force navigation controls to not affect button sizing */
+        .navigation-controls > * {
+            flex: none !important;
+            flex-shrink: 0 !important;
+            flex-grow: 0 !important;
+        }
+        
+        /* Remove all focus outlines from navigation buttons */
+        .navigation-controls button:focus,
+        .navigation-controls button:active,
+        .navigation-controls button:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
         /* Fresh navigation button styling */
         .nav-btn {
-            width: 60px;
-            height: 60px;
+            width: 60px !important;
+            height: 60px !important;
             border: none;
             border-radius: 50%;
             background: #007bff;
@@ -303,17 +318,56 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            box-sizing: border-box;
+            padding: 0 !important;
+            margin: 0 !important;
+            min-width: 60px !important;
+            max-width: 60px !important;
+            min-height: 60px !important;
+            max-height: 60px !important;
+            overflow: hidden !important;
         }
         
         .nav-btn:hover:not(:disabled) {
             background: #0056b3;
-            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+        }
+        
+        .nav-btn:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        .nav-btn:active {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        .nav-btn:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
         }
         
         .nav-btn:disabled {
             background: #6c757d;
             cursor: not-allowed;
             opacity: 0.6;
+        }
+        
+        /* Ensure both arrow buttons are identical */
+        #prev-btn, #next-btn {
+            width: 60px !important;
+            height: 60px !important;
+            font-size: 1.5rem !important;
+            font-weight: bold !important;
+            text-align: center !important;
+            line-height: 1 !important;
+            min-width: 60px !important;
+            max-width: 60px !important;
+            min-height: 60px !important;
+            max-height: 60px !important;
+            box-sizing: border-box !important;
+            overflow: hidden !important;
         }
         
         .clear-btn {
@@ -331,7 +385,22 @@
         
         .clear-btn:hover {
             background: #e0a800;
-            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+        }
+        
+        .clear-btn:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        .clear-btn:active {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        .clear-btn:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
         }
         
         /* Mobile responsive design */
@@ -399,9 +468,9 @@
                 <div class="answers" id="answers"></div>
                 <div class="question-controls">
                     <div class="navigation-controls">
-                        <button class="nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>&larr;</button>
+                        <button class="nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>‹</button>
                         <button class="clear-btn" onclick="clearCurrentQuestionAnswers()">Clear</button>
-                        <button class="nav-btn" id="next-btn" onclick="nextQuestion()" disabled>&rarr;</button>
+                        <button class="nav-btn" id="next-btn" onclick="nextQuestion()" disabled>›</button>
                     </div>
                 </div>
             </div>
@@ -584,13 +653,7 @@
             
             currentTestQuestions = finalTestQuestions;
             
-            console.log('Final test questions (exactly ' + currentTestQuestions.length + '):', currentTestQuestions.map(q => ({
-                number: q.question_number,
-                linked_to: q.linked_to,
-                link_order: q.link_order,
-                is_linked: q.is_linked
-            })));
-            console.log('Total questions:', currentTestQuestions.length);
+
             
             // Update question grid
             updateQuestionGrid();
