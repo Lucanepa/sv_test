@@ -125,23 +125,14 @@
             background: #f8d7da;
         }
         
-        .answer-label {
-            font-weight: bold;
-            margin-right: 10px;
-            color: #007bff;
-            font-size: 0.92rem;
-        }
-        
         .answer-text {
             color: #333;
             font-size: 0.92rem;
         }
         
         .controls {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
+            margin-top: 20px;
+            text-align: center;
         }
         
         .btn {
@@ -151,6 +142,7 @@
             cursor: pointer;
             font-size: 0.92rem;
             font-weight: 600;
+            margin: 0 10px;
             transition: all 0.2s ease;
         }
         
@@ -159,8 +151,13 @@
             color: white;
         }
         
-        .btn-primary:hover {
+        .btn-primary:hover:not(:disabled) {
             background: #0056b3;
+        }
+        
+        .btn-primary:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
         }
         
         .btn-success {
@@ -172,22 +169,13 @@
             background: #1e7e34;
         }
         
-        .btn-secondary {
-            background: #6c757d;
-            color: white;
-        }
-        
-        .btn-secondary:hover {
-            background: #545b62;
-        }
-        
         .feedback {
-            text-align: center;
-            margin: 20px 0;
+            margin-top: 20px;
             padding: 15px;
             border-radius: 8px;
             font-size: 0.92rem;
             font-weight: 600;
+            text-align: center;
         }
         
         .feedback.correct {
@@ -202,22 +190,28 @@
             border: 1px solid #f5c6cb;
         }
         
-        .session-info {
+        .completion-message {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
-            color: white;
-            margin-bottom: 20px;
-            font-size: 0.92rem;
         }
         
-        .completion-message {
-            text-align: center;
-            color: white;
+        .completion-message h2 {
+            color: #28a745;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .completion-message p {
+            color: #6c757d;
+            margin-bottom: 30px;
             font-size: 0.92rem;
-            margin: 20px 0;
         }
         
         .restart-btn {
-            background: #28a745;
+            background: #007bff;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -225,16 +219,18 @@
             cursor: pointer;
             font-size: 0.92rem;
             font-weight: 600;
-            margin-top: 20px;
+            transition: background-color 0.2s ease;
         }
         
         .restart-btn:hover {
-            background: #1e7e34;
+            background: #0056b3;
         }
         
         .hidden {
             display: none;
         }
+        
+
     </style>
 </head>
 <body>
@@ -245,6 +241,7 @@
             <h1>Card Game Mode</h1>
         </div>
         
+
         
         <div class="card" id="question-card">
             <div class="question-prefix" id="question-prefix"></div>
@@ -399,7 +396,6 @@
             }
             
             showRandomQuestion();
-            updateSessionInfo();
         }
         
         function shuffleArray(array) {
@@ -478,8 +474,6 @@
                 });
                 answersContainer.appendChild(answerDiv);
             });
-            
-            updateSessionInfo();
         }
         
         function selectAnswer(answerKey) {
@@ -529,8 +523,6 @@
             // Hide check button and show next button
             document.getElementById('check-btn').classList.add('hidden');
             document.getElementById('next-btn').classList.remove('hidden');
-            
-            updateSessionInfo();
         }
         
         function nextQuestion() {
@@ -543,11 +535,7 @@
             document.getElementById('completion-message').classList.remove('hidden');
         }
         
-        function updateSessionInfo() {
-            const totalQuestions = currentSessionQuestions.length;
-            const answeredCount = Math.min(currentQuestionIndex, totalQuestions);
-         
-        }
+
         
         // Load questions when page loads
         loadQuestions();

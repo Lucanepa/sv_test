@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz System</title>
+    <title>SSK ZK Prep</title>
     <style>
         * {
             margin: 0;
@@ -34,15 +34,15 @@
         
         h1 {
             text-align: center;
-            color: #333;
+            color: #2c3e50;
             margin-bottom: 30px;
-            font-size: 0.92rem;
+            font-size: 1.5rem;
             font-weight: 600;
         }
         
         .subtitle {
             text-align: center;
-            color: #666;
+            color: #6c757d;
             margin-bottom: 40px;
             font-size: 0.92rem;
         }
@@ -53,37 +53,58 @@
             max-width: 400px;
             padding: 20px;
             margin: 15px auto;
-            background: #007bff;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 12px;
             text-align: center;
             font-size: 0.92rem;
             font-weight: 600;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+            border: none;
+            cursor: pointer;
         }
         
         .menu-item:hover {
-            background: #0056b3;
+            background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
         }
         
         .menu-item:active {
             transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+        
+        .volleyball-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        
+        .swiss-flag {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background: linear-gradient(45deg, #ff0000 25%, transparent 25%), 
+                        linear-gradient(-45deg, #ff0000 25%, transparent 25%), 
+                        linear-gradient(45deg, transparent 75%, #ff0000 75%), 
+                        linear-gradient(-45deg, transparent 75%, #ff0000 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            margin-right: 10px;
+            border-radius: 2px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Quiz System</h1>
-        <p class="subtitle">Choose your quiz mode:</p>
+        <h1>🏐 SSK ZK Prep</h1>
         
-        <a href="card_game.html" class="menu-item">Card Game</a>
-        <a href="test_feedback.html" class="menu-item">Test Feedback</a>
-        <a href="test_real.html" class="menu-item">Real Test</a>
+        <a href="card_game.html" class="menu-item">🏆 Card Game Mode</a>
+        <a href="test_feedback.html" class="menu-item">📝 Test Feedback Mode</a>
+        <a href="test_real.html" class="menu-item">🎯 Real Test Mode</a>
     </div>
 </body>
 </html>
