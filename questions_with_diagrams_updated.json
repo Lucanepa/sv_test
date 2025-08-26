@@ -3059,11 +3059,10 @@
     "question_number": 232,
     "question": "In quale caso un giocatore può murare il servizio?",
     "answers": {
-      "a": "",
-      "b": ""
+      "a": "Solo se la palla rimane nella metà campo del muro dopo aver toccato il muro.",
+      "b": "Il servizio dell'avversario non può essere murato."
     },
     "correct": [
-      "a",
       "b"
     ]
   },
