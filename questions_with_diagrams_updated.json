@@ -2632,7 +2632,7 @@
   },
   {
     "question_number": 198,
-    "question": "22A causa dell'architettura sfavorevole del palazzetto dello sport, c'è un'area al centro del palazzetto che non può essere vista dagli arbitri a tutta altezza. Viene giocata una palla alta, che esce brevemente dal campo visivo degli arbitri. A giudizio del primo arbitro, la palla non tocca necessariamente il soffitto, ma non può essere esclusa. Come deve decidere?",
+    "question": "A causa dell'architettura sfavorevole del palazzetto dello sport, c'è un'area al centro del palazzetto che non può essere vista dagli arbitri a tutta altezza. Viene giocata una palla alta, che esce brevemente dal campo visivo degli arbitri. A giudizio del primo arbitro, la palla non tocca necessariamente il soffitto, ma non può essere esclusa. Come deve decidere?",
     "answers": {
       "a": "Il gioco deve essere interrotto solo se una delle squadre si lamenta di un fallo. L'arbitro decide di assegnare punti alla squadra che non ha causato il fallo.",
       "b": "Poiché, a giudizio dell'arbitro, non è possibile escludere un fallo, egli deve in ogni caso decidere per un doppio fallo e ripetere il rally.",
@@ -3006,8 +3006,7 @@
     },
     "correct": [
       "a"
-    ],
-    "image_url": "diagram_227.png"
+    ]
   },
   {
     "question_number": 228,
