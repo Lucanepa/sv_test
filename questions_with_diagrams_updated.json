@@ -438,7 +438,7 @@
       "a": "In caso di errore di servizio durante la battuta e di un contemporaneo fallo di posizione da parte della squadra in ricezione, il primo arbitro non può decidere di rigiocare l’azione.",
       "b": "Il 1° arbitro può autorizzare un servizio anche se il giocatore al servizio, in possesso della palla, non si trova nella zona di servizio.",
       "c": "Se, durante il servizio, un compagno di squadra del giocatore che serve non è completamente in campo (con un piede nella zona libera) e la squadra che riceve commette un errore di posizione, deve essere assegnato un doppio fallo.",
-      "d": "Prima di assegnare il servizio, il 1° arbitro deve assicurarsi che entrambe le squadre siano pronte a giocare e che il giocatore al servizio sia in possesso della palla."
+      "d": "Prima di autorizzare il servizio, il 1° arbitro deve assicurarsi che entrambe le squadre siano pronte a giocare e che il giocatore al servizio sia in possesso della palla."
     },
     "correct": [
       "a",
@@ -877,7 +877,7 @@
   },
   {
     "question_number": 64,
-    "question": "Quali delle seguenti affermazioni si applicano alle azioni di gioco regolari sopra il bordo superiore della rete?",
+    "question": "Quali delle seguenti affermazioni relative alle azioni di gioco regolari sopra il bordo superiore della rete sono regolari?",
     "answers": {
       "a": "Toccare il pallone nell'area avversaria contemporaneamente all'attacco dell'avversario.",
       "b": "Superare la rete per toccare la palla nell'area avversaria e rigiocarla verso il proprio lato.",
@@ -998,7 +998,7 @@
   },
   {
     "question_number": 72,
-    "question": "A metà del 2° set, un sostituto della squadra A si presenta nella zona di sostituzione e chiede un cambio di giocatore. Il segnapunti richiama l'attenzione degli arbitri sul fatto che questo giocatore non è inserito nell'elenco delle squadre sul foglio di gara. Durante il successivo controllo, si scopre che questo giocatore è stato sostituito anche sul 7:7 del primo set e poi sostituito di nuovo sul 9:9 (senza che l'errore sia stato notato). Cosa si deve fare?",
+    "question": "A metà del 2° set, un sostituto della squadra A si presenta nella zona di sostituzione e chiede un cambio di giocatore. Il segnapunti richiama l'attenzione degli arbitri sul fatto che questo giocatore non è inserito nell'elenco delle squadre sul foglio di gara. Durante il successivo controllo, si scopre che questo giocatore è stato sostituito (entrato) anche sul 7:7 del primo set e poi sostituito di nuovo (uscito) sul 9:9 (senza che l'errore sia stato notato). Cosa si deve fare?",
     "answers": {
       "a": "Il 1° set si conclude con il punteggio di 25:0 a favore della squadra B.",
       "b": "La partita prosegue senza ulteriori conseguenze, poiché il 1° set è terminato.",
@@ -1066,7 +1066,7 @@
     "question_number": 77,
     "question": "Dopo una ricezione, la palla vola sotto la rete (a circa un metro di altezza) verso la metà campo avversaria. Il palleggiatore vuole giocare la palla di nuovo verso la propria metà campo. In quali casi è consentito?",
     "answers": {
-      "a": "A condizione che la palla sia solo a metà del livello inferiore della rete.",
+      "a": "A condizione che solo metà palla abbia oltrepassato il piano verticale sotto la rete.",
       "b": "Finché la palla non ha attraversato completamente il livello inferiore della rete.",
       "c": "Solo se la palla è ancora completamente nella propria metà campo.",
       "d": "Solo se il palleggiatore tocca la palla completamente nella propria metà campo."
@@ -1430,7 +1430,7 @@
     "question": "Un giocatore rincorre la palla sugli spalti dal suo lato del campo e la recupera giocandola verso il proprio campo; al momento del tocco, il giocatore si trova in una posizione più elevata rispetto al campo. Il 1° arbitro dovrebbe: ...",
     "answers": {
       "a": "... fischiare una palla trattenuta.",
-      "b": "... continuare l'azione.",
+      "b": "... lasciar continuare l'azione.",
       "c": "... fischiare un fallo."
     },
     "correct": [
@@ -1608,7 +1608,7 @@
   },
   {
     "question_number": 117,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 1. Colpo d'attacco completato da parte di un giocatore dopo un palleggio del libero, con le dita rivolte verso l’alto, che si trova nella zona d’attacco. Al momento dell’attacco, l'intera circonferenza della palla si trovava al di sopra del bordo superiore della rete e il giocatore in attacco è saltato da dietro la line di attacco. Il 1° arbitro ha potuto vedere chiaramente questa situazione.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n1. Colpo d'attacco completato da parte di un giocatore dopo un palleggio del libero, con le dita rivolte verso l’alto, che si trova nella zona d’attacco. Al momento dell’attacco, l'intera circonferenza della palla si trovava al di sopra del bordo superiore della rete e il giocatore in attacco è saltato da dietro la linea di attacco. Il 1° arbitro ha potuto vedere chiaramente questa situazione.",
     "answers": {
       "a": "Fallo; 1° arbitro.",
       "b": "Fallo; 2° arbitro.",
@@ -1621,7 +1621,7 @@
   },
   {
     "question_number": 118,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 2. Tentativo di muro da parte di un difensore.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n2. Tentativo di muro da parte di un difensore.",
     "answers": {
       "a": "Fallo; 2° arbitro.",
       "b": "Fallo; 1° e 2° arbitro.",
@@ -1634,7 +1634,7 @@
   },
   {
     "question_number": 119,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 3. Dopo il servizio, la palla attraversa il piano verticale della rete al di fuori dello spazio di passaggio sul lato del 2° arbitro.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n3. Dopo il servizio, la palla attraversa il piano verticale della rete al di fuori dello spazio di passaggio sul lato del 2° arbitro.",
     "answers": {
       "a": "Fallo; 2° arbitro.",
       "b": "Non è un fallo.",
@@ -1647,7 +1647,7 @@
   },
   {
     "question_number": 120,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 4. Un giocatore tocca la rete al di fuori dell'antenna dal lato del 1° arbitro durante l’azione di giocare la palla.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n4. Un giocatore tocca la rete al di fuori dell'antenna dal lato del 1° arbitro durante l’azione di giocare la palla.",
     "answers": {
       "a": "Fallo; 1° arbitro.",
       "b": "Non è un fallo.",
@@ -1672,7 +1672,7 @@
   },
   {
     "question_number": 122,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 5. Colpo d’attacco completato da parte del libero (palleggio con dita rivolte verso l’alto) dalla zona di difesa se la palla era completamente sopra la parte superiore della rete al momento del contatto.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n5. Colpo d’attacco completato da parte del libero (palleggio con dita rivolte verso l’alto) dalla zona di difesa se la palla era completamente sopra la parte superiore della rete al momento del contatto.",
     "answers": {
       "a": "Fallo; 1° e 2° arbitro.",
       "b": "Non è un fallo.",
@@ -1697,7 +1697,7 @@
   },
   {
     "question_number": 124,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 6. La palla tocca il soffitto.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n6. La palla tocca il soffitto.",
     "answers": {
       "a": "Fallo; 1° arbitro.",
       "b": "Fallo; 1° e 2° arbitro.",
@@ -1721,7 +1721,7 @@
   },
   {
     "question_number": 126,
-    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? 7. Colpo d’attacco completato da parte di un difensore, la palla è completamente al di sopra del bordo superiore della rete al momento del contatto; il difensore tocca la linea di attacco con la punta del piede al momento del salto.",
+    "question": "Indicare se le situazioni descritte di seguito sono illegali. In caso affermativo, quale arbitro è autorizzato a fischiare in questa situazione? \n7. Colpo d’attacco completato da parte di un difensore, la palla è completamente al di sopra del bordo superiore della rete al momento del contatto; il difensore tocca la linea di attacco con la punta del piede al momento del salto.",
     "answers": {
       "a": "Non è un fallo.",
       "b": "Fallo; 1° arbitro.",
@@ -2030,7 +2030,7 @@
     "question_number": 150,
     "question": "Al momento del servizio, un difensore della squadra in ricezione si trova alla stessa altezza del suo attaccante in fronte. Quali affermazioni sono valide?",
     "answers": {
-      "a": "Non si tratta di un fallo, perché il difensore non è completamente di fronte all’attaccante.",
+      "a": "Non si tratta di un fallo, perché il difensore non è completamente davanti all’attaccante.",
       "b": "Viene conteggiato come fallo anche se il giocatore al servizio commette un fallo al momento di colpire la palla.",
       "c": "Non c'è fallo se il piede posteriore del difensore è dietro il piede anteriore dell’attaccante.",
       "d": "Viene conteggiato come fallo se il servizio diventa falloso dopo che la palla è stata colpita."
@@ -2228,7 +2228,7 @@
   },
   {
     "question_number": 164,
-    "question": "Tra l’autorizzazione dell’arbitro e l'esecuzione del servizio, la squadra avversaria esegue un rimpiazzo regolare del libro. L’azione viene immediatamente interrotta e la squadra in questione è soggetta a una sanzione per ritardo di gioco. Il primo arbitro ha agito correttamente?",
+    "question": "Tra l’autorizzazione dell’arbitro e l'esecuzione del servizio, la squadra avversaria esegue un rimpiazzo regolare del libero. L’azione viene immediatamente interrotta e la squadra in questione è soggetta a una sanzione per ritardo di gioco. Il primo arbitro ha agito correttamente?",
     "answers": {
       "a": "Sì, assolutamente.",
       "b": "Solo se questa azione di rimpiazzo “ritardato” si è già verificata per la stessa squadra per la seconda volta nella partita.",
@@ -2282,7 +2282,7 @@
     "question": "Un giocatore tocca la rete. In quali casi si tratta di un fallo?",
     "answers": {
       "a": "Un attaccante sfiora il bordo superiore della rete con la mano dopo il colpo di attacco.",
-      "b": "Il palleggiatore tocca chiaramente la rete al di sotto della banda bianca nella parte superiore della rete.",
+      "b": "Il palleggiatore, mentre sta giocando la palla, tocca chiaramente la rete al di sotto della banda bianca nella parte superiore della rete.",
       "c": "Il giocatore tocca la banda bianca nella parte superiore della rete all'esterno dell'antenna senza influire sul gioco."
     },
     "correct": [
@@ -2307,7 +2307,7 @@
     "question": "Dopo una ricezione sbagliata, la palla vola, passando al di fuori dell'antenna, nella zona libera dell'avversario. Un giocatore recupera la palla e la rigioca nel proprio campo. Quali affermazioni sono vere?",
     "answers": {
       "a": "Il giocatore che rigioca indietro la palla non deve mai toccare il campo avversario.",
-      "b": "Il recupero è consentito se la palla attraversa completamente lo spazio di passaggio esterno sullo stesso lato della rete.",
+      "b": "Il recupero è consentito solo se la palla attraversa completamente lo spazio di passaggio esterno sullo stesso lato della rete.",
       "c": "Il giocatore che rigioca indietro la palla non deve toccare il campo avversario, a meno che non si trovi con un piede sulla linea mediana o oltre.",
       "d": "Il giocatore che rigioca indietro la palla può saltare sulla panchina della squadra avversaria."
     },
@@ -2623,7 +2623,7 @@
     "question": "Nel 1° set, la squadra A ha ricevuto un avvertimento per ritardo di gioco. Nel set successivo, un altro giocatore della stessa squadra commette un’azione simile. Come dovrebbe decidere l'arbitro?",
     "answers": {
       "a": "Poiché entrambi i ritardi sono stati commessi in due set diversi, viene emesso un ulteriore avvertimento per ritardo di gioco.",
-      "b": "L sanzioni per ritardo di gioco sono sanzioni di squadra e restano in carico per l’intera gara; quindi, viene emessa una \"penalizzazione per ritardo di gioco\", con conseguente perdita di un punto e del diritto al servizio.",
+      "b": "Le sanzioni per ritardo di gioco sono sanzioni di squadra e restano in carico per l’intera gara; quindi, viene emessa una \"penalizzazione per ritardo di gioco\", con conseguente perdita di un punto e del diritto al servizio.",
       "c": "Le sanzioni per ritardo sono sanzioni personali, quindi verrà emesso un altro avvertimento per ritardo di gioco."
     },
     "correct": [
@@ -2687,7 +2687,7 @@
   },
   {
     "question_number": 202,
-    "question": "Durante il punteggio è 24:20 a favore della squadra A, la squadra avversaria attacca una palla fuori dal campo. Gli arbitri non vedono se il muro della squadra A ha toccato la palla. Il primo arbitro decide un punto a favore della squadra A e termina il set. Solo ora il giocatore a muro ammette di aver toccato la palla. Tuttavia, il 1° arbitro si attiene alla sua decisione, affermando che il set è già terminato e la decisione non può più essere revocata. Sta agendo correttamente?",
+    "question": "Sul punteggio di 24:20 a favore della squadra A, la squadra avversaria attacca una palla fuori dal campo. Gli arbitri non vedono se il muro della squadra A ha toccato la palla. Il primo arbitro decide un punto a favore della squadra A e termina il set. Solo ora il giocatore a muro ammette di aver toccato la palla. Tuttavia, il 1° arbitro si attiene alla sua decisione, affermando che il set è già terminato e la decisione non può più essere revocata. Sta agendo correttamente?",
     "answers": {
       "a": "Sì.",
       "b": "No, il punto deve andare alla squadra B.",
@@ -2841,11 +2841,11 @@
   },
   {
     "question_number": 214,
-    "question": "La posizione dei giocatori viene determinata e controllata di conseguenza ...",
+    "question": "La posizione dei giocatori viene determinata e controllata in base ...",
     "answers": {
-      "a": "... la posizione del loro corpo in relazione al livello della rete.",
-      "b": "... la posizione dei piedi che toccano il suolo.",
-      "c": "... la posizione di una parte del corpo che tocca il suolo (mani, piedi, ginocchia, ecc.)."
+      "a": "... alla posizione del loro corpo in relazione al livello della rete.",
+      "b": "... alla posizione dei piedi che toccano il suolo.",
+      "c": "... alla posizione di una parte del corpo che tocca il suolo (mani, piedi, ginocchia, ecc.)."
     },
     "correct": [
       "b"
@@ -2865,10 +2865,10 @@
   },
   {
     "question_number": 216,
-    "question": "Prima dell'inizio della partita, il libero inserito nel referto di gara si infortuna. L'allenatore chiede di rinominare il libero. Il nuovo libero dovrebbe essere il giocatore n.1, che è già inserito nella formazione nel referto per il primo set. Qual è la procedura?",
+    "question": "Prima dell'inizio della partita, il libero inserito nel referto di gara si infortuna. L'allenatore chiede di ridesignare il libero. Il nuovo libero dovrebbe essere il giocatore n.1, che è già inserito nella formazione nel referto per il primo set. Qual è la procedura?",
     "answers": {
       "a": "L'arbitro autorizza una sostituzione prima dell'inizio della partita. Il giocatore n. 1 viene sostituito come di consueto (punteggio 0:0). Il numero del nuovo libero deve essere inserito nel referto alla voce osservazioni.",
-      "b": "L'arbitro autorizza la nuova designazione, la formazione nel referto per il primo set viene cambiata e il giocatore n.1 può giocare come nuovo libero nel primo set. Tutte le circostanze devono essere inserite nel referto alla voce osservazioni.",
+      "b": "L'arbitro autorizza la ridesignazione, la formazione nel referto per il primo set viene cambiata e il giocatore n.1 può giocare come nuovo libero nel primo set. Tutte le circostanze devono essere inserite nel referto alla voce osservazioni.",
       "c": "L'arbitro respinge la richiesta e la ridesignazione può avvenire dopo la prima azione del primo set. Tutte le circostanze devono essere inserite nel referto alla voce osservazioni."
     },
     "correct": [
@@ -2913,7 +2913,7 @@
   },
   {
     "question_number": 220,
-    "question": "Il giocatore n.3 della squadra \"A\" attacca la palla, che è nella zona d’attacco ed è completamente al di sopra del bordo superiore della rete. La palla cade nel campo dell'avversario. L'arbitro concede il punto alla squadra \"A\". Dopo che i giocatori si sono schierati di nuovo correttamente, l'arbitro nota che il giocatore n.3 è un difensore. L'arbitro:",
+    "question": "Il giocatore n.3 della squadra \"A\" è nella zona d’attacco e attacca la palla, che è completamente al di sopra del bordo superiore della rete. La palla cade nel campo dell'avversario. L'arbitro concede il punto alla squadra \"A\". Dopo che i giocatori si sono schierati di nuovo correttamente, l'arbitro nota che il giocatore n.3 è un difensore. L'arbitro:",
     "answers": {
       "a": "Cambia la sua decisione e l'azione precedente viene vinta dalla squadra \"B\".",
       "b": "Decidere di rigiocare l'azione (doppio fallo).",
@@ -2998,7 +2998,7 @@
   },
   {
     "question_number": 227,
-    "question": "Un giocatore della squadra \"A\" mura l'attacco della squadra \"B\", la palla rimbalza dal muro nella metà campo della squadra “B” e, scendendo, attraversa lo spazio inferiore della rete entrando nel campo della squadra “A”. L'arbitro:",
+    "question": "Un giocatore della squadra \"A\" mura l'attacco della squadra \"B\", la palla rimbalza dal muro nella metà campo della squadra “B” e, scendendo, attraversa completamente lo spazio inferiore della rete entrando nel campo della squadra “A”. L'arbitro:",
     "answers": {
       "a": "Fischia un fallo della squadra “B”: punto per la squadra “A”.",
       "b": "Lascia continuare il gioco.",
@@ -3445,7 +3445,7 @@
     "question_number": 262,
     "question": "Un giocatore della formazione iniziale è stato sostituito e successivamente torna in campo. Poco dopo si infortuna e non è più in grado di continuare a giocare. Chi può sostituire questo giocatore?",
     "answers": {
-      "a": "Qualsiasi giocatore che non è in campo, tranne il libero o il suo rimpiazza.",
+      "a": "Qualsiasi giocatore che non è in campo, tranne il libero o il suo rimpiazzo",
       "b": "Il libero o il giocatore che attualmente lo rimpiazza.",
       "c": "Nessun giocatore. La squadra deve continuare a giocare con soli cinque giocatori.",
       "d": "Qualsiasi giocatore che non è attualmente in campo."
@@ -3535,7 +3535,7 @@
   },
   {
     "question_number": 269,
-    "question": "Un giocatore della squadra A attacca una palla che si trova direttamente sopra il bordo superiore della rete. Contemporaneamente, il muro della squadra B tocca la palla senza superare la rete. Dopo il contatto simultaneo, la palla cade nella zona libera della squadra B. Come deve decidere il 1° arbitro?",
+    "question": "Un giocatore della squadra A attacca una palla che si trova direttamente sopra il bordo superiore della rete. Contemporaneamente, il giocatore a muro della squadra B tocca la palla senza superare la rete. Dopo il contatto simultaneo, la palla cade nella zona libera della squadra B. Come deve decidere il 1° arbitro?",
     "answers": {
       "a": "La squadra B vince il punto, poiché il fallo è attribuito alla squadra A (la palla cade nella zona libera della squadra B).",
       "b": "Replay (doppio fallo) perché la palla è stata oggetto di contatto simultaneo e prolungato sopra il bordo superiore della rete.",
