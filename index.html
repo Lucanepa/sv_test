@@ -66,6 +66,43 @@
             margin-bottom: 12px;
         }
 
+        /* Level toggle */
+        .level-toggle {
+            display: flex;
+            gap: 0;
+            margin-bottom: 36px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .level-btn {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--bg-surface);
+            border: none;
+            color: var(--text-secondary);
+            font-family: inherit;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+
+        .level-btn:first-child {
+            border-right: 1px solid var(--border);
+        }
+
+        .level-btn:hover {
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
+        }
+
+        .level-btn.active {
+            background: var(--accent);
+            color: #fff;
+        }
+
         /* Language selector */
         .lang-grid {
             display: grid;
@@ -280,6 +317,13 @@
             </button>
         </div>
 
+        <!-- Level Toggle -->
+        <p class="section-label" id="levelLabel">Level</p>
+        <div class="level-toggle" id="levelToggle">
+            <button class="level-btn active" data-level="national" onclick="selectLevel('national')" id="btn-national">National</button>
+            <button class="level-btn" data-level="regional" onclick="selectLevel('regional')" id="btn-regional">Regional</button>
+        </div>
+
         <!-- Mode Selector -->
         <p class="section-label">Study Mode</p>
         <div class="mode-cards">
@@ -366,7 +410,7 @@
             if (cached) {
                 try {
                     const data = JSON.parse(cached);
-                    updateCount(data.length, lang);
+                    updateCount(filterByLevel(data).length, lang);
                     return data;
                 } catch (e) {
                     localStorage.removeItem(cacheKey);
@@ -375,7 +419,7 @@
 
             // Fetch from network
             try {
-                countEl.querySelector('span').textContent = 'Loading questions...';
+                countEl.querySelector('span').textContent = t('loading');
                 const response = await fetch('questions_' + lang + '.json');
                 if (!response.ok) throw new Error('HTTP ' + response.status);
                 const data = await response.json();
@@ -386,7 +430,7 @@
                 // Cache diagram images as base64
                 await cacheDiagrams(data);
 
-                updateCount(data.length, lang);
+                updateCount(filterByLevel(data).length, lang);
                 return data;
             } catch (err) {
                 console.warn('Could not load questions for', lang, err);
@@ -437,11 +481,30 @@
             countEl.querySelector('span').textContent = count + t('questionsLoaded') + ' (' + lang.toUpperCase() + ')';
         }
 
+        // --- Level Selection ---
+        function selectLevel(level) {
+            localStorage.setItem('selectedLevel', level);
+            updateLevelButtons(level);
+            // Reload count with filter applied
+            loadQuestions(getSelectedLang());
+        }
+
+        function updateLevelButtons(activeLevel) {
+            document.querySelectorAll('.level-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.level === activeLevel);
+            });
+        }
+
         // --- Translations ---
         function applyTranslations() {
             document.querySelector('.landing-header .subtitle').textContent = t('subtitle');
-            document.querySelectorAll('.section-label')[0].textContent = t('language');
-            document.querySelectorAll('.section-label')[1].textContent = t('studyMode');
+            var labels = document.querySelectorAll('.section-label');
+            labels[0].textContent = t('language');
+            labels[1].textContent = t('level');
+            labels[2].textContent = t('studyMode');
+
+            document.getElementById('btn-national').textContent = t('national');
+            document.getElementById('btn-regional').textContent = t('regional');
 
             var cards = document.querySelectorAll('.mode-card');
             cards[0].querySelector('.mode-title').textContent = t('cardGame');
@@ -454,7 +517,9 @@
 
         // --- Init ---
         const currentLang = getSelectedLang();
+        const currentLevel = getSelectedLevel();
         updateLangButtons(currentLang);
+        updateLevelButtons(currentLevel);
         applyTranslations();
         loadQuestions(currentLang);
     </script>

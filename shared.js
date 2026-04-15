@@ -21,6 +21,70 @@ function getSelectedLang() {
     return 'en';
 }
 
+// --- Level (National / Regional) ---
+
+function getSelectedLevel() {
+    var stored = localStorage.getItem('selectedLevel');
+    return stored === 'regional' ? 'regional' : 'national';
+}
+
+/**
+ * Filter terms for regional mode: questions containing these are national-only.
+ * Covers all 4 languages (DE/EN/FR/IT).
+ */
+var NATIONAL_ONLY_TERMS = [
+    // Leagues
+    'nla', 'nlb', 'lfp', 'gfl', 'jfl', 'las',
+    // eScoresheet
+    'escoresheet', 'e-scoresheet', 'escore',
+    // Ball boys
+    'ballholer', 'raccattapalle', 'raccoglipalle', 'ramasseur', 'ball boy', 'ball-boy',
+    // Speaker
+    'speaker',
+    // Substitution paddles
+    'paletta', 'palette', 'wechseltafel', 'paddle',
+];
+
+/**
+ * Check if a question is national-only (should be hidden in regional mode).
+ * Checks question text and all answer texts.
+ * @param {Object} question - Raw question object
+ * @returns {boolean} true if national-only
+ */
+function isNationalOnly(question) {
+    var text = (question.question + ' ' + Object.values(question.answers).join(' ')).toLowerCase();
+    for (var i = 0; i < NATIONAL_ONLY_TERMS.length; i++) {
+        if (text.indexOf(NATIONAL_ONLY_TERMS[i]) !== -1) return true;
+    }
+    return false;
+}
+
+/**
+ * Filter questions based on current level setting.
+ * In regional mode, removes national-only questions and any linked sub-questions
+ * whose base question was removed.
+ * @param {Array} questions - Raw question array
+ * @returns {Array} Filtered array
+ */
+function filterByLevel(questions) {
+    if (getSelectedLevel() === 'national') return questions;
+
+    // Find which base question numbers to exclude
+    var excludedBases = new Set();
+    questions.forEach(function (q) {
+        if (isNationalOnly(q)) {
+            excludedBases.add(q.question_number);
+            if (q.linked_to) excludedBases.add(q.linked_to);
+        }
+    });
+
+    return questions.filter(function (q) {
+        if (excludedBases.has(q.question_number)) return false;
+        if (q.linked_to && excludedBases.has(q.linked_to)) return false;
+        return true;
+    });
+}
+
 // --- Data Loading ---
 
 /**
@@ -65,6 +129,9 @@ async function loadQuestionData() {
             });
         } catch (e) { /* ignore parse errors */ }
     }
+
+    // Apply level filter (regional hides national-only questions)
+    data = filterByLevel(data);
 
     return data;
 }
@@ -149,6 +216,9 @@ var UI_STRINGS = {
         studyMode: 'Lernmodus',
         cardGame: 'Kartenspiel',
         cardGameDesc: 'Karteikarten-Training, eine Frage nach der anderen',
+        level: 'Stufe',
+        national: 'National',
+        regional: 'Regional',
         testMode: 'Testmodus',
         testModeDesc: 'Simuliere die echte Prüfung mit 25 zufälligen Fragen',
         answerHint: 'Hinweis: Eine, mehrere, alle oder keine Antworten können richtig sein.',
@@ -197,6 +267,9 @@ var UI_STRINGS = {
     en: {
         subtitle: 'Swiss Volleyball Referee Exam Training',
         language: 'Language',
+        level: 'Level',
+        national: 'National',
+        regional: 'Regional',
         studyMode: 'Study Mode',
         cardGame: 'Card Game',
         cardGameDesc: 'Flashcard-style practice, one question at a time',
@@ -248,6 +321,9 @@ var UI_STRINGS = {
     fr: {
         subtitle: 'Préparation examen arbitre volleyball suisse',
         language: 'Langue',
+        level: 'Niveau',
+        national: 'National',
+        regional: 'Régional',
         studyMode: "Mode d'étude",
         cardGame: 'Jeu de cartes',
         cardGameDesc: 'Entraînement par fiches, une question à la fois',
@@ -299,6 +375,9 @@ var UI_STRINGS = {
     it: {
         subtitle: 'Preparazione esame arbitro pallavolo svizzera',
         language: 'Lingua',
+        level: 'Livello',
+        national: 'Nazionale',
+        regional: 'Regionale',
         studyMode: 'Modalità di studio',
         cardGame: 'Gioco a carte',
         cardGameDesc: 'Esercitazione con flashcard, una domanda alla volta',
