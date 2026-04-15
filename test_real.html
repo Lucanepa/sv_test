@@ -337,7 +337,7 @@
             border-radius: 999px;
             font-size: 0.8125rem;
             font-weight: 600;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
         .performance-badge.tier-excellent {
@@ -364,14 +364,84 @@
             border: 1px solid rgba(239, 68, 68, 0.3);
         }
 
+        .performance-desc {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* Collapsible grade scale */
+        .grade-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-family: inherit;
+            font-size: 0.75rem;
+            cursor: pointer;
+            padding: 6px 0;
+            margin-bottom: 8px;
+            transition: color var(--transition);
+        }
+
+        .grade-toggle:hover { color: var(--text-primary); }
+
+        .grade-toggle svg { width: 14px; height: 14px; transition: transform var(--transition); }
+
+        .grade-toggle.open svg { transform: rotate(180deg); }
+
+        .grade-scale {
+            display: none;
+            text-align: left;
+            margin: 0 auto 20px;
+            max-width: 340px;
+        }
+
+        .grade-scale.open { display: block; }
+
+        .grade-row {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.8125rem;
+        }
+
+        .grade-row:last-child { border-bottom: none; }
+
+        .grade-row .grade-pct {
+            font-weight: 600;
+            min-width: 50px;
+            flex-shrink: 0;
+        }
+
+        .grade-row .grade-label { font-weight: 600; min-width: 90px; flex-shrink: 0; }
+
+        .grade-row .grade-desc { color: var(--text-secondary); }
+
+        .grade-row.active { color: var(--accent); }
+        .grade-row.active .grade-desc { color: var(--accent); opacity: 0.8; }
+
+        .grade-warning {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
         .results-actions {
             display: flex;
             gap: 12px;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .results-actions .btn {
-            min-width: 140px;
+            min-width: 120px;
         }
 
         /* --- Empty State --- */
@@ -555,13 +625,47 @@
                 <div class="score-label">Score</div>
                 <div class="score-fraction" id="score-fraction"></div>
                 <div class="performance-badge" id="performance-badge"></div>
+                <div class="performance-desc" id="performance-desc"></div>
+
+                <!-- Collapsible grade scale -->
+                <button class="grade-toggle" id="grade-toggle" onclick="toggleGradeScale()">
+                    <i data-lucide="chevron-down"></i>
+                    <span id="grade-toggle-text">Grading Scale</span>
+                </button>
+                <div class="grade-scale" id="grade-scale">
+                    <div class="grade-row" data-tier="excellent">
+                        <span class="grade-pct">&ge; 90%</span>
+                        <span class="grade-label" id="gs-sehr-gut"></span>
+                        <span class="grade-desc" id="gs-sehr-gut-desc"></span>
+                    </div>
+                    <div class="grade-row" data-tier="good">
+                        <span class="grade-pct">&ge; 80%</span>
+                        <span class="grade-label" id="gs-gut"></span>
+                        <span class="grade-desc" id="gs-gut-desc"></span>
+                    </div>
+                    <div class="grade-row" data-tier="sufficient">
+                        <span class="grade-pct">&ge; 66%</span>
+                        <span class="grade-label" id="gs-genuegend"></span>
+                        <span class="grade-desc" id="gs-genuegend-desc"></span>
+                    </div>
+                    <div class="grade-row" data-tier="fail">
+                        <span class="grade-pct">&lt; 66%</span>
+                        <span class="grade-label" id="gs-ungenuegend"></span>
+                        <span class="grade-desc" id="gs-ungenuegend-desc"></span>
+                    </div>
+                    <div class="grade-warning" id="grade-warning"></div>
+                </div>
+
                 <div class="results-actions">
                     <button class="btn btn-outline" onclick="checkAnswers()">
-                        <i data-lucide="search"></i> Check Answers
+                        <i data-lucide="search"></i> <span id="ra-check">Check Answers</span>
                     </button>
                     <button class="btn btn-primary" onclick="startNewTest()">
-                        <i data-lucide="shuffle"></i> New Test
+                        <i data-lucide="shuffle"></i> <span id="ra-new">New Test</span>
                     </button>
+                    <a href="index.html" class="btn btn-outline">
+                        <i data-lucide="home"></i> <span id="ra-home">Home</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -579,16 +683,18 @@
             document.querySelector('.test-header h1').textContent = t('testMode');
             document.querySelector('#start-btn').innerHTML = '<i data-lucide="shuffle"></i> ' + t('newTest');
             document.querySelector('#finish-btn').innerHTML = '<i data-lucide="flag"></i> ' + t('finish');
+            document.querySelector('#finish-btn').onclick = finishTest;
             document.querySelector('.sidebar-label').textContent = t('questions');
             document.querySelector('#empty-state p').innerHTML = t('clickNewTest');
             document.querySelector('.results-title').textContent = t('testResults');
             document.querySelector('.score-label').textContent = t('score');
             // Results action buttons
-            var resultBtns = document.querySelectorAll('.results-actions .btn');
-            resultBtns[0].innerHTML = '<i data-lucide="search"></i> ' + t('checkAnswers');
-            resultBtns[1].innerHTML = '<i data-lucide="shuffle"></i> ' + t('newTest');
+            document.getElementById('ra-check').textContent = t('checkAnswers');
+            document.getElementById('ra-new').textContent = t('newTest');
+            document.getElementById('ra-home').textContent = t('home');
             document.querySelector('.clear-pill').innerHTML = '<i data-lucide="eraser"></i> ' + t('clear');
             document.getElementById('answer-hint').textContent = t('answerHint');
+            document.getElementById('grade-toggle-text').textContent = t('gradeDetails');
             lucide.createIcons();
         }
         applyTranslations();
@@ -955,39 +1061,70 @@
 
             // Score display
             document.getElementById('score-percent').textContent = score + '%';
-            document.getElementById('score-fraction').textContent = correctCount + ' / 25 correct';
+            document.getElementById('score-fraction').textContent = correctCount + ' / 25';
 
             // Performance badge
             const badge = document.getElementById('performance-badge');
+            const descEl = document.getElementById('performance-desc');
             const resultsIcon = document.getElementById('results-icon');
 
-            let badgeClass, badgeText, iconBg;
+            let badgeClass, badgeText, badgeDesc, iconBg, activeTier;
 
             if (score >= 90) {
                 badgeClass = 'tier-excellent';
                 badgeText = t('sehr_gut');
+                badgeDesc = t('sehr_gut_desc');
                 iconBg = 'var(--correct-bg)';
                 resultsIcon.style.color = 'var(--correct)';
+                activeTier = 'excellent';
             } else if (score >= 80) {
                 badgeClass = 'tier-good';
                 badgeText = t('gut');
+                badgeDesc = t('gut_desc');
                 iconBg = 'var(--accent-subtle)';
                 resultsIcon.style.color = 'var(--accent)';
+                activeTier = 'good';
             } else if (score >= 66) {
                 badgeClass = 'tier-sufficient';
                 badgeText = t('genuegend');
+                badgeDesc = t('genuegend_desc');
                 iconBg = 'rgba(234, 179, 8, 0.12)';
                 resultsIcon.style.color = '#eab308';
+                activeTier = 'sufficient';
             } else {
                 badgeClass = 'tier-fail';
                 badgeText = t('ungenuegend');
+                badgeDesc = t('ungenuegend_desc');
                 iconBg = 'var(--incorrect-bg)';
                 resultsIcon.style.color = 'var(--incorrect)';
+                activeTier = 'fail';
             }
 
             badge.className = 'performance-badge ' + badgeClass;
             badge.textContent = badgeText;
+            descEl.textContent = badgeDesc;
             resultsIcon.style.background = iconBg;
+
+            // Populate grade scale
+            document.getElementById('gs-sehr-gut').textContent = t('sehr_gut');
+            document.getElementById('gs-sehr-gut-desc').textContent = t('sehr_gut_desc');
+            document.getElementById('gs-gut').textContent = t('gut');
+            document.getElementById('gs-gut-desc').textContent = t('gut_desc');
+            document.getElementById('gs-genuegend').textContent = t('genuegend');
+            document.getElementById('gs-genuegend-desc').textContent = t('genuegend_desc');
+            document.getElementById('gs-ungenuegend').textContent = t('ungenuegend');
+            document.getElementById('gs-ungenuegend-desc').textContent = t('ungenuegend_desc');
+            document.getElementById('grade-warning').textContent = t('gradeWarning');
+            document.getElementById('grade-toggle-text').textContent = t('gradeDetails');
+
+            // Highlight active tier
+            document.querySelectorAll('.grade-row').forEach(function(row) {
+                row.classList.toggle('active', row.dataset.tier === activeTier);
+            });
+
+            // Reset grade scale collapsed state
+            document.getElementById('grade-scale').classList.remove('open');
+            document.getElementById('grade-toggle').classList.remove('open');
 
             // Show results, hide test
             document.getElementById('test-container').classList.add('hidden');
@@ -997,6 +1134,18 @@
             lucide.createIcons();
         }
 
+        function showResults() {
+            document.getElementById('test-container').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+        }
+
+        function toggleGradeScale() {
+            var toggle = document.getElementById('grade-toggle');
+            var scale = document.getElementById('grade-scale');
+            toggle.classList.toggle('open');
+            scale.classList.toggle('open');
+        }
+
         // ===== Check Answers (Review Mode) =====
         function checkAnswers() {
             isReviewMode = true;
@@ -1004,9 +1153,13 @@
             document.getElementById('test-container').classList.remove('hidden');
             document.getElementById('results').classList.add('hidden');
 
-            // Disable finish button during review
-            document.getElementById('finish-btn').disabled = true;
+            // Change finish button to "Results" to go back to results view
+            var finishBtn = document.getElementById('finish-btn');
+            finishBtn.disabled = false;
+            finishBtn.innerHTML = '<i data-lucide="bar-chart-2"></i> ' + t('results');
+            finishBtn.onclick = showResults;
 
+            lucide.createIcons();
             showQuestion(currentQuestionIndex);
         }
 
