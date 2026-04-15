@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Game - SSK ZK Prep</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
             color: var(--text-primary);
             white-space: pre-line;
             margin-bottom: 20px;
+            text-align: justify;
         }
 
         .question-number {
@@ -51,6 +52,7 @@
 
         .answer-text {
             flex: 1;
+            text-align: justify;
         }
 
         .answer-indicator {
@@ -259,6 +261,18 @@
         // Initialize Lucide icons
         lucide.createIcons();
 
+        // --- Translations ---
+        function applyTranslations() {
+            document.querySelector('.page-header h1').textContent = t('cardGame');
+            document.querySelector('#check-btn').innerHTML = '<i data-lucide="check-circle"></i> ' + t('checkAnswer');
+            document.querySelector('#next-btn-text').textContent = t('next');
+            document.querySelector('.completion-card h2').textContent = t('allCompleted');
+            document.querySelector('.completion-card p').textContent = t('allCompletedSub');
+            document.querySelector('.completion-card .btn').innerHTML = '<i data-lucide="refresh-cw"></i> ' + t('startNewSession');
+            lucide.createIcons();
+        }
+        applyTranslations();
+
         // --- State ---
         let questions = [];
         let currentQuestionIndex = 0;
@@ -365,7 +379,7 @@
             checkBtn.classList.remove('hidden');
             checkBtn.disabled = true;
             nextBtn.classList.add('hidden');
-            nextBtnText.textContent = 'Next';
+            nextBtnText.textContent = t('next');
             feedback.classList.add('hidden');
             feedback.className = 'feedback hidden';
 
@@ -386,7 +400,7 @@
             var diagramElement = document.getElementById('diagram');
 
             // Question number
-            questionNumber.querySelector('span').textContent = 'Question ' + question.question_number;
+            questionNumber.querySelector('span').textContent = t('question') + ' ' + question.question_number;
 
             // Question text
             questionText.textContent = question.question;
@@ -447,7 +461,7 @@
             var linkOrder = question.link_order || 1;
             var totalLinked = item.allLinkedQuestions.length;
             var numberSpan = questionNumber.querySelector('span');
-            numberSpan.innerHTML = 'Question ' + question.question_number +
+            numberSpan.innerHTML = t('question') + ' ' + question.question_number +
                 ' <span class="linked-badge"><i data-lucide="link"></i> ' +
                 linkOrder + '/' + totalLinked + '</span>';
 
@@ -546,11 +560,11 @@
             // Build feedback message
             var feedbackMessage = '';
             if (isCorrect) {
-                feedbackMessage = 'Correct! Well done.';
+                feedbackMessage = t('correct');
             } else {
                 var correctTexts = correctAnswers.map(function(key) { return question.answers[key]; });
-                feedbackMessage = 'Incorrect. The correct answer' +
-                    (correctAnswers.length > 1 ? 's are' : ' is') + ':';
+                feedbackMessage = t('incorrectPre') +
+                    (correctAnswers.length > 1 ? t('incorrectAre') : t('incorrectIs')) + ':';
                 correctTexts.forEach(function(txt) {
                     feedbackMessage += '\n\u2022 ' + txt;
                 });
@@ -573,7 +587,7 @@
                     });
 
                     if (nextLinkedQuestion) {
-                        document.getElementById('next-btn-text').textContent = 'Next Linked Question';
+                        document.getElementById('next-btn-text').textContent = t('nextLinked');
                     }
                 }
             }
@@ -607,7 +621,7 @@
 
             // Move to next item
             currentQuestionIndex++;
-            document.getElementById('next-btn-text').textContent = 'Next';
+            document.getElementById('next-btn-text').textContent = t('next');
             showRandomQuestion();
         }
 

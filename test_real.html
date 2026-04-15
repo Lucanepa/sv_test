@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Mode - SSK ZK Prep</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -150,6 +150,7 @@
             line-height: 1.7;
             color: var(--text-primary);
             margin-bottom: 20px;
+            text-align: justify;
         }
 
         .answers-container {
@@ -565,6 +566,24 @@
         // Initialize Lucide icons
         lucide.createIcons();
 
+        // ===== Translations =====
+        function applyTranslations() {
+            document.querySelector('.test-header h1').textContent = t('testMode');
+            document.querySelector('#start-btn').innerHTML = '<i data-lucide="shuffle"></i> ' + t('newTest');
+            document.querySelector('#finish-btn').innerHTML = '<i data-lucide="flag"></i> ' + t('finish');
+            document.querySelector('.sidebar-label').textContent = t('questions');
+            document.querySelector('#empty-state p').innerHTML = t('clickNewTest');
+            document.querySelector('.results-title').textContent = t('testResults');
+            document.querySelector('.score-label').textContent = t('score');
+            // Results action buttons
+            var resultBtns = document.querySelectorAll('.results-actions .btn');
+            resultBtns[0].innerHTML = '<i data-lucide="search"></i> ' + t('checkAnswers');
+            resultBtns[1].innerHTML = '<i data-lucide="shuffle"></i> ' + t('newTest');
+            document.querySelector('.clear-pill').innerHTML = '<i data-lucide="eraser"></i> ' + t('clear');
+            lucide.createIcons();
+        }
+        applyTranslations();
+
         // ===== State =====
         let questions = [];
         let currentTestQuestions = [];
@@ -582,7 +601,7 @@
                 console.error('Error loading questions:', error);
                 document.getElementById('empty-state').innerHTML =
                     '<div class="empty-state-icon"><i data-lucide="alert-circle"></i></div>' +
-                    '<p>Error loading questions. Please refresh the page.</p>';
+                    '<p>' + t('errorLoading') + '</p>';
                 lucide.createIcons();
             }
         }
@@ -769,7 +788,7 @@
 
             // Question number label
             const numberEl = document.getElementById('question-number');
-            numberEl.textContent = 'Question ' + (index + 1) + ' of ' + currentTestQuestions.length;
+            numberEl.textContent = t('question') + ' ' + (index + 1) + ' / ' + currentTestQuestions.length;
 
             // Question text
             document.getElementById('question-text').textContent = question.question;
@@ -937,22 +956,22 @@
 
             if (score >= 90) {
                 badgeClass = 'tier-excellent';
-                badgeText = 'SEHR GUT (Groups 1 & 2)';
+                badgeText = t('sehr_gut');
                 iconBg = 'var(--correct-bg)';
                 resultsIcon.style.color = 'var(--correct)';
             } else if (score >= 80) {
                 badgeClass = 'tier-good';
-                badgeText = 'GUT (Group 3)';
+                badgeText = t('gut');
                 iconBg = 'var(--accent-subtle)';
                 resultsIcon.style.color = 'var(--accent)';
             } else if (score >= 66) {
                 badgeClass = 'tier-sufficient';
-                badgeText = 'GENUGEND (2SR)';
+                badgeText = t('genuegend');
                 iconBg = 'rgba(234, 179, 8, 0.12)';
                 resultsIcon.style.color = '#eab308';
             } else {
                 badgeClass = 'tier-fail';
-                badgeText = 'UNGENUGEND';
+                badgeText = t('ungenuegend');
                 iconBg = 'var(--incorrect-bg)';
                 resultsIcon.style.color = 'var(--incorrect)';
             }

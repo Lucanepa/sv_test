@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Questions - SSK ZK Prep</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -157,6 +157,7 @@
             color: var(--text-primary);
             margin-bottom: 16px;
             white-space: pre-line;
+            text-align: justify;
         }
 
         /* Answer options inside check view */
@@ -346,7 +347,7 @@
             <a href="index.html" class="back-btn" aria-label="Back to home">
                 <i data-lucide="arrow-left"></i>
             </a>
-            <h1>Check Questions</h1>
+            <h1 data-i18n="checkQuestions">Check Questions</h1>
             <div class="count-badge" id="countBadge">
                 <i data-lucide="database"></i>
                 <span id="countText">--</span>
@@ -369,7 +370,7 @@
 
         <!-- Questions list -->
         <div class="questions-grid" id="questionsGrid">
-            <div class="loading-state">Loading questions...</div>
+            <div class="loading-state" id="loadingState">Loading questions...</div>
         </div>
 
     </div>
@@ -394,8 +395,7 @@
                 document.getElementById('questionsGrid').innerHTML =
                     '<div class="no-results">' +
                         '<div class="no-results-icon"><i data-lucide="alert-triangle"></i></div>' +
-                        '<div class="no-results-text">Error loading questions</div>' +
-                        '<div class="no-results-sub">Please refresh or check your connection.</div>' +
+                        '<div class="no-results-text">' + t('errorLoading') + '</div>' +
                     '</div>';
                 lucide.createIcons();
             }
@@ -511,8 +511,8 @@
                 container.innerHTML =
                     '<div class="no-results">' +
                         '<div class="no-results-icon"><i data-lucide="search-x"></i></div>' +
-                        '<div class="no-results-text">No questions found</div>' +
-                        '<div class="no-results-sub">Try a different search term.</div>' +
+                        '<div class="no-results-text">' + t('noResults') + '</div>' +
+                        '<div class="no-results-sub">' + t('noResultsSub') + '</div>' +
                     '</div>';
                 lucide.createIcons();
                 return;
@@ -533,7 +533,7 @@
 
             var linkedBadge = '';
             if (question.is_linked) {
-                linkedBadge = '<span class="q-linked-badge">Linked ' +
+                linkedBadge = '<span class="q-linked-badge">' + t('linked') + ' ' +
                     question.link_order + '/' + question.link_total + '</span>';
             }
 
@@ -600,7 +600,7 @@
                     '<div class="linked-section">' +
                         '<div class="linked-section-title">' +
                             '<i data-lucide="link"></i>' +
-                            'Linked Questions' +
+                            t('linkedQuestions') +
                         '</div>' +
                         subCards +
                     '</div>';
@@ -638,10 +638,21 @@
             }
         });
 
+        // ---- Translations ----
+
+        function applyTranslations() {
+            document.querySelector('.page-header h1').textContent = t('checkQuestions');
+            document.querySelector('#searchInput').placeholder = t('search');
+            var loadingEl = document.getElementById('loadingState');
+            if (loadingEl) loadingEl.textContent = t('loading');
+            lucide.createIcons();
+        }
+
         // ---- Init ----
 
         document.addEventListener('DOMContentLoaded', function() {
             lucide.createIcons();
+            applyTranslations();
 
             document.getElementById('searchInput').addEventListener('input', handleSearch);
 

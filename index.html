@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSK ZK Prep</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -203,6 +203,7 @@
             font-size: 0.8125rem;
             color: var(--text-secondary);
             line-height: 1.4;
+            text-align: justify;
         }
 
         .mode-card .mode-arrow {
@@ -319,6 +320,7 @@
 
     </div>
 
+    <script src="shared.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
         // Initialize Lucide icons
@@ -344,6 +346,7 @@
         function selectLang(lang) {
             localStorage.setItem('selectedLang', lang);
             updateLangButtons(lang);
+            applyTranslations();
             loadQuestions(lang);
         }
 
@@ -432,12 +435,28 @@
 
         function updateCount(count, lang) {
             const countEl = document.getElementById('questionCount');
-            countEl.querySelector('span').textContent = count + ' questions loaded (' + lang.toUpperCase() + ')';
+            countEl.querySelector('span').textContent = count + t('questionsLoaded') + ' (' + lang.toUpperCase() + ')';
+        }
+
+        // --- Translations ---
+        function applyTranslations() {
+            document.querySelector('.landing-header .subtitle').textContent = t('subtitle');
+            document.querySelectorAll('.section-label')[0].textContent = t('language');
+            document.querySelectorAll('.section-label')[1].textContent = t('studyMode');
+
+            var cards = document.querySelectorAll('.mode-card');
+            cards[0].querySelector('.mode-title').textContent = t('cardGame');
+            cards[0].querySelector('.mode-desc').textContent = t('cardGameDesc');
+            cards[1].querySelector('.mode-title').textContent = t('testMode');
+            cards[1].querySelector('.mode-desc').textContent = t('testModeDesc');
+            cards[2].querySelector('.mode-title').textContent = t('checkQuestions');
+            cards[2].querySelector('.mode-desc').textContent = t('checkQuestionsDesc');
         }
 
         // --- Init ---
         const currentLang = getSelectedLang();
         updateLangButtons(currentLang);
+        applyTranslations();
         loadQuestions(currentLang);
     </script>
 </body>
