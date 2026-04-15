@@ -153,6 +153,13 @@
             text-align: justify;
         }
 
+        .answer-hint {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
         .answers-container {
             margin: 20px 0;
         }
@@ -511,6 +518,7 @@
                     <div class="question-number" id="question-number"></div>
                     <div class="question-text" id="question-text"></div>
                     <img id="diagram" class="diagram hidden" alt="Question diagram">
+                    <div class="answer-hint" id="answer-hint"></div>
                     <div class="answers-container" id="answers"></div>
 
                     <div class="nav-controls">
@@ -580,6 +588,7 @@
             resultBtns[0].innerHTML = '<i data-lucide="search"></i> ' + t('checkAnswers');
             resultBtns[1].innerHTML = '<i data-lucide="shuffle"></i> ' + t('newTest');
             document.querySelector('.clear-pill').innerHTML = '<i data-lucide="eraser"></i> ' + t('clear');
+            document.getElementById('answer-hint').textContent = t('answerHint');
             lucide.createIcons();
         }
         applyTranslations();

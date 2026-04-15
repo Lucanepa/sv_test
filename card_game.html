@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* --- Card Game Specific --- */
+        .answer-hint {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
         .question-text {
             font-size: 0.9375rem;
             line-height: 1.7;
@@ -52,7 +59,6 @@
 
         .answer-text {
             flex: 1;
-            text-align: justify;
         }
 
         .answer-indicator {
@@ -224,6 +230,7 @@
             </div>
             <div class="question-text" id="question-text">Loading...</div>
             <img id="diagram" class="diagram hidden" alt="Question diagram">
+            <div class="answer-hint" id="answer-hint"></div>
             <div class="answers" id="answers"></div>
 
             <div class="controls">
@@ -269,6 +276,7 @@
             document.querySelector('.completion-card h2').textContent = t('allCompleted');
             document.querySelector('.completion-card p').textContent = t('allCompletedSub');
             document.querySelector('.completion-card .btn').innerHTML = '<i data-lucide="refresh-cw"></i> ' + t('startNewSession');
+            document.getElementById('answer-hint').textContent = t('answerHint');
             lucide.createIcons();
         }
         applyTranslations();
