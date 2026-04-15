@@ -14,63 +14,58 @@
         .landing-container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
 
-        /* Header */
+        /* Header — compact */
         .landing-header {
-            text-align: center;
-            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
         .landing-header .icon-wrap {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 56px;
-            height: 56px;
+            width: 36px;
+            height: 36px;
             background: var(--accent-subtle);
             border-radius: 50%;
-            margin-bottom: 16px;
             color: var(--accent);
+            flex-shrink: 0;
         }
 
         .landing-header .icon-wrap svg {
-            width: 28px;
-            height: 28px;
+            width: 18px;
+            height: 18px;
         }
 
         .landing-header h1 {
-            font-size: 1.75rem;
+            font-size: 1.125rem;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 6px;
-        }
-
-        .landing-header .subtitle {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            font-weight: 400;
         }
 
         /* Section labels */
         .section-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
 
         /* Level toggle */
         .level-toggle {
             display: flex;
             gap: 0;
-            margin-bottom: 36px;
+            margin-bottom: 20px;
             border: 2px solid var(--border);
             border-radius: var(--radius-md);
             overflow: hidden;
@@ -103,49 +98,38 @@
             color: #fff;
         }
 
-        /* Language selector */
+        /* Language selector — compact inline row */
         .lang-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-bottom: 36px;
-        }
-
-        @media (min-width: 480px) {
-            .lang-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
         }
 
         .lang-btn {
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 4px;
-            padding: 14px 10px;
+            padding: 8px 16px;
             background: var(--bg-surface);
             border: 2px solid var(--border);
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-sm);
             cursor: pointer;
             transition: all var(--transition);
             position: relative;
             font-family: inherit;
-            color: var(--text-primary);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--text-secondary);
         }
 
         .lang-btn:hover {
             border-color: var(--border-hover);
             background: var(--bg-surface-hover);
-        }
-
-        .lang-btn .lang-code {
-            font-size: 1.125rem;
-            font-weight: 700;
-            line-height: 1;
+            color: var(--text-primary);
         }
 
         .lang-btn .lang-name {
+            display: none; /* hidden — compact mode */
             font-size: 0.75rem;
             color: var(--text-secondary);
             font-weight: 400;
@@ -161,30 +145,22 @@
             transition: opacity var(--transition);
         }
 
-        .lang-btn .check-icon svg {
-            width: 16px;
-            height: 16px;
+        .lang-btn .check-icon {
+            display: none;
         }
 
         .lang-btn.active {
             border-color: var(--accent);
-            background: var(--accent-subtle);
-        }
-
-        .lang-btn.active .lang-name {
-            color: var(--text-primary);
-        }
-
-        .lang-btn.active .check-icon {
-            opacity: 1;
+            background: var(--accent);
+            color: #fff;
         }
 
         /* Mode cards */
         .mode-cards {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-bottom: 40px;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
         .mode-card {
@@ -289,32 +265,15 @@
                 <i data-lucide="circle-dot"></i>
             </div>
             <h1>SSK ZK Prep</h1>
-            <p class="subtitle">Swiss Volleyball Referee Exam Training</p>
         </header>
 
         <!-- Language Selector -->
         <p class="section-label">Language</p>
         <div class="lang-grid" id="langGrid">
-            <button class="lang-btn" data-lang="de" onclick="selectLang('de')">
-                <span class="check-icon"><i data-lucide="check"></i></span>
-                <span class="lang-code">DE</span>
-                <span class="lang-name">Deutsch</span>
-            </button>
-            <button class="lang-btn" data-lang="en" onclick="selectLang('en')">
-                <span class="check-icon"><i data-lucide="check"></i></span>
-                <span class="lang-code">EN</span>
-                <span class="lang-name">English</span>
-            </button>
-            <button class="lang-btn" data-lang="fr" onclick="selectLang('fr')">
-                <span class="check-icon"><i data-lucide="check"></i></span>
-                <span class="lang-code">FR</span>
-                <span class="lang-name">Francais</span>
-            </button>
-            <button class="lang-btn" data-lang="it" onclick="selectLang('it')">
-                <span class="check-icon"><i data-lucide="check"></i></span>
-                <span class="lang-code">IT</span>
-                <span class="lang-name">Italiano</span>
-            </button>
+            <button class="lang-btn" data-lang="de" onclick="selectLang('de')">DE</button>
+            <button class="lang-btn" data-lang="en" onclick="selectLang('en')">EN</button>
+            <button class="lang-btn" data-lang="fr" onclick="selectLang('fr')">FR</button>
+            <button class="lang-btn" data-lang="it" onclick="selectLang('it')">IT</button>
         </div>
 
         <!-- Level Toggle -->
@@ -497,7 +456,6 @@
 
         // --- Translations ---
         function applyTranslations() {
-            document.querySelector('.landing-header .subtitle').textContent = t('subtitle');
             var labels = document.querySelectorAll('.section-label');
             labels[0].textContent = t('language');
             labels[1].textContent = t('level');
