@@ -329,7 +329,16 @@
 
         function getSelectedLang() {
             const stored = localStorage.getItem('selectedLang');
-            return LANGUAGES.includes(stored) ? stored : 'it';
+            if (LANGUAGES.includes(stored)) return stored;
+
+            // Detect from browser language (e.g. "de-CH" -> "de")
+            const browserLangs = navigator.languages || [navigator.language || ''];
+            for (const bl of browserLangs) {
+                const code = bl.split('-')[0].toLowerCase();
+                if (LANGUAGES.includes(code)) return code;
+            }
+
+            return 'en';
         }
 
         function selectLang(lang) {

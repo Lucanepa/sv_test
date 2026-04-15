@@ -374,6 +374,7 @@
 
     </div>
 
+    <script src="shared.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
         let allQuestions = [];
@@ -383,54 +384,18 @@
 
         async function loadQuestions() {
             try {
-                const lang = localStorage.getItem('selectedLang') || 'it';
-                const cacheKey = 'offlineQuestions_' + lang;
-                let data;
-
-                // Try localStorage cache first
-                const cached = localStorage.getItem(cacheKey);
-                if (cached) {
-                    try {
-                        data = JSON.parse(cached);
-                    } catch (e) {
-                        localStorage.removeItem(cacheKey);
-                        data = null;
-                    }
-                }
-
-                // Fallback to fetching JSON file
-                if (!data) {
-                    const response = await fetch('questions_' + lang + '.json');
-                    if (!response.ok) throw new Error('HTTP ' + response.status);
-                    data = await response.json();
-                }
-
-                // Replace image URLs with cached base64 if available
-                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
-                if (cachedDiagrams) {
-                    try {
-                        const diagrams = JSON.parse(cachedDiagrams);
-                        data.forEach(function(q) {
-                            if (q.image_url && diagrams[q.image_url]) {
-                                q.image_url = diagrams[q.image_url];
-                            }
-                        });
-                    } catch (e) { /* ignore */ }
-                }
-
+                var data = await loadQuestionData();
                 allQuestions = processQuestionsForCheck(data);
                 filteredQuestions = allQuestions.slice();
-
                 updateCount(filteredQuestions.length);
                 displayQuestions();
-
             } catch (error) {
                 console.error('Error loading questions:', error);
                 document.getElementById('questionsGrid').innerHTML =
                     '<div class="no-results">' +
                         '<div class="no-results-icon"><i data-lucide="alert-triangle"></i></div>' +
                         '<div class="no-results-text">Error loading questions</div>' +
-                        '<div class="no-results-sub">Please refresh the page or check your connection.</div>' +
+                        '<div class="no-results-sub">Please refresh or check your connection.</div>' +
                     '</div>';
                 lucide.createIcons();
             }
@@ -441,35 +406,13 @@
         function processQuestionsForCheck(originalQuestions) {
             var processedQuestions = [];
             var processedLinks = new Set();
-
-            // Group linked questions by their base question number
-            var linkGroups = new Map();
+            var linkGroups = buildLinkGroups(originalQuestions);
 
             originalQuestions.forEach(function(question) {
-                if (question.linked_to) {
-                    var baseNumber = question.linked_to;
-                    if (!linkGroups.has(baseNumber)) {
-                        linkGroups.set(baseNumber, []);
-                    }
-                    linkGroups.get(baseNumber).push(question);
-                }
-            });
-
-            // Sort each link group by link_order
-            linkGroups.forEach(function(questions) {
-                questions.sort(function(a, b) { return a.link_order - b.link_order; });
-            });
-
-            // Process questions in order
-            originalQuestions.forEach(function(question) {
-                if (processedLinks.has(question.question_number)) {
-                    return;
-                }
+                if (processedLinks.has(question.question_number)) return;
 
                 if (question.linked_to) {
-                    var baseNumber = question.linked_to;
-                    var linkedQuestions = linkGroups.get(baseNumber);
-
+                    var linkedQuestions = linkGroups.get(question.linked_to);
                     linkedQuestions.forEach(function(linkedQ) {
                         processedQuestions.push({
                             question_number: linkedQ.question_number,
@@ -478,7 +421,7 @@
                             correct: linkedQ.correct,
                             image_url: linkedQ.image_url || null,
                             is_linked: true,
-                            link_group: baseNumber,
+                            link_group: question.linked_to,
                             link_order: linkedQ.link_order,
                             link_total: linkedQuestions.length,
                             prefix: '',
@@ -488,27 +431,20 @@
                         });
                         processedLinks.add(linkedQ.question_number);
                     });
-                } else {
-                    // Check if this question is a base for a linked group
-                    var isReferenced = originalQuestions.find(function(q) {
-                        return q.linked_to === question.question_number;
+                } else if (!isLinkedTarget(question, originalQuestions)) {
+                    processedQuestions.push({
+                        question_number: question.question_number,
+                        question: question.question,
+                        answers: question.answers,
+                        correct: question.correct,
+                        image_url: question.image_url || null,
+                        is_linked: false,
+                        link_group: null,
+                        link_order: null,
+                        link_total: 0,
+                        prefix: '',
+                        linked_questions: []
                     });
-
-                    if (!isReferenced) {
-                        processedQuestions.push({
-                            question_number: question.question_number,
-                            question: question.question,
-                            answers: question.answers,
-                            correct: question.correct,
-                            image_url: question.image_url || null,
-                            is_linked: false,
-                            link_group: null,
-                            link_order: null,
-                            link_total: 0,
-                            prefix: '',
-                            linked_questions: []
-                        });
-                    }
                 }
             });
 
@@ -680,13 +616,6 @@
                 '<div class="check-answers">' + answersHTML + '</div>' +
                 linkedHTML +
             '</div>';
-        }
-
-        function highlightSearchTerm(text, searchTerm) {
-            if (!searchTerm) return text;
-            var escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            var regex = new RegExp('(' + escaped + ')', 'gi');
-            return text.replace(regex, '<span class="highlight">$1</span>');
         }
 
         // ---- Keyboard Shortcuts ----

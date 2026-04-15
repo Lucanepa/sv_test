@@ -559,6 +559,7 @@
 
     </div>
 
+    <script src="shared.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
         // Initialize Lucide icons
@@ -574,42 +575,7 @@
         // ===== Data Loading =====
         async function loadQuestions() {
             try {
-                const lang = localStorage.getItem('selectedLang') || 'it';
-                const cacheKey = 'offlineQuestions_' + lang;
-                const cached = localStorage.getItem(cacheKey);
-
-                let data;
-
-                if (cached) {
-                    try {
-                        data = JSON.parse(cached);
-                        console.log('Using cached questions for ' + lang.toUpperCase());
-                    } catch (e) {
-                        localStorage.removeItem(cacheKey);
-                        data = null;
-                    }
-                }
-
-                if (!data) {
-                    const response = await fetch('questions_' + lang + '.json');
-                    if (!response.ok) throw new Error('HTTP ' + response.status);
-                    data = await response.json();
-                    console.log('Loaded questions from server for ' + lang.toUpperCase());
-                }
-
-                // Replace image URLs with cached base64 if available
-                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
-                if (cachedDiagrams) {
-                    try {
-                        const diagrams = JSON.parse(cachedDiagrams);
-                        data.forEach(question => {
-                            if (question.image_url && diagrams[question.image_url]) {
-                                question.image_url = diagrams[question.image_url];
-                            }
-                        });
-                    } catch (e) { /* ignore parse errors */ }
-                }
-
+                var data = await loadQuestionData();
                 questions = processQuestionsForTest(data);
                 console.log('Processed ' + questions.length + ' questions');
             } catch (error) {
@@ -623,88 +589,35 @@
 
         // ===== Process Questions for Linked Groups =====
         function processQuestionsForTest(originalQuestions) {
-            const processedQuestions = [];
-            const processedLinks = new Set();
+            var processedQuestions = [];
+            var processedLinks = new Set();
+            var linkGroups = buildLinkGroups(originalQuestions);
 
-            // Group all linked questions by their base question
-            const linkGroups = new Map();
-
-            originalQuestions.forEach(question => {
-                if (question.linked_to) {
-                    const baseNumber = question.linked_to;
-                    if (!linkGroups.has(baseNumber)) {
-                        linkGroups.set(baseNumber, []);
-                    }
-                    linkGroups.get(baseNumber).push(question);
-                }
-            });
-
-            // Sort each link group by link_order
-            linkGroups.forEach((questions) => {
-                questions.sort((a, b) => a.link_order - b.link_order);
-            });
-
-            // Process questions in order
-            originalQuestions.forEach(question => {
-                if (processedLinks.has(question.question_number)) {
-                    return;
-                }
+            originalQuestions.forEach(function(question) {
+                if (processedLinks.has(question.question_number)) return;
 
                 if (question.linked_to) {
-                    const baseNumber = question.linked_to;
-                    const linkedQuestions = linkGroups.get(baseNumber);
-
-                    linkedQuestions.forEach(linkedQ => {
-                        processedQuestions.push({
-                            ...linkedQ,
+                    var linkedQuestions = linkGroups.get(question.linked_to);
+                    linkedQuestions.forEach(function(linkedQ) {
+                        processedQuestions.push(Object.assign({}, linkedQ, {
                             is_linked: true,
-                            link_group: baseNumber,
+                            link_group: question.linked_to,
                             link_order: linkedQ.link_order,
                             prefix: ''
-                        });
+                        }));
                         processedLinks.add(linkedQ.question_number);
                     });
-                } else {
-                    const isReferenced = originalQuestions.find(q =>
-                        q.linked_to === question.question_number
-                    );
-
-                    if (!isReferenced) {
-                        processedQuestions.push({
-                            ...question,
-                            is_linked: false,
-                            link_group: null,
-                            link_order: null,
-                            prefix: ''
-                        });
-                    }
+                } else if (!isLinkedTarget(question, originalQuestions)) {
+                    processedQuestions.push(Object.assign({}, question, {
+                        is_linked: false,
+                        link_group: null,
+                        link_order: null,
+                        prefix: ''
+                    }));
                 }
             });
 
             return processedQuestions;
-        }
-
-        // ===== Fisher-Yates Shuffle with crypto =====
-        function shuffleArray(array) {
-            const shuffled = [...array];
-            let randomValues;
-
-            try {
-                randomValues = new Uint32Array(shuffled.length);
-                crypto.getRandomValues(randomValues);
-            } catch (e) {
-                randomValues = new Uint32Array(shuffled.length);
-                for (let i = 0; i < shuffled.length; i++) {
-                    randomValues[i] = Math.floor(Math.random() * 0x100000000);
-                }
-            }
-
-            for (let i = shuffled.length - 1; i > 0; i--) {
-                const j = randomValues[i] % (i + 1);
-                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-            }
-
-            return shuffled;
         }
 
         // ===== Start New Test =====
