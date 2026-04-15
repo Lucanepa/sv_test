@@ -3,624 +3,632 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKK Test</title>
+    <title>Test Mode - SSK ZK Prep</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            font-size: 0.8rem;
-            overscroll-behavior: none;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        html {
-            overscroll-behavior: none;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        .container {
-            max-width: 1200px;
-            width: auto;
+        /* --- Test Page Layout --- */
+        .test-layout {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 16px;
+            min-height: 100vh;
         }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            margin-top: 60px;
-        }
-        
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            backdrop-filter: blur(10px);
-        }
-        
-        .back-button:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
 
-        
-        h1 {
-            color: white;
-            font-size: 0.8rem;
+        /* --- Header --- */
+        .test-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
             margin-bottom: 20px;
-            margin-top: 0;
         }
-        
-        .subtitle {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.8rem;
-        }
-        
-        .test-controls {
+
+        .test-header h1 {
+            flex: 1;
             text-align: center;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
         }
-        
-        .btn {
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin: 0 10px;
-            transition: all 0.2s ease;
+
+        .header-actions {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
         }
-        
-        .btn-primary {
-            background: #007bff;
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: #0056b3;
-        }
-        
-        .btn-success {
-            background: #28a745;
-            color: white;
-        }
-        
-        .btn-success:hover {
-            background: #1e7e34;
-        }
-        
-        .btn-info {
-            background: #17a2b8;
-            color: white;
-        }
-        
-        .btn-info:hover {
-            background: #138496;
-        }
-        
-        .btn-warning {
-            background: #ffc107;
-            color: #212529;
-        }
-        
-        .btn-warning:hover {
-            background: #e0a800;
-        }
-        
+
+        /* --- Two-Column Test Container --- */
         .test-container {
             display: flex;
             gap: 20px;
+            align-items: flex-start;
         }
-        
-        .question-list {
-            flex: 1;
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            max-height: 600px;
-            overflow-y: auto;
+
+        /* --- Left Sidebar: Question Overview --- */
+        .sidebar {
+            width: 240px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 16px;
         }
-        
+
+        .sidebar-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
         .question-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 8px;
         }
-        
+
         .question-indicator {
             width: 40px;
             height: 40px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            font-size: 0.8rem;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: var(--bg-surface);
+            color: var(--text-secondary);
+            font-size: 13px;
             font-weight: 600;
-            transition: all 0.2s ease;
-            background: white;
+            cursor: pointer;
+            transition: all var(--transition);
+            user-select: none;
         }
-        
+
         .question-indicator:hover {
-            border-color: #007bff;
-            background: #f0f8ff;
+            border-color: var(--border-hover);
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
         }
-        
+
         .question-indicator.current {
-            border-color: #007bff;
-            background: #e3f2fd;
-            color: #007bff;
+            border-color: var(--accent);
+            background: var(--accent-subtle);
+            color: var(--accent);
         }
-        
+
         .question-indicator.answered {
-            border-color: #333;
-            background: #333;
-            color: white;
+            border-color: var(--bg-elevated);
+            background: var(--bg-elevated);
+            color: var(--text-primary);
         }
-        
+
+        .question-indicator.answered.current {
+            border-color: var(--accent);
+        }
+
         .question-indicator.correct {
-            border-color: #28a745;
-            background: #28a745;
-            color: white;
+            border-color: var(--correct);
+            background: var(--correct-bg);
+            color: var(--correct);
         }
-        
+
         .question-indicator.incorrect {
-            border-color: #dc3545;
-            background: #dc3545;
-            color: white;
+            border-color: var(--incorrect);
+            background: var(--incorrect-bg);
+            color: var(--incorrect);
         }
-        
+
+        /* --- Right Main: Question Card --- */
+        .question-area {
+            flex: 1;
+            min-width: 0;
+        }
+
         .question-card {
-            flex: 2;
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            text-align: justify;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow);
         }
-        
-        .question-prefix {
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 10px;
-            font-size: 0.8rem;
-            display: none;
+
+        .question-number {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
         }
-        
+
         .question-text {
-            font-size: 0.8rem;
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-primary);
             margin-bottom: 20px;
-            line-height: 1.6;
-            color: #333;
         }
-        
-        .diagram {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .answers {
+
+        .answers-container {
             margin: 20px 0;
         }
-        
-        .answer-option {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 10px 0;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 0.8rem;
+
+        /* Review-mode answer states */
+        .answer-option.correct-review {
+            border-color: var(--correct);
+            background: var(--correct-bg);
+            color: var(--correct);
         }
-        
-        .answer-option:hover {
-            border-color: #007bff;
-            background: #f0f8ff;
+
+        .answer-option.incorrect-review {
+            border-color: var(--incorrect);
+            background: var(--incorrect-bg);
+            color: var(--incorrect);
         }
-        
-        .answer-option.selected {
-            border-color: #007bff;
-            background: #e3f2fd;
-        }
-        
-        .answer-option.correct-answer {
-            border-color: #28a745;
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .answer-option.incorrect-answer {
-            border-color: #dc3545;
-            background: #f8d7da;
-            color: #721c24;
-        }
-        
-        .answer-option.user-selected {
+
+        .answer-option.user-selected-review {
             border-width: 3px;
-            font-weight: bold;
-        }
-        
-        .answer-text {
-            color: #333;
-            font-size: 0.8rem;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
-        .results {
-            text-align: center;
-            color: white;
-            margin: 20px 0;
-            font-size: 0.92rem;
-        }
-        
-        .score-display {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            backdrop-filter: blur(10px);
-            max-width: 600px;
-            text-align: center;
-        }
-        
-        .performance-rating {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 0.92rem;
             font-weight: 600;
         }
-        
-        .performance-rating.excellent {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
+
+        .answer-option.review-disabled {
+            pointer-events: none;
+            cursor: default;
         }
-        
-        .performance-rating.very-good {
-            background: #d1ecf1;
-            color: #0c5460;
-            border: 1px solid #bee5eb;
-        }
-        
-        .performance-rating.good {
-            background: #fff3cd;
-            color: #856404;
-            border: 1px solid #ffeaa7;
-        }
-        
-                         .performance-rating.needs-improvement {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-        
-        .results-actions {
-            margin-top: 30px;
-            text-align: center;
-        }
-        
-        .results-actions .btn {
-            margin: 0 10px;
-            padding: 15px 30px;
-            font-size: 0.9rem;
-        }
-        
-        .score-display p {
-            margin-bottom: 15px;
-            line-height: 1.5;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .question-controls {
-            margin-top: 20px;
-            text-align: center;
-        }
-         
-        .navigation-controls {
-            margin-top: 15px;
+
+        /* --- Navigation Controls --- */
+        .nav-controls {
             display: flex;
-            justify-content: center;
-            gap: 10px;
             align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
         }
-        
-        /* Force navigation controls to not affect button sizing */
-        .navigation-controls > * {
-            flex: none !important;
-            flex-shrink: 0 !important;
-            flex-grow: 0 !important;
-        }
-        
-        /* Remove all focus outlines from navigation buttons */
-        .navigation-controls button:focus,
-        .navigation-controls button:active,
-        .navigation-controls button:focus-visible {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-        
-        /* Fresh navigation button styling */
-        .nav-btn {
-            width: 60px !important;
-            height: 60px !important;
-            border: none;
+
+        .nav-circle {
+            width: 52px;
+            height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
-            background: #007bff;
-            color: white;
-            font-size: 1.5rem !important;
-            font-weight: bold;
+            border: none;
+            background: var(--accent);
+            color: #fff;
             cursor: pointer;
-            transition: all 0.2s ease;
+            transition: all var(--transition);
+            flex-shrink: 0;
+        }
+
+        .nav-circle svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .nav-circle:hover:not(:disabled) {
+            background: var(--accent-hover);
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
+        }
+
+        .nav-circle:disabled {
+            background: var(--bg-elevated);
+            color: var(--text-muted);
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .nav-circle:focus,
+        .nav-circle:active,
+        .nav-circle:focus-visible {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .clear-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: var(--bg-surface);
+            color: var(--text-secondary);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+
+        .clear-pill svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .clear-pill:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
+        }
+
+        .clear-pill:focus,
+        .clear-pill:active,
+        .clear-pill:focus-visible {
+            outline: none;
+        }
+
+        /* --- Results View --- */
+        .results-overlay {
             display: flex;
             align-items: center;
             justify-content: center;
-            box-sizing: border-box;
-            padding: 0 !important;
-            margin: 0 !important;
-            min-width: 60px !important;
-            max-width: 60px !important;
-            min-height: 60px !important;
-            max-height: 60px !important;
-            overflow: hidden !important;
+            padding: 60px 20px;
         }
-        
-        .nav-btn:hover:not(:disabled) {
-            background: #0056b3;
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+
+        .results-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
         }
-        
-        .nav-btn:focus {
-            outline: none !important;
-            box-shadow: none !important;
+
+        .results-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
-        
-        .nav-btn:active {
-            outline: none !important;
-            box-shadow: none !important;
+
+        .results-icon svg {
+            width: 28px;
+            height: 28px;
         }
-        
-        .nav-btn:focus-visible {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-        
-        .nav-btn:disabled {
-            background: #6c757d;
-            cursor: not-allowed;
-            opacity: 0.6;
-        }
-        
-        /* Ensure both arrow buttons are identical */
-        #prev-btn, #next-btn {
-            width: 60px !important;
-            height: 60px !important;
-            font-size: 1.5rem !important;
-            font-weight: bold !important;
-            text-align: center !important;
-            line-height: 1 !important;
-            min-width: 60px !important;
-            max-width: 60px !important;
-            min-height: 60px !important;
-            max-height: 60px !important;
-            box-sizing: border-box !important;
-            overflow: hidden !important;
-        }
-        
-        .clear-btn {
-            width: 80px;
-            height: 40px;
-            border: none;
-            border-radius: 20px;
-            background: #ffc107;
-            color: #212529;
-            font-size: 0.9rem;
+
+        .results-title {
+            font-size: 1.125rem;
             font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
+            color: var(--text-primary);
+            margin-bottom: 24px;
         }
-        
-        .clear-btn:hover {
-            background: #e0a800;
-            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+
+        .score-big {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 4px;
         }
-        
-        .clear-btn:focus {
-            outline: none !important;
-            box-shadow: none !important;
+
+        .score-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
         }
-        
-        .clear-btn:active {
-            outline: none !important;
-            box-shadow: none !important;
+
+        .score-fraction {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
         }
-        
-        .clear-btn:focus-visible {
-            outline: none !important;
-            box-shadow: none !important;
+
+        .performance-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 999px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            margin-bottom: 32px;
         }
-        
-        /* Mobile responsive design */
+
+        .performance-badge.tier-excellent {
+            background: var(--correct-bg);
+            color: var(--correct);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
+        .performance-badge.tier-good {
+            background: var(--accent-subtle);
+            color: var(--accent);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .performance-badge.tier-sufficient {
+            background: rgba(234, 179, 8, 0.12);
+            color: #eab308;
+            border: 1px solid rgba(234, 179, 8, 0.3);
+        }
+
+        .performance-badge.tier-fail {
+            background: var(--incorrect-bg);
+            color: var(--incorrect);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .results-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .results-actions .btn {
+            min-width: 140px;
+        }
+
+        /* --- Empty State --- */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+        }
+
+        .empty-state-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background: var(--accent-subtle);
+            border-radius: 50%;
+            margin-bottom: 16px;
+            color: var(--accent);
+        }
+
+        .empty-state-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .empty-state p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        /* --- Mobile Responsive --- */
         @media (max-width: 768px) {
-            .test-container {
-                flex-direction: column;
-                gap: 15px;
+            .test-layout {
+                padding: 12px;
             }
-            
-            .question-list {
-                order: 2;
-                max-height: none;
-            }
-            
-            .question-card {
-                order: 1;
-            }
-            
-            .question-grid {
-                grid-template-columns: repeat(6, 1fr);
+
+            .test-header {
+                flex-wrap: wrap;
                 gap: 8px;
             }
-            
+
+            .test-header h1 {
+                order: -1;
+                flex-basis: 100%;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+
+            .back-btn {
+                order: 0;
+            }
+
+            .header-actions {
+                order: 1;
+                margin-left: auto;
+            }
+
+            .test-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                order: 2;
+            }
+
+            .question-area {
+                order: 1;
+            }
+
+            .question-grid {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 6px;
+            }
+
             .question-indicator {
-                width: 35px;
-                height: 35px;
-                font-size: 0.8rem;
+                width: 100%;
+                height: 38px;
+                font-size: 12px;
             }
-            
-            .container {
-                padding: 15px;
-            }
-            
+
             .question-card {
                 padding: 20px;
             }
-            
 
+            .results-card {
+                padding: 28px 20px;
+            }
+
+            .score-big {
+                font-size: 2.5rem;
+            }
+
+            .results-actions {
+                flex-direction: column;
+            }
+
+            .results-actions .btn {
+                width: 100%;
+            }
+
+            .header-actions .btn {
+                padding: 8px 12px;
+                font-size: 13px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+    <div class="test-layout">
 
-        
-        <div class="header">
-            <h1>SKK Test Mode</h1>
-        </div>
-        
-        <div class="test-controls">
-            <button class="btn btn-primary" onclick="startNewTest()">Start New Test</button>
-            <button class="btn btn-success" id="finish-test-btn" onclick="finishTest()" disabled>Finish Test</button>
-        </div>
-        
-        <div class="test-container" id="test-container">
-            <div class="question-list">
-                <h3 style="margin-bottom: 15px; font-size: 0.92rem;">Question Overview</h3>
-                <div class="question-grid" id="question-grid"></div>
+        <!-- Header -->
+        <header class="test-header">
+            <a href="index.html" class="back-btn" aria-label="Back to home">
+                <i data-lucide="arrow-left"></i>
+            </a>
+            <h1>Test Mode</h1>
+            <div class="header-actions">
+                <button class="btn btn-primary" id="start-btn" onclick="startNewTest()">
+                    <i data-lucide="shuffle"></i> New Test
+                </button>
+                <button class="btn btn-outline" id="finish-btn" onclick="finishTest()" disabled>
+                    <i data-lucide="flag"></i> Finish
+                </button>
             </div>
-            
-            <div class="question-card" id="question-card">
-                <div class="question-prefix" id="question-prefix"></div>
-                <div class="question-text" id="question-text">Click "Start New Test" to begin</div>
-                <img id="diagram" class="diagram hidden" alt="Question diagram">
-                <div class="answers" id="answers"></div>
-                <div class="question-controls">
-                    <div class="navigation-controls">
-                        <button class="nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>‹</button>
-                        <button class="clear-btn" onclick="clearCurrentQuestionAnswers()">Clear</button>
-                        <button class="nav-btn" id="next-btn" onclick="nextQuestion()" disabled>›</button>
+        </header>
+
+        <!-- Test Container: Sidebar + Question -->
+        <div class="test-container hidden" id="test-container">
+
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="card" style="padding: 16px;">
+                    <p class="sidebar-label">Questions</p>
+                    <div class="question-grid" id="question-grid"></div>
+                </div>
+            </aside>
+
+            <!-- Right Main -->
+            <main class="question-area">
+                <div class="question-card">
+                    <div class="question-number" id="question-number"></div>
+                    <div class="question-text" id="question-text"></div>
+                    <img id="diagram" class="diagram hidden" alt="Question diagram">
+                    <div class="answers-container" id="answers"></div>
+
+                    <div class="nav-controls">
+                        <button class="nav-circle" id="prev-btn" onclick="previousQuestion()" disabled aria-label="Previous question">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <button class="clear-pill" onclick="clearCurrentQuestionAnswers()">
+                            <i data-lucide="eraser"></i> Clear
+                        </button>
+                        <button class="nav-circle" id="next-btn" onclick="nextQuestion()" disabled aria-label="Next question">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
-        
-        <div class="results hidden" id="results">
-            <div class="score-display">
-                <h2 style="margin-bottom: 15px; font-size: 0.92rem;">Test Results</h2>
-                <div id="score-display"></div>
-                <div id="performance-rating" class="performance-rating"></div>
-                
+
+        <!-- Empty State (before test starts) -->
+        <div id="empty-state" class="empty-state">
+            <div class="empty-state-icon">
+                <i data-lucide="clipboard-check"></i>
+            </div>
+            <p>Click <strong>New Test</strong> to start a 25-question exam simulation.</p>
+        </div>
+
+        <!-- Results View -->
+        <div class="results-overlay hidden" id="results">
+            <div class="results-card">
+                <div class="results-icon" id="results-icon">
+                    <i data-lucide="trophy"></i>
+                </div>
+                <div class="results-title">Test Results</div>
+                <div class="score-big" id="score-percent"></div>
+                <div class="score-label">Score</div>
+                <div class="score-fraction" id="score-fraction"></div>
+                <div class="performance-badge" id="performance-badge"></div>
                 <div class="results-actions">
-                    <button class="btn btn-info" onclick="checkAnswers()">Check Answers</button>
-                    <button class="btn btn-success" onclick="startNewTest()">New Test</button>
+                    <button class="btn btn-outline" onclick="checkAnswers()">
+                        <i data-lucide="search"></i> Check Answers
+                    </button>
+                    <button class="btn btn-primary" onclick="startNewTest()">
+                        <i data-lucide="shuffle"></i> New Test
+                    </button>
                 </div>
             </div>
         </div>
+
     </div>
 
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // ===== State =====
         let questions = [];
         let currentTestQuestions = [];
         let currentQuestionIndex = 0;
         let userAnswers = {};
         let isReviewMode = false;
-        
+
+        // ===== Data Loading =====
         async function loadQuestions() {
             try {
-                // Try to load from localStorage first (cached data)
-                const cachedQuestions = localStorage.getItem('offlineQuestions');
-                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
-                
+                const lang = localStorage.getItem('selectedLang') || 'it';
+                const cacheKey = 'offlineQuestions_' + lang;
+                const cached = localStorage.getItem(cacheKey);
+
                 let data;
-                
-                if (cachedQuestions && cachedDiagrams) {
-                    // Use cached data
-                    data = JSON.parse(cachedQuestions);
-                    
-                    // Replace image URLs with cached base64 data
-                    const diagrams = JSON.parse(cachedDiagrams);
-                    data.forEach(question => {
-                        if (question.image_url && diagrams[question.image_url]) {
-                            question.image_url = diagrams[question.image_url];
-                        }
-                    });
-                    
-                    console.log('✅ Using cached questions and diagrams');
-                } else {
-                    // Fallback to server if no cached data
-                    const response = await fetch('questions_with_diagrams_updated.json');
-                    data = await response.json();
-                    console.log('✅ Loaded questions from server');
+
+                if (cached) {
+                    try {
+                        data = JSON.parse(cached);
+                        console.log('Using cached questions for ' + lang.toUpperCase());
+                    } catch (e) {
+                        localStorage.removeItem(cacheKey);
+                        data = null;
+                    }
                 }
-                
-                // Process questions to handle continuation questions
+
+                if (!data) {
+                    const response = await fetch('questions_' + lang + '.json');
+                    if (!response.ok) throw new Error('HTTP ' + response.status);
+                    data = await response.json();
+                    console.log('Loaded questions from server for ' + lang.toUpperCase());
+                }
+
+                // Replace image URLs with cached base64 if available
+                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
+                if (cachedDiagrams) {
+                    try {
+                        const diagrams = JSON.parse(cachedDiagrams);
+                        data.forEach(question => {
+                            if (question.image_url && diagrams[question.image_url]) {
+                                question.image_url = diagrams[question.image_url];
+                            }
+                        });
+                    } catch (e) { /* ignore parse errors */ }
+                }
+
                 questions = processQuestionsForTest(data);
-                
-                // Start test automatically
-                startNewTest();
+                console.log('Processed ' + questions.length + ' questions');
             } catch (error) {
                 console.error('Error loading questions:', error);
-                const questionText = document.getElementById('question-text');
-                if (questionText) {
-                    questionText.textContent = 'Error loading questions. Please refresh the page or check your internet connection.';
-                }
+                document.getElementById('empty-state').innerHTML =
+                    '<div class="empty-state-icon"><i data-lucide="alert-circle"></i></div>' +
+                    '<p>Error loading questions. Please refresh the page.</p>';
+                lucide.createIcons();
             }
         }
-        
-        function updateStatusIndicator(isOffline) {
-            const statusIcon = document.getElementById('status-icon');
-            
-            if (isOffline) {
-                statusIcon.textContent = '📵';
-            } else {
-                statusIcon.textContent = '📶';
-            }
-        }
-        
+
+        // ===== Process Questions for Linked Groups =====
         function processQuestionsForTest(originalQuestions) {
             const processedQuestions = [];
             const processedLinks = new Set();
-            
-            // First, group all linked questions by their base question
+
+            // Group all linked questions by their base question
             const linkGroups = new Map();
-            
+
             originalQuestions.forEach(question => {
                 if (question.linked_to) {
                     const baseNumber = question.linked_to;
@@ -630,25 +638,22 @@
                     linkGroups.get(baseNumber).push(question);
                 }
             });
-            
+
             // Sort each link group by link_order
-            linkGroups.forEach((questions, baseNumber) => {
+            linkGroups.forEach((questions) => {
                 questions.sort((a, b) => a.link_order - b.link_order);
             });
-            
-            // Now process questions in the correct order
+
+            // Process questions in order
             originalQuestions.forEach(question => {
-                // Skip if this question has already been processed as part of a link group
                 if (processedLinks.has(question.question_number)) {
                     return;
                 }
-                
-                // Check if this question is linked to another question
+
                 if (question.linked_to) {
                     const baseNumber = question.linked_to;
                     const linkedQuestions = linkGroups.get(baseNumber);
-                    
-                    // Add all linked questions in order
+
                     linkedQuestions.forEach(linkedQ => {
                         processedQuestions.push({
                             ...linkedQ,
@@ -660,13 +665,11 @@
                         processedLinks.add(linkedQ.question_number);
                     });
                 } else {
-                    // Check if this question is referenced by a future linked question
-                    const isReferenced = originalQuestions.find(q => 
+                    const isReferenced = originalQuestions.find(q =>
                         q.linked_to === question.question_number
                     );
-                    
+
                     if (!isReferenced) {
-                        // Only add if not already added as part of a link group
                         processedQuestions.push({
                             ...question,
                             is_linked: false,
@@ -677,46 +680,60 @@
                     }
                 }
             });
-            
+
             return processedQuestions;
         }
-        
+
+        // ===== Fisher-Yates Shuffle with crypto =====
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            let randomValues;
+
+            try {
+                randomValues = new Uint32Array(shuffled.length);
+                crypto.getRandomValues(randomValues);
+            } catch (e) {
+                randomValues = new Uint32Array(shuffled.length);
+                for (let i = 0; i < shuffled.length; i++) {
+                    randomValues[i] = Math.floor(Math.random() * 0x100000000);
+                }
+            }
+
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = randomValues[i] % (i + 1);
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+
+            return shuffled;
+        }
+
+        // ===== Start New Test =====
         function startNewTest() {
-            // Reset test state
             currentQuestionIndex = 0;
             userAnswers = {};
             isReviewMode = false;
-            
-            // Create a set to track all selected question numbers to prevent duplicates
+
             const selectedQuestionNumbers = new Set();
             const finalTestQuestions = [];
-            
-            // Super randomized approach: shuffle all questions and pick the first 25 that fit
-            // This ensures maximum randomness from all 278 questions
             const allShuffledQuestions = shuffleArray([...questions]);
-            
-            console.log(`🎲 Starting new test - shuffling all ${questions.length} questions with crypto-grade randomness`);
-            
-            // Process questions to ensure linked groups stay together and no duplicates
+
+            console.log('Starting new test - shuffling all ' + questions.length + ' questions');
+
             let i = 0;
             while (finalTestQuestions.length < 25 && i < allShuffledQuestions.length) {
                 const question = allShuffledQuestions[i];
-                
-                // Skip if this question number is already selected
+
                 if (selectedQuestionNumbers.has(question.question_number)) {
                     i++;
                     continue;
                 }
-                
-                // If this is a linked question, add the entire group
+
                 if (question.is_linked) {
-                    const linkGroup = questions.filter(q => 
+                    const linkGroup = questions.filter(q =>
                         q.is_linked && q.link_group === question.link_group
                     );
-                    
-                    // Check if we have space for the entire group
+
                     if (finalTestQuestions.length + linkGroup.length <= 25) {
-                        // Add all questions in the link group
                         linkGroup.forEach(linkedQ => {
                             if (!selectedQuestionNumbers.has(linkedQ.question_number)) {
                                 finalTestQuestions.push({
@@ -731,13 +748,11 @@
                         });
                     }
                 } else {
-                    // Check if this question is referenced by a future linked question
-                    const isReferenced = questions.find(q => 
+                    const isReferenced = questions.find(q =>
                         q.linked_to === question.question_number
                     );
-                    
+
                     if (!isReferenced) {
-                        // Add non-linked question
                         finalTestQuestions.push({
                             ...question,
                             is_linked: false,
@@ -748,18 +763,18 @@
                         selectedQuestionNumbers.add(question.question_number);
                     }
                 }
-                
+
                 i++;
             }
-            
-            // If we still don't have 25 questions, fill with additional random questions
+
+            // Fill remaining slots if needed
             if (finalTestQuestions.length < 25) {
-                const remainingQuestions = questions.filter(q => 
-                    !selectedQuestionNumbers.has(q.question_number) && 
-                    !q.is_linked && 
+                const remainingQuestions = questions.filter(q =>
+                    !selectedQuestionNumbers.has(q.question_number) &&
+                    !q.is_linked &&
                     !questions.find(refQ => refQ.linked_to === q.question_number)
                 );
-                
+
                 const additionalShuffled = shuffleArray([...remainingQuestions]);
                 for (let j = 0; j < additionalShuffled.length && finalTestQuestions.length < 25; j++) {
                     const question = additionalShuffled[j];
@@ -775,382 +790,286 @@
                     }
                 }
             }
-            
-            // Sort questions to ensure linked groups appear consecutively
+
+            // Stable sort: linked groups stay consecutive
             finalTestQuestions.sort((a, b) => {
                 if (a.is_linked && b.is_linked && a.link_group === b.link_group) {
-                    // Keep linked questions in order within their group
                     return a.link_order - b.link_order;
                 }
-                // For non-linked questions or different groups, maintain original order
                 return 0;
             });
-            
+
             currentTestQuestions = finalTestQuestions;
-            
-            console.log(`🎯 New test started with ${finalTestQuestions.length} questions`);
-            console.log(`📊 Questions selected: ${finalTestQuestions.map(q => q.question_number).join(', ')}`);
-            
-            // Update question grid
+
+            console.log('Test started with ' + finalTestQuestions.length + ' questions');
+            console.log('Questions: ' + finalTestQuestions.map(q => q.question_number).join(', '));
+
+            // Show test interface
+            document.getElementById('empty-state').classList.add('hidden');
+            document.getElementById('test-container').classList.remove('hidden');
+            document.getElementById('results').classList.add('hidden');
+
+            // Enable finish button
+            const finishBtn = document.getElementById('finish-btn');
+            finishBtn.disabled = false;
+
             updateQuestionGrid();
-            
-            // Show first question
             showQuestion(0);
-            
-            // Hide results and show test interface
-            const resultsContainer = document.getElementById('results');
-            const testContainer = document.getElementById('test-container');
-            
-            if (resultsContainer) {
-                resultsContainer.classList.add('hidden');
-            }
-            
-            if (testContainer) {
-                testContainer.classList.remove('hidden');
-            }
-            
-            // Initialize navigation buttons
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-            
-            prevBtn.disabled = true;
-            prevBtn.style.opacity = '0.5';
-            prevBtn.style.cursor = 'not-allowed';
-            
-            nextBtn.disabled = currentTestQuestions.length <= 1;
-            if (nextBtn.disabled) {
-                nextBtn.style.opacity = '0.5';
-                nextBtn.style.cursor = 'not-allowed';
-            } else {
-                nextBtn.style.opacity = '1';
-                nextBtn.style.cursor = 'pointer';
-            }
-            
-            // Enable Finish Test button
-            const finishBtn = document.getElementById('finish-test-btn');
-            if (finishBtn) {
-                finishBtn.disabled = false;
-                finishBtn.style.opacity = '1';
-                finishBtn.style.cursor = 'pointer';
-            }
         }
-        
-        function shuffleArray(array) {
-            const shuffled = [...array];
-            
-            // Use crypto.getRandomValues for true random noise if available
-            let randomValues;
-            try {
-                randomValues = new Uint32Array(shuffled.length);
-                crypto.getRandomValues(randomValues);
-            } catch (e) {
-                // Fallback to Math.random if crypto API not available
-                randomValues = new Uint32Array(shuffled.length);
-                for (let i = 0; i < shuffled.length; i++) {
-                    randomValues[i] = Math.floor(Math.random() * 0x100000000);
-                }
-            }
-            
-            // Fisher-Yates shuffle with true random values
-            for (let i = shuffled.length - 1; i > 0; i--) {
-                const j = randomValues[i] % (i + 1);
-                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-            }
-            
-            return shuffled;
-        }
-        
+
+        // ===== Update Question Grid =====
         function updateQuestionGrid() {
             const grid = document.getElementById('question-grid');
             grid.innerHTML = '';
-            
+
             currentTestQuestions.forEach((question, index) => {
                 const indicator = document.createElement('div');
                 indicator.className = 'question-indicator';
                 indicator.textContent = index + 1;
                 indicator.onclick = () => showQuestion(index);
-                
+
                 if (index === currentQuestionIndex) {
                     indicator.classList.add('current');
                 }
-                
+
                 if (userAnswers[index] && userAnswers[index].length > 0) {
                     indicator.classList.add('answered');
                 }
-                
-                // In review mode, show correct/incorrect answers
+
                 if (isReviewMode) {
                     const isCorrect = checkAnswerCorrectness(index);
-                    if (isCorrect) {
-                        indicator.classList.add('correct');
-                    } else {
-                        indicator.classList.add('incorrect');
+                    indicator.classList.remove('answered', 'current');
+                    indicator.classList.add(isCorrect ? 'correct' : 'incorrect');
+                    if (index === currentQuestionIndex) {
+                        indicator.classList.add('current');
                     }
                 }
-                
+
                 grid.appendChild(indicator);
             });
         }
-        
+
+        // ===== Show Question =====
         function showQuestion(index) {
             currentQuestionIndex = index;
             const question = currentTestQuestions[index];
-            
-            // Update question prefix
-            const prefixElement = document.getElementById('question-prefix');
-            if (question.prefix) {
-                prefixElement.textContent = question.prefix;
-                prefixElement.style.display = 'block';
-            } else {
-                prefixElement.style.display = 'none';
-            }
-            
-            // Update question text
+
+            // Question number label
+            const numberEl = document.getElementById('question-number');
+            numberEl.textContent = 'Question ' + (index + 1) + ' of ' + currentTestQuestions.length;
+
+            // Question text
             document.getElementById('question-text').textContent = question.question;
-            
-            // Update diagram
-            const diagramElement = document.getElementById('diagram');
+
+            // Diagram
+            const diagramEl = document.getElementById('diagram');
             if (question.image_url) {
-                diagramElement.src = question.image_url;
-                diagramElement.classList.remove('hidden');
+                diagramEl.src = question.image_url;
+                diagramEl.classList.remove('hidden');
             } else {
-                diagramElement.classList.add('hidden');
+                diagramEl.classList.add('hidden');
+                diagramEl.removeAttribute('src');
             }
-            
-            // Update answers
+
+            // Answer options — reshuffled every time (intentional)
             const answersContainer = document.getElementById('answers');
             answersContainer.innerHTML = '';
-            
-            // Create array of answer entries and shuffle them
+
             const answerEntries = Object.entries(question.answers);
             const shuffledAnswers = shuffleArray([...answerEntries]);
-            
+
             shuffledAnswers.forEach(([key, value]) => {
                 const answerDiv = document.createElement('div');
                 answerDiv.className = 'answer-option';
                 answerDiv.dataset.answer = key;
-                
+
                 const text = document.createElement('span');
-                text.className = 'answer-text';
                 text.textContent = value;
-                
                 answerDiv.appendChild(text);
-                
-                // Check if this answer was previously selected
+
+                // Restore previous selection
                 if (userAnswers[index] && userAnswers[index].includes(key)) {
                     answerDiv.classList.add('selected');
                 }
-                
-                // In review mode, show correct/incorrect answers and highlight user selections
+
                 if (isReviewMode) {
                     const isCorrect = question.correct.includes(key);
                     const wasSelected = userAnswers[index] && userAnswers[index].includes(key);
-                    
-                    // Always show if user selected this answer (regardless of correctness)
+
+                    answerDiv.classList.add('review-disabled');
+
                     if (wasSelected) {
-                        answerDiv.classList.add('user-selected');
+                        answerDiv.classList.add('user-selected-review');
                     }
-                    
-                    // Show correct/incorrect status
+
                     if (isCorrect) {
-                        answerDiv.classList.add('correct-answer');
+                        answerDiv.classList.add('correct-review');
+                        answerDiv.classList.remove('selected');
                     } else if (wasSelected) {
-                        answerDiv.classList.add('incorrect-answer');
+                        answerDiv.classList.add('incorrect-review');
+                        answerDiv.classList.remove('selected');
                     }
-                    
-                    // Disable selection in review mode
-                    answerDiv.style.pointerEvents = 'none';
-                    answerDiv.style.cursor = 'default';
                 } else {
-                    // Add both click and touch events for better mobile support (only in test mode)
-                    const handleAnswerSelection = () => {
+                    const handleSelection = () => {
                         const isCurrentlySelected = answerDiv.classList.contains('selected');
-                        
+
                         if (isCurrentlySelected) {
-                            // Deselect the answer
                             answerDiv.classList.remove('selected');
                         } else {
-                            // Select the answer
                             answerDiv.classList.add('selected');
                         }
-                        
-                        // Update user answers
+
+                        // Collect all selected for this question
                         const selectedAnswers = [];
-                        document.querySelectorAll(`.answer-option.selected`).forEach(option => {
-                            selectedAnswers.push(option.dataset.answer);
+                        answersContainer.querySelectorAll('.answer-option.selected').forEach(opt => {
+                            selectedAnswers.push(opt.dataset.answer);
                         });
                         userAnswers[index] = selectedAnswers;
-                        
-                        // Update question grid
+
                         updateQuestionGrid();
                     };
-                    
-                    // Add click event
-                    answerDiv.addEventListener('click', handleAnswerSelection);
-                    
-                    // Add touch events for mobile
+
+                    answerDiv.addEventListener('click', handleSelection);
+
                     answerDiv.addEventListener('touchstart', (e) => {
-                        e.preventDefault(); // Prevent double-firing on mobile
+                        e.preventDefault();
                     });
-                    
+
                     answerDiv.addEventListener('touchend', (e) => {
                         e.preventDefault();
-                        handleAnswerSelection();
+                        handleSelection();
                     });
                 }
-                
+
                 answersContainer.appendChild(answerDiv);
             });
-            
-            // Update navigation button states
+
+            // Navigation button states
             const prevBtn = document.getElementById('prev-btn');
             const nextBtn = document.getElementById('next-btn');
-            
+
             prevBtn.disabled = index === 0;
             nextBtn.disabled = index === currentTestQuestions.length - 1;
-            
-            // Update button styles based on disabled state
-            if (prevBtn.disabled) {
-                prevBtn.style.opacity = '0.5';
-                prevBtn.style.cursor = 'not-allowed';
-            } else {
-                prevBtn.style.opacity = '1';
-                prevBtn.style.cursor = 'pointer';
+
+            updateQuestionGrid();
+
+            // Re-render Lucide icons in nav controls
+            lucide.createIcons();
+        }
+
+        // ===== Navigation =====
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                showQuestion(currentQuestionIndex - 1);
             }
-            
-            if (nextBtn.disabled) {
-                nextBtn.style.opacity = '0.5';
-                nextBtn.style.cursor = 'not-allowed';
-            } else {
-                nextBtn.style.opacity = '1';
-                nextBtn.style.cursor = 'pointer';
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < currentTestQuestions.length - 1) {
+                showQuestion(currentQuestionIndex + 1);
             }
-            
-            // Update question grid
+        }
+
+        // ===== Clear Current Question =====
+        function clearCurrentQuestionAnswers() {
+            if (isReviewMode) return;
+
+            if (userAnswers[currentQuestionIndex]) {
+                delete userAnswers[currentQuestionIndex];
+            }
+
+            document.querySelectorAll('.answer-option.selected').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
             updateQuestionGrid();
         }
-        
+
+        // ===== Check Answer Correctness =====
+        function checkAnswerCorrectness(questionIndex) {
+            const question = currentTestQuestions[questionIndex];
+            const selectedAnswers = userAnswers[questionIndex];
+
+            if (!selectedAnswers || selectedAnswers.length === 0) return false;
+
+            const correctAnswers = question.correct;
+            return selectedAnswers.length === correctAnswers.length &&
+                selectedAnswers.every(answer => correctAnswers.includes(answer));
+        }
+
+        // ===== Finish Test =====
         function finishTest() {
-            // Check if test has started
             if (!currentTestQuestions || currentTestQuestions.length === 0) {
-                alert('Please start a test first before finishing it.');
                 return;
             }
-            
-            const resultsContainer = document.getElementById('results');
-            const testContainer = document.getElementById('test-container');
-            const scoreDisplay = document.getElementById('score-display');
-            const performanceRating = document.getElementById('performance-rating');
-            
-            // Check if all required elements exist
-            if (!resultsContainer || !testContainer || !scoreDisplay || !performanceRating) {
-                console.error('Required elements not found for finishTest function');
-                console.log('resultsContainer:', resultsContainer);
-                console.log('testContainer:', testContainer);
-                console.log('scoreDisplay:', scoreDisplay);
-                console.log('performanceRating:', performanceRating);
-                return;
-            }
-            
+
             let correctCount = 0;
-            
-            // Count all 25 questions - unanswered questions count as incorrect
             currentTestQuestions.forEach((question, index) => {
                 if (checkAnswerCorrectness(index)) {
                     correctCount++;
                 }
             });
-            
+
             const score = Math.round((correctCount / 25) * 100);
-            
-            scoreDisplay.innerHTML = `
-                <p style="font-size: 0.92rem; margin-bottom: 10px;">Correct answers: ${correctCount}/25</p>
-                <p style="font-size: 0.92rem; margin-bottom: 10px;">Score: ${score}%</p>
-            `;
-            
-            // Performance rating
-            let ratingClass = '';
-            let ratingText = '';
-            
+
+            // Score display
+            document.getElementById('score-percent').textContent = score + '%';
+            document.getElementById('score-fraction').textContent = correctCount + ' / 25 correct';
+
+            // Performance badge
+            const badge = document.getElementById('performance-badge');
+            const resultsIcon = document.getElementById('results-icon');
+
+            let badgeClass, badgeText, iconBg;
+
             if (score >= 90) {
-                ratingClass = 'excellent';
-                ratingText = 'SEHR GUT (Groups 1 & 2)';
+                badgeClass = 'tier-excellent';
+                badgeText = 'SEHR GUT (Groups 1 & 2)';
+                iconBg = 'var(--correct-bg)';
+                resultsIcon.style.color = 'var(--correct)';
             } else if (score >= 80) {
-                ratingClass = 'very-good';
-                ratingText = 'GUT (Group 3)';
+                badgeClass = 'tier-good';
+                badgeText = 'GUT (Group 3)';
+                iconBg = 'var(--accent-subtle)';
+                resultsIcon.style.color = 'var(--accent)';
             } else if (score >= 66) {
-                ratingClass = 'good';
-                ratingText = 'GENÜGEND (2SR)';
+                badgeClass = 'tier-sufficient';
+                badgeText = 'GENUGEND (2SR)';
+                iconBg = 'rgba(234, 179, 8, 0.12)';
+                resultsIcon.style.color = '#eab308';
             } else {
-                ratingClass = 'needs-improvement';
-                ratingText = 'UNGENÜGEND (No games)';
+                badgeClass = 'tier-fail';
+                badgeText = 'UNGENUGEND';
+                iconBg = 'var(--incorrect-bg)';
+                resultsIcon.style.color = 'var(--incorrect)';
             }
-            
-            performanceRating.className = `performance-rating ${ratingClass}`;
-            performanceRating.textContent = ratingText;
-            
-            // Hide test interface and show results
-            testContainer.classList.add('hidden');
-            resultsContainer.classList.remove('hidden');
-        }
-        
-                 function checkAnswerCorrectness(questionIndex) {
-             const question = currentTestQuestions[questionIndex];
-             const selectedAnswers = userAnswers[questionIndex];
-             
-             if (!selectedAnswers) return false;
-             
-             const correctAnswers = question.correct;
-             return selectedAnswers.length === correctAnswers.length &&
-                 selectedAnswers.every(answer => correctAnswers.includes(answer));
-         }
-         
-         function previousQuestion() {
-             if (currentQuestionIndex > 0) {
-                 showQuestion(currentQuestionIndex - 1);
-             }
-         }
-         
-         function nextQuestion() {
-             if (currentQuestionIndex < currentTestQuestions.length - 1) {
-                 showQuestion(currentQuestionIndex + 1);
-             }
-         }
 
-        function clearCurrentQuestionAnswers() {
-            // Clear answers only for the current question
-            if (userAnswers[currentQuestionIndex]) {
-                delete userAnswers[currentQuestionIndex];
-            }
-            
-            // Clear selected answers from the current view
-            document.querySelectorAll('.answer-option.selected').forEach(option => {
-                option.classList.remove('selected');
-            });
-            
-            // Update question grid to reflect the cleared answers
-            updateQuestionGrid();
-        }
-        
+            badge.className = 'performance-badge ' + badgeClass;
+            badge.textContent = badgeText;
+            resultsIcon.style.background = iconBg;
 
-        
+            // Show results, hide test
+            document.getElementById('test-container').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+            document.getElementById('empty-state').classList.add('hidden');
+
+            lucide.createIcons();
+        }
+
+        // ===== Check Answers (Review Mode) =====
         function checkAnswers() {
-            // Enable review mode and show test interface
             isReviewMode = true;
-            
-            const testContainer = document.getElementById('test-container');
-            const resultsContainer = document.getElementById('results');
-            
-            if (testContainer && resultsContainer) {
-                testContainer.classList.remove('hidden');
-                resultsContainer.classList.add('hidden');
-                
-                // Show the current question with answer checking
-                showQuestion(currentQuestionIndex);
-            }
+
+            document.getElementById('test-container').classList.remove('hidden');
+            document.getElementById('results').classList.add('hidden');
+
+            // Disable finish button during review
+            document.getElementById('finish-btn').disabled = true;
+
+            showQuestion(currentQuestionIndex);
         }
-        
-        // Load questions when page loads
+
+        // ===== Init =====
         loadQuestions();
     </script>
 </body>

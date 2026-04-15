@@ -3,363 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Game - Quiz</title>
+    <title>Card Game - SSK ZK Prep</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            font-size: 0.92rem;
-        }
-        
-        .container {
-            max-width: 800px;
-            width: auto;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.92rem;
-            backdrop-filter: blur(10px);
-        }
-        
-        .back-button:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
-
-        
-        h1 {
-            color: white;
-            font-size: 0.92rem;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.92rem;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-        
+        /* --- Card Game Specific --- */
         .question-text {
-            font-size: 0.92rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            color: #333;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: var(--text-primary);
             white-space: pre-line;
+            margin-bottom: 20px;
         }
-        
-        .diagram {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .question-number {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
-        
+
+        .question-number svg {
+            width: 14px;
+            height: 14px;
+        }
+
         .answers {
             margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
-        
+
         .answer-option {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px 15px 15px 25px;
-            margin: 10px 0;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 0.92rem;
-            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        
-        .answer-option:hover {
-            border-color: #007bff;
-            background: #f0f8ff;
-        }
-        
-        .answer-option.selected {
-            background: #e3f2fd;
-            position: relative;
-        }
-        
-        .answer-option.selected::before {
-            content: '';
-            position: absolute;
-            left: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 12px;
-            height: 12px;
-            background: #007bff;
-            border-radius: 50%;
-        }
-        
-        .answer-option.correct {
-            border-color: #28a745;
-            background: #d4edda;
-        }
-        
-        .answer-option.incorrect {
-            border-color: #dc3545;
-            background: #f8d7da;
-            border-width: 3px;
-        }
-        
-        .answer-option.correct {
-            border-color: #28a745;
-            background: #d4edda;
-            border-width: 3px;
-        }
-        
+
         .answer-text {
-            color: #333;
-            font-size: 0.92rem;
+            flex: 1;
         }
-        
+
+        .answer-indicator {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer-indicator svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .answer-indicator.indicator-correct {
+            color: var(--correct);
+        }
+
+        .answer-indicator.indicator-incorrect {
+            color: var(--incorrect);
+        }
+
         .controls {
-            margin-top: 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
         }
-        
-        .btn {
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.92rem;
-            font-weight: 600;
-            margin: 0 10px;
-            transition: all 0.2s ease;
+
+        .controls .btn {
+            min-width: 140px;
         }
-        
-        .btn-primary {
-            background: #007bff;
-            color: white;
-        }
-        
-        .btn-primary:hover:not(:disabled) {
-            background: #0056b3;
-        }
-        
-        .btn-primary:disabled {
-            background: #6c757d;
-            cursor: not-allowed;
-        }
-        
-        .btn-success {
-            background: #28a745;
-            color: white;
-        }
-        
-        .btn-success:hover {
-            background: #1e7e34;
-        }
-        
+
         .feedback {
             margin-top: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 0.92rem;
-            font-weight: 600;
-            text-align: left;
-            white-space: pre-line;
-            line-height: 1.4;
         }
-        
-        .feedback.correct {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        
-        .feedback.incorrect {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-        
-        .completion-message {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-        
-        .completion-message h2 {
-            color: #28a745;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-        
-        .completion-message p {
-            color: #6c757d;
-            margin-bottom: 30px;
-            font-size: 0.92rem;
-        }
-        
-        .restart-btn {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.92rem;
-            font-weight: 600;
-            transition: background-color 0.2s ease;
-        }
-        
-        .restart-btn:hover {
-            background: #0056b3;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
 
+        /* Completion card */
+        .completion-card {
+            text-align: center;
+            padding: 48px 24px;
+        }
+
+        .completion-card .completion-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: var(--correct-bg);
+            border-radius: 50%;
+            color: var(--correct);
+            margin-bottom: 20px;
+        }
+
+        .completion-card .completion-icon svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .completion-card h2 {
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .completion-card p {
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            font-size: 0.875rem;
+        }
+
+        /* Progress indicator */
+        .progress-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .progress-text {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .progress-text svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .progress-bar-wrap {
+            flex: 1;
+            max-width: 200px;
+            height: 4px;
+            background: var(--bg-elevated);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-left: 12px;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: width var(--transition);
+            width: 0%;
+        }
+
+        /* Linked badge */
+        .linked-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            color: var(--accent);
+            background: var(--accent-subtle);
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .linked-badge svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Header balance placeholder */
+        .header-balance {
+            width: 40px;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+    <div class="page-container">
 
-        
-        <div class="header">
-            <h1>Card Game Mode</h1>
+        <!-- Header -->
+        <header class="page-header">
+            <a href="index.html" class="back-btn" aria-label="Back to home">
+                <i data-lucide="arrow-left"></i>
+            </a>
+            <h1>Card Game</h1>
+            <div class="header-balance"></div>
+        </header>
+
+        <!-- Progress -->
+        <div class="progress-row" id="progress-row">
+            <span class="progress-text">
+                <i data-lucide="layers"></i>
+                <span id="progress-label">0 / 0</span>
+            </span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
         </div>
-        
 
-        
+        <!-- Question Card -->
         <div class="card" id="question-card">
+            <div class="question-number" id="question-number">
+                <i data-lucide="hash"></i>
+                <span></span>
+            </div>
             <div class="question-text" id="question-text">Loading...</div>
             <img id="diagram" class="diagram hidden" alt="Question diagram">
             <div class="answers" id="answers"></div>
-            
+
             <div class="controls">
-                <button class="btn btn-primary" id="check-btn" onclick="checkAnswer()" disabled>Check Answer</button>
-                <button class="btn btn-success" id="next-btn" onclick="nextQuestion()" class="hidden">Next</button>
+                <button class="btn btn-primary" id="check-btn" onclick="checkAnswer()" disabled>
+                    <i data-lucide="check-circle"></i>
+                    Check Answer
+                </button>
+                <button class="btn btn-success hidden" id="next-btn" onclick="nextQuestion()">
+                    <i data-lucide="arrow-right"></i>
+                    <span id="next-btn-text">Next</span>
+                </button>
             </div>
-            
+
             <div class="feedback hidden" id="feedback"></div>
         </div>
-        
-        <div class="completion-message hidden" id="completion-message">
+
+        <!-- Completion Card -->
+        <div class="card completion-card hidden" id="completion-card">
+            <div class="completion-icon">
+                <i data-lucide="trophy"></i>
+            </div>
             <h2>All questions completed!</h2>
             <p>You've answered all available questions in this session.</p>
-            <button class="restart-btn" onclick="startNewSession()">Start New Session</button>
+            <button class="btn btn-primary" onclick="startNewSession()">
+                <i data-lucide="refresh-cw"></i>
+                Start New Session
+            </button>
         </div>
+
     </div>
 
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // --- State ---
         let questions = [];
         let currentQuestionIndex = 0;
         let answeredQuestions = new Set();
         let currentSessionQuestions = [];
-        
+
+        // --- Data Loading ---
         async function loadQuestions() {
             try {
-                // Try to load from localStorage first (cached data)
-                const cachedQuestions = localStorage.getItem('offlineQuestions');
-                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
-                
+                const lang = localStorage.getItem('selectedLang') || 'it';
                 let data;
-                
-                if (cachedQuestions && cachedDiagrams) {
-                    // Use cached data
-                    data = JSON.parse(cachedQuestions);
-                    
-                    // Replace image URLs with cached base64 data
-                    const diagrams = JSON.parse(cachedDiagrams);
-                    data.forEach(question => {
-                        if (question.image_url && diagrams[question.image_url]) {
-                            question.image_url = diagrams[question.image_url];
-                        }
-                    });
-                    
-                    console.log('✅ Using cached questions and diagrams');
-                } else {
-                    // Fallback to server if no cached data
-                    const response = await fetch('questions_with_diagrams_updated.json');
-                    data = await response.json();
-                    console.log('✅ Loaded questions from server');
+
+                // Try localStorage cache first
+                const cacheKey = 'offlineQuestions_' + lang;
+                const cached = localStorage.getItem(cacheKey);
+
+                if (cached) {
+                    try {
+                        data = JSON.parse(cached);
+                        console.log('Using cached questions for ' + lang);
+                    } catch (e) {
+                        localStorage.removeItem(cacheKey);
+                        data = null;
+                    }
                 }
-                
-                // Process questions to handle continuation questions
+
+                if (!data) {
+                    // Fetch from file
+                    const response = await fetch('questions_' + lang + '.json');
+                    if (!response.ok) throw new Error('HTTP ' + response.status);
+                    data = await response.json();
+                    console.log('Loaded questions from server for ' + lang);
+                }
+
+                // Resolve cached diagram images
+                const cachedDiagrams = localStorage.getItem('offlineDiagrams');
+                if (cachedDiagrams) {
+                    try {
+                        const diagrams = JSON.parse(cachedDiagrams);
+                        data.forEach(function(question) {
+                            if (question.image_url && diagrams[question.image_url]) {
+                                question.image_url = diagrams[question.image_url];
+                            }
+                        });
+                    } catch (e) { /* ignore parse errors */ }
+                }
+
+                // Process for linked questions
                 questions = processQuestionsForCardGame(data);
-                
+                console.log('Processed ' + questions.length + ' question items (' + data.length + ' raw)');
+
                 startNewSession();
             } catch (error) {
                 console.error('Error loading questions:', error);
-                const questionText = document.getElementById('question-text');
-                if (questionText) {
-                    questionText.textContent = 'Error loading questions';
-                }
+                document.getElementById('question-text').textContent = 'Error loading questions. Please go back and select a language.';
             }
         }
-        
 
-        
+        // --- Linked Question Processing ---
         function processQuestionsForCardGame(originalQuestions) {
-            const processedQuestions = [];
-            
-            // First, identify all linked question groups
-            const linkGroups = new Map();
-            
-            originalQuestions.forEach(question => {
+            var processedQuestions = [];
+
+            // Identify all linked question groups
+            var linkGroups = new Map();
+
+            originalQuestions.forEach(function(question) {
                 if (question.linked_to) {
-                    const baseNumber = question.linked_to;
+                    var baseNumber = question.linked_to;
                     if (!linkGroups.has(baseNumber)) {
                         linkGroups.set(baseNumber, []);
                     }
                     linkGroups.get(baseNumber).push(question);
                 }
             });
-            
+
             // Sort each link group by link_order
-            linkGroups.forEach((questions, baseNumber) => {
-                questions.sort((a, b) => a.link_order - b.link_order);
+            linkGroups.forEach(function(groupQuestions) {
+                groupQuestions.sort(function(a, b) { return a.link_order - b.link_order; });
             });
-            
-            // Now process questions, ensuring linked questions are handled properly
-            originalQuestions.forEach(question => {
+
+            // Process each question
+            originalQuestions.forEach(function(question) {
                 if (question.linked_to) {
-                    // This is a linked question
-                    const baseNumber = question.linked_to;
-                    const linkedQuestions = linkGroups.get(baseNumber);
-                    
-                    // Only add the first question in each link group initially
+                    // Linked question: only add the first one (link_order === 1)
+                    var baseNumber = question.linked_to;
+                    var linkedQuestions = linkGroups.get(baseNumber);
+
                     if (question.link_order === 1) {
                         processedQuestions.push({
                             type: 'linked_first',
@@ -368,15 +353,14 @@
                             allLinkedQuestions: linkedQuestions
                         });
                     }
-                    // Skip other linked questions - they'll be shown sequentially
+                    // Other linked questions are skipped; they show sequentially
                 } else {
-                    // Check if this question is referenced by a future linked question
-                    const isReferenced = originalQuestions.find(q => 
-                        q.linked_to === question.question_number
-                    );
-                    
+                    // Check if this question is referenced as a linked_to target
+                    var isReferenced = originalQuestions.find(function(q) {
+                        return q.linked_to === question.question_number;
+                    });
+
                     if (!isReferenced) {
-                        // Only add if not already added as part of a link group
                         processedQuestions.push({
                             type: 'single',
                             question: question
@@ -384,299 +368,348 @@
                     }
                 }
             });
-            
+
             return processedQuestions;
         }
-        
+
+        // --- Session Management ---
         function startNewSession() {
-            // Reset session state
             answeredQuestions.clear();
             currentQuestionIndex = 0;
-            
-            // Create a new random selection of questions
-            const availableQuestions = questions.filter(q => {
+
+            var availableQuestions = questions.filter(function(q) {
                 if (q.type === 'linked_first') {
-                    // For linked first questions, check if any question in the group has been answered
-                    return !q.allLinkedQuestions.some(linkedQ => answeredQuestions.has(linkedQ.question_number));
-                } else {
-                    // For single questions, check normally
-                    return !answeredQuestions.has(q.question.question_number);
+                    return !q.allLinkedQuestions.some(function(linkedQ) {
+                        return answeredQuestions.has(linkedQ.question_number);
+                    });
                 }
+                return !answeredQuestions.has(q.question.question_number);
             });
-            
-            let selectedQuestions = shuffleArray([...availableQuestions]);
-            currentSessionQuestions = selectedQuestions;
-            
+
+            currentSessionQuestions = shuffleArray([].concat(availableQuestions));
+
             if (currentSessionQuestions.length === 0) {
-                // All questions have been answered, start fresh
                 answeredQuestions.clear();
                 startNewSession();
                 return;
             }
-            
+
+            // Show question card, hide completion
+            document.getElementById('question-card').classList.remove('hidden');
+            document.getElementById('completion-card').classList.add('hidden');
+
+            updateProgress();
             showRandomQuestion();
         }
-        
+
         function shuffleArray(array) {
-            const shuffled = [...array];
-            for (let i = shuffled.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            var shuffled = [].concat(array);
+            for (var i = shuffled.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = shuffled[i];
+                shuffled[i] = shuffled[j];
+                shuffled[j] = temp;
             }
             return shuffled;
         }
-        
+
+        // --- Progress ---
+        function updateProgress() {
+            var total = currentSessionQuestions.length;
+            var current = Math.min(currentQuestionIndex + 1, total);
+            document.getElementById('progress-label').textContent = current + ' / ' + total;
+            var pct = total > 0 ? (currentQuestionIndex / total) * 100 : 0;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        // --- Display ---
         function showRandomQuestion() {
             if (currentQuestionIndex >= currentSessionQuestions.length) {
                 showCompletionMessage();
                 return;
             }
-            
-            const question = currentSessionQuestions[currentQuestionIndex];
-            displayQuestion(question);
+
+            var item = currentSessionQuestions[currentQuestionIndex];
+            displayQuestion(item);
+            updateProgress();
         }
-        
-        function displayQuestion(question) {
-            // Reset UI state
-            document.getElementById('check-btn').classList.remove('hidden');
-            document.getElementById('check-btn').disabled = false;
-            document.getElementById('next-btn').classList.add('hidden');
-            document.getElementById('feedback').classList.add('hidden');
-            
-            // Clear previous selections and re-enable answer options
-            document.querySelectorAll('.answer-option').forEach(option => {
-                option.classList.remove('selected', 'correct', 'incorrect');
-                option.style.pointerEvents = 'auto';
-                option.style.cursor = 'pointer';
-            });
-            
-            if (question.type === 'linked_first') {
-                // Display linked question (could be first or subsequent)
-                displayLinkedQuestion(question);
+
+        function displayQuestion(item) {
+            // Reset UI
+            var checkBtn = document.getElementById('check-btn');
+            var nextBtn = document.getElementById('next-btn');
+            var feedback = document.getElementById('feedback');
+            var nextBtnText = document.getElementById('next-btn-text');
+
+            checkBtn.classList.remove('hidden');
+            checkBtn.disabled = true;
+            nextBtn.classList.add('hidden');
+            nextBtnText.textContent = 'Next';
+            feedback.classList.add('hidden');
+            feedback.className = 'feedback hidden';
+
+            if (item.type === 'linked_first') {
+                displayLinkedQuestion(item);
             } else {
-                // Display single question
-                displaySingleQuestion(question.question);
+                displaySingleQuestion(item.question);
             }
+
+            // Re-create Lucide icons for dynamically added elements
+            lucide.createIcons();
         }
-        
+
         function displaySingleQuestion(question) {
-            const questionText = document.getElementById('question-text');
-            const answersContainer = document.getElementById('answers');
-            const diagramElement = document.getElementById('diagram');
-            
-            // Display question text with question number
-            questionText.textContent = `Question ${question.question_number}:\n${question.question}`;
-            
-            // Display diagram if available
+            var questionNumber = document.getElementById('question-number');
+            var questionText = document.getElementById('question-text');
+            var answersContainer = document.getElementById('answers');
+            var diagramElement = document.getElementById('diagram');
+
+            // Question number
+            questionNumber.querySelector('span').textContent = 'Question ' + question.question_number;
+
+            // Question text
+            questionText.textContent = question.question;
+
+            // Diagram
             if (question.image_url) {
                 diagramElement.src = question.image_url;
                 diagramElement.classList.remove('hidden');
             } else {
                 diagramElement.classList.add('hidden');
             }
-            
-            // Display answers
+
+            // Answers
             answersContainer.innerHTML = '';
-            
-            // Create array of answer entries and shuffle them
-            const answerEntries = Object.entries(question.answers);
-            const shuffledAnswers = shuffleArray([...answerEntries]);
-            
-            shuffledAnswers.forEach(([key, value]) => {
-                const answerDiv = document.createElement('div');
+            var answerEntries = Object.entries(question.answers);
+            var shuffledAnswers = shuffleArray([].concat(answerEntries));
+
+            shuffledAnswers.forEach(function(entry) {
+                var key = entry[0];
+                var value = entry[1];
+
+                var answerDiv = document.createElement('div');
                 answerDiv.className = 'answer-option';
                 answerDiv.dataset.answer = key;
-                
-                const text = document.createElement('span');
+
+                var text = document.createElement('span');
                 text.className = 'answer-text';
                 text.textContent = value;
-                
+
                 answerDiv.appendChild(text);
-                
-                answerDiv.addEventListener('click', () => {
+
+                answerDiv.addEventListener('click', function() {
                     selectAnswer(key);
                 });
+
                 answersContainer.appendChild(answerDiv);
             });
         }
-        
-        function displayLinkedQuestion(question) {
-            const questionText = document.getElementById('question-text');
-            const answersContainer = document.getElementById('answers');
-            const diagramElement = document.getElementById('diagram');
 
-            // Safety check - ensure question object is valid
-            if (!question || !question.question || !question.question.answers) {
-                console.error('Invalid question object:', question);
+        function displayLinkedQuestion(item) {
+            var questionNumber = document.getElementById('question-number');
+            var questionText = document.getElementById('question-text');
+            var answersContainer = document.getElementById('answers');
+            var diagramElement = document.getElementById('diagram');
+
+            var question = item.question;
+
+            // Safety check
+            if (!question || !question.answers) {
+                console.error('Invalid linked question object:', item);
                 questionText.textContent = 'Error: Invalid question data';
                 answersContainer.innerHTML = '';
                 diagramElement.classList.add('hidden');
                 return;
             }
 
-            // Display question text with question number
-            questionText.textContent = `Question ${question.question.question_number}:\n${question.question.question}`;
+            // Question number with linked badge
+            var linkOrder = question.link_order || 1;
+            var totalLinked = item.allLinkedQuestions.length;
+            var numberSpan = questionNumber.querySelector('span');
+            numberSpan.innerHTML = 'Question ' + question.question_number +
+                ' <span class="linked-badge"><i data-lucide="link"></i> ' +
+                linkOrder + '/' + totalLinked + '</span>';
 
-            // Display diagram if available
-            if (question.question.image_url) {
-                diagramElement.src = question.question.image_url;
+            // Question text
+            questionText.textContent = question.question;
+
+            // Diagram
+            if (question.image_url) {
+                diagramElement.src = question.image_url;
                 diagramElement.classList.remove('hidden');
             } else {
                 diagramElement.classList.add('hidden');
             }
 
-            // Display answers
+            // Answers
             answersContainer.innerHTML = '';
+            var answerEntries = Object.entries(question.answers);
+            var shuffledAnswers = shuffleArray([].concat(answerEntries));
 
-            // Create array of answer entries and shuffle them
-            const answerEntries = Object.entries(question.question.answers);
-            const shuffledAnswers = shuffleArray([...answerEntries]);
+            shuffledAnswers.forEach(function(entry) {
+                var key = entry[0];
+                var value = entry[1];
 
-            shuffledAnswers.forEach(([key, value]) => {
-                const answerDiv = document.createElement('div');
+                var answerDiv = document.createElement('div');
                 answerDiv.className = 'answer-option';
                 answerDiv.dataset.answer = key;
-                
-                const text = document.createElement('span');
+
+                var text = document.createElement('span');
                 text.className = 'answer-text';
                 text.textContent = value;
-                
+
                 answerDiv.appendChild(text);
-                
-                answerDiv.addEventListener('click', () => {
+
+                answerDiv.addEventListener('click', function() {
                     selectAnswer(key);
                 });
+
                 answersContainer.appendChild(answerDiv);
             });
         }
-        
+
+        // --- Selection ---
         function selectAnswer(answerKey) {
-            const answerElement = document.querySelector(`[data-answer="${answerKey}"]`);
-            answerElement.classList.toggle('selected');
-            
-            // Enable check button if at least one answer is selected
-            const selectedAnswers = document.querySelectorAll('.answer-option.selected');
-            document.getElementById('check-btn').disabled = selectedAnswers.length === 0;
+            var el = document.querySelector('[data-answer="' + answerKey + '"]');
+            if (!el) return;
+            el.classList.toggle('selected');
+
+            // Enable check button if at least one answer selected
+            var selected = document.querySelectorAll('.answer-option.selected');
+            document.getElementById('check-btn').disabled = selected.length === 0;
         }
-        
+
+        // --- Check Answer ---
         function checkAnswer() {
-            const currentItem = currentSessionQuestions[currentQuestionIndex];
-            const selectedAnswers = Array.from(document.querySelectorAll('.answer-option.selected'))
-                .map(option => option.dataset.answer);
-            
-            const question = currentItem.question;
-            const correctAnswers = question.correct;
-            const isCorrect = selectedAnswers.length === correctAnswers.length &&
-                selectedAnswers.every(answer => correctAnswers.includes(answer));
-            
-            // Disable all answer options after checking
-            document.querySelectorAll('.answer-option').forEach(option => {
+            var currentItem = currentSessionQuestions[currentQuestionIndex];
+            var selectedAnswers = Array.from(document.querySelectorAll('.answer-option.selected'))
+                .map(function(opt) { return opt.dataset.answer; });
+
+            var question = currentItem.question;
+            var correctAnswers = question.correct;
+            var isCorrect = selectedAnswers.length === correctAnswers.length &&
+                selectedAnswers.every(function(a) { return correctAnswers.includes(a); });
+
+            // Disable all answer options
+            document.querySelectorAll('.answer-option').forEach(function(option) {
                 option.style.pointerEvents = 'none';
                 option.style.cursor = 'default';
             });
-            
-            // Mark all answers with visual indicators
-            document.querySelectorAll('.answer-option').forEach(option => {
-                const answerKey = option.dataset.answer;
-                const isSelected = selectedAnswers.includes(answerKey);
-                const isCorrectAnswer = correctAnswers.includes(answerKey);
-                
+
+            // Mark answers with visual indicators
+            document.querySelectorAll('.answer-option').forEach(function(option) {
+                var answerKey = option.dataset.answer;
+                var isSelected = selectedAnswers.includes(answerKey);
+                var isCorrectAnswer = correctAnswers.includes(answerKey);
+                var textContent = option.querySelector('.answer-text').textContent;
+
+                // Remove old indicator if any
+                var oldIndicator = option.querySelector('.answer-indicator');
+                if (oldIndicator) oldIndicator.remove();
+
                 if (isSelected && isCorrectAnswer) {
-                    // Correctly selected answer - green with checkmark, keep blue dot
                     option.classList.add('correct');
-                    option.innerHTML = `<span class="answer-text">${option.querySelector('.answer-text').textContent}</span> <span style="color: #28a745; font-weight: bold;">✓</span>`;
+                    option.innerHTML = '<span class="answer-text">' + escapeHtml(textContent) +
+                        '</span><span class="answer-indicator indicator-correct"><i data-lucide="check"></i></span>';
                 } else if (isSelected && !isCorrectAnswer) {
-                    // Incorrectly selected answer - red with X, keep blue dot
                     option.classList.add('incorrect');
-                    option.innerHTML = `<span class="answer-text">${option.querySelector('.answer-text').textContent}</span> <span style="color: #dc3545; font-weight: bold;">✗</span>`;
+                    option.innerHTML = '<span class="answer-text">' + escapeHtml(textContent) +
+                        '</span><span class="answer-indicator indicator-incorrect"><i data-lucide="x"></i></span>';
                 } else if (!isSelected && isCorrectAnswer) {
-                    // Missed correct answer - green with checkmark
                     option.classList.add('correct');
-                    option.innerHTML = `<span class="answer-text">${option.querySelector('.answer-text').textContent}</span> <span style="color: #28a745; font-weight: bold;">✓</span>`;
+                    option.innerHTML = '<span class="answer-text">' + escapeHtml(textContent) +
+                        '</span><span class="answer-indicator indicator-correct"><i data-lucide="check"></i></span>';
                 }
             });
-            
-            // Build feedback message showing correct answers as bullet points when incorrect
-            let feedbackMessage = '';
+
+            // Build feedback message
+            var feedbackMessage = '';
             if (isCorrect) {
-                feedbackMessage = 'Correct! Well done!';
+                feedbackMessage = 'Correct! Well done.';
             } else {
-                const correctAnswerTexts = correctAnswers.map(key => question.answers[key]);
-                feedbackMessage = `Incorrect. The correct answer${correctAnswers.length > 1 ? 's' : ''} ${correctAnswers.length > 1 ? 'are' : 'is'}:`;
-                
-                // Add bullet points for each correct answer
-                correctAnswerTexts.forEach(answerText => {
-                    feedbackMessage += `\n• ${answerText}`;
+                var correctTexts = correctAnswers.map(function(key) { return question.answers[key]; });
+                feedbackMessage = 'Incorrect. The correct answer' +
+                    (correctAnswers.length > 1 ? 's are' : ' is') + ':';
+                correctTexts.forEach(function(txt) {
+                    feedbackMessage += '\n\u2022 ' + txt;
                 });
             }
-            
+
             // Show feedback
-            const feedbackElement = document.getElementById('feedback');
-            feedbackElement.classList.remove('hidden');
-            feedbackElement.textContent = feedbackMessage;
-            feedbackElement.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
-            
+            var feedbackEl = document.getElementById('feedback');
+            feedbackEl.textContent = feedbackMessage;
+            feedbackEl.className = 'feedback ' + (isCorrect ? 'correct' : 'incorrect');
+
             if (isCorrect) {
                 answeredQuestions.add(question.question_number);
-                
-                // Check if this was a linked question and if there are more in the sequence
+
+                // For linked questions, check if there are more in the sequence
+                // Important: do NOT mutate currentItem.question here
                 if (currentItem.type === 'linked_first') {
-                    const currentLinkOrder = question.link_order || 1;
-                    const nextLinkedQuestion = currentItem.allLinkedQuestions.find(q => 
-                        q.link_order === currentLinkOrder + 1
-                    );
-                    
+                    var currentLinkOrder = question.link_order || 1;
+                    var nextLinkedQuestion = currentItem.allLinkedQuestions.find(function(q) {
+                        return q.link_order === currentLinkOrder + 1;
+                    });
+
                     if (nextLinkedQuestion) {
-                        // There's a next linked question, update the current item
-                        currentItem.question = nextLinkedQuestion;
-                        
-                        // Change button text to indicate it's the next linked question
-                        document.getElementById('next-btn').textContent = 'Next Linked Question';
+                        document.getElementById('next-btn-text').textContent = 'Next Linked Question';
                     }
                 }
             }
-            
-            // Hide check button and show next button
+
+            // Toggle buttons
             document.getElementById('check-btn').classList.add('hidden');
             document.getElementById('next-btn').classList.remove('hidden');
-        }
-        
 
-        
+            // Re-create Lucide icons for check/x indicators
+            lucide.createIcons();
+        }
+
+        // --- Next Question ---
         function nextQuestion() {
-            const currentItem = currentSessionQuestions[currentQuestionIndex];
-            
-            // Check if we're in the middle of a linked question sequence
+            var currentItem = currentSessionQuestions[currentQuestionIndex];
+
+            // If in a linked question sequence, advance within the group
             if (currentItem.type === 'linked_first') {
-                const currentLinkOrder = currentItem.question.link_order || 1;
-                const nextLinkedQuestion = currentItem.allLinkedQuestions.find(q => 
-                    q.link_order === currentLinkOrder + 1
-                );
-                
+                var currentLinkOrder = currentItem.question.link_order || 1;
+                var nextLinkedQuestion = currentItem.allLinkedQuestions.find(function(q) {
+                    return q.link_order === currentLinkOrder + 1;
+                });
+
                 if (nextLinkedQuestion) {
-                    // Show the next linked question
+                    // Advance to next linked question without mutating the original
                     currentItem.question = nextLinkedQuestion;
                     displayQuestion(currentItem);
                     return;
                 }
             }
-            
-            // Move to the next question in the session
+
+            // Move to next item
             currentQuestionIndex++;
+            document.getElementById('next-btn-text').textContent = 'Next';
             showRandomQuestion();
-            
-            // Reset button text
-            document.getElementById('next-btn').textContent = 'Next';
         }
-        
+
+        // --- Completion ---
         function showCompletionMessage() {
             document.getElementById('question-card').classList.add('hidden');
-            document.getElementById('completion-message').classList.remove('hidden');
-        }
-        
+            document.getElementById('completion-card').classList.remove('hidden');
+            document.getElementById('progress-row').classList.add('hidden');
 
-        
-        // Load questions when page loads
+            // Update progress to 100%
+            document.getElementById('progress-bar').style.width = '100%';
+
+            lucide.createIcons();
+        }
+
+        // --- Utility ---
+        function escapeHtml(text) {
+            var div = document.createElement('div');
+            div.appendChild(document.createTextNode(text));
+            return div.innerHTML;
+        }
+
+        // --- Init ---
         loadQuestions();
     </script>
 </body>

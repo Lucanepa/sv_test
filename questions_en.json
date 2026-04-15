@@ -1,0 +1,3678 @@
+[
+  {
+    "question_number": 1,
+    "question": "What belongs within the scope of authority and responsibilities of the 2nd referee?",
+    "answers": {
+      "a": "To whistle the contact of the ball with an outside object.",
+      "b": "To whistle the completed block by a back row player.",
+      "c": "To control the work of the ball retrievers.",
+      "d": "To authorize a requested substitution.",
+      "e": "To check the score sheet at the end of the match."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d",
+      "e"
+    ]
+  },
+  {
+    "question_number": 2,
+    "question": "The ball crosses the net outside the crossing space into the opponent's free zone. In which cases must the line judge in charge indicate this immediately?",
+    "answers": {
+      "a": "It happens during a service.",
+      "b": "It happens after the first touch of the ball by the (receiving) team.",
+      "c": "It happens after the second touch of the ball by the (receiving) team.",
+      "d": "It happens after the third touch of the ball by the (receiving) team."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 3,
+    "question": "A group of players prevent the opponent's view of the server and service hit during their own serve. Is this considered as a screen?",
+    "answers": {
+      "a": "Yes, in any case.",
+      "b": "No, in no way.",
+      "c": "Yes, if it prevents the view of the flight path of the ball."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 4,
+    "question": "In which of the following cases may the ball touch several parts of a player's body consecutively?",
+    "answers": {
+      "a": "Without restrictions in receiving the opponent's serve in the technique of the overhand finger pass.",
+      "b": "Without restrictions on all blocking actions of the opponent's serve.",
+      "c": "During the reception of the opponent’s serve in the technique of the overhand finger pass, if the multiple contacts occur during the same action."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 5,
+    "question": "After a rally, the 1st referee decides in favor of team A. The latter immediately makes a substitution (it is the first substitution in this set). Then the referee revises his decision and gives the point to Team B. Team A wants to reverse the substitution. Can the referee allow this?",
+    "answers": {
+      "a": "Yes, however, the team will be charged with two substitutions.",
+      "b": "No.",
+      "c": "Yes, without further restrictions."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 6,
+    "question": "A front-row player takes off to a block too early and touches the ball with his head below the top of the net after the opponent's attack while 'coming down'. Is the team still entitled to three hits of the ball afterwards?",
+    "answers": {
+      "a": "Yes, in any case.",
+      "b": "Yes, if part of the player's body (e.g. the hands) is still above the top of the net at the moment the ball touches the head.",
+      "c": "No, in no way."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 7,
+    "question": "Player No. 8 is warned with a yellow card for a (minor) misconduct. In the further course of the game, a player of the same team shows a similar misconduct. Which of the following reactions of the 1st referee are possible in this situation?",
+    "answers": {
+      "a": "He may in any case give a warning to the player concerned by showing the yellow card.",
+      "b": "He can issue a penalty (red card) to the player in question.",
+      "c": "If the player in question is not player no. 8, he may give a warning to him by showing the yellow card."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 8,
+    "question": "Player No. 9 is penalized for rude conduct (red card). No member of the team has yet been warned with a yellow card. As the game continues, a minor misconduct occurs (for the first time) by a player of the same team. Can this player be warned verbally or by showing the yellow card?",
+    "answers": {
+      "a": "Yes, in any case.",
+      "b": "No, in no way.",
+      "c": "Yes, if it is not player No. 9."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 9,
+    "question": "After winning a rally, the team makes a libero replacement. After the whistle for the service, the 1st referee blows the whistle again 8 seconds later, because the service player has not executed the service by then. Is the team allowed to make another libero replacement?",
+    "answers": {
+      "a": "Only if the opposing team also makes a libero replacement.",
+      "b": "No.",
+      "c": "Yes."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 10,
+    "question": "Team A makes a libero replacement on court, immediately afterwards Team B makes a substitution, then Team A replaces the libero again. The referees notice this at the time of the second libero replacement. How should they proceed?",
+    "answers": {
+      "a": "The second replacement will be tolerated, after the following service the rally will be stopped by whistling and the referee decides a fault of team A.",
+      "b": "The second replacement will be reversed, Team A receives a sanction for delay.",
+      "c": "The second replacement will be reversed, without further consequences."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 11,
+    "question": "A team plays with one libero. The coach declares him unable to play and immediately re-designates a new libero. Is this possible?",
+    "answers": {
+      "a": "Only when the acting libero is currently not on the court.",
+      "b": "Only if the acting libero is currently on the court.",
+      "c": "Yes, in any case."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 12,
+    "question": "A team plays with 2 liberos (L1 and L2). Libero L1 is injured and becomse unable to play. Which statements are true for the rest of the match?",
+    "answers": {
+      "a": "If Libero L2 gets injured, the team can re-designate a new Libero.",
+      "b": "If Libero L2 is expelled, the team can re-designate a new Libero.",
+      "c": "If Libero L2 is disqualified, the team can re-designate a new Libero.",
+      "d": "Libero L1 is allowed to act as libero again in any case when he has recovered from his injury."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 13,
+    "question": "In the course of a set the players No. 4 (for No. 3) and No. 6 (for No. 5) were substituted into the match. Then players No. 3 (with substitution paddle No. 4) and No. 5 (with substitution paddle No. 10) appear in the substitution zone, requesting a double substitution. How to proceed?",
+    "answers": {
+      "a": "Both substitutions will be rejected. The team receives a sanction for delay.",
+      "b": "The substitution '3 for 4' is granted, the other substitution is rejected. The match continues without further consequences.",
+      "c": "The substitution '3 for 4' is granted, the other substitution is rejected. The team receives a sanction for delay."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 14,
+    "question": "A team requests a double substitution after having already made 5 substitutions during the set. What is the procedure?",
+    "answers": {
+      "a": "The 2nd referee asks the coach which one of the two substitutions he wants to make. This one will be granted, the other substitution request will be rejected. The team will receive a sanction for delay in any case.",
+      "b": "The 2nd referee asks the coach which one of the two substitutions he wants to make. This one will be granted, the other substitution request will be rejected. If there is no delay, the second request is treated as an improper request.",
+      "c": "Both substitution requests will be rejected. The team will receive a sanction for delay."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 15,
+    "question": "A player has been replaced by the libero, is sitting on the team bench, and is expelled for unsportsmanlike conduct (the libero is in position 6). What should be done next?",
+    "answers": {
+      "a": "The libero may initially remain on the court. Only when he is to leave the court again, a substitute player must be designated for the player who has been expelled and must come onto the court.",
+      "b": "The player must be substituted immediately outside the court, the libero may remain on the court for the time being.",
+      "c": "In any case, the player must be immediately replaced with the libero back on the court and then substituted.",
+      "d": "The player must be substituted immediately outside the court, the new player must immediately replace the libero on the court."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 16,
+    "question": "The serving team's libero comes onto the court in place of a back-row player, with the replacement action taking place after the whistle for service, but before the ball is hit. This is the second time this has happened in this match. What is the correct reaction of the 1st referee?",
+    "answers": {
+      "a": "He allows the rally to be finished and then informs the game captain of the serving team.",
+      "b": "He whistles and calls a positional fault for the serving team.",
+      "c": "He shall immediately reject the libero replacement and issue a delay santion on the serving team.",
+      "d": "He immediately interrupts the rally and issues a delay sanction."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 17,
+    "question": "Which of these \"blocking actions\" by a back-row player is/are allowed?",
+    "answers": {
+      "a": "The back-row player takes part in an executed collective block, but without touching the ball himself.",
+      "b": "The libero makes a block attempt.",
+      "c": "The back-row player reaches with his hands towards the top of the net, but without reaching over the top of the net, and touches the ball below the top of the net.",
+      "d": "The back-row player makes a block attempt (without touching the ball) and the opponent hits the ball directly \"out\"."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 18,
+    "question": "A player of the receiving team makes a bad service reception. The ball flies outside the antenna over the vertical plane of the net into the opponent's free zone. Another player of the receiving team runs after the ball and plays it from the opponent's free zone back to his own side of the court. In which situations is this allowed?",
+    "answers": {
+      "a": "The ball is returned on the same side of the court between the net and the post without touching the net's cables or ropes.",
+      "b": "The ball is returned directly over the antenna on the same side of the court.",
+      "c": "The ball is returned below the net (through the lower space of the net) between the posts and the extension of the antenna."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 19,
+    "question": "Which of the following situations are within the rules regarding playing the ball over the net?",
+    "answers": {
+      "a": "The setter reaches over the top of the net and touches the ball coming from his team in the opponent's space to pass it back to his side of the court.",
+      "b": "Touching the ball in the opponent's space by a blocking action during the opponent's attack hit.",
+      "c": "Two opposing front-row players touch the ball simultaneously when it is directly above the top of the net.",
+      "d": "Touching the ball in the opponent's space before the opponent's attack hit."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 20,
+    "question": "The team captain of team A is not on the court. After a long rally, the team is not sure who has to serve next. Who is allowed to ask the 2nd referee who will serve next?",
+    "answers": {
+      "a": "The coach.",
+      "b": "The team captain.",
+      "c": "The assistent coach.",
+      "d": "The game captain."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 21,
+    "question": "As team A serves, the ball hits one of its own players in the back. At the same time, the 2nd referee whistles for a positional fault of team B. Which decision(s) is/are correct?",
+    "answers": {
+      "a": "Fault of Team B; point and service for Team A.",
+      "b": "Double fault; Team A serves.",
+      "c": "Fault of Team A; point and service for Team B.",
+      "d": "Double fault; Team B serves."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 22,
+    "question": "Two opposing players touch the ball directly over the net at the same time. Which of the following statements is/are in accordance with the rules?",
+    "answers": {
+      "a": "If the ball remains in play afterwards, the team on whose side the ball falls has the right to three touches.",
+      "b": "If the ball then goes «out» on team A's side, this is a fault for team B.",
+      "c": "If the two players make contact with the ball for a longer period of time, this is considered a double fault and the rally is repeated.",
+      "d": "If the ball then touches the antenna, the rally is repeated."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 23,
+    "question": "An exceptional substitution must be written in the score sheet and counted in the total number of substitutions in that set and in the match. Is this statement correct or incorrect?",
+    "answers": {
+      "a": "Incorrect",
+      "b": "Correct"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 24,
+    "question": "Who is allowed to stay in their own free zone in front of the team bench for a longer period of time during the match?",
+    "answers": {
+      "a": "Coach and assistant coach.",
+      "b": "Coach, assistant coach, team therapist and medical doctor.",
+      "c": "Coach.",
+      "d": "Coach, assistant coach and game captain."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 25,
+    "question": "Player A is the wrong server and executes the service. What should happen?",
+    "answers": {
+      "a": "The scorer waits until the rally has been completed and draws the 2nd referee's attention to the fault. The 1st referee must issue a sanction for delay and the opponent is given the next service. If the opponent has won the rally, the opponent also receives a point.",
+      "b": "The scorer waits until the rally has been completed and draws the 2nd referee's attention to the fault. If the opponent has won the rally, the opponent is awarded a point. Player A's team retains the right to serve and must correct the positions.",
+      "c": "The scorer waits until the rally has been completed and draws the 2nd referee's attention to the fault. If the opponent has won the rally, the opponent is awarded two points. Player A's team must correct the positions.",
+      "d": "The scorer waits until the rally has been completed and draws the 2nd referee's attention to the fault. No point is awarded for the rally. The referee whistles and awards a point and service to the opponent.",
+      "e": "The scorer draws the 2nd referee's attention to the fault and he stops the rally immediately."
+    },
+    "correct": [
+      "e"
+    ]
+  },
+  {
+    "question_number": 26,
+    "question": "The libero enters the court for player A. Once on the team bench, player A actes rude towards the referees and receives a penalty. Player A now swears and shouts, whereupon he is expelled and ultimately disqualified. How will the replacement of the libero and the substitution be handled?",
+    "answers": {
+      "a": "The libero becomes the substitute for player A and can stay on the court.",
+      "b": "The libero must leave the court. Player A is substituted for another player on the team bench and no longer physically enters the court. The new player enters the court. The libero can return to the court after the next completed rally.",
+      "c": "The libero must leave the court. Player A must return to the court to be replaced by the libero.",
+      "d": "The libero can remain on the court. Player A is legally (if possible, otherwise exceptionally) substituted by another player sitting on the team bench."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 27,
+    "question": "What is the procedure of the 2nd referee if the line-up sheet of team A does not match with the starting positions on the court?",
+    "answers": {
+      "a": "Keeping calm. This is the responsibility of the 1st referee.",
+      "b": "To go to the coach and ask him what he wants to do.",
+      "c": "To go to the coach and inform him that his team will receive a sanction for delay.",
+      "d": "Keeping calm. This is the responsibility of the scorer."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 28,
+    "question": "Team A has used all possible (legal) substitutions. The libero sits on the team bench. One of the players on the court is expelled. How is the game continued?",
+    "answers": {
+      "a": "One of the previously substituted players can be (expectionally) substituted for the expelled player.",
+      "b": "Team A is allowed to finish the set with five players.",
+      "c": "The libero can replace the expelled player.",
+      "d": "Team A loses this set in any case."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 29,
+    "question": "Player A blocks the ball. The ball hits her face and goes over the antenna into the opponent's free zone. Her team-mate B pursues the ball and also plays it back over the antenna to her own side of the net. What is the correct action of the referees / line judges and why?",
+    "answers": {
+      "a": "The ball is \"out\" (hand signal #15) when it flies over the antenna for the first time.",
+      "b": "Nothing. This playing of the ball is in accordance with the rules.",
+      "c": "The ball is \"out\" (hand signal #15) when it flies back over the antenna.",
+      "d": "The ball is \"out\" (hand signal #15) if player B plays the ball in the opponent's free zone."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 30,
+    "question": "A player enters the substitution zone. A second player (still in a tracksuit) leaves the warm-up area at this moment and runs towards the substitution zone. What should the 2nd referee do at this moment?",
+    "answers": {
+      "a": "Allowing only one substitution with the player who is in the substitution zone and impose a delay sanction on the team.",
+      "b": "Allowing only one substitution with the player who is in the substitution zone.",
+      "c": "Impose a delay sanction on the team.",
+      "d": "Allowing a double substitution.",
+      "e": "Prevent the second player from entering the substitution zone."
+    },
+    "correct": [
+      "b",
+      "e"
+    ]
+  },
+  {
+    "question_number": 31,
+    "question": "Three players enter the substitution zone. After the request is recognised and accepted by the scorer, the coach decides to make only two substitutions. What is the correct procedure for the 2nd referee?",
+    "answers": {
+      "a": "To execute the two substitions, without sanctions for the teams (as long as there is no delay).",
+      "b": "To inform the coach that three players need to be substituted.",
+      "c": "To inform the coach that he needs to take a time-out to change the number of substitutions.",
+      "d": "Nothing. Substitutions are handled by the scorer, not the referee."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 32,
+    "question": "Player A is ready to play and enters the substitution zone during an interruption. After the request is recognised and accepted by the scorer, the coach changes her mind and orders the player back to the warm-up area. How should the referees decide?",
+    "answers": {
+      "a": "The substitution must be carried out. No sanction.",
+      "b": "The situation is counted as two substitutions - player A for another player, and then that player for player A. No sanction.",
+      "c": "The substitution is cancelled. No sanction.",
+      "d": "The substitution is cancelled and the team receives a sanction for delay."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 33,
+    "question": "At the change of courts after the 2nd set, player #13 of team A accuses the 1st referee of \"being blind\" and then shakes the referee's chair violently. How should the 1st referee react?",
+    "answers": {
+      "a": "The 1st referee asks the captain of team A to come to him during the interval and explains to him that he will sanction player #13 for aggressive behavior. After the 2nd referee has checked the line-up for the 3rd set, the 1st referee disqualifies player #13 (hand signal #8).",
+      "b": "The 1st referee asks the coach of team A to come and explains to him that he will sanction player #13 for offensive conduct. The 1st referee then expels player #13 (hand signal #8).",
+      "c": "After the 2nd referee has checked the line-up for the 3rd set, the 1st referee shows the hand signal for disqualification (hand signal #8) and points to player #13, who is then substituted. Team A receives an additional delay sanction.",
+      "d": "The 1st referee asks the captain of team A to come to him during the interval and explains to him that he will sanction player #13 for aggressive behavior. After the 2nd referee has checked the line-up for the 3rd set, the 1st referee expels player #13 (hand signal #7).",
+      "e": "After the 2nd referee has checked the line-up for the 3rd set, the 1st referee shows the hand signal for expulsion (hand signal #7) and points to player #13."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 34,
+    "question": "Which statement(s) is (are) true?",
+    "answers": {
+      "a": "The 1st referee may authorise a serve even if the server is not in the service zone with the ball.",
+      "b": "If, during the serve, a teammate of the serving player is not completely within the own court (with one foot in the free zone) and the receiving team commits a position fault, a replay must be awarded.",
+      "c": "Before the service is authorized, the 1st referee must ensure that both teams are ready to play and that the service player is in possession of the ball.",
+      "d": "In the event of a service fault during the serve and a simultaneous position fault by the receiving team, the first referee shall not decide to replay the game."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 35,
+    "question": "A team plays with one libero. Which statement(s) is (are) correct?",
+    "answers": {
+      "a": "A libero may play the ball, which is not entirely higher than the top of the net, with an overhand finger pass to the opposing team from any position on his side of the playing area.",
+      "b": "An injured libero receives a recovery time of 3 minutes.",
+      "c": "The team captain can never be the libero.",
+      "d": "The coach may re-designate a new libero for an expelled libero."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 36,
+    "question": "A team has 7 players, one of whom is a libero. One player (position VI) is expelled in the 2nd set. What option(s) does the team have?",
+    "answers": {
+      "a": "As the player cannot be substituted, the team is declared incomplete for this set and loses the 2nd set.",
+      "b": "The coach declares himself to be a playing coach and sustitutes with the sanctioned player.",
+      "c": "The sanctioned player must be substituted. Therefore, the libero is re-designated as a \"normal\" player upon request (jersey must be changed!) and the substitution can be carried out.",
+      "d": "The expelled player can be replaced by the libero. If the libero has to rotate to position IV, the expelled player cannot be substituted legally, the team is then declared incomplete and loses the set."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 37,
+    "question": "Which fact(s) is (are) entered in the score sheet?",
+    "answers": {
+      "a": "An exceptional substitution.",
+      "b": "A first improper request that did not cause a delay.",
+      "c": "A formal warning (yellow card).",
+      "d": "A re-designation of a Libero."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 38,
+    "question": "After an unsuccessful reception, the ball flies on the own side of the court to the spot marked in red in the diagram. The libero runs to the ball and plays it back into the own side of the court with an overhand finger pass. How must the referees decide?",
+    "answers": {
+      "a": "The rally continues unrestricted.",
+      "b": "The referees stop the rally and decide on ball \"out\" (hand signal #15).",
+      "c": "The rally continues until an attack hit of the ball, which was completely higher than the top of the net at the moment of the hit, is completed. Then the rally is stopped and decided as \"fault of the attack hit\" (hand signal #21).",
+      "d": "The rally would continue unrestricted even if the pass by the libero had been made from the opponent's free zone (spot marked in blue) – the ball would have entered the opponent's free zone outside the crossing space and would likewise be played back into the own side of the court."
+    },
+    "correct": [
+      "a",
+      "d"
+    ],
+    "image_url": "ZK_2022_question_038.png"
+  },
+  {
+    "question_number": 39,
+    "question": "A player enters the substitution zone at the moment of the whistle to serve. Which statement is correct?",
+    "answers": {
+      "a": "The player's action constitutes an improper request.",
+      "b": "The player's action is to be sanctioned as a delay in any case.",
+      "c": "The 2nd referee interrupts the rally and grants the request for a substitution."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 40,
+    "question": "A coach requests a time-out. The 2nd referee whistles. He is then informed by the scorer that this is the 3rd time-out in this set. The team has not yet made an improper request during the course of the match. What is the procedure?",
+    "answers": {
+      "a": "The time-out is cancelled and the game continues without further consequences.",
+      "b": "The time-out is cancelled. An \"improper request\" is noted on the score sheet. The game continues without further consequences.",
+      "c": "The time-out is cancelled and the requesting team is sanctioned for delay.",
+      "d": "The time-out is cancelled and the requesting team is sanctioned for delay. In addition, an \"improper request\" is noted on the score sheet."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 41,
+    "question": "Which statement(s) is (are) true?",
+    "answers": {
+      "a": "The playing coach of an NLB team may transfer his rights to the assistant coach for the duration of his active participation in the match.",
+      "b": "The game captain may request time-outs if the coach is not present. This also applies if the coach has been expelled or disqualified, unless the coach's duties have been taken over by an assistant coach.",
+      "c": "The coach may ask the 2nd referee for the correctness of the opponent's line-up.",
+      "d": "During a match, the 2nd referee may replace the sick 1st referee. If no replacement referee can be found, the match can only be continued with the agreement of the team captains."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 42,
+    "question": "When does the scorer have to click on the 'Start Rally' button in the eScoresheet application?",
+    "answers": {
+      "a": "At the moment the 1st referee whistles to authorise the serve.",
+      "b": "Not at all; the eScoresheet application 'Swiss Volley' does not have this button because Swiss Volley does not use Video Challenge.",
+      "c": "Between the 1st referee's whistle to authorise the serve and the player hitting the ball.",
+      "d": "At the moment of the serve (i.e. when the player hits the ball)."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 43,
+    "question": "How many locally formed players (LFP) must be \"on the court\" during each of the NLA and NLB matches?",
+    "answers": {
+      "a": "NLA: 2; NLB: 1",
+      "b": "NLA: 2; NLB: 3",
+      "c": "NLA: 3; NLB: 3",
+      "d": "NLA: 2; NLB: no specification",
+      "e": "NLA: 2; NLB: 2"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 44,
+    "question": "The team composition must be entered in the 'Roster' section of the eScoresheet application. Which functions can and may be selected for official Swiss Volley competitions in the lower section for the team members on the bench?",
+    "answers": {
+      "a": "Scout",
+      "b": "Medical Doctor",
+      "c": "Other",
+      "d": "Assistant",
+      "e": "Manager",
+      "f": "Physiotherapist",
+      "g": "Head Coach"
+    },
+    "correct": [
+      "b",
+      "d",
+      "f",
+      "g"
+    ]
+  },
+  {
+    "question_number": 45,
+    "question": "Teams can enter one or two libero(s) in the eScoresheet application. These two players are individually LFPs (locally formed players) or not. Which statement(s) is (are) correct?",
+    "answers": {
+      "a": "The team has one libero; this player is a LFP. In this team, the libero only counts as a LFP on the court if he is actually on the court.",
+      "b": "The team has two liberos; both players are not LFPs. In this team, the libero does not count as LFP on the court.",
+      "c": "The team has two liberos; one of these players is a LFP, the other is not. In this team, the libero does not count as LFP on the court.",
+      "d": "The team has two liberos; one of these players is a LFP, the other is not. In this team, the libero only counts as LFP on the court if the libero who is also LFP is on the court.",
+      "e": "The team has one libero; this player is a LFP. In the third set, the libero is injured and another player who is not a LFP is re-designated as the new libero. After the re-designation, the libero continues to count as a LFP on the court in this team.",
+      "f": "The team has one libero; this player is a LFP. In this team, the libero always counts as a LFP on the court, i.e. even if he is not on the court.",
+      "g": "The team has one libero; this player is a LFP. In the third set, the libero is injured and another player who is not a LFP is re-designated as the new libero. After the re-designation, the libero no longer counts as LFP on the court in this team."
+    },
+    "correct": [
+      "b",
+      "c",
+      "f",
+      "g"
+    ]
+  },
+  {
+    "question_number": 46,
+    "question": "At what point before the game are the match balls distributed?",
+    "answers": {
+      "a": "The 2nd referee distributes two match balls to the ball retrievers after the presentation of the starting players of both teams and before checking the starting line-ups; he gives the third match ball to the serving player after checking the starting line-ups.",
+      "b": "The 2nd referee distributes two match balls to the ball retrievers and the third match ball to the serving player after the presentation of the starting players of both teams and before checking the starting line-ups.",
+      "c": "The 2nd referee distributes the three match balls to the ball retrievers after checking the starting line-ups.",
+      "d": "The 2nd referee distributes the three match balls to the ball retrievers after the presentation of the starting players of both teams and before checking the starting line-ups.",
+      "e": "The 2nd referee distributes the three match balls to the ball retrievers before the presentation of the starting players of the two teams."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 47,
+    "question": "During a substitution, it is determined (before the whistle for the next service) that the necessary number of LFP are no longer on the court after the substitution. What options does the team in question have and what sanctions must the referees apply?",
+    "answers": {
+      "a": "The team concerned has the right to cancel the substitution. For the resulting delay, the team in question shall receive a sanction for delay.",
+      "b": "The team concerned has the right to make another substitution during the same interruption (if the team is still entitled to do so) in order to comply with the regulations concerning LFP on the court. Because no effective delay occurs (a legal double substitution), no sanction for delay is imposed.",
+      "c": "The team concerned may continue to play with less LFP than necessary on the court. In this case, a fine will be imposed according to the catalog of fines. No sanction will be given for delay.",
+      "d": "The team concerned may continue to play with less LFP than necessary on the court. In this case, a fine shall be imposed in accordance with the catalog of fines. A sanction for delay shall be imposed on the team concerned.",
+      "e": "The team concerned has the right to make another substitution during the same interruption (if the team is still entitled to do so) in order to comply with the regulations concerning LFP on the court. For the resulting delay, the team concerned shall be sanctioned for delay."
+    },
+    "correct": [
+      "a",
+      "c",
+      "e"
+    ]
+  },
+  {
+    "question_number": 48,
+    "question": "The language can be selected in the eScoresheet application. Which language(s) should be selected for official Swiss Volley competitions?",
+    "answers": {
+      "a": "Native language of the scorer (if this is one of the four national languages of Switzerland)",
+      "b": "Native language of the 2nd referee (if this is one of the four national languages of Switzerland)",
+      "c": "German, French, Italian or English (the referees decide)",
+      "d": "English",
+      "e": "Native language of the 1st referee (if this is one of the four national languages of Switzerland)",
+      "f": "German, French, Italian or English (the scorer decides)",
+      "g": "The referees decide"
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 49,
+    "question": "In the eScoresheet application 'Swiss Volley', the players of both teams are highlighted with specific colours. How many colours are used and which player categories are specially marked? (LFP: locally formed player; no colour is also considered a colour here)",
+    "answers": {
+      "a": "2; LFP and non-LFP",
+      "b": "4; 'normal' LFP, 'normal' non-LFP, LFP Libero(s) and non-LFP Libero(s)",
+      "c": "3; 'normal' LFP, 'normal' non-LFP and Libero(s)",
+      "d": "2; 'normal' players and libero(s)"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 50,
+    "question": "In the eScoresheet application, the following seven options are offered for selection under Options - General. Which options should be selected?",
+    "answers": {
+      "a": "Libero in automatically (to be confirmed)",
+      "b": "Show a confirmation box (substitution and time-out)",
+      "c": "Manage captain on court",
+      "d": "Request to enter Libero at each start set",
+      "e": "Confirm when Libero out",
+      "f": "Check accidental clicking of the buttons (assign point, time-out)",
+      "g": "Propose starting line-up from prior set (when available)"
+    },
+    "correct": [
+      "a",
+      "b",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  {
+    "question_number": 51,
+    "question": "In which area of the eScoresheet application must the number of spectators be entered (at the latest) at the end of the match?",
+    "answers": {
+      "a": "Comments",
+      "b": "Official Form",
+      "c": "Roster",
+      "d": "Options",
+      "e": "Match Info"
+    },
+    "correct": [
+      "e"
+    ]
+  },
+  {
+    "question_number": 52,
+    "question": "The eScoresheet application has the two buttons 'Undo' and 'Replay'. Which statement(s) is (are) correct?",
+    "answers": {
+      "a": "Both buttons have the same consequences; in both actions, the last action previously performed is cancelled.",
+      "b": "In both actions, the last action previously performed is cancelled. When using 'Replay', however, an entry is made in the history of the match.",
+      "c": "The 'Undo' function should be used if the scorer has performed an incorrect action (an incorrect click).",
+      "d": "The 'Replay' function should be used if the referee changes his original decision."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 53,
+    "question": "At the end of the match, one of the two teams refuses to \"sign\" the eScoresheet, i.e. to confirm the result of the match by entering the password. What should the referees do in such a situation? (indicate all applicable answers)",
+    "answers": {
+      "a": "The eScoresheet of the match cannot be finalised. The laptop must not be switched off and must be sent to Swiss Volley (office) as soon as possible in this condition. Swiss Volley will then finalise the match.",
+      "b": "The eScoresheet of the match cannot be finalised. The eScoresheet must be printed out (if possible) and saved as a pdf-file. The printout and the pdf-file must be sent to Swiss Volley.",
+      "c": "After the match, Swiss Volley (office) and the Swiss Refereeing Commission (president) must be informed of the incident by means of a short e-mail.",
+      "d": "The team in question shall be sanctioned for delay.",
+      "e": "The eScoresheet must be confirmed by the referees with the master password on behalf of this team.",
+      "f": "Using the 'Comments' function, the referees must make a corresponding entry in the 'Scoresheet Notes' (or have it made by the scorer).",
+      "g": "The eScoresheet of the match cannot be finalised. The 1st referee must call the Swiss Volley hotline and follow their instructions.",
+      "h": "The team in question must be persuaded by the referees, if necessary under threat of sanctions, to confirm the result of the match by entering the password."
+    },
+    "correct": [
+      "c",
+      "e",
+      "f"
+    ]
+  },
+  {
+    "question_number": 54,
+    "question": "Which of these playing actions - concerning a team's first touch of the ball - are correct according to the rules?",
+    "answers": {
+      "a": "The ball bounces back from the opponent's block and hits the player's head and then his arms during the same action.",
+      "b": "During the service reception, a player plays the ball with an overhand finger pass and the ball touches one hand and the other in succession within one action.",
+      "c": "The ball was deflected by the player's own team's block and the player plays the ball with his foot.",
+      "d": "During the defence of the opponent's attack, a player plays the ball with an overhand finger pass and the ball touches one hand and the other in succession within one action."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 55,
+    "question": "When the 2nd referee checks the positions of the players on the court before the start of the set, he notices a discrepancy between the line-up sheet and the positions of the players. Which of the following statements are correct?",
+    "answers": {
+      "a": "The coach may request a substitution and sustitute the player on the line-up sheet with the player who is actually on the court.",
+      "b": "The players may correct their positions according to the line-up sheet and the team will be sanctioned with a warning for delay.",
+      "c": "The players must correct their positions according to the line-up sheet without being sanctioned.",
+      "d": "The scorer can correct the score sheet so that it matches the line-up of players on the court."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 56,
+    "question": "Team A blocks the opponent's attack in a regular manner, with their hands and the ball completely in the opponent's space. The ball bounces over the antenna into the free space above the free zone of team A. A player from Team A runs to play the ball back. Decide whether this is legal or not.",
+    "answers": {
+      "a": "Double fault, replay of the rally.",
+      "b": "Legal play, continue.",
+      "c": "Illegal play, ball out."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 57,
+    "question": "Team A blocks the opponent's attack in a regular manner, with the hands and the ball above their own half of the court. The ball bounces over the antenna into the free space above team B's free zone. A player from team A runs to return the ball. Decide whether this is legal or not.",
+    "answers": {
+      "a": "Double fault, replay of the rally.",
+      "b": "Illegal play, ball out.",
+      "c": "Legal play, continue."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 58,
+    "question": "When we talk about \"influence\" in the (wider) context of the net, which of the following statements is/are true?",
+    "answers": {
+      "a": "Interference is given when the player stands in the path of the opponent and thereby prevents the opponent from playing the ball.",
+      "b": "When entering the opponent's space, court and/or free zone, touching players automatically constitutes interference.",
+      "c": "Interference can be sanctioned, even if the contact is merely obstructive but not physical.",
+      "d": "If the contact with an opponent is accidental, this is still considered interference, even if it did not prevent the opponent from playing the ball."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 59,
+    "question": "During a match, a player from team B hit the ball against the opposing blocker (team A). The hands of the blocker were not over the court of B. The ball went from the hands of the blocker over the antenna, partially outside the crossing space and over the 1st referee into the free zone of B (see diagram). A second player from A ran after the ball to return it to his side of the net. The line judge signaled the ball as \"out\" and the 1st referee blew the whistle in B's favour. What should the 1st referee's interpretation of the rules be?",
+    "answers": {
+      "a": "The referee was right to blow the whistle.",
+      "b": "The referee should not have blown the whistle.",
+      "c": "The referee should decide on a replay."
+    },
+    "correct": [
+      "b",
+      "c"
+    ],
+    "image_url": "ZK_2022_question_059.png",
+    "linked_to": 59,
+    "link_order": 1
+  },
+  {
+    "question_number": 60,
+    "question": "Continuation of the previous question: The reason for this decision is:",
+    "answers": {
+      "a": "A player may not return a ball that comes from a block.",
+      "b": "The ball may be played back if it has completely or partially crossed the net plane outside the crossing space.",
+      "c": "The ball must not fly over the antenna into the free zone."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 59,
+    "link_order": 2
+  },
+  {
+    "question_number": 61,
+    "question": "Which of the following statements regarding the competences and/or restrictions of a team's coach are correct?",
+    "answers": {
+      "a": "He may not leave his place on the bench closest to the scorer, but he may give instructions to the players on the court.",
+      "b": "He may ask the 1st or 2nd referee for explanations and clarifications of the rules.",
+      "c": "He may ask the scorer how many substitutions or time-outs he has already taken if this information is not shown on the electronic scoreboard.",
+      "d": "He may give instructions while standing or moving within the free zone in the area in front of his team bench without interfering with or delaying the game."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 62,
+    "question": "Which of the following actions are permitted?",
+    "answers": {
+      "a": "A player touches the opponent's half of the court with his hand (completely beyond the centre line) but does not interfere with the opponent's play.",
+      "b": "A player touches the opponent's half of the court with his foot (completely beyond the centre line) but does not interfere with the opponent's play.",
+      "c": "An attacker who lands after hitting the ball kicks the opposing blocker under the net, preventing the blocker from playing the ball.",
+      "d": "A player enters the opponent's space under the net with his body, but not his feet, but does not interfere with the opponent's play."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 63,
+    "question": "Which service action(s) are permitted?",
+    "answers": {
+      "a": "A server throws the ball up to serve, drops it on the floor, then throws the ball up again and touches the ball, all within eight seconds of the 1st referee's whistle to authorise the serve.",
+      "b": "A server throws the ball up eight seconds after the 1st referee's whistle to authorise the serve and then touches the ball half a second later.",
+      "c": "A server bounces the ball five times, then throws the ball up and touches it for the serve seven seconds after the 1st referee's whistle to authorise the serve.",
+      "d": "A server moves the ball backwards and forwards in his hands, then throws the ball up and touches the ball to serve six seconds after the 1st referee's whistle to authorise the serve."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 64,
+    "question": "Which of the following statements apply to regular ball play actions above the top of the net?",
+    "answers": {
+      "a": "Touching the ball in the opponent's space with a blocking action after the opponent's attacking hit.",
+      "b": "Touching the ball in the opponent's space at the same time as the opponent's attacking hit.",
+      "c": "Reaching over the net by the setter to touch the ball in the opponent's space and play it back to his side of the net.",
+      "d": "Simultaneous contact of the ball by opposing front-row players when the ball is directly over the top of the net."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 65,
+    "question": "At the moment of the 1st referee's whistle for the serve, only five players of the receiving team are on the court. The libero and the player he is replacing are standing in the warm-up area and make no attempt to enter the court. What is the referees' reaction if they only realise this during the rally?",
+    "answers": {
+      "a": "If the situation is recognised after the end of the rally, the result of that rally should be cancelled and the rally should be replayed without sanctions.",
+      "b": "Fault by the 1st referee. The rally is stopped immediately and replayed, without any sanctions.",
+      "c": "If the situation is only recognised after the whistle has been blown for the start of the next rally, the incorrect rally can no longer be replayed.",
+      "d": "The rally must be stopped immediately. It is replayed. The receiving team is sanctioned for the delay.",
+      "e": "The play continues. After the rally, the 1st referee issues a verbal warning to the captain of the receiving team.",
+      "f": "The rally continues and after the rally the receiving team is sanctioned for delay."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "linked_to": 65,
+    "link_order": 1
+  },
+  {
+    "question_number": 66,
+    "question": "Continuation of the previous question: What is the correct reaction of the referees if they notice this before the 1st referee whistles for the serve?",
+    "answers": {
+      "a": "The serving team is awarded one point in the event of a warning for the receiving team.",
+      "b": "Issuing a warning for minor misconduct to the receiving team.",
+      "c": "Issuing a sanction for delay on the receiving team.",
+      "d": "The serving team is awarded one point in the event of a penalty for the receiving team."
+    },
+    "correct": [
+      "c",
+      "d"
+    ],
+    "linked_to": 65,
+    "link_order": 2
+  },
+  {
+    "question_number": 67,
+    "question": "After the second touch of the ball by one team, the ball crosses the plane of the net outside the antenna into the opposing team's free zone. Player #5 of this team runs after the ball to return it to his own half of the court. At what moment is a fault to be whistled?",
+    "answers": {
+      "a": "When player #5 touches the ball.",
+      "b": "If the ball flies out of the opponent's free zone (e.g. over the opponent's team bench).",
+      "c": "If the ball is touched by another player of the team after it has been correctly returned.",
+      "d": "Immediately when the ball crosses the plane of the net after the second touch of this team."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 68,
+    "question": "A blocker from team A wants to block the ball, which flies over the net in the direction of his playing space after the opponent's reception. Team B's setter passes the ball back to a team-mate, but the blocker touches the setter’s hand during the playing action (at the same moment). Which player makes a mistake?",
+    "answers": {
+      "a": "Double fault, rally is replayed.",
+      "b": "Fault by team B (setter) if the setter’s hand is in the opponent's playing space.",
+      "c": "Fault by team A (blocker) if the hand of the setter is in his own playing space.",
+      "d": "Fault by team A (blocker) in any case, the setter must never be disturbed when playing the ball."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 69,
+    "question": "An attacker hits the ball and, on landing, touching the ground with both feet, takes a small step and touches the net (inside the antennae), trying to regain balance. The ball is still in play. The player has not used the net as a stabilising aid. Which of the following statements is/are correct?",
+    "answers": {
+      "a": "This can never be a fault.",
+      "b": "The landing action ends when the player is able to start a new action as soon as he has regained his balance after landing (has landed safely).",
+      "c": "This is only a fault if the player has touched the ball.",
+      "d": "The landing action is always completed the moment the player touches the floor with both feet.",
+      "e": "If the referee still judges this movement of the player as \"in the action of playing the ball \", he will whistle a net fault."
+    },
+    "correct": [
+      "b",
+      "e"
+    ]
+  },
+  {
+    "question_number": 70,
+    "question": "A player lands safely after a block, turns and pushes the net aside. He then stretches to play the ball as it falls to the ground, touching the net during this new action. Which of the following statements is/are correct?",
+    "answers": {
+      "a": "Touching the net when turning is not a fault.",
+      "b": "Only a blocking action at the net should be whistled as a fault.",
+      "c": "The first fault occurs when he turns.",
+      "d": "The first fault occurs when he stretches to play the ball in a new action and touches the net."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 71,
+    "question": "A player passes the ball to the middle of the net for a combination attack. An attacker and a blocker were in the middle position and another player some distance away in position 2. The ball went to the middle attacker. Indicate the correct statement(s):",
+    "answers": {
+      "a": "The player in position 2 commits a fault if he touches the net during this playing action.",
+      "b": "The setter commits a fault if he touches the net during this playing action.",
+      "c": "The attacker commits a fault if he touches the net during this playing action.",
+      "d": "The opposing block player commits a fault if he touches the net during this playing action."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 72,
+    "question": "In the middle of the 2nd set, a substitute player from team A appears in the substitution zone and thus requests a substitution. The scorer draws the attention of the referees to the fact that this player is not listed in the team list of the score sheet. During the subsequent closer check, it is also discovered that this player was already substituted in the 1st set at the score of 7:7 and substituted back again at the score of 9:9 (without the fault being noticed). How to proceed?",
+    "answers": {
+      "a": "The 1st set will be scored 25:0 for team B.",
+      "b": "The substitution is not allowed, the team receives a sanction for delay.",
+      "c": "The substitution will not be allowed, this will be considered as an improper request.",
+      "d": "The 1st set will be scored 25:7 for team B.",
+      "e": "The match will continue without further consequences as the 1st set is finished."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 73,
+    "question": "Player #3 from team A is substituted by player #8. One rally later, the libero replaces player #8 on the court. Shortly afterwards, when the score is 14:15 from team A's point of view, the libero leaves the court and player #3 returns on court again. The mistake goes unnoticed and team B wins the next rally. At this moment, team A realises the mistake, player #8 quickly runs onto the court and player #3 leaves. At what score does the game continue?",
+    "answers": {
+      "a": "14:17 from team A's perspective.",
+      "b": "14:15 from team A's perspective.",
+      "c": "14:16 from team A's perspective."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 74,
+    "question": "The player to be substituted on court is waiting correctly in the substitution zone. The player on court who is to be substituted delays the substitution by walking very slowly towards the substitution zone. He has already been cautioned for minor misconduct by being shown a yellow card. What is the referee's reaction now?",
+    "answers": {
+      "a": "The substitution is rejected because the request is unauthorised.",
+      "b": "The substitution is rejected and the team is sanctioned for delay.",
+      "c": "The substitution is allowed, but the team is subsequently sanctioned for delay.",
+      "d": "The substitution is allowed, but the substituted player is subsequently penalised for rude conduct."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 75,
+    "question": "At the score of 14:14, Team A asks for the correct service player. The scorer explains that #3 is serving. Team A wins the next two points and Team B takes a time-out. After the time-out it becomes clear that #7, not #3, would have been the correct server. How should the game be continued?",
+    "answers": {
+      "a": "The game resumes at 14:14 with #7 serving for Team A. The time-out remains valid.",
+      "b": "The game resumes at 14:14 with #7 serving for Team A. The time-out is cancelled and is available to Team B again.",
+      "c": "Team B receives the service and one point. The game resumes at 16:15. The time-out remains valid.",
+      "d": "Team B receives the service and one point. The game resumes at 14:15. The time-out is cancelled and is available to Team B again."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 76,
+    "question": "Which of the following attack actions are faulty?",
+    "answers": {
+      "a": "The libero executes an attack hit after jumping in the front zone, with the ball partially below the top of the net.",
+      "b": "The libero executes an attack hit after juming in the front zone, with the ball partially above the top of the net.",
+      "c": "A back-row player executes an attack hit after jumping in the front zone, whereby the ball is completely above the top of the net at the moment of hitting the ball.",
+      "d": "A player executes an attack hit directly after the opposing team's serve, with the ball in the back zone completely above the top of the net."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 77,
+    "question": "After a poor reception, the ball is heading under the net (at a height of about one meter) towards the opponent's side of the court. The server wants to play the ball back into his own half of the court. In which cases is this allowed?",
+    "answers": {
+      "a": "Only if the player touches the ball completely in his own half of the court.",
+      "b": "Always, as long as the ball has not completely crossed the lower space of the net.",
+      "c": "Only if the ball is still completely in their own half of the court.",
+      "d": "Always, as long as the ball has only half crossed the lower space of the net."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 78,
+    "question": "The team captain #1 is not on the court. The game captain #5 is substituted by #7, #9 becomes the new game captain. After one rally, #5 returns to the court. Who is now game captain?",
+    "answers": {
+      "a": "Player #1 because he is the team captain and the game captain is not clearly defined.",
+      "b": "Player #5 because he was named game captain first.",
+      "c": "Player #9 because he was last named as game captain.",
+      "d": "The game captain must be redefined because he is not clearly defined."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 79,
+    "question": "Which of the following actions during the game must the 2nd referee whistle for within his area of responsibility?",
+    "answers": {
+      "a": "Attack hit fault by a back-row player.",
+      "b": "Position faults by the receiving team.",
+      "c": "Block attempt by a back-row player (not the libero).",
+      "d": "Executed block by a back-row player."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 80,
+    "question": "The assistant coach of team A hands the line-up sheet to the 2nd referee shortly before the start of the next set. When checking the positions on the court, the 2nd referee notices that player #5 is on the court instead of player #8, who is on the line-up sheet. He informs the coach that player #5 is not allowed on the court without a legal substitution. The coach replies that he can still change the starting line-up because his signature is missing on the line-up sheet. What do the referees have to do?",
+    "answers": {
+      "a": "Since the 2nd referee did not realise that the line-up sheet was not signed, the coach has the right to correct the line-up sheet. Since the 2nd referee made a mistake, team A cannot be sanctioned for delay.",
+      "b": "Even if the signature is missing on the line-up sheet, it remains valid. Therefore, player #8 must enter the cort or a legal substitution must be requested.",
+      "c": "Since the 2nd referee did not realise that the line-up sheet was not signed, the coach has the right to correct the line-up sheet. Team A is sanctioned for delay.",
+      "d": "The 2nd referee makes sure that the coach of team A signs the line-up sheet before the start of the next set."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 81,
+    "question": "After a bad service reception, the ball crosses the vertical plane of the net completely outside the crossing space in the direction of the opponent's free zone. A player runs after the ball and passes the ball back to his team completely inside the crossing space. What signals the line judge in charge?",
+    "answers": {
+      "a": "The line judge raises the flag vertically at the moment the player touches the ball in the opponent's free zone.",
+      "b": "The line judge raises the flag vertically at the moment when the ball crosses the vertical plane of the net completely within the crossing space in the direction of the respective court.",
+      "c": "The line jduge waves the flag and points to the antenna at the moment when the ball crosses the vertical plane of the net completely within the crossing space in the direction of the respective court or when it is completely above the opponent's court.",
+      "d": "The line judge does not signal anything because there is no fault."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 82,
+    "question": "What conditions must be met for the 1st referee to authorise the serve?",
+    "answers": {
+      "a": "The service player is in possession of the ball and has eye contact with the 1st referee.",
+      "b": "The service player is in possession of the ball and both teams are ready to play.",
+      "c": "The service player is in the service zone and both teams are ready to play.",
+      "d": "The service player is in the service zone and in possession of the ball."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 83,
+    "question": "Team A has already made five substitutions in the current 2nd set when a player is injured and cannot continue playing. This player has already been substituted back once in the current set. How should the match be continued?",
+    "answers": {
+      "a": "Team A has the right to make an exceptional substitution. Any player who is not on the court at the moment of the injury – with the exception of the libero, the second libero or their regular replacement player - may be substituted. Team A is then entitled to one more legal substitution.",
+      "b": "A player cannot be substituted twice during a set. Team A is therefore declared incomplete for the current set and loses this set.",
+      "c": "Team A has the right to make an exceptional substitution. Any player who is not on the court at the moment of the injury – with the exception of the libero, the second libero or their regular replacement player – may be sustituted. This means that the maximum number of six substitutions per set has been reached and only exceptional substitutions are permitted in the current set.",
+      "d": "A player cannot be substituted twice during a set. Team A is therefore declared incomplete and loses the match."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 84,
+    "question": "A team plays with two liberos (L1 and L2). Libero L1 is disqualified, then libero L2 is injured. The team coach re-designates a new libero L3. Which statements are correct?",
+    "answers": {
+      "a": "The team may not play with two liberos for the rest of the match.",
+      "b": "The team can re-designate another player as second libero L4.",
+      "c": "If the team captain is to be re-designated as libero L3, he must first surrender all his rights in this regard.",
+      "d": "When libero L2 has recovered from the injury, he can act as a second libero alongside libero L3."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 85,
+    "question": "Team A plays with only one libero. The libero gets injured. The coach decides to re-designate a new libero. Which of the statements are correct?",
+    "answers": {
+      "a": "The injured libero may not re-enter the match, but he may sit on the bench during the match.",
+      "b": "The coach must re-designate a player as the new libero who was not on the court at the moment of the injury.",
+      "c": "The player re-designated as libero must retain the function as libero for the remainder of the match (except when the libero is again re-designated).",
+      "d": "The coach must re-designate a player as the new libero who has not played in that set until the moment of the injury."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 86,
+    "question": "Player #8 is registered as team captain. Player #12 is also registered as coach. The coach is substituted on court and immediately afterwards requests a time-out. There was no improper request or delay in the match up to this point. In the 1st set, however, the coach had already been warned for minor misconduct by being shown a yellow card. What is the correct reaction of the referees now?",
+    "answers": {
+      "a": "The request is rejected, the first time without a sanction for delay, the second and each subsequent time with a sanction for delay.",
+      "b": "The request is rejected and the team is sanctioned for delay.",
+      "c": "The request is rejected and the coach is penalised for rude conduct.",
+      "d": "The request is granted and the time-out is given."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 87,
+    "question": "A rally is won by the receiving team A. At the beginning of the rally, the scorer was unable to recognise the number of the serving player. Only after the rally has ended does the scorer realise that the wrong player has served the ball and immediately informs the 2nd referee. How do the referees decide correctly?",
+    "answers": {
+      "a": "Team A is awarded two points; one because of team B's rotational fault and one because the rally was completed and team A won it.",
+      "b": "Team A is awarded a point due to team B's rotational fault. The rally itself is cancelled.",
+      "c": "The rally is replayed. The score does not change because the referees have recognised the rotation fault too late.",
+      "d": "Team A is awarded a point due to winning the rally. As a result of the rotational fault, the rally is replayed with the correct server from team B."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 88,
+    "question": "A player shows misbehaviour for the first time. In which cases is an expulsion the sanction provided for in the volleyball rules?",
+    "answers": {
+      "a": "After several faulty receptions, the setter shouts \"idiot\" at one of his team's two receiving players and shows him a 'bird'.",
+      "b": "The player tries to hit an opponent but does not touch him.",
+      "c": "After a net decision, the player shows the 2nd referee the 'middle finger'.",
+      "d": "The player threatens a line judge with his fist."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 89,
+    "question": "The entries in the score sheet (e-scoresheet) have been confirmed by the team captain and the coach before the match. In the 2nd set, coach A wants to replace player #7 of the starting lineup with player #15. A #15 is not recorded in the score sheet. The scorer reports this to the 2nd referee after player #15 has entered the substitution zone. Which of the statements are correct?",
+    "answers": {
+      "a": "If the player is registered in the score sheet with a different number, the 1st referee allows the substitution and in the score sheet the number of the player is corrected. Team A is sanctioned for delay.",
+      "b": "If the player is not recorded in the score sheet at all, the 1st referee does not approve the substitution. The coach A is given a warning.",
+      "c": "If the player is not recorded in the score sheet at all, the 1st referee does not approve the substitution. Team A is sanctioned for delay.",
+      "d": "If the player is registered in the score sheet with a different number, the 1st referee allows the substition and in the score sheet the number of the player is corrected without sanction."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 90,
+    "question": "The libero of team A acrobatically defends a short tip by the attacker of team B and is able to keep the ball in play. After touching the ball, the libero slides under the net while lying on the ground; in the end, his entire body is completely on Team B's side of the court. The libero then immediately moves back into his own side of the court. During the entire action, his two feet never touch the opponent's court. He also does not interfere with the players of team B. How do the referees decide correctly?",
+    "answers": {
+      "a": "The referees do not interrupt the rally. There is no fault because the libero neither touches the opponent's half of the court with his feet nor interferes with the opponent's players when playing the ball.",
+      "b": "The referees interrupt the rally. Because the libero ends up lying completely in the opponent's half of the court and no part of his body is in contact with his own half of the court, a fault has been committed."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 91,
+    "question": "Team A serves. Team B receives with the setter in position 6. When releasing from the net, the diagonal player of team B takes a step and stands with one foot on the centre line at the moment of the serve. In doing so, he also touches the opponent's court, but without interfering with the players of team A. What is the correct decision by the referees?",
+    "answers": {
+      "a": "The referees do not stop the rally. Team B has made a mistake, but because Team A's players are not hindered in their actions, this should not be sanctioned (\"keep the ball flying\").",
+      "b": "The referees stop the rally and decide that team B has committed a fault because a player of team B (the diagonal player) touches the opponent's court at the moment of the serve.",
+      "c": "The referees do not stop the rally because there is no fault."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 92,
+    "question": "Team A wants to make a double substitution. One player enters the substitution zone ready to play, while the second player is still looking for the correct substitution paddle. Shortly before the first substitution is completed, the second player also enters the substitution zone ready to play. How should the referees react?",
+    "answers": {
+      "a": "The 2nd referee authorises both substitutions. As the second substitution player was ready before the first substitution was completed, there was effectively no delay. In such cases, the referees should interpret the rules generously.",
+      "b": "The 2nd referee rejects both substitutions because the two substitution players did not enter the substitution zone at the same time. The 1st referee sanctions team A for delay.",
+      "c": "The 2nd referee only authorises the first substitution; the second substitution is rejected because the second substitute was not ready to play at the moment of the request. The 1st referee sanctions team A for delay.",
+      "d": "The 2nd referee only authorises the first substitution; the second substitution is rejected without consequences because the second substitute was not ready to play at the moment of the request."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 93,
+    "question": "Team B requests a substitution. This is rejected by the 2nd referee because the substitute player entered the substitution zone with the wrong substitution paddle. Because team B had already received a delay warning, they are now penalised by the 1st referee for delay. As a result, team B requests another substitution before the match is resumed. How should the referees react?",
+    "answers": {
+      "a": "The referees reject the second request for a substitution. The 2nd referee has an improper request noted on the score sheet.",
+      "b": "The referees reject the second request for a substitution. The first referee again penalises the team for delay.",
+      "c": "The referees allow this substitution.",
+      "d": "The referees reject the second request for a substitution without any further consequences."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 94,
+    "question": "Team A requests a time-out after a request for a substitution has already been denied in the same interruption and the team has been sanctioned with a delay warning. How should the referees react?",
+    "answers": {
+      "a": "The referees grant the request for time-out.",
+      "b": "The referees reject the request for time-out. The 2nd referee has an improper request recorded on the score sheet.",
+      "c": "The referees reject the request for time-out without further consequences.",
+      "d": "The referees reject the request for time-out. The 1st referee awards a delay penalty."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 95,
+    "question": "How should the 1st referee react if a game captain asks to check the positions of the opposing team's players?",
+    "answers": {
+      "a": "To provide answers and detailed information on the positions.",
+      "b": "The 1st referee should not answer. The game captain can only ask to check the positions of his own team.",
+      "c": "First answer only with hand signals. Follow-up questions can then be answered verbally.",
+      "d": "To Answer and indicate whether the positions of the opposing team are correct or not."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 96,
+    "question": "The team captain is injured before the toss. What is the correct procedure for nominating a new team captain?",
+    "answers": {
+      "a": "The coach can nominate another player as the new team captain. A strip of tape is stuck under the number on the front of the jersey and the number on the score sheet is circled.",
+      "b": "It is too late to appoint a new team captain. The coach may appoint a \"general game captain\" who fulfils the duties of the team captain and who signs the score sheet after the match.",
+      "c": "The coach can nominate two other players to act as co-captains. Both players are marked on the score sheet by circling their names.",
+      "d": "It is too late to nominate a new team captain. The coach fulfils the duties of the team captain during the match and signs the score sheet instead of the team captain."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 97,
+    "question": "A player thinks she has noticed a wet spot on the floor. She calls the assistant coach to the side line near the team bench to help find the wet spot, preventing the 1st referee from immediately blowing the whistle to continue the match. What should the 1st referee do?",
+    "answers": {
+      "a": "He should inform the assistant coach via the game captain to return to the team bench.",
+      "b": "He should leave the team their way and do nothing.",
+      "c": "He should personally inform the assistant coach to go back to the team bench.",
+      "d": "He should instruct the 2nd referee to tell the game captain to inform the assistant coach to go back to the team bench.",
+      "e": "He should issue a sanction to the team for delay."
+    },
+    "correct": [
+      "a",
+      "e"
+    ]
+  },
+  {
+    "question_number": 98,
+    "question": "After hitting the serve, the scorer reports an incorrect service player of team A. What happens next?",
+    "answers": {
+      "a": "All points that were clearly scored with the wrong service player are cancelled. Team A corrects the line-up and then rotates. Team B receives a point and the right to serve and does not rotate.",
+      "b": "All points that were clearly scored with the wrong service player are cancelled. Team A corrects the line-up and retains the right to serve. Team B does not rotate.",
+      "c": "All points that were clearly scored with the wrong service player are cancelled. Team A rotates. Team B receives a point and the right to serve and rotates by one position.",
+      "d": "All points that were clearly scored with the wrong service player are cancelled. Team A corrects the line-up. Team B receives a point and the right to serve and rotates by one position."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 99,
+    "question": "Player A is on the line-up sheet, but is injured immediately before the match. What happens next?",
+    "answers": {
+      "a": "The substitution of player A takes place on the court at the start of the match. Before the first serve, the game captain must request a time-out and the coach must report the substitution directly to the scorer, who then records everything on the score sheet.",
+      "b": "Player A's team starts the match with only five players on the court. A substitution can only be requested by the coach after at least one rally has been completed. The substitution is then carried out in a regular way.",
+      "c": "Player A may be replaced by any player not listed on the line-up sheet. The coach can have the scorer make the substitution on the score sheet before the first serve. Informing the 2nd referee is optional.",
+      "d": "The situation is treated as a legal substitution. After the 2nd referee has checked the line-up sheet, the coach requests the substitution by hand signal to the 2nd referee, who also shows the hand signal for substitution. The substitution is registered on the score sheet."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 100,
+    "question": "Before the third set, the 2nd referee whistles the teams back onto the court. One team does not react. This team has not yet received a sanction for delay. How should the referees react?",
+    "answers": {
+      "a": "The 1st referee issues a \"sanction for delay\" (warning). If the team still does not react, the 1st referee must impose a further sanction for delay (penalty).",
+      "b": "The 2nd referee goes to the team to remind them to return to the court. If the team does not respond, the 2nd referee will impose a sanction for delay (yellow card, covering the wrist).",
+      "c": "Whistle again and then once more. If the team does not react to the third whistle, the 1st referee must issue a penalty for delay (red card, covering the wrist).",
+      "d": "Issue a penalty for delay (red card, covering the wrist)."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 101,
+    "question": "The libero was on the court for player A and was expelled for the remainder of this set. There are three ways in which the game can be continued. Which of the following suggestions is NOT a way to continue the game?",
+    "answers": {
+      "a": "If the team has only one libero, the team can immediately re-designate a new libero from the players who are not currently on the court (except for the libero's replacement player). The acting/expelled libero is not allowed to play for the remainder of the match.",
+      "b": "If the team has two liberos, the second libero can be exchanged immediately for the acting/expelled libero.",
+      "c": "If the team has two liberos, the team may decide to expell the second libero for the remainder of the match, allowing the acting libero to continue playing in this set.",
+      "d": "If the team has only one libero, player A can return onto the court. The team can continue to play without a libero."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 102,
+    "question": "Player A runs into the stands adjacent to his side of the court to play the ball. Just before contacting the ball, a spectator knocks the ball away. What is the correct action of the referee and why?",
+    "answers": {
+      "a": "Whistle. Fault. These are external influences.",
+      "b": "Whistle. Fault. A player may never enter the spectator stands.",
+      "c": "Whistle and hand signal \"out\" (hand signal #15). The players have no priority when playing the ball outside the playing area.",
+      "d": "Whistle. Fault. The player may not leave the free zone to play a ball in the spectator stands."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 103,
+    "question": "Player A, a setter, reaches over the top of the net to the opponent's side and passes the ball to a team-mate to attack. What should the referee decide?",
+    "answers": {
+      "a": "Nothing. Playing the ball in this way is in accordance with the rules, as player A is trying to pass and not to attack himself.",
+      "b": "This is a fault in any case, as players are not allowed to reach into the opponent's playing space (even if the ball is not touched).",
+      "c": "This is a fault because a player must touch the ball on his own side above the top of the net (except when blocking).",
+      "d": "Nothing. Playing the ball in this way is in accordance with the rules, as there is no contact with the opposing team."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 104,
+    "question": "Player A, a middle blocker, jumps up at the net to block and touches the top of the net when attempting to block. There is no contact with the ball. What should happen and why?",
+    "answers": {
+      "a": "This is not a net fault, as a blocking player is allowed to touch the net during play.",
+      "b": "This is a net fault by player A, as players never have the right to touch the top of the net.",
+      "c": "This is a net fault by player A (touching the net during an action in which he tries to play the ball).",
+      "d": "This is not a net fault because player A does not touch the ball."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 105,
+    "question": "A player from the starting line-up has been substituted and later returns to the court. Shortly afterwards, he injures himself and is no longer able to continue playing. Who can be substituted for this player?",
+    "answers": {
+      "a": "Any player who is not on the court, except the libero or his replacement player.",
+      "b": "No player. The team must continue to play with only five players.",
+      "c": "The libero or the player who is currently replaced by the acting libero.",
+      "d": "Any player who is not currently on the court."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 106,
+    "question": "Team A substitutes player A for player B. At the same time, the coach indicates that player C should replace the libero. What should the referees decide?",
+    "answers": {
+      "a": "Allow either the replacement or the substitution. The other action can be completed at the end of the next rally.",
+      "b": "Either allow the substitution or the replacement and issue a sanction for delay against team A. The other action can be completed at the end of the next rally.",
+      "c": "If a substitution or a replacement occurs at the same time, the only player who can be replaced for the libero is the freshly substituted player. The referee should allow player B to replace the libero.",
+      "d": "Allow both: substitution and replacement."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 107,
+    "question": "Team A forgets to replace the libero when he rotates to position IV. After three points, the referee realises that the libero is illegally on the court. Which of the following are the correct consequences of this situation?",
+    "answers": {
+      "a": "The points scored by team A with the wrong line-up are cancelled.",
+      "b": "The line-up must be corrected.",
+      "c": "Point and service to the opponent.",
+      "d": "Expulsion of the libero."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 108,
+    "question": "Between two sets, the 1st referee issues a red card to a player from team A for rude conduct. Team A will have the first serve in the next set. What happens now?",
+    "answers": {
+      "a": "Team A starts the set at 0:2 and retains the right to serve.",
+      "b": "Team A starts the set at 0:0 and retains the right to serve.",
+      "c": "Team A starts the set at 0:1 and retains the right to serve.",
+      "d": "Team A starts the set at 0:1 and loses the right to serve."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 109,
+    "question": "A team plays with two liberos. One libero is expelled. A few rallies later, the other libero is declared unable to play. Which statement(s) is (are) NOT correct?",
+    "answers": {
+      "a": "The libero who is unable to play may be replaced by a re-designated libero. Only players who have not yet taken part in a substitution may be re-designated as libero.",
+      "b": "The coach immediately re-designates the replacement player of the libero who is unable to play as the new libero.",
+      "c": "The coach may not re-designate another player as libero, as the player who has been expelled may play again in the next set. A re-designation would be permitted in the 5th set."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 110,
+    "question": "Player #8 is formally warned (yellow card) in the 2nd set for minor misconduct. In the 4th set, player #2 of the same team shows a similar behaviour. What is the procedure?",
+    "answers": {
+      "a": "Player #2 receives a yellow card for minor misconduct.",
+      "b": "Player #2 is given a verbal warning because he has not yet received a yellow card, but a team cannot receive two yellow cards during one match.",
+      "c": "Player #2 is penalised (red card) for repeated minor misconduct by this team."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 111,
+    "question": "A ball flies below the bottom of the net between the post and the extension of the antenna towards the opponent's court. Which statement(s) is (are) correct?",
+    "answers": {
+      "a": "A player may enter the opponent's space to return the ball that has completely crossed the lower space of the net as long as he can reach the ball without stepping over the centre line.",
+      "b": "If the ball has completely crossed the lower space under the net, the ball is \"out\" (hand signal #15).",
+      "c": "If the ball has completely crossed the lower space under the net, hand signal #22 (\"ball crossing the lower space\" under the net) must be shown."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 112,
+    "question": "A player from team A attacks a ball that is directly above the top of the net. At the same time, a blocker from team B touches the ball without reaching over the net. After the simultaneous contact, the ball falls into the free zone of team B. How should the 1st referee decide?",
+    "answers": {
+      "a": "Team B wins the rally, as the fault is attributed to team A (ball falls into team B's free zone).",
+      "b": "A blocking player may not touch the ball before or at the same time as the attacking hit, therefore team A wins the rally.",
+      "c": "Replay (double fault) because the ball was caught above the top of the net."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 113,
+    "question": "A ball is played by a player of Team A and then touches a coaching staff member of Team A. Which hand signal is to be shown?",
+    "answers": {
+      "a": "Hand signal \"ball touched\" (hand signal #24).",
+      "b": "Hand signal ball \"out\" (hand signal #15)."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 113,
+    "link_order": 1
+  },
+  {
+    "question_number": 114,
+    "question": "Continuation of the previous question: Which hand signal should be used when the ball touches a coaching staff member of the opposing Team B?",
+    "answers": {
+      "a": "Hand signal ball \"out\" (hand signal #15).",
+      "b": "Hand signal \"ball touched\" (hand signal #24)."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 113,
+    "link_order": 2
+  },
+  {
+    "question_number": 115,
+    "question": "Which referee blows the whistle to send the teams onto the court before the start of a set in an NLA match?",
+    "answers": {
+      "a": "In any case, the 1st referee.",
+      "b": "In any case, the 2nd referee.",
+      "c": "Before the 1st and 5th set the 1st referee, otherwise the 2nd referee.",
+      "d": "Before the 1st set none of the referees, the speaker calls the players onto the court; before the 2nd to 5th set the 2nd referee."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 116,
+    "question": "In the 3rd set, with the score 17:9 and team A serving, player #11 from team A enters the substitution zone. Player #3, who had been on the court since the beginning of the set, comes to the sideline. At that moment, the scorer realises that player #3 is not on the team list. It is also noted that player #3 was substituted at 19:11 in the 1st set and was substituted again at 24:19. This set was won by team A with 25:21. There was also issued a delay warning against team A. The 2nd set was won by team A without player #3 being in play. How should the refereeing corps deal with this situation?",
+    "answers": {
+      "a": "The 1st set is re-assessed: Team B wins it 25:19 and the result of the 2nd set remains unchanged. In the current 3rd set, the points scored by team A up to that moment are cancelled. In addition, team A is sanctioned for delay. Score in the 3rd set: 10:0 in favour of team B. Serve for team B.",
+      "b": "As team A used a player who was not listed in the team list, they lose the match 0:3 (0:75 ball points).",
+      "c": "The 1st set is re-assessed: Team B wins it 25:19 and the result of the 2nd set remains unchanged. In the current 3rd set, team B is awarded a point and the right to serve; the points scored by team A in the 3rd set up to that moment are cancelled. Score in the 3rd set: 10:0 in favour of team B.",
+      "d": "The 1st set is re-assessed: Team B wins it 25:0 and the result of the 2nd set remains unchanged. In the current 3rd set, the points scored by team A up to that moment are cancelled. Score in the 3rd set: 9:0 in favour of team B. Serve for team B."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 117,
+    "question": "During a rally in the 1st set, a player from team A is seriously injured. Which statement(s) is (are) correct?",
+    "answers": {
+      "a": "An injured player must be substituted exceptionally. If this is the first substitution made by team A, the team can make a further six substitutions.",
+      "b": "The referee stops the rally and the rally is then replayed.",
+      "c": "Medical treatment inside the playing area must be completed after 3 minutes at the latest. After that, treatment continues outside the playing area.",
+      "d": "A player who has been substituted exceptionally may no longer take part in the match."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 118,
+    "question": "In the 3rd set of a match, the score is 8:8. After the following rally, two opposing players have an altercation under the net, prompting the 1st referee to penalise both players for rude conduct. How should the sanction be issued according to the rules?",
+    "answers": {
+      "a": "The 1st referee calls both game captains and first imposes the penalty on the player of the team not serving next.",
+      "b": "The 1st referee calls both players to be penalised and first imposes the penalty to the player of the team serving next.",
+      "c": "The 1st referee calls both game captains and first imposes the penalty to the player of the team serving next.",
+      "d": "The 1st referee shows both players the red card at the same time – without directly addressing the game captains or the two players.",
+      "e": "The 1st referee calls both players to be penalised and first imposes the penalty on the player of the team not serving next."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 119,
+    "question": "Overhand finger passes are a technique judged by the 1st referee. Which of the following statements are correct?",
+    "answers": {
+      "a": "The 1st referee automatically assesses a spinning ball as faulty.",
+      "b": "The 1st referee stops (whistles) long or extended contacts with the ball.",
+      "c": "The 1st referee only whistles if a clear double touch was visible.",
+      "d": "The 1st referee does not judge a ball on the basis of its spin."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 120,
+    "question": "After the end of a rally, the captain comes to the 1st referee to ask him about the ball handling during the game. The 1st referee's answer should initially be:",
+    "answers": {
+      "a": "After a brief explanation, a yellow card is shown for minor misconduct.",
+      "b": "After a brief explanation, issue a verbal warning.",
+      "c": "Wave the player off and penalise him with a red card.",
+      "d": "After a brief explanation, ask the player to resume play, as ball handling matters are entirely at the judgement of the 1st referee."
+    },
+    "correct": [
+      "d"
+    ],
+    "linked_to": 120,
+    "link_order": 1
+  },
+  {
+    "question_number": 121,
+    "question": "Continuation of the previous question: After the captain, another player came to question the 1st referee. What answer should the 1st referee give?",
+    "answers": {
+      "a": "Ask the player to resume play, as ball handling matters are entirely at the judgement of the 1st referee.",
+      "b": "Issue a warning to the player, verbally or with a yellow card.",
+      "c": "Issuing a delay sanction.",
+      "d": "Waving the player off and refusing to listen."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 120,
+    "link_order": 2
+  },
+  {
+    "question_number": 122,
+    "question": "Teams have the right to request multiple consecutive regular game interruptions during an interruption, but not in all cases. Please answer which combinations may be granted DURING THE SAME INTERRUPTION according to the rules: Explanation: S: Substitution / T: Time-out / A: Team A / B: Team B",
+    "answers": {
+      "a": "SA-SB-TA-TB-SA-TA",
+      "b": "SA-SB-TA-TB-TA-TB",
+      "c": "SB-TB-SA-SB",
+      "d": "SA-TB-SB-TA-TB-TA",
+      "e": "TA-SA-TB-TA-SB",
+      "f": "TA-TB-SA-TB-SB",
+      "g": "TA-TA-TB-TB-TA-TB"
+    },
+    "correct": [
+      "b",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  {
+    "question_number": 123,
+    "question": "Indicate each individual step that is not allowed by ticking each corresponding box that makes the sequence illegal. Take a look at this sequence:",
+    "answers": {
+      "a": "Libero enters the court.",
+      "b": "Rally.",
+      "c": "Libero leaves the court.",
+      "d": "During the next rally, the 1st referee whistles a double fault (to replay the rally)",
+      "e": "Libero re-enters the court.",
+      "f": "The 1st referee whistles for the serve of the repeated rally."
+    },
+    "correct": [
+      "e"
+    ],
+    "linked_to": 123,
+    "link_order": 1
+  },
+  {
+    "question_number": 124,
+    "question": "Continuation of the previous question: What is wrong with the sequence? I.e. why did you choose this/these point/s of the sequence?",
+    "answers": {
+      "a": "There must be a completed rally between two libero replacements.",
+      "b": "The 1st referee is not allowed to whistle for a double fault.",
+      "c": "This is an illegal libero replacement.",
+      "d": "The libero may only re-enter the court after a completed rally.",
+      "e": "The libero must be substituted like any other player.",
+      "f": "The libero needs the permission of the 2nd referee to leave the court.",
+      "g": "The libero needs the permission of the 2nd referee to enter the court.",
+      "h": "The libero may only enter the court at the start of a set.",
+      "i": "Replay of the rally does not exist in Volleyball.",
+      "j": "Only the 2nd referee may whistle for a double fault."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d"
+    ],
+    "linked_to": 123,
+    "link_order": 2
+  },
+  {
+    "question_number": 125,
+    "question": "The game captain of team A demanded a time-out by showing the respective hand signal. Immediately afterwards, the coach of team A withdrew this time-out by shouting \"No.\" to the 2nd referee. What is the correct decision now?",
+    "answers": {
+      "a": "Time-out may not be granted.",
+      "b": "Time-out must be granted."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 125,
+    "link_order": 1
+  },
+  {
+    "question_number": 126,
+    "question": "Continuation of the previous question: Reason for this decision:",
+    "answers": {
+      "a": "Only the team captain may request time-outs and player substitutions in the absence of the coach.",
+      "b": "The coach is the first in the team's command structure – the captain may only request time-outs and player substitutions in the absence of the coach.",
+      "c": "Only the game captain may request time-outs and player substitutions."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 125,
+    "link_order": 2
+  },
+  {
+    "question_number": 127,
+    "question": "Continuation of the previous question: Indicate the additional actions of the 1st referee, if any:",
+    "answers": {
+      "a": "This is in any case an improper request.",
+      "b": "If there is a delay, the 1st referee must issue a delay sanction.",
+      "c": "If there is no delay, the 1st referee should simply continue the game."
+    },
+    "correct": [
+      "a",
+      "b"
+    ],
+    "linked_to": 125,
+    "link_order": 3
+  },
+  {
+    "question_number": 128,
+    "question": "At the moment of the substitution request, the substitute player was still wearing his tracksuit jacket. Should the 2nd referee authorise the substitution?",
+    "answers": {
+      "a": "Yes.",
+      "b": "No."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 129,
+    "question": "After a substitution was requested by the substitute player entering the substitution zone, the scorer and the 2nd referee noticed that the player was wearing the wrong substitution paddle no. 7. The coach \"changed his mind\" at that moment and instructed the substitute to take paddle no. 9 instead. Which player must be substituted?",
+    "answers": {
+      "a": "No. 9.",
+      "b": "No. 7.",
+      "c": "No player."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 130,
+    "question": "The service player of team A was tipping the ball outside the service zone, enters the service zone and then serves; however, the ball was outside the service zone during the whole process (even at the moment of the serve). The 1st referee should ...",
+    "answers": {
+      "a": "... allow the serve.",
+      "b": "... call a fault.",
+      "c": "... have the serve executed again."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 130,
+    "link_order": 1
+  },
+  {
+    "question_number": 131,
+    "question": "Continuation of the previous question: The reason for this decision is ...",
+    "answers": {
+      "a": "... that the ball must be inside the service zone at the moment of the hit.",
+      "b": "... that only the position of the feet is relevant.",
+      "c": "... that the player has started the movement outside the service zone."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 130,
+    "link_order": 2
+  },
+  {
+    "question_number": 132,
+    "question": "A ball served by Team A goes toward the opponent, but catches on the top of the net and then falls down on A's side of the net. A player from Team B reaches under the net and catches the ball before it touches the ground. The 1st referee should ...",
+    "answers": {
+      "a": "... whistle a double fault and replay the rally.",
+      "b": "... whistle a fault of the serving player.",
+      "c": "... whistle a fault of the player of Team B."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 132,
+    "link_order": 1
+  },
+  {
+    "question_number": 133,
+    "question": "Continuation of the previous question: The reason for this decision is, ...",
+    "answers": {
+      "a": "... that the service was not executed.",
+      "b": "... that the ball failed to cross the vertical plane of the net through the crossing space.",
+      "c": "... that the ball was still in play."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 132,
+    "link_order": 2
+  },
+  {
+    "question_number": 134,
+    "question": "A player ran up the stands after the ball on his side of the court and, with the second hit, played the ball back into his own court from a position above the court. The 1st referee should ...",
+    "answers": {
+      "a": "... do nothing.",
+      "b": "... call a fault.",
+      "c": "... call for a caught ball."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 134,
+    "link_order": 1
+  },
+  {
+    "question_number": 135,
+    "question": "Continuation of the previous question: The reason for this decision is ...",
+    "answers": {
+      "a": "... that the player may play the ball outside his own free zone.",
+      "b": "... that the player may only play the ball within the playing area.",
+      "c": "... that the player used assistance to play the ball."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 134,
+    "link_order": 2
+  },
+  {
+    "question_number": 136,
+    "question": "In Switzerland, in official competitions, a team consists of a maximum of ...",
+    "answers": {
+      "a": "... 14 players, one coach, two assistant coaches, one physiotherapist and one doctor.",
+      "b": "... 14 players, one coach, one assistant coach, one athletic trainer, one physiotherapist and one doctor.",
+      "c": "... 12 players, one coach, two assistant coaches, one physiotherapist and one doctor.",
+      "d": "... 12 players, one coach, one assistant coach, one physiotherapist and one doctor."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 137,
+    "question": "In which of the following situations is there a mistake that leads to a point for the receiving team?",
+    "answers": {
+      "a": "Team A's service player hits the ball with both hands while serving when team B commits a positional fault.",
+      "b": "Team A's service player hits the ball while serving, standing on the baseline, and team B commits a positional fault.",
+      "c": "Team B commits a positional fault, whereupon team A's serve flies into the net.",
+      "d": "Team A's service player commits a rotational fault and team B commits a positional fault."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 138,
+    "question": "A player attacks and after hitting the ball touches the net meshes while landing.",
+    "answers": {
+      "a": "Touching the net is a fault and should primarily be whistled by the 1st referee.",
+      "b": "Nevertheless, touching the net is not a fault, as only contact with the upper top band of the net constitutes a fault.",
+      "c": "Touching the net is a fault that should primarily be whistled by the 2nd referee because it involves the lower part of the net.",
+      "d": "Touching the net is not a fault, as it is only a fault during the hitting movement."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 139,
+    "question": "After having whistled a net fault, the 2nd referee shows...",
+    "answers": {
+      "a": "... the hand signal No. 19 \"net contact by a player\" and after the 1st referee the team serving next.",
+      "b": "... only the hand signal No. 19 \"net contact by a player\" and the player.",
+      "c": "... the hand signal No. 19 \"net contact by a player\", the player and then immediately the team serving next.",
+      "d": "... the hand signal No. 19 \"net contact by a player\", the player (if necessary) and, after the 1st referee, the team serving next."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 140,
+    "question": "Indicate the correct statement(s):",
+    "answers": {
+      "a": "A player may use the net between the antennas as a support or stabilising aid.",
+      "b": "The line judge is responsible for indicating when a player touches the lower part of the antenna.",
+      "c": "A player may touch the net meshes outside the antenna as long as he does not interferes with play.",
+      "d": "A player interferes with the game by touching the antenna during an action of playing the ball."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 141,
+    "question": "During the serve, the player in position 6 wipes his hand briefly over a wet spot on the floor. His foot position is 'correct' in relation to the player in position 3 (i.e. he is standing behind him), but his hand is closer to the centre line than the feet of the player in position 3. Is this a fault?",
+    "answers": {
+      "a": "No.",
+      "b": "Yes, in any case.",
+      "c": "Yes, if the hand actually touches the ground at the moment of the service hit."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 142,
+    "question": "A player from team A is injured and the referee stops the rally immediately. While a doctor attends to the injured player on the court, a player from team B is disqualified. Which of the following statements are true?",
+    "answers": {
+      "a": "Team B is declared incomplete in any case.",
+      "b": "If team B can make a legal substitution for the disqualified player, the referee will allow this.",
+      "c": "If team B cannot substitute the disqualified player legally, the team is declared incomplete."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 143,
+    "question": "Team \"A\" plays with one libero. This libero is injured during a playing action. The rally has to be repeated. The coach decides to re-designate a new libero immediately. The injured libero leaves the court while the newly re-designated libero takes up his position on the court at the same time. Is this allowed?",
+    "answers": {
+      "a": "No, the coach is not allowed to re-designate a new libero during the match.",
+      "b": "No, a new rally must be made before the libero can be replaced.",
+      "c": "Yes."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 144,
+    "question": "The libero of team \"A\" is injured. The coach decides to re-designate a new libero. Which of the following statements is/are correct?",
+    "answers": {
+      "a": "The coach must re-designate a player as the new libero who was not on the court at the moment of the injury.",
+      "b": "The injured libero may not re-enter the match, but he may sit on the bench or be in the warm-up area during the match.",
+      "c": "The player re-designated as the new libero must retain the function as libero for the remainder of the match (except when the libero is again re-designated)."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 145,
+    "question": "Is an injured player who has been substituted exceptionally allowed to sit on the bench during the match?",
+    "answers": {
+      "a": "Yes, but only with the permission of the 1st referee.",
+      "b": "No, he's not allowed to sit on the bench.",
+      "c": "Yes, he can sit on the bench."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 146,
+    "question": "The libero of team \"A\" suddenly felt dizzy during the 2nd set, had a severe headache and felt very ill. During the change of courts, the team doctor diagnosed him with high temperature (40°). Is the coach allowed to re-designate a new libero in this case?",
+    "answers": {
+      "a": "No, the coach can only re-designate a new libero in the event of an injury (with the prior authorisation of the 1st referee).",
+      "b": "The decision is at the discretion of the 1st referee.",
+      "c": "Yes."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 147,
+    "question": "During a rally, the ball touches the antenna on the 2nd referee's side. What is the correct decision of the 2nd referee?",
+    "answers": {
+      "a": "The 2nd referee does not indicate anything.",
+      "b": "The 2nd referee whistles and indicates the fault (out).",
+      "c": "The 2nd referee takes a step to the side of the team that committed the fault, makes the hand signal for out, but without whistling, to help the 1st referee."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 148,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 1. Successful attack hit of the front-row player after an overhand finger pass of the libero within the front zone. At the moment of the attack hit, the ball was above the top of the net with its entire circumference and the attacking player jumped within the back zone. The 1st referee could clearly see this game situation.",
+    "answers": {
+      "a": "Fault; 1st and 2nd referee.",
+      "b": "Fault; 1st referee.",
+      "c": "No fault.",
+      "d": "Fault; 2nd referee."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 149,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 2. Attempted block of a back-row player.",
+    "answers": {
+      "a": "Fault; 1st referee.",
+      "b": "Fault; 1st and 2nd referee.",
+      "c": "No fault.",
+      "d": "Fault; 2nd referee."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 150,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 3. After the service, the ball crosses the vertical plane of the net on the 2nd referee's side outside the crossing space.",
+    "answers": {
+      "a": "Fault; 1st and 2nd referee.",
+      "b": "Fault; 1st referee.",
+      "c": "No fault.",
+      "d": "Fault; 2nd referee."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 151,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 4. A player touches the net outside the antenna on the 1st referee's side during an action of playing the ball.",
+    "answers": {
+      "a": "Fault; 1st referee.",
+      "b": "No fault.",
+      "c": "Fault; 1st and 2nd referee.",
+      "d": "Fault; 2nd referee."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 152,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 5. Executed attack hit of the libero (played with overhand fingers) from the back zone, if the ball was above the top of the net with its full circumference at the moment of contact.",
+    "answers": {
+      "a": "Fault; 1st referee.",
+      "b": "No fault.",
+      "c": "Fault; 1st and 2nd referee.",
+      "d": "Fault; 2nd referee."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 153,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 6. The ball touches the ceiling of the sport hall.",
+    "answers": {
+      "a": "Fault; 1st referee.",
+      "b": "No fault.",
+      "c": "Fault; 1st and 2nd referee.",
+      "d": "Fault; 2nd referee."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 154,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 7. Executed attack hit of a back-row player, the ball is with full circumference above the top of the net at the moment of contact, the back-row player touches the attacking line with the tip of his foot during the take-off.",
+    "answers": {
+      "a": "Fault; 2nd referee.",
+      "b": "Fault; 1st and 2nd referee.",
+      "c": "Fault; 1st referee.",
+      "d": "No fault."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 155,
+    "question": "Indicate whether the situations described below are against the rules. If so, which referee is responsible for blowing the whistle in this situation? 8. A player touches the antenna above the top of the net on the 2nd referee's side during an action of playing the ball.",
+    "answers": {
+      "a": "Fault; 1st and 2nd referee.",
+      "b": "Fault; 2nd referee.",
+      "c": "Fault; 1st referee.",
+      "d": "No fault."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 156,
+    "question": "The front-row players of the serving team stand together in a group directly in front of two receiving players. The captain of the opponent team asks the 1st referee to inform the group to stand so that his receiving players can see the serving player.",
+    "answers": {
+      "a": "The 1st referee does not have to respond to the captain's request, but he is allowed to point out the possible screen to team \"A\".",
+      "b": "The 1st referee is obliged to inform the group to line up individually.",
+      "c": "The 1st referee is not allowed to respond to the captain's request."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 157,
+    "question": "Player No. 8 is entered in the team list as the team captain. The registered coach (player No. 12) is substituted onto the court and, after a few rallies, requests a time-out (player No. 8 was also on the court at this moment).",
+    "answers": {
+      "a": "The referees reject the request. The first time without sanction, any further improper request will be sanction as delay.",
+      "b": "The referees reject the request and issue a sanction for delay.",
+      "c": "The referees accept the request and grant the time-out."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 158,
+    "question": "A blocker of the serving team stands close to the net during the serve and touches the opponent's court with part of his foot.",
+    "answers": {
+      "a": "The referee allows play to continue.",
+      "b": "The 2nd referee whistles a positional fault.",
+      "c": "The 1st referee whistles a positional fault."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 159,
+    "question": "Team \"A\" requests a substitution after the 1st referee's whistle for service. The buzzer has been pressed by the scorer. This happens the second time in the same match.",
+    "answers": {
+      "a": "The referees do not react to the coach's request because there is no delay.",
+      "b": "The 1st referee sanctions the team for delay after the rally.",
+      "c": "The referee stops the rally immediately and issues a delay sanction to the team."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 160,
+    "question": "The coach of team \"A\" makes a substitution and immediately afterwards takes a time-out. Before the game is continued, he requests another substitution. Can the referee authorise this ?",
+    "answers": {
+      "a": "No.",
+      "b": "Yes."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 160,
+    "link_order": 1
+  },
+  {
+    "question_number": 161,
+    "question": "Continuation of the previous question: In the above case, may the coach take another time-out instead of the 2nd substitution without the game having continued after the 1st time-out?",
+    "answers": {
+      "a": "Yes.",
+      "b": "No."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 160,
+    "link_order": 2
+  },
+  {
+    "question_number": 162,
+    "question": "During the match, the 2nd referee decides and whistles the following faults:",
+    "answers": {
+      "a": "Penetration into the opponent's court under the net.",
+      "b": "Four hits of a team.",
+      "c": "Block of a back-row player.",
+      "d": "Faults in playing the ball (catch, double touch).",
+      "e": "Net touch faults.",
+      "f": "Positional fault of the serving team.",
+      "g": "Illegally reaching beyond the net.",
+      "h": "Illegal attack hit of a back-row player.",
+      "i": "Positional fault of the receiving team."
+    },
+    "correct": [
+      "a",
+      "c",
+      "e",
+      "h",
+      "i"
+    ]
+  },
+  {
+    "question_number": 163,
+    "question": "The starting line-up of the players at the beginning of the set is the following (starting from position 1): 1, 2, 3, 4, 5, 6. The last player on service was No. 1. The positions in the drawing are therefore:",
+    "answers": {
+      "a": "Correct regarding the front-row players, incorrect regarding the back-row players.",
+      "b": "Correct regarding the front-row and back-row players.",
+      "c": "Correct regarding the back-row players, incorrect regarding the front-row players."
+    },
+    "correct": [
+      "b"
+    ],
+    "image_url": "ZK_2022_question_156.png"
+  },
+  {
+    "question_number": 164,
+    "question": "The starting line-up of the players at the beginning of the set is the following (starting from position 1): 4, 9, 7, 2, 5 and 1. Player No. 5 is substituted by player No. 3. The libero replaces player No. 7. The last player to serve was player No. 2. The positions in the diagram are therefore:",
+    "answers": {
+      "a": "Correct.",
+      "b": "Wrong, between players 9 and 3.",
+      "c": "Wrong, between players 4 and 9."
+    },
+    "correct": [
+      "c"
+    ],
+    "image_url": "ZK_2022_question_157.png"
+  },
+  {
+    "question_number": 165,
+    "question": "The unsuccessful ball reception of team \"B\" flies outside the crossing space into the free zone of team \"A\". Libero \"B\" reaches the ball and plays it back outside the crossing space into his own court from the opponent's free zone, with overhand fingers. An attacker \"B\" plays the ball, which is completely higher than the top of the net, into the opponent's court. The referee whistles a fault for team \"B\" because the attack was completed after a pass from the libero with overhand fingers. Did he act correctly?",
+    "answers": {
+      "a": "Yes.",
+      "b": "No."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 166,
+    "question": "One player is ready for substitution in accordance with the rules, the other is busy looking for the substitution paddel by the players' bench. The referees allow one substitution, the second substitution is rejected because he was still searching after the completion of the first substitution. The referees allow play to continue without delay and without sanction. Is this correct?",
+    "answers": {
+      "a": "Yes.",
+      "b": "No."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 167,
+    "question": "During a poor reception, the setter penetrating from the second line (back-row player) of team \"A\" participates in the two-man block. The block was executed by the blocker of team \"A\" (front-row player). The referees allowed team \"A\" three more hits. Did they act correctly?",
+    "answers": {
+      "a": "Yes.",
+      "b": "No."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 168,
+    "question": "On the third touch of the ball by Team \"A\" over the top of the net, the ball is touched simultaneously by the attacker \"A\" and the blocking player \"B\" (fully in the playing area of Team \"A\"). Subsequently, the ball touches the antenna. The 1st referee whistles a fault of the block player. Is this correct?",
+    "answers": {
+      "a": "No.",
+      "b": "Yes."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 169,
+    "question": "The 1st referee decides that team A wins the rally. Team A immediately executes a substitution. The 1st referee then corrects his decision and gives the win of the rally to team B. Which statements apply to the situation that has arisen?",
+    "answers": {
+      "a": "Team A may 'cancel' the substitution (i.e. they may reverse it without consequences and take their previous line-up).",
+      "b": "Team A must play the next rally with the substituted player.",
+      "c": "Team A may not 'cancel' the substitution, but may re-substitute the player immediately (if this is 'legally' possible)."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 170,
+    "question": "A back-row player of team A attacks and hits the ball past a block of three players of team B into the court of B. The ball is completely higher than the top of the net at the moment of the attack hit, the block of B does not touch the ball after the attack hit. The back-row player of A touches the attack line during the take-off; the libero participates in the block of B. Which action of the referees is correct?",
+    "answers": {
+      "a": "The referees decide on point for B due to the fault of the back-row player.",
+      "b": "The referees decide on point for A because the libero is involved in a block attempt.",
+      "c": "The referees decide on double fault."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 171,
+    "question": "Team A has the libero in position 5 and must receive. A wins the rally and rotates by one position. The libero leaves the court and the replaced middle blocker returns to the court. The 1st referee then penalises the new service player from A in position 1 with a red card. As a consequence, the right to serve changes to team B and B receives a point. A now wants to replace the player in position 1 (the other middle blocker) with the libero as usual. How do the referees decide?",
+    "answers": {
+      "a": "The referees allow the replacement. A therefore plays the next rally with the libero in reception on position 1.",
+      "b": "The referees do not allow the replacement. A therefore plays the next rally with the middle blocker in reception on position 1.",
+      "c": "The referees authorise the replacement. This replacement is entered in the 'Remarks' section of the score sheet as an exceptional replacement. A therefore plays the next rally with the libero in reception on position 1."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 172,
+    "question": "The team captain is substituted and another player becomes game captain. Which statements are correct?",
+    "answers": {
+      "a": "As game captain, this player may submit a request from a team-mate to the 1st referee.",
+      "b": "If this player is back in the starting line-up at the beginning of the next set, but the team captain is not, this player is then again 'automatically' game captain.",
+      "c": "As game captain, this player may request the 1st referee to check the height of the net."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 173,
+    "question": "Team A wins the rally. Immediately afterwards, there is simultaneous rude conduct by one player from each team. In what order are the penalties (red cards) given to these players?",
+    "answers": {
+      "a": "First to the player of team A.",
+      "b": "First to the player of team B.",
+      "c": "The order is at the discretion of the 1st referee."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 174,
+    "question": "After the whistle for the serve, the 1st referee notices that one team has seven players on the court; a libero has come onto the court and the respective replacement player has not seen this. The 1st referee stops the rally. How should he then proceed?",
+    "answers": {
+      "a": "He sanctions this team for delaying the game.",
+      "b": "He decides on a positional fault of this team.",
+      "c": "He allows the replacement player to leave the court and restarts the rally again, blowing his whistle, without any consequences."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 175,
+    "question": "Team A serves. Team B wins the rally. The next service player of this team according to the rotational order goes to serve. Before the 1st referee blows the whistle, the 2nd referee notices that this player was standing in the wrong position during A's previous service. Which statements are true?",
+    "answers": {
+      "a": "Team B is sanctioned for a rotational fault.",
+      "b": "Team B is not sanctioned, the match continues without intervention of the referees.",
+      "c": "Team B is sanctioned for a positional fault."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 176,
+    "question": "In the NLB, a substitute player enters the substitution zone. After the 2nd referee has blown the whistle, the coach gives the substitute player a different numbered paddle because the player has accidentally entered the substitution zone with the wrong paddle. What is the procedure?",
+    "answers": {
+      "a": "The 2nd referee rejects the request for substitution, the 1st referee imposes a sanction for delay.",
+      "b": "The substitution is carried out without consequences according to the original numbered paddle.",
+      "c": "The 1st referee rejects the request for substitution and imposes a sanction for delay.",
+      "d": "The substitution is carried out without consequences accordint to the new numbered paddle."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 177,
+    "question": "A substitute player enters the substitution zone at the moment of the 1st referee's whistle for service. Which statements are correct?",
+    "answers": {
+      "a": "The action of the substitute player is - in any case - to be sanctioned as a delay.",
+      "b": "The action of the substitute player constitutes an improper request.",
+      "c": "The 2nd referee should stop the rally and the request for substitution should be accepted."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 178,
+    "question": "The libero of team A enters the court. The 1st referee blows the whistle to start the next rally and then blows the whistle again shortly after the serve because a second ball rolls into the court. Which statements apply to the resulting situation?",
+    "answers": {
+      "a": "Team A may replace the libero in any case.",
+      "b": "Team B may request a time-out (1st or 2nd time-out in this set).",
+      "c": "Team A may replace the libero if he has been injured in the meantime."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 179,
+    "question": "A team plays with 2 liberos (L1 and L2). Libero L1 is disqualified. Which statements apply to the rest of the game?",
+    "answers": {
+      "a": "If libero L2 is also disqualified later, the team can re-designate a new libero.",
+      "b": "If libero L2 is later expelled, the team can re-designate a new libero.",
+      "c": "If libero L2 is injured later, the team can re-designate a new libero."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 180,
+    "question": "A front-row player makes a 'one-man-block', touching the opponent's attack ball. In which cases may the team then hit the ball three more times?",
+    "answers": {
+      "a": "The blocker reaches over the top of the net with one hand, the attack ball only touches his head below the top of the net.",
+      "b": "The blocker does not reach with any part of his body over the top of the net, the attack ball touches one of his hands.",
+      "c": "The blocker reaches over the top of the net with one hand, the attack ball touches this hand and immediately afterwards his head."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 181,
+    "question": "At the moment of the serve, a back-row player of the receiving team is at the same height as his front-row player. Which statements are correct?",
+    "answers": {
+      "a": "No fault if the back foot of the back-row player is behind the front foot of the front-row player.",
+      "b": "Is counted as a fault even if the server commits a fault at the moment of hitting the ball.",
+      "c": "This is not a fault, because the back-row player is not completely in front of the front-row player.",
+      "d": "Is counted as a fault if the serve becomes faulty after the ball has been hit."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 182,
+    "question": "The coach requests a time-out from the 2nd referee for the first time, but the 1st referee has already whistled for the serve. The 2nd referee interrupts the rally. What should be done if the team has not yet been sanctioned for delay?",
+    "answers": {
+      "a": "The team is granted the requested time-out.",
+      "b": "The 1st referee ignores the whistle of the 2nd referee and allows play to continue on the condition that the players have not interrupted the rally.",
+      "c": "The request is rejected without sanction and the 1st re-starts the rally again, blowing the whistle.",
+      "d": "The time-out is not granted and the team is sanctioned for delay. The right to serve is granted again."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 183,
+    "question": "Which requests for regular game interruptions are improper?",
+    "answers": {
+      "a": "The request is made at the same time as the 1st referee whistles for the execution of the serve.",
+      "b": "The coach requests a time-out after a substitution without the game having been resumed in the meantime.",
+      "c": "The coach requests a time-out and then, without the game having been resumed, a substitution of two players by sending the substitutes to the substitution zone at the same time.",
+      "d": "The game captain requests a time-out because the coach is in the warm-up area."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 184,
+    "question": "What are the correct characteristics of a volleyball?",
+    "answers": {
+      "a": "Circumference 66 – 68 cm; weight 260 – 280 g; inside pressure 0.275 – 0.325 kg/cm2",
+      "b": "Circumference 65 – 67 cm; weight 260 – 280 g; inside pressure 0.300 – 0.325 kg/cm2",
+      "c": "Circumference 66 – 68 cm; weight 250 – 270 g; inside pressure 0.300 – 0.325 kg/cm2",
+      "d": "Circumference 65 – 67 cm; weight 260 – 280 g; inside pressure 0.275 – 0.325 kg/cm2"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 185,
+    "question": "What are the correct dimensions of the extensions of the attack lines?",
+    "answers": {
+      "a": "Per extension 5 line pieces of 15 cm each with 25 cm spacing.",
+      "b": "Per extension 5 line pieces of 20 cm each with 15 cm spacing.",
+      "c": "Per extension 5 line pieces of 15 cm each with 20 cm spacing.",
+      "d": "Per extension 5 line pieces of 20 cm each with 25 cm spacing.",
+      "e": "Per extension 5 line pieces of 20 cm each with 20 cm spacing."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 186,
+    "question": "At official competitions of Swiss Volley in the category National (NLA, NLB and 1L) the jerseys of the players must be numbered from 1 to ...",
+    "answers": {
+      "a": "18 (NLA, NLB and 1L)",
+      "b": "20 (NLA)",
+      "c": "20 (1L)",
+      "d": "24 (NLA, NLB and 1L)",
+      "e": "99 (NLA)",
+      "f": "99 (NLB)",
+      "g": "20 (NLB)",
+      "h": "99 (1L)"
+    },
+    "correct": [
+      "c",
+      "e",
+      "g"
+    ]
+  },
+  {
+    "question_number": 187,
+    "question": "[htmlThe coach hands the line-up sheet to the 2nd referee shortly before the start of the set. After entering the starting line-up on the score sheet (e-scoresheet), the 2nd referee checks the line-up on the court. He realises that player #5 is on the court instead of the player #8, who is listed on the line-up sheet. How do the referees decide correctly?",
+    "answers": {
+      "a": "At the coach's request, the scorer changes #8 to #5 on the score sheet and the team is sanctioned for delay.",
+      "b": "Player #8 must enter the court according to the line-up sheet. The coach can then request a legal substitution against player #5. The team is sanctioned for delay.",
+      "c": "At the coach's request, the scorer changes #8 to #5 in the score sheet, without any sanction.",
+      "d": "According to the line-up sheet, player #8 should be on the court. However, the coach can request a legal substitution against player #5. There is no sanction."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 188,
+    "question": "Which of the listed situations is seen as a completed rally?",
+    "answers": {
+      "a": "During a rally, a ball rolls from the ball retriever into the court and game is stopped by the referee.",
+      "b": "The ball lands outside the opponent's court after the service.",
+      "c": "When the ball is touched above the net at the same time (\"holding ball\"/ball stops), the ball touches the antenna.",
+      "d": "When serving, at the moment of the service hit, both the positional fault of the serving team and the receiving team are whistled at the same time.",
+      "e": "The player is expelled (yellow and red card jointly).",
+      "f": "After a simultaneous contact of the ball over the net where the ball is \"held\", the ball goes \"out\".",
+      "g": "When serving, at the moment of the service hit, a positional fault of the receiving team and a rotation fault of the serving team are whistled simultaneously.",
+      "h": "A team receives a delay penalty (red card)."
+    },
+    "correct": [
+      "b",
+      "f",
+      "g",
+      "h"
+    ]
+  },
+  {
+    "question_number": 189,
+    "question": "Which team compositions are permitted in the NLA and NLB?",
+    "answers": {
+      "a": "9 \"normal\" players plus 2 liberos.",
+      "b": "12 players, no libero.",
+      "c": "14 players, no libero.",
+      "d": "12 \"normal\" players plus 1 libero.",
+      "e": "11 \"normal\" players plus 2 liberos."
+    },
+    "correct": [
+      "a",
+      "b",
+      "e"
+    ]
+  },
+  {
+    "question_number": 190,
+    "question": "The coach is disqualified. Which statements are correct?",
+    "answers": {
+      "a": "The assistant coach can not take over the duties of the coach, as the coach leaves the team due to a sanction.",
+      "b": "The assistant coach may take over the duties of the coach. If this happens, the game captain is subsequently not allowed to request time-outs.",
+      "c": "The game captain may subsequently request time-outs in any case.",
+      "d": "The assistant coach may take over the duties of the coach. If this is not the case, the game captain may subsequently request time-outs."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 191,
+    "question": "A team requests a time-out after the 1st referee has blown his whistle for service. This is the first unauthorised request by the team. Which statements are correct?",
+    "answers": {
+      "a": "If there is no delay, the 2nd referee rejects the request. At the end of the rally, the improper request is entered in the appropriate section of the sanction part. No sanction is imposed.",
+      "b": "The rally is stopped immediately and the improper request is entered in the new section of the sanction part. No sanction is imposed.",
+      "c": "The rally is stopped immediately and the team is sanctioned for delay. The improper request is entered in the new section in the sanction part."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 192,
+    "question": "In which cases of incorrect conduct should a disqualification be issued?",
+    "answers": {
+      "a": "In the event of a physical attack.",
+      "b": "In the event of aggressive behaviour.",
+      "c": "In the event of a defamatory gesture."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 193,
+    "question": "The coach, facing the 2nd referee, executes the hand signal \"substitution\". A substitute player comes running from behind the players' bench, looks for the correct substitution paddle and then appears in the substitution zone. Which statements are correct?",
+    "answers": {
+      "a": "The 2nd referee confirms the substitution request at the moment when the substitute player enters the substitution zone (provided that the 1st referee has not yet blown the whistle for service).",
+      "b": "The 2nd referee blows the whistle when he sees the coach's hand signal, the substitution is subsequently rejected, the team receives a delay sanction.",
+      "c": "The 2nd referee does not respond to the coach's hand signal, the substitution is rejected, and the team receives a delay sanction.",
+      "d": "If the substitution request is confirmed but the substitute player is not ready to play when entering the substitution zone, the substitution will not be allowed and the team will receive a delay sanction."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 194,
+    "question": "During a rally, a player from team A is injured. The 1st referee stops the rally immediately and decides to \"replay\". Which statements apply in this situation?",
+    "answers": {
+      "a": "Neither team can request a time-out.",
+      "b": "If the player is unable to continue playing, he must be substituted.",
+      "c": "If team B has not made a substitution before the start of the interrupted rally, it may now request a substitution."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 195,
+    "question": "Between the 1st referee's whistle for service and the execution of the serve, the opposing team carries out a libero replacement. The rally is stopped immediately and the team concerned is sanctioned with a delay. Is this in accordance with the rules?",
+    "answers": {
+      "a": "Yes, in any case.",
+      "b": "Only if this late replacement action occurs repeatedly with the same team.",
+      "c": "Whenever this team had already received a delay sanction."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 196,
+    "question": "After receiving the ball, it flies below the net towards the opponent's court. Before the ball has completely crossed the vertical plane of the net, the setter plays it back to his own court. Is this allowed?",
+    "answers": {
+      "a": "Only if the ball is touched in the player's own side of the court.",
+      "b": "No, if the ball has already partially crossed the vertical plane of the net.",
+      "c": "Yes, the ball may also be touched in the opponent's side of the court."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 197,
+    "question": "A player touches the opponent's court. Which statements are true?",
+    "answers": {
+      "a": "The touch is not a fault if it happens with the foot and part of the foot is on the center line.",
+      "b": "The touch is not a fault if it happens with the knee and it does not affect the opponent's play.",
+      "c": "The touch is not a fault if it happens with the complete hand and it does not affect the opponent's play."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 198,
+    "question": "A back-row player takes part in a \"block of three\". In which cases does this lead to a fault?",
+    "answers": {
+      "a": "He is not the libero, and the opponent's attack ball does not touch any of the blocking players.",
+      "b": "He is the libero, and the opponent's attack ball does not touch any of the blocking players.",
+      "c": "The opponent's attack ball touches another player of the block, but not him."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 199,
+    "question": "A player touches the net. In which cases is this a fault?",
+    "answers": {
+      "a": "The player touches the white band at the top of the net outside the antenna.",
+      "b": "The setter clearly touches the net below the white band at the top of the net while passing the ball.",
+      "c": "An attacker grazes the top band of the net with his hitting hand after his attack hit."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 200,
+    "question": "At the moment of service hit, a player touches the center line with one foot without crossing it. Is this a fault?",
+    "answers": {
+      "a": "Only, if the foot crosses the axis of the center line.",
+      "b": "No.",
+      "c": "Yes, in any case."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 201,
+    "question": "After a bad reception, the ball flies outside the antenna into the opponent's free zone. A player plays the ball back into his own court. Which statements are correct?",
+    "answers": {
+      "a": "The player returning the ball is never allowed to touch the opponent's court.",
+      "b": "The player returning the ball is not allowed to touch the opponent's court, unless his foot is on or above the centre line.",
+      "c": "The playing back is only legal if the ball crosses the plane of the net totally through the external space on the same side of the net.",
+      "d": "The player returning the ball may jump onto the opposing team's bench."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 202,
+    "question": "The ball received by team A flies higher than the top of the net in the direction of the opponent's court. A front-row player from team B jumps to block. Team A's setter reaches the ball just before it crosses the plane of the net and, as he passes the ball to one of his attackers, the blocker touches his hand. Is this a mistake by the blocker?",
+    "answers": {
+      "a": "Only if the touch of the hand \"spoils\" the pass.",
+      "b": "Yes, in any case.",
+      "c": "No, because he did not touch the ball."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 203,
+    "question": "A team plays with 2 liberos. In the 2nd set, the coach wants to replace the acting libero with the second libero. Which statements are correct?",
+    "answers": {
+      "a": "This replacement is possible without further justification.",
+      "b": "This replacement is possible, but can only be reversed in the next set if the new libero is injured.",
+      "c": "The acting libero can not be on the court when this replacement is done."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 204,
+    "question": "A team is playing with one libero. During the match, the coach wants to re-designate another player (who is not on the court) as the new libero. Which statements are true?",
+    "answers": {
+      "a": "The re-designation is not permitted under any circumstances, as the team does not have a second libero.",
+      "b": "If the libero is injured, the re-desigation is allowed directly on the court.",
+      "c": "The re-designation is permitted directly on the court in any case."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 205,
+    "question": "The libero enters the court for player No. 5. At the next \"swap back\", player No. 7 enters the court for the libero. What should be done when this is noticed?",
+    "answers": {
+      "a": "The incorrect line-up is not corrected, a substitution (7 for 5) is noted and the team receives a delay sanction.",
+      "b": "If this is noticed before the start of the next rally, the incorrect line-up must be corrected and the team receives a delay sanction.",
+      "c": "If this is only noticed after the serve has been executed, the incorrect line-up must be corrected, all points scored by the team since the incorrect replacement are cancelled and the opponent is awarded a point and the serve."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 206,
+    "question": "The server executes the service outside the service zone. At the same time, the 2nd referee calls for a positional fault by the receiving team. The 1st referee decides ...",
+    "answers": {
+      "a": "... to replay.",
+      "b": "... a fault of the serving team."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 207,
+    "question": "During the interval between two sets, the players of team A want to warm up with the ball on the court. The referee has forbidden this. Did he act correctly?",
+    "answers": {
+      "a": "No.",
+      "b": "Yes."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 208,
+    "question": "The 2nd referee does not turn up for a championship match. No referee is present among the spectators. The 1st referee ...",
+    "answers": {
+      "a": "... directs the match with the agreement of both teams together with a coach of the teams involved.",
+      "b": "... is not allowed to direct the match alone and goes home again.",
+      "c": "... directs the match alone."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 209,
+    "question": "The home team causes the match to start late (with verifiable and sufficient justification). The postponement of the new start of the match in the national leagues shall not exceed ...",
+    "answers": {
+      "a": "... 15 minutes if the match in question is followed by a second match in the same sports hall and if the duration of use of the hall is limited.",
+      "b": "... 60 minutes.",
+      "c": "... 30 minutes."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 210,
+    "question": "The two team captains cannot agree on a joint warm-up session at the net. The separate official warm-up (5 minutes each) starts with ...",
+    "answers": {
+      "a": "... the home team.",
+      "b": "... the visiting team.",
+      "c": "... the team that has the first reception.",
+      "d": "... the team that has the first service."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 211,
+    "question": "For the judgement of an attack hit by a back-row player in the front zone, the following is decisive:",
+    "answers": {
+      "a": "The height of contact with the ball in relation to the top of the net.",
+      "b": "The position of the ball in relation to the top of the net."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 212,
+    "question": "The block is executed, ...",
+    "answers": {
+      "a": "... if the ball has fully entered the opponent's court after being blocked.",
+      "b": "... whenever the ball is touched by a blocking player."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 213,
+    "question": "The attack hit is considered executed ...",
+    "answers": {
+      "a": "... when the ball has completely crossed the vertical plane of the net.",
+      "b": "... when the ball is touched by an opponent.",
+      "c": "... at the moment the attacking player touches the ball."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 214,
+    "question": "An attack hit is understood to be ...",
+    "answers": {
+      "a": "... all actions in which the ball is played above the top of the net in the direction of the opponent, except service and block.",
+      "b": "... all actions in which the ball is played in the direction of the opponent, except service and block."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 215,
+    "question": "An injured player cannot be substituted either legally or exceptionally. The referee ...",
+    "answers": {
+      "a": "... grants the player three minutes of recovery time, but not more than once for the same player in the match.",
+      "b": "... declares the team incomplete and ends the match."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 216,
+    "question": "A team refuses to play at the start of the third set. The 1st referee declares the team in default. What should be done next?",
+    "answers": {
+      "a": "The opposing team will be given the sets needed to win the match. The team in default keeps its points and sets.",
+      "b": "The final score is 0:3 for the match and 0:25 for each set."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 217,
+    "question": "The scorer does not receive the team line-up for the next set in time. What should be done next?",
+    "answers": {
+      "a": "For this reason, he automatically uses the team line-up from the previous set.",
+      "b": "He reports this to the 2nd referee without delay."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 218,
+    "question": "The coach requests a 7th substitution for the second time. The referee judges this as ...",
+    "answers": {
+      "a": "... a repeated improper request and imposes a sanction for delay.",
+      "b": "... the first improper request and does not impose any further sanctions."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 219,
+    "question": "The ball flies towards the playing surface. A player plays the ball in such a way that the ball touches both his fingers and the playing surface. The 1st referee does not see this, but the 2nd referee can recognise the situation. What is the correct procedure?",
+    "answers": {
+      "a": "The 2nd referee whistles the contact of the ball with the playing surface.",
+      "b": "The referees allow play to continue. After the 2nd referee has informed the 1st referee about the situation at the end of the rally, the 1st referee decides to replay the rally."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 220,
+    "question": "A back-row player \"A\" takes off behind the attack line. The ball is above the front zone \"A\" after the opponent's service and is completely higher than the top of the net. The back-row player \"A\" plays the ball into the court of \"B\". How to decide?",
+    "answers": {
+      "a": "The 1st referee blows the whistle, team \"B\" receives the ball.",
+      "b": "The 1st referee blows the whistle, team \"A\" receives the ball.",
+      "c": "The 1st referee does not blow the whistle, the action is correct."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 221,
+    "question": "After the end of a rally, player \"A\" asks the referee for permission to tie his footwear. This does not result in an effective delay. What is the correct procedure?",
+    "answers": {
+      "a": "The referee decides for a delay of team \"A\".",
+      "b": "The referee has the player tie his footwear."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 222,
+    "question": "Team A is serving and commits a rotational fault, e.g. the wrong player serves. At the same time, the receiving team B commits a positional fault. How is the decision to be made?",
+    "answers": {
+      "a": "Point for team A.",
+      "b": "Double fault, replay of the rally.",
+      "c": "Point for team B."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 223,
+    "question": "After a time-out, the wrong player prepares to serve. The referee authorizes the service. Before the service is executed, the team realises the mistake and the correct player goes to serve. The 1st referee whistles again to authorize the service. Has the referee acted correctly?",
+    "answers": {
+      "a": "No.",
+      "b": "Yes."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 224,
+    "question": "After the 1st referee has already blown his whistle to authorize the service, the 2nd referee reacts late to a request for a time-out and also blows his whistle. How must the decision be made?",
+    "answers": {
+      "a": "The 1st referee must decide on a double fault and then restart the rally. The time-out is not granted and a sanction for delay is imposed.",
+      "b": "The 1st referee must decide on a double fault. If the request for a time-out is renewed, the time-out is granted.",
+      "c": "As the rally has has already been authorized and started, the service must be executed within 8 seconds. The time-out is not granted."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 225,
+    "question": "After team A has scored several points on its own serve, a rotational fault is detected for this team. What should be done?",
+    "answers": {
+      "a": "Only the last point scored by team A is cancelled and credited to the opponent, the other points are regarded as \"played\" and are retained.",
+      "b": "If the moment of the fault can be determined, team A is deprived of all points since the moment the fault occurred. The opponent's points remain valid and the last rally is awarded to the opponent."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 226,
+    "question": "Team A has 7 players available, including one libero. In the 2nd set, one player (not the libero) is injured and cannot continue playing. How does the match continue?",
+    "answers": {
+      "a": "The libero can be substituted immediately for the injured player.",
+      "b": "Team A is declared incomplete for the 2nd set and loses it. As no other player is available, the libero can take part in the match as a \"normal\" player in the 3rd set after an exceptional substitution.",
+      "c": "Team A is declared incomplete and loses the entire game."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 227,
+    "question": "Which penalties also result in the opponent gaining a point?",
+    "answers": {
+      "a": "Yellow card.",
+      "b": "Red card.",
+      "c": "Yellow and red cards jointly."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 228,
+    "question": "In the 1st set, team A has received a delay warning. In the following set, another player of this team commits a similar offence. How must the referee decide?",
+    "answers": {
+      "a": "As both delays were committed in two different sets, a further delay warning will be issued.",
+      "b": "Sanctions for delay are personal sanctions, therefore a further delay warning will be issued.",
+      "c": "Sanctions for delay are team sanctions and are effective for the entire match, therefore a \"delay penalty\" will be issued, which results in a point and service to the opponent."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 229,
+    "question": "Due to the unfavorable architecture of the sports hall, there is an area in the middle of the hall that cannot be seen by the referees at full height. A high ball is played, which briefly leaves the referees' field of vision. In the judgement of the first referee, the ball does not necessarily touch the ceiling, but it cannot be ruled out. How should he decide?",
+    "answers": {
+      "a": "Since a fault cannot be ruled out according to the referee's assessment, he must decide on double fault and replay of the rally in any case.",
+      "b": "Play continues because none of the referees noticed an obvious fault.",
+      "c": "Only if one of the teams complains about a fault, the rally must be stopped. The referee decides to award a point (and service) to the team that did not cause the fault.",
+      "d": "Only if one of the teams complains about a fault, the rally must be stopped. The referee decides on double fault and replay of the rally."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 230,
+    "question": "A front-row player executes a block. In doing so, he touches the ball in the opponent's playing space at the same time as the opponent's attack hit. The attack is executed by the opposing team by a back-row player within the front zone completely above the top of the net. How is the decision to be made?",
+    "answers": {
+      "a": "Double fault, replay of the rally.",
+      "b": "Fault of the attacker.",
+      "c": "Fault of the block player."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 230,
+    "link_order": 1
+  },
+  {
+    "question_number": 231,
+    "question": "Continuation of the previous question: What is the correct decision if the block player is a back-row player?",
+    "answers": {
+      "a": "Fault of the attacker.",
+      "b": "Double fault, replay of the rally.",
+      "c": "Fault of the block player."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 230,
+    "link_order": 2
+  },
+  {
+    "question_number": 232,
+    "question": "The ball is passed by the libero with overhand fingers, the attacker hits the ball above net height. This is permitted if the libero, while setting the ball, is located in the ...",
+    "answers": {
+      "a": "back zone and the attack is executed within the front zone by a front-row player.",
+      "b": "back zone and the attacker jumps off at least behind the attack line.",
+      "c": "front zone and the attacker jumps off at least behind the attack line.",
+      "d": "front zone and the attack is executed within the front zone."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 233,
+    "question": "At the score of 24:20 for Team A, the opposing team hits an attack ball out. The referees fail to recognise that a blocker from Team A has touched the ball. The 1st referee decides on a point for Team A and ends the set. Only now does the blocker admit to touching the ball. However, the 1st referee sticks to his decision, stating that the set has already ended and that the decision can therefore no longer be changed. Is he acting correctly?",
+    "answers": {
+      "a": "No, the rally should be awarded to Team B.",
+      "b": "No, the rally should be replayed.",
+      "c": "Yes."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 234,
+    "question": "What does this hand signal from the referee mean?",
+    "answers": {
+      "a": "Attack hit fault by a libero.",
+      "b": "Blocking fault by the Libero.",
+      "c": "Attack hit fault on an overhand finger pass by the libero in his/her front zone.",
+      "d": "Illegal direct return of the opponent's serve.",
+      "e": "Illegally reaching beyond the net.",
+      "f": "Attack hit fault by a back-row player.",
+      "g": "Blocking fault by a back-row player."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d",
+      "f"
+    ],
+    "image_url": "ZK_2022_question_227.png"
+  },
+  {
+    "question_number": 235,
+    "question": "If there is a discrepancy between the line-up sheet and the current line-up of players (including libero) before the first service in the first set, the following applies:",
+    "answers": {
+      "a": "The scorer must correct the line-up sheet and the score sheet.",
+      "b": "The players must line up according to the line-up sheet, without further sanctions.",
+      "c": "The players must line up according to the line-up sheet and the team is sanctioned with a delay warning."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 236,
+    "question": "Concerning the first hit of a team, it is a fault if ...",
+    "answers": {
+      "a": "... the ball bounced off one's own block and is deliberately played with the foot of one of the block players.",
+      "b": "... the ball bounces back into the net from the attacker's head (attacker completely below the top of the net at the moment of contact) after an opponent's block and the same player continues to play the ball.",
+      "c": "... the ball is played with an overhand finger pass while receiving the opponent’s attack hit and thus touches both hands in succession, during one action."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 237,
+    "question": "After the server has tossed the ball up, the ball touches both the server's foot and the floor. How does the 1st referee decide?",
+    "answers": {
+      "a": "The serving team receives a delay sanction and the 1st referee allows the same player to serve again.",
+      "b": "This action was a service fault.",
+      "c": "A second service attempt must be executed without delay within 8 seconds after the 1st referee's whistle."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 238,
+    "question": "The server inadvertently bounces the ball on his foot after the 1st referee has authorised the service, after which the ball rolls into the court:",
+    "answers": {
+      "a": "The action is not a service fault. The player has the right to execute the service within 8 seconds.",
+      "b": "The 1st referee authorises another service attempt.",
+      "c": "This is a service fault."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 239,
+    "question": "During the 1st set, the 2nd referee notices that the coach is sitting at the end of the players' bench furthest away from the scorer's table. The 2nd referee demands that the coach takes up his correct position on the bench. The coach refuses to do so.",
+    "answers": {
+      "a": "The 1st referee insists that the coach takes up the correct position on the bench or stands up and moves in the free zone in front of his team bench.",
+      "b": "The 1st referee gives the coach a yellow card and insists that the coach takes up the correct position on the bench or stands up and moves in the free zone in front of his team bench.",
+      "c": "The 1st referee ignores the coach. It is the 2nd referee's duty to control the team bench."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 240,
+    "question": "Is it a fault if a player reaches over the net with his hands and hits the ball instead of blocking it?",
+    "answers": {
+      "a": "No, if the initial contact took place in the opponent’s playing area.",
+      "b": "No, if the initial contact took place in the own playing area.",
+      "c": "Yes, if the initial contact took place in the opponent’s playing area.",
+      "d": "Yes, if the initial contact took place in the own playing area."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 241,
+    "question": "Team \"A\" wins the rally and prepares to serve. After the whistle, the server throws the ball in the air so that it touches the ceiling. Without dropping the ball, the server hits the ball and serves. The 1st referee:",
+    "answers": {
+      "a": "Allows the execution of the serve.",
+      "b": "Must whistle and the serve is repeated.",
+      "c": "Team \"B\" wins the rally – illegal execution of the serve."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 242,
+    "question": "After the first hit, the receiving team \"A\" plays the ball into the free zone of the opponent \"B\", whereby the ball has completely crossed the vertical plane of the net in the external space. One of the players of team \"A\" wants to reach this ball, using the net post to quickly change direction. He then plays the ball back into his own playing space and the ball flies completely through the external space on the same side of the court. The referee:",
+    "answers": {
+      "a": "Whistles a fault by the receiving team \"A\".",
+      "b": "Allows the rally to continue.",
+      "c": "Replays the rally."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 243,
+    "question": "A team is playing without coach or assistant coach. The team captain is player No. 1. In the 2nd set, player No. 1 sits on the team bench and requests a time-out from the 2nd referee. The 2nd referee:",
+    "answers": {
+      "a": "Authorises the time-out.",
+      "b": "Will authorise the time-out and warn the team captain, as only the game captain has the right to request regular game interruptions.",
+      "c": "Does not authorise the time-out – only the game captain has the right to request time-outs and substitutions."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 244,
+    "question": "A player of team \"A\" goes to serve. The service player executes the service within the prescribed time, but the ball flies into the net, close below the top of the net. The net meshes tear and the ball flies through the net into the playing court of team \"B\".",
+    "answers": {
+      "a": "The referee decides to replay the rally.",
+      "b": "Team \"B\" wins the rally.",
+      "c": "The referee allows play to continue."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 245,
+    "question": "The position of the players is determined and controlled depending on ...",
+    "answers": {
+      "a": "... the position of their bodies in relation to the plane of the net.",
+      "b": "... the position of their feet touching the ground.",
+      "c": "... the position of a part of their body that touches the floor (hands, feet, knees, etc.)."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 246,
+    "question": "A player from team \"A\" executes an attack hit. The ball flies near the antenna in the direction of the external space. A player from team \"B\" blocks this attack in the opponent's space outside the antenna. After the block, the ball touches the floor of the playing area of team \"A\".",
+    "answers": {
+      "a": "The rally must be replayed.",
+      "b": "Fault by the blocking team \"B\".",
+      "c": "Fault by the attacking team \"A\"."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 247,
+    "question": "Before the start of the match, the libero registered in the e-scoresheet is injured. The coach asks for the libero to be re-designated. The new libero should be the player No. 1, who is already entered in the line-up in the e-scoresheet for the first set. How to proceed?",
+    "answers": {
+      "a": "The referee allows the re-designation before the start of the match. The player No. 1 is substituted legally (score 0:0). The number of the new libero must be entered in the e-scoresheet under remarks.",
+      "b": "The referee rejects the request and the re-designation can take place after the first rally of the first set. All circumstances must be entered in the e scoresheet under remarks.",
+      "c": "The referee allows the re-designation, the line-up in the e-scoresheet for the first set is changed, and the player No. 1 can play as the new libero in the first set. All circumstances must be entered in the e-scoresheet under remarks."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 248,
+    "question": "In the 2nd set, player No. 10 substitutes player No. 2 of team \"A\". In the same set, player no. 2 is substituted back for player No. 10. Later (in the same set), player No. 2 is disqualified. The referee:",
+    "answers": {
+      "a": "Refuses an \"exceptional substitution\" and declares the team incomplete for this set. The match continues with the 3rd set. Player No. 2 cannot continue to play in this match.",
+      "b": "Refuses an \"exceptional substitution\", declares the team incomplete for the match and ends the match. The incomplete team keeps its points and sets.",
+      "c": "Authorises an \"exceptional substitution\" of player No. 2 by any player sitting on the bench. Player No. 2 must go to the team dressing room for the remainder of the match."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 249,
+    "question": "After hitting the ball, the player touches the ropes that attach the net to the post.",
+    "answers": {
+      "a": "No fault is committed, provided that this contact does not interfere with play.",
+      "b": "The referee may not interrupt the rally under any circumstances.",
+      "c": "The referee whistles the fault \"contact of the player with the net\"."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 250,
+    "question": "After the blocking players of team \"A\" land, one of them remains on the ground with a twisted ankle. The players of the opposing team are successful in playing the ball and prepare the next attack. The referee:",
+    "answers": {
+      "a": "Must stop play immediately and allow medical assistance to enter the court. The rally is replayed.",
+      "b": "Does not stop the rally.",
+      "c": "Stops the rally and issues a time-out for team \"A\"."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 251,
+    "question": "Player No. 3 of team \"A\" attacks, the ball is in the front zone and is completely higher than the top of the net. The attack ball lands on the opponent's court. The referee decides in favour of team \"A\". After the players have lined up correctly again, the referee realises that player No. 3 is a back-row player. The referee:",
+    "answers": {
+      "a": "Does not change his decision.",
+      "b": "Changes his decision and team \"B\" wins the previous rally.",
+      "c": "Decides to replay the rally."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 252,
+    "question": "The front-row setter of team \"A\" tries to play a ball that comes from a team-mate. He jumps up and hits the ball over the net with one hand. At the moment he touches the ball, his hand is in the opponent's space. The ball played in this way flies on the setter’s side, parallel to the net, in the direction of an attacker from team \"A\". The block of team \"B\" touches the ball before the attacker of team \"A\", so that the attacker \"A\" cannot execute the attack. The 1st referee:",
+    "answers": {
+      "a": "Whistles the fault from block \"B\".",
+      "b": "Whistles the fault from setter \"A\".",
+      "c": "Doesn't whistle, no fault has been made."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 253,
+    "question": "The receiving team is positioned incorrectly at the moment of the service. The server touches the end line when jumping to serve. The referee:",
+    "answers": {
+      "a": "Decides the rally in favour of the serving team – positional fault by the receiving team.",
+      "b": "Decides on \"double fault\" - the rally is replayed.",
+      "c": "Decides the rally in favour of the receiving team – fault by the server."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 254,
+    "question": "A player touches the playing surface of the opponent with his fingers under the net with his palm above the centre line. The referee:",
+    "answers": {
+      "a": "Does not whistle because this penetration does not interfere with the opponent.",
+      "b": "Whistles only in the event that the palm of the hand is not in contact with the centre line.",
+      "c": "Whistles an unauthorised penetration under the net into the opponent's court."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 255,
+    "question": "The libero of team \"A\" makes an overhand finger pass in the front zone. An attacking player plays the ball, which is completely higher than the top of the net, towards the opponent. The attacking ball touches the opponent's block, in which a back-row player also participates. After the block touch, the ball still remains in play. The referee blows the whistle:",
+    "answers": {
+      "a": "The team \"B\" (block) wins the rally.",
+      "b": "The team \"A\" (attack) wins the rally.",
+      "c": "Rally is replayed, double fault."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 256,
+    "question": "After two opponents touch the ball over the net at the same time (both players try to hit the ball), the ball lands on the floor completely outside the side line of team \"A\". The rally:",
+    "answers": {
+      "a": "Must be replayed.",
+      "b": "Is won by team \"A\".",
+      "c": "Is won by team \"B\".",
+      "d": "Must be whistled in any case, if the contact was completed above the opponent court."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 257,
+    "question": "Before serving, the game captain asks the referee to check the opponent's line-up. The referee:",
+    "answers": {
+      "a": "Rejects the request without any other consequences.",
+      "b": "Sanctions the team for delay.",
+      "c": "Informs the captain whether the opponent is correctly lined-up or not. The referee is not permitted to show the opponent's line-up sheet or to say which player is a front-row or back-row player."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 258,
+    "question": "A player of team \"A\" blocks the attack of team \"B\", so that the ball flies through the space of team \"B\" and then under the net into the space of the blocking team \"A\". The referee:",
+    "answers": {
+      "a": "Whistles a fault of team \"A\" (block).",
+      "b": "Replays the rally.",
+      "c": "Whistles a fault of team \"B\" (attack)."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 259,
+    "question": "If a player is injured during the match, procedures are as follows:",
+    "answers": {
+      "a": "The player must be granted a recovery time of 3 minutes immediately and in any case, but only once per player in a match.",
+      "b": "The team must first use its time-outs, only then will it be granted a recovery time of 3 minutes, but only once per player in a match.",
+      "c": "The player must be granted a recovery time of 3 minutes if he cannot be substituted either legally or exceptionally, but only once per player in a match."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 260,
+    "question": "After a bad reception by team \"A\", the ball flies directly towards the net. A player from team \"B\" clearly moves his arms with the intention of hitting the ball through the net into the opponent's court, so that the receiving team has no chance of playing the ball. The referee decides:",
+    "answers": {
+      "a": "Rally is replayed – \"double fault\".",
+      "b": "Team \"A\" wins the rally – net fault of team \"B\".",
+      "c": "Team \"B\" wins the rally – ball \"in\"."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 261,
+    "question": "After a coach has been disqualified, the following must be observed:",
+    "answers": {
+      "a": "Only the team captain can assume the coach’s functions.",
+      "b": "The assistant coach can assume the coach's functions as soon as the game captain has informed the referee.",
+      "c": "The assistant coach automatically assumes the coach’s functions."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 262,
+    "question": "Coach \"A\" requests a substitution in accordance with the rules. When the player is already in the substitution zone, he cancels his request. The referees accept this and penalise team \"A\" for unsportsmanlike conduct. Is this correct?",
+    "answers": {
+      "a": "Yes.",
+      "b": "No."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 263,
+    "question": "In which case may a player block the service?",
+    "answers": {
+      "a": "Only if the ball remains in the blocker's half of the court after touching the block.",
+      "b": "The opponent's serve must not be blocked."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 264,
+    "question": "Two faults were committed by opponents at the same time, the 1st referee decides on DOUBLE FAULT. Coach \"A\" requests a substitution.",
+    "answers": {
+      "a": "The substitution will be granted.",
+      "b": "The substitution will be rejected. It will be considered as improper request.",
+      "c": "The substitution will be rejected. The team will not receive a sanction."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 265,
+    "question": "Team \"A\" plays the ball in a way that it touches the 2nd referee. The 1st referee decides:",
+    "answers": {
+      "a": "Rally will be replayed.",
+      "b": "Fault of team \"A\"."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 266,
+    "question": "After landing of the block players of Team \"A\", one of the block players remains severely injured on the floor. Immediately after the injury, the block rebound touches the court. What is the procedure?",
+    "answers": {
+      "a": "The 1st referee stops the rally immediately and allows medical assistance to enter the court. The rally is replayed.",
+      "b": "At the end of the rally (ball touches the floor), the 1st referee allows medical assistance to enter the court. Team \"B\" is awarded the point and the right to serve."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 267,
+    "question": "During a time-out, the substitute players use a volleyball in the warm-up area. The referees:",
+    "answers": {
+      "a": "May allow the use of a heavy medicine ball or rubber ropes.",
+      "b": "Allow players to warm up with the ball.",
+      "c": "Prohibit the use of a volleyball."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 268,
+    "question": "During a playing action in the free zone in front of the team bench \"A\", a player \"A\" collides with his own coach standing in the authorised area in such a way that he can no longer reach the ball. What is the procedure?",
+    "answers": {
+      "a": "Fault by team \"A\".",
+      "b": "The rally is replayed."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 269,
+    "question": "Team discipline during the match is within the responsibility of:",
+    "answers": {
+      "a": "The coach only.",
+      "b": "The team captain and the coach in equal shares.",
+      "c": "The team captain only."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 270,
+    "question": "In which areas is the coach of a team allowed to move freely during the match?",
+    "answers": {
+      "a": "He may stand in the service zone.",
+      "b": "He may in any case move in the free zone from the extension of the attack line up to the end of the free zone.",
+      "c": "He may move in the free zone from the extension of the attack line up to the warm-up area, provided that the warm-up area is situated in the corner of the Competition Control Area.",
+      "d": "He may stand or walk within the free zone in the area in front of his team bench.",
+      "e": "He may in any case move in the free zone from the extension of the attack line up to the end of his/her team’s court."
+    },
+    "correct": [
+      "c",
+      "d",
+      "e"
+    ]
+  },
+  {
+    "question_number": 271,
+    "question": "After a long and intense rally, a player waves to a quickmopper to come onto the court and wipe away a wet spot on the floor. How do the referees react?",
+    "answers": {
+      "a": "If, in the opinion of the 1st referee, there is a need to wipe up a wet spot, the 1st referee will allow the quickmoppers to come onto the field and will authorise wiping.",
+      "b": "If the 1st referee is of the opinion that there is no need to bring the quickmoppers onto the court and that this is only intended to delay the game, he will impose a delay sanction.",
+      "c": "The 2nd referee has to control the work of the quickmoppers and only he is allowed to send them onto the court.",
+      "d": "If the 1st referee issues a delay sanction, he calls the captain to him and informs him by showing the corresponding card and hand signal."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 272,
+    "question": "After the second touch of the ball by team A, the ball crosses the plane of the net outside the antenna into the opponent's free zone. Player #5 of team A runs after the ball to return it to his own half of the court. At this moment, the 2nd referee whistles for a net fault by team B and team A wins the rally. Are the referees acting correctly?",
+    "answers": {
+      "a": "Yes, as long as the opposing player caused the net contact during an action of playing the ball, this decision is correct.",
+      "b": "Yes, in any case.",
+      "c": "No."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 273,
+    "question": "At the moment when the correct service player tosses and hits the ball, both teams stand within their court, but not according to the rotational order. How should the referees decide?",
+    "answers": {
+      "a": "Fault of the receiving team.",
+      "b": "Fault of the serving team.",
+      "c": "Replay of the rally."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 274,
+    "question": "What options has the 1st referee if he is of the opinion that some players of the serving team are holding their hands above the head during service?",
+    "answers": {
+      "a": "He can penalise this as a mistake.",
+      "b": "He can sanction this as a delay and have the rally replayed.",
+      "c": "He may give the serving team a verbal warning for minor misconduct.",
+      "d": "As he has already cautioned the team for this, he penalises this as deliberately screening and also issues a yellow card for unsportsmanlike conduct.",
+      "e": "He can call the game captain and point out that in the event of a repetition, this will be judged as deliberately screening."
+    },
+    "correct": [
+      "a",
+      "e"
+    ]
+  },
+  {
+    "question_number": 275,
+    "question": "Which of the following hand positions of the players of the serving team are allowed at the moment of the service hit?",
+    "answers": {
+      "a": "At most one hand is higher than the head.",
+      "b": "Both hands are clasped behind the head.",
+      "c": "He rests one hand on his head and leaves the other hand hanging.",
+      "d": "One hand rests on the head, the other hand is placed on the head (palm facing forwards)."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 276,
+    "question": "In the serving team, the players in positions 2, 3 and 4 have their hands below head height, while the player in position 5 has his hands above head height. The ball is played over position 2 to the opponent. Is this in accordance with the rules?",
+    "answers": {
+      "a": "Yes, because the service does not fly over the player concerned and therefore the flight path of the ball is not hidden.",
+      "b": "Yes, in any case.",
+      "c": "Non."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 277,
+    "question": "The ball is passed by the libero with overhand fingers, the attacker hits the ball above net height. This is permitted if the libero, while setting the ball, is located, ...",
+    "answers": {
+      "a": "with both feet in the front zone, and the attacker jumps off at least behind the attack line.",
+      "b": "with one foot in the front zone and with the other foot in the back zone, and the attack is executed within the front zone.",
+      "c": "with one foot in the back zone and with the other foot in the front zone, while at the moment of the setting action, he lifts his foot into the air in the front zone and thus no longer has contact with the floor, and the attacker jumps off at least behind the attack line.",
+      "d": "with both feet in the back zone, and the attack is executed within the front zone by a front-row player."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 278,
+    "question": "Team A's attacker hits the ball into the top band of the net with his third touch, after which the ball is touched a fourth time by team A without an opposing player having touched the ball. The referee shows the following hand signal to signal the fault:",
+    "answers": {
+      "a": "Double contact (hand signal #17), if the third and fourth touches are made by the same player.",
+      "b": "Attack hit fault (hand signal #21).",
+      "c": "Four hits (hand signal #18), if the third and fourth touches are made by different players.",
+      "d": "Four hits (hand signal #18), if the third and fourth touches are made by the same player."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  }
+]

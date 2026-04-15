@@ -1,0 +1,16 @@
+# Extraction script (contains credential handling)
+extract_questions.py
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Debug/temp files
+debug_*.html
+diff_*.html
+
+# Old question file (replaced by per-language files)
+questions_with_diagrams_updated.json
+
+# Diagrams downloaded by extraction script
+diagrams/

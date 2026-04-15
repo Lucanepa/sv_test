@@ -1,0 +1,3678 @@
+[
+  {
+    "question_number": 1,
+    "question": "Qu’est-ce qui tombe dans le champ de compétence et de décision du 2ème arbitre?",
+    "answers": {
+      "a": "Siffler le contre effectif effectué par un joueur arrière.",
+      "b": "Autoriser une demande de remplacement.",
+      "c": "Contrôler le travail des ramasseurs de ballon.",
+      "d": "Siffler le contact du ballon avec un objet extérieur.",
+      "e": "Vérifier la feuille de match à la fin du match."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d",
+      "e"
+    ]
+  },
+  {
+    "question_number": 2,
+    "question": "Le ballon traverse le plan vertical du filet en dehors de l’espace de passage et va dans la zone libre adverse. Dans quels cas le juge de ligne concerné doit il immédiatement signaler ceci?",
+    "answers": {
+      "a": "Il s’agit d’un service.",
+      "b": "Cela se produit après la troisième touche de balle de l’équipe (en réception).",
+      "c": "Cela se produit après la deuxième touche de balle de l’équipe (en réception).",
+      "d": "Cela se produit après la première touche de balle de l’équipe (en réception)."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 3,
+    "question": "Sur son propre service, un groupe de joueurs cache à l’adversaire la vue sur le joueur au service. S’agit-il d’un écran?",
+    "answers": {
+      "a": "Non, en aucun cas.",
+      "b": "Oui, dans tous les cas.",
+      "c": "Oui, si ce faisant la trajectoire du ballon est également cachée."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 4,
+    "question": "Dans lesquelles des situations suivantes le ballon peut-il toucher consécutivement plusieurs partie du corps d’un joueur?",
+    "answers": {
+      "a": "Sans aucune limitation lors de toutes actions de contre du service adverse.",
+      "b": "Lors de la réception du service adverse en passe haute avec les doigts, si les contacts consécutifs ont lieu durant la même action.",
+      "c": "Sans aucune limitation lors de la réception du service adverse en passe haute avec les doigts."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 5,
+    "question": "Le 1er arbitre décide après un échange de jeu en faveur de l’équipe A. Celle-ci effectue immédiatement un remplacement (il s’agit du premier remplacement dans ce set). Ensuite, le 1er arbitre revoit sa décision et attribue le point à l’équipe B. L’équipe A souhaite annuler son remplacement. L’arbitre peut-il autoriser ceci?",
+    "answers": {
+      "a": "Oui, toutefois 2 remplacements seront comptabilisés à l’équipe.",
+      "b": "Oui, sans autres restrictions.",
+      "c": "Non."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 6,
+    "question": "Un joueur avant saute trop tôt au contre et „en redescendant“ touche le ballon après l’attaque de l’adversaire avec la tête, sous le bord supérieur du filet. Est-ce que l’équipe dispose ensuite encore de trois touches de balle?",
+    "answers": {
+      "a": "Non, en aucun cas.",
+      "b": "Oui , dans tous les cas.",
+      "c": "Oui, si au moment du contact du ballon avec la tête une partie du corps (p.ex. les mains) est encore au-dessus du sommet du filet."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 7,
+    "question": "Le joueur #8 est averti pour une incorrection (mineure) au moyen d’un carton jaune. Plus tard dans le match, un joueur de la même équipe a un comportement incorrect similaire. Lesquelles des réactions suivantes du 1er arbitre sont possibles dans cette situation?",
+    "answers": {
+      "a": "S’il ne s’agit pas du joueur #8, il peut avertir le joueur concerné au moyen d’un carton jaune.",
+      "b": "Il peut avertir le joueur concerné dans tous les cas en lui montrant un carton jaune.",
+      "c": "Il peut pénaliser le joueur concerné (carton rouge)."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 8,
+    "question": "Le joueur #9 est pénalisé pour conduite grossière (carton rouge). Aucun membre de l’équipe n’avait été averti auparavant par un carton jaune. Plus tard dans le match a lieu un (premier) comportement incorrect mineur par un joueur de la même équipe. Est-ce que ce joueur peut être averti verbalement ou en utilisant un carton jaune?",
+    "answers": {
+      "a": "Oui, s’il ne s’agit pas du joueur #9.",
+      "b": "Oui, dans tous les cas.",
+      "c": "Non, en aucun cas."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 9,
+    "question": "Après le gain d’un échange de jeu, l’équipe effectue un changement de Libéro. Après le coup de sifflet pour le service, le 1er arbitre siffle à nouveau après 8 secondes, car le joueur au service n’avait jusqu’alors pas encore effectué le service. Est-ce que l’équipe peut effectuer un nouveau changement de Libéro?",
+    "answers": {
+      "a": "Oui.",
+      "b": "Non.",
+      "c": "Uniquement si l’équipe adverse effectue aussi un changement de Libéro."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 10,
+    "question": "L’équipe A échange le Libéro, immédiatement après l’équipe B effectue un remplacement, et sur ce le Libéro de l’équipe A est à nouveau changé. Les arbitres remarquent ceci au moment du second changement. Comment doivent-ils procéder?",
+    "answers": {
+      "a": "Le second changement est annulé sans autres conséquences.",
+      "b": "Le second changement est annulé. L’équipe A reçoit une sanction pour retard de jeu.",
+      "c": "Le second changement est autorisé, après le service suivant l’arbitre siffle la fin de l’échange et décide une faute contre l’équipe A."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 11,
+    "question": "Une équipe joue avec un Libéro. Le coach désigne celui-ci comme inapte à jouer et désigne immédiatement un nouveau Libéro. Est-ce possible?",
+    "answers": {
+      "a": "Oui, dans tous les cas.",
+      "b": "Uniquement si le premier Libéro ne se trouve pas sur le terrain à ce moment.",
+      "c": "Uniquement si le premier Libéro se trouve sur le terrain à ce moment."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 12,
+    "question": "Une équipe joue avec 2 Libéros (L1 et L2). Le Libéro L1 se blesse et devient incapable de jouer. Quelles affirmations sont correctes pour la suite de la rencontre?",
+    "answers": {
+      "a": "Le Libéro L1 peut dans tous les cas à nouveau agir comme Libéro, s’il se remet de sa blessure.",
+      "b": "Si le Libéro L2 est disqualifié, l’équipe peur re-désigner un nouveau Libéro.",
+      "c": "Si le Libéro L2 se blesse, l’équipe peur re-désigner un nouveau Libéro.",
+      "d": "Si le Libéro L2 est expulsé, l’équipe peur re-désigner un nouveau Libéro."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 13,
+    "question": "Deux remplacements ont eu lieu dans le cours d’un set: le joueur #4 pour le #3 et le joueur #6 pour le #5. Plus tard, les joueurs remplacés entrent dans la zone de remplacement, le #3 avec la plaquette #4 et le #5 avec la plaquette #10, afin d’effectuer un double remplacement. Comment faut-il procéder?",
+    "answers": {
+      "a": "Le remplacement „3 pour 4“ est autorisé, mais pas l’autre remplacement. Le jeu se poursuit sans autres conséquences.",
+      "b": "Le remplacement „3 pour 4“ est autorisé, mais pas l’autre remplacement. L’équipe reçoit une sanction pour retard.",
+      "c": "Les deux remplacements sont refusés. L’équipe reçoit une sanction pour retard."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 14,
+    "question": "Une équipe demande un double remplacement, après avoir déjà effectué 5 remplacements durant le cours du set. Comment faut-il procéder?",
+    "answers": {
+      "a": "Les deux remplacement ne sont pas autorisés. L’équipe reçoit une sanction pour retard.",
+      "b": "Le 2ème arbitre demande au coach lequel des deux remplacements il souhaite effectuer. Celui-ci sera autorisé, l’autre sera rejeté. Si cela ne provoque pas de retard, la seconde demande est considérée comme une demande non fondée.",
+      "c": "Le 2ème arbitre demande au coach lequel des deux remplacements il souhaite effectuer. Celui-ci sera autorisé, l’autre sera rejeté. L’équipe reçoit dans tous les cas une sanction pour retard."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 15,
+    "question": "Un joueur qui a été échangé par le Libéro est assis sur le banc d’équipe et est expulsé pour antisportivité (le Libéro se trouve en position 6). Comment faut-il procéder?",
+    "answers": {
+      "a": "Le joueur doit dans tous les cas être échangé avec le Libéro et retourner sur le terrain, afin d’être ensuite remplacé régulièrement.",
+      "b": "Le Libéro peut rester sur le terrain. Ce n’est que quand il doit quitter le terrain qu’un joueur doit être désigné pour remplacer le joueur expulsé et entrer sur le terrain.",
+      "c": "Le joueur doit immédiatement être remplacé hors du terrain, le Libéro peut rester sur le terrain.",
+      "d": "Le joueur doit immédiatement être remplacé hors du terrain, le joueur remplaçant doit immédiatement être échangé avec le Libéro et entrer sur le terrain."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 16,
+    "question": "Le Libéro de l’équipe au service entre sur le terrain à la place d’un joueur arrière, l’échange ayant lieu après le coup de sifflet autorisant le service et avant la frappe de la balle. C’est la deuxième fois que cela se produit durant ce match. Quelle est la réaction correcte du 1er arbitre?",
+    "answers": {
+      "a": "Il siffle et sanctionne l’équipe au service avec une faute de positions.",
+      "b": "Il rejette immédiatement le changement et inflige une sanction pour retard de jeu à l’équipe au service.",
+      "c": "Il interrompt immédiatement l’échange et prononce une sanction pour retard de jeu.",
+      "d": "Il laisse l’échange se terminer et informe ensuite le capitaine de jeu de l’équipe au service."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 17,
+    "question": "Lesquelles de ces «actions de bloc» par un joueur arrière sont autorisées?",
+    "answers": {
+      "a": "Le joueur arrière étend ses mains en direction de la bande supérieure du filet, sans toutefois la dépasser, et touche le ballon sous la bande supérieure du filet.",
+      "b": "Le joueur arrière effectue une tentative de bloc (sans contact du ballon) et le joueur adverse frappe la balle directement «out».",
+      "c": "Le joueur arrière partcipe à un bloc collectif effectif, sans lui-même toucher le ballon.",
+      "d": "Le Libéro effectue une tentative de bloc."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 18,
+    "question": "Un joueur de l’équipe en réception fait une mauvaise réception de service. Le ballon traverse le plan vertical du filet à l’extérieur de l’antenne et va dans la zone libre de l’adversaire. Un autre joueur de l’équipe en réception court après le ballon et le joue depuis la zone libre adverse vers son propre terrain. Dans quels cas ceci est-il autorisé?",
+    "answers": {
+      "a": "Le ballon retourné passe sous le filet entre le poteau et la prolongation de l’antenne.",
+      "b": "Le ballon est retourné directement au-dessus de l’antenne du même côté du terrain.",
+      "c": "Le ballon est retourné du même côté du terrain entre le poteau et le filet, sans toucher de câbles ou de cordes du filet."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 19,
+    "question": "Lesquelles des situations suivantes sont conformes aux règles en termes de contact du ballon au-dessus du filet?",
+    "answers": {
+      "a": "Le contact du ballon dans l’espace de jeu adverse par une action de bloc pendant la frappe d’attaque de l’adversaire.",
+      "b": "Le passeur joue le ballon venant de sa propre équipe dans l’espace de jeu adverse afin de le ramener dans son côté du terrain.",
+      "c": "Deux joueurs avant adverses touchent le ballon simultanément, alors que celui-ci se trouve directement au-dessus de la bande supérieure du filet.",
+      "d": "Le contact du ballon dans l‘espace de jeu adverseavant la frappe d’attaque adverse."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 20,
+    "question": "Le capitaine d’équipe de l’équipe A ne se trouve par sur le terrain. Après un long échange, l’équipe n’est pas sûre de qui doit servir ensuite. Qui a le droit de demander au 2ème arbitre, quel joueur est le prochain à servir?",
+    "answers": {
+      "a": "Le coach.",
+      "b": "Le capitaine de jeu.",
+      "c": "Le coach-adjoint.",
+      "d": "Le capitaine d’équipe."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 21,
+    "question": "Lorsque l’équipe A sert, le ballon touche un de ses propre joueur dans le dos. En même temps, le 2ème arbitre siffle une faute de position de l’équipe B. Quelle(s) décision(s) est/sont correcte(s)?",
+    "answers": {
+      "a": "Double faute; équipe B au service.",
+      "b": "Double faute; équipe A au service.",
+      "c": "Faute de l’équipe A; point et service pour l’équipe B.",
+      "d": "Faute de l’équipe B; point et service pour l’équipe A."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 22,
+    "question": "Deux joueurs adverses touchent le ballon en même temps directement au-dessus du filet. Lesquelles des affirmations suivantes sont conformes aux règles?",
+    "answers": {
+      "a": "Si le ballon reste ensuite en jeu, l’équipe vers laquelle le ballon se dirige a droit à trois touches de balle.",
+      "b": "Si le ballon touche ensuite l’antenne, l’échange de jeu est rejoué.",
+      "c": "Si le contact du ballon par les deux joueurs se prolonge, c’est une double faute et l’échange doit être rejoué.",
+      "d": "Si le ballon est ensuite «out» du côté de l’équipe A, c’est une faute de l’équipe B."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 23,
+    "question": "En remplacement exceptionnel doit être inscrit sur la feuille de match et compté dans le nombre de remplacements total effectués dans le set et le match. Cette affirmation est-elle correcte ou fausse?",
+    "answers": {
+      "a": "Correcte",
+      "b": "Fausse"
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 24,
+    "question": "Durant le match, qui est autorisé à rester dans sa propre zone libre devant le banc d’équipe pendant une période prolongée?",
+    "answers": {
+      "a": "Coach et coach-adjoint",
+      "b": "Coach",
+      "c": "Coach, coach-adjoint et capitaine d'équipe",
+      "d": "Coach, coach-adjoint, thérapeute et médecin"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 25,
+    "question": "Le joueur A n'est pas le bon joueur au service et effectue le service. Que devrait-il se passer?",
+    "answers": {
+      "a": "Le marqueur rend attentif le 2ème arbitre de la faute et celui-ci interrompt immédiatement l'échange.",
+      "b": "Le marqueur attend la fin de l'échange et informe ensuite le 2ème arbitre de la faute. Aucun point n'est attribué pour cet échange. L'arbitre siffle et donne un point et le droit au service à l'adversaire.",
+      "c": "Le marqueur attend la fin de l'échange et informe ensuite le 2ème arbitre de la faute. Le 1er arbitre doit donner une sanction pour retard de jeu et l'adversaire reçoit le droit au service. Si l'adversaire devait avoir gagné l'échange, alors il reçoit aussi un point.",
+      "d": "Le marqueur attend la fin de l'échange et informe ensuite le 2ème arbitre de la faute. Si l'adversaire devait avoir gagné l'échange, alors il reçoit deux points. L'équipe du joueur A doit corriger ses positions.",
+      "e": "Le marqueur attend la fin de l'échange et informe ensuite le 2ème arbitre de la faute. Si l'adversaire devait avoir gagné l'échange, alors il reçoit un point. L'équipe du joueur A garde le droit au service et doit corriger ses positions."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 26,
+    "question": "Le Libéro entre sur le terrain et est échangé pour le joueur A. Arrivé vers le banc d'équipe, le joueur A agit grossièrement face aux arbitres et reçoit une pénalité. Le joueur A commence alors à jurer et à crier, ce qui conduit à son expulsion puis à sa disqualification. Comment vont se dérouler l'échange de Libéro et le remplacement?",
+    "answers": {
+      "a": "Le Libéro doit quitter le terrain. Le joueur A est remplacé sans pénétrer sur le terrain par un autre joueur se trouvant sur le banc d'équipe. Le nouveau joueur entre sur le terrain. Le Libéro peut revenir sur le terrain après le prochain échange de jeu terminé.",
+      "b": "Le Libéro doit quitter le terrain. Le joueur A doit retourner sur le terrain afin d'être échangé avec le Libéro.",
+      "c": "Le Libéro peut rester sur le terrain. Le joueur A est remplacé régulièrement (si possible, sinon exceptionellement) par un autre joueur qui se trouve sur le banc d'équipe.",
+      "d": "Le Libéro devient le remplaçant du joueur A et peut rester sur le terrain."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 27,
+    "question": "Quelle procédure le 2ème arbitre doit-il suivre lorsque la fiche de positions de l'équipe A ne correspond pas aux positions de départ sur le terrain?",
+    "answers": {
+      "a": "Aller vers le coach et lui demander ce qu'il veut faire.",
+      "b": "Aller vers le coach et l'informer que son équipe va recevoir une sanction pour retard de jeu.",
+      "c": "Se comporter calmement. C'est la responsabilité du marqueur.",
+      "d": "Se comporter calmement. C'est la responsabilité du 1er arbitre"
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 28,
+    "question": "L'équipe A a effectué tous les remplacements possibles. Le Libéro est assis sur le banc. Un des joueurs sur le terrain est expulsé. Comment la rencontre se poursuit-elle?",
+    "answers": {
+      "a": "L'équipe A perd le set.",
+      "b": "L'équipe A peut terminer le set avec cinq joueurs.",
+      "c": "L'un des joueurs qui a déjà effectué un remplacement auparavant peut remplacer le joueur expulsé.",
+      "d": "Le Libéro peut être échangé pour le joueur qui vient d'être expulsé."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 29,
+    "question": "La joueuse A contre le ballon. Celui-ci la frappe au visage et va ensuite au-dessus de l'antenne dans la zone libre adverse. Sa coéquipière B suit le ballon et le retourne dans son camp également au-dessus de l'antenne. Quelle est l'action correcte de l'arbitre / du juge de ligne et pourquoi?",
+    "answers": {
+      "a": "Le ballon est \"out\" (geste #15) lorsque la coéquipière B joue le ballon dans la zone libre adverse.",
+      "b": "Le ballon est \"out\" (geste #15) lorsqu'il retourne au-dessus de l'antenne.",
+      "c": "Rien. Cette action de jeu est conforme aux règles",
+      "d": "Le ballon est \"out\" (geste #15) lorsqu'il passe pour la première fois au-dessus de l'antenne."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 30,
+    "question": "Un joueur entre dans la zone de remplacement. Un deuxième joueur (encore en training) quitte au même moment l'aire d'échauffement et marche vers la zone de remplacement. Quelle attitude le 2ème arbitre doit-il adopter à ce moment-là?",
+    "answers": {
+      "a": "Procéder à un seul remplacement, avec le joueur se trouvant dans la zone de remplacement.",
+      "b": "Prononcer une sanction pour retard de jeu à l'encontre de l'équipe.",
+      "c": "Empêcher le deuxième joueur d’entrer dans la zone de remplacement.",
+      "d": "Procéder à un double remplacement.",
+      "e": "Procéder à un seul remplacement, avec le joueur se trouvant dans la zone de remplacement, et prononcer une sanction pour retard de jeu à l'encontre de l'équipe."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 31,
+    "question": "Trois joueurs pénètrent dans la zone de remplacement. Après que la demande soit reconnue et acceptée par le marqueur, le coach décide de ne faire que deux remplacements. Quelle est la procédure correcte pour le 2ème arbitre?",
+    "answers": {
+      "a": "Informer le coach que trois remplacements doivent être effectués.",
+      "b": "Rien. Les remplacements sont effectués par le marqueur, pas par l'arbitre.",
+      "c": "Procéder aux deux remplacements, sans sanction pour l’équipe (pour autant que cela ne cause pas de retard).",
+      "d": "Informer le coach qu'il doit prendre un temps-mort afin de rectifier le nombre de remplacements."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 32,
+    "question": "Le joueur A est prêt à jouer et entre dans la zone de remplacement pendant une interruption. Une fois la demande reconnue et acceptée par le marqueur, l’entraîneur change d’avis et ordonne au joueur de retourner dans l'aire d'échauffement. Que doivent décider les arbitres?",
+    "answers": {
+      "a": "La situation est comptabilisée comme deux remplacements – le joueur A pour un autre joueur, puis cet autre joueur pour le joueur A. Pas de sanction.",
+      "b": "Le remplacement est annulé. Pas de sanction.",
+      "c": "Le remplacement doit être effectué. Pas de sanction.",
+      "d": "Le remplacement est annulé et l'équipe reçoit une sanction pour retard de jeu."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 33,
+    "question": "Lors du changement de côté après le 2ème set, le joueur #13 de l'équipe A accuse le 1er arbitre \"d'être aveugle\" et secoue ensuite violemment la chaise d'arbitre. Comment le 1er arbitre doit-il réagir?",
+    "answers": {
+      "a": "Le 1er arbitre appelle le coach de l'équipe A vers lui et lui explique que le joueur #13 sera sanctionné pour conduite injurieuse. Ensuite le 1er arbitre expulse le joueur #13 (geste #8).",
+      "b": "Le 1er arbitre appelle le capitaine de jeu de l'équipe A vers lui durant la pause et lui explique qu'il va sanctionner le joueur #13 pour agression. Une fois que le 2ème arbitre a contrôlé les positions pour le 3ème set, le 1er arbitre disqualifie le joueur #13 (geste #8).",
+      "c": "Le 1er arbitre appelle le capitaine de jeu de l'équipe A vers lui durant la pause et lui explique qu'il va sanctionner le joueur #13 pour agression. Une fois que le 2ème arbitre a contrôlé les positions pour le 3ème set, le 1er arbitre expulse le joueur #13 (geste #7).",
+      "d": "Une fois que le 2ème arbitre a contrôlé les positions pour le 3ème set, le 1er arbitre fait le geste pour une disqualification (geste #8) et montre le joueur #13, qui est ensuite remplacé. L'équipe A reçoit en plus une sanction pour retard de jeu.",
+      "e": "Une fois que le 2ème arbitre a contrôlé les positions pour le 3ème set, le 1er arbitre fait le geste pour une expulsion (geste #7) et montre le joueur #13."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 34,
+    "question": "Quelle(s) affirmation(s) est(sont) correcte(s)?",
+    "answers": {
+      "a": "Avant de donner l'autorisation de servir, le 1er arbitre doit vérifier que les deux équipes sont prêtes à jouer et que le joueur au service est en possession du ballon.",
+      "b": "Si pendant le service un coéquipier du joueur au service ne se trouve pas entièrement à l'intérieur du terrain (avec un pied dans la zone libre) et que l'équipe en réception commet une faute de positions, alors il faut décider de rejouer cet échange de jeu.",
+      "c": "En cas de faute de service durant l'exécution du service et simultanément de faute de positions de l'équipe en réception, le 1er arbitre ne peut pas décider de donner l'échange à rejouer.",
+      "d": "Le 1er arbitre peut autoriser le service même si le joueur au service en possession du ballon ne se trouve pas dans la zone de service."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 35,
+    "question": "Une équipe joue avec un Libéro. Quelle(s) affirmation(s) est(sont) correcte(s)?",
+    "answers": {
+      "a": "Le coach peut effectuer une redésignation du Libéro si celui-ci se fait expulser.",
+      "b": "Un Libéro peut jouer en passe haute à deux mains le ballon vers l'équipe adverse depuis n'importe quelle position de son propre terrain si le ballon ne se trouve pas entièrement au-dessus du bord supérieur du filet.",
+      "c": "Le capitaine d'équipe ne peut jamais devenir Libéro.",
+      "d": "Un Libéro blessé reçoit un temps de récupération de 3 minutes."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 36,
+    "question": "Une équipe a sept joueurs, dont l'un est un Libéro. Un joueur (position VI) est expulsé durant le 2ème set. Quelle(s) possibilité(s) l'équipe a-t-elle?",
+    "answers": {
+      "a": "Le joueur sanctionné doit être remplacé. C'est pourquoi le Libéro est redésigné sur demande comme joueur \"normal\" (il doit changer de maillot!) et le remplacement peut être effectué.",
+      "b": "Comme le joueur ne peut pas être remplacé, l'équipe est déclarée incomplète et perd le 2ème set.",
+      "c": "Le joueur expulsé peut être échangé par le Libéro. Si le libéro devait effectuer une rotation sur la position IV, le joueur expulsé ne pourra pas être remplacé régulièrement, l'équipe sera déclarée incomplète et perdra le set.",
+      "d": "Le coach se désigne joueur-entraîneur et remplace le joueur sanctionné."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 37,
+    "question": "[[html]Quel(s) fait(s) est(sont) à inscrire sur la feuille de match?",
+    "answers": {
+      "a": "Un remplacement exceptionnel.",
+      "b": "Une redésignation d'un Libéro.",
+      "c": "Une première demande non fondée d’une équipe qui ne provoque aucun retard de jeu.",
+      "d": "Un avertissement formel (carton jaune)."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 38,
+    "question": "Après une réception ratée, le ballon se dirige vers le point marqué en rouge sur le dessin, situé du côté de l'équipe en réception. Le Libéro court après le ballon et le joue en passe haute à deux mains dans son propre camp. Que doivent décider les arbitres?",
+    "answers": {
+      "a": "Le jeu se poursuit jusqu'à ce qu'une frappe d'attaque soit effective, alors que le ballon se trouvait entièrement au-dessus du bord supérieur du filet au moment de la frappe. Le jeu est alors interrompu et une \"Faute de frappe d'attaque\" (geste #21) est décidée.",
+      "b": "Le jeu se poursuit sans restriction.",
+      "c": "Le jeu se poursuivrait aussi sans restriction si la passe du Libéro avait été effectuée depuis la zone libre de l'adversaire (point marqué en bleu) (le ballon aurait alors été dans la zone libre adverse et serait retourné dans son propre camp les deux fois en passant en dehors de l'espace de passage).",
+      "d": "Les arbitres interrompent l'échange et décident ballon \"out\" (geste #15\")."
+    },
+    "correct": [
+      "b",
+      "c"
+    ],
+    "image_url": "ZK_2022_question_038.png"
+  },
+  {
+    "question_number": 39,
+    "question": "Un joueur entre dans la zone de remplacement au moment du coup de sifflet autorisant le service. Quelle affirmation est correcte?",
+    "answers": {
+      "a": "L'action du joueur constitue une demande non fondée.",
+      "b": "L'action du joueur doit dans tous les cas être sanctionnée comme retard de jeu.",
+      "c": "Le 2ème arbitre interrompt le jeu et accède à la demande de remplacement."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 40,
+    "question": "Un coach demande un temps-mort. Le 2ème arbitre siffle. Il est ensuite rendu attentif par le marqueur qu'il s'agit du 3ème temps-mort dans ce set. L'équipe n'a pas encore fait de demande non fondée depuis le début du match. Comment procéder?",
+    "answers": {
+      "a": "Le temps-mort est interrompu et l'équipe sanctionnée pour retard de jeu.",
+      "b": "Le temps-mort est interrompu et le jeu reprend sans autres conséquences.",
+      "c": "Le temps-mort est interrompu et l'équipe sanctionnée pour retard de jeu. De plus, une \"demande non fondée\" est enregistrée sur la feuille de match.",
+      "d": "Le temps-mort est interrompu. Une \"demande non fondée\" est enregistrée sur la feuille de match. Le jeu se poursuit sans autres conséquences."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 41,
+    "question": "Quelle(s) affirmation(s) est(sont) correcte(s)?",
+    "answers": {
+      "a": "Durant un match, le 2ème arbitre peut remplacer le 1er arbitre tombé malade. Si aucun arbitre de remplacement ne peut être trouvé, le match ne peut continuer qu'avec l'assentiment des deux capitaines d'équipes.",
+      "b": "Le coach peut demander l'exactitude des positions adverses auprès du 2ème arbitre.",
+      "c": "Le joueur-entraîneur d'une équipe de LNB peut transmettre ses droits au coach-assistant pour la durée de sa participation active au jeu.",
+      "d": "Le capitaine de jeu peut demander des temps-morts si le coach n'est pas présent. Ceci est également valable lorsque le coach a été expulsé ou disqualifié, pour autant que les droits du coach n’aient pas été repris par le coach-assistant."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 42,
+    "question": "Quand le marqueur doit-il cliquer sur 'Start Rally' dans l'application eScoresheet?",
+    "answers": {
+      "a": "Au moment du coup de sifflet du 1er arbitre autorisant le service.",
+      "b": "Pas du tout, l'application eScoresheet 'Swiss Volley' ne dispose pas de ce champ car Swiss Volley n'utilise pas le Video Challenge.",
+      "c": "Au moment du service (c-à-d. lorsque le joueur frappe le ballon).",
+      "d": "Entre le coup de sifflet du 1er arbitre autorisant le service et la frappe de la balle par le joueur."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 43,
+    "question": "Combien de joueurs formés localement (JFL) doivent être \"sur le terrain\" en LNB et en LNA?",
+    "answers": {
+      "a": "LNA: 2; LNB: 2",
+      "b": "LNA: 2; LNB: 1",
+      "c": "LNA: 2; LNB: pas d’obligation",
+      "d": "LNA: 2; LNB: 3",
+      "e": "LNA: 3; LNB: 3"
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 44,
+    "question": "La composition de l'équipe doit être inscrite dans la section 'Roster' de l'application eScoresheet. Quelles fonctions peuvent être sélectionnées pour les compétitions officielles de Swiss Volley dans la partie inférieure pour les membres de l'équipe sur le banc?",
+    "answers": {
+      "a": "Scout",
+      "b": "Manager",
+      "c": "Head Coach",
+      "d": "Other",
+      "e": "Medical Doctor",
+      "f": "Physiotherapist",
+      "g": "Assistant"
+    },
+    "correct": [
+      "c",
+      "e",
+      "f",
+      "g"
+    ]
+  },
+  {
+    "question_number": 45,
+    "question": "Les équipes peuvent faire entrer un ou deux Liberos dans l'application eScoresheet. Ces deux joueurs ont chacun leur propre statut JFL ou non. Quelle(s) affirmation(s) est(sont) exacte(s)?",
+    "answers": {
+      "a": "L'équipe a un Libero; ce joueur est JFL. Dans cette équipe, le Libero ne compte comme JFL sur le terrain de jeu que s'il s’y trouve effectivement.",
+      "b": "L'équipe a un Libero; ce joueur est JFL. Dans le troisième set, le Libero se blesse et un autre joueur, qui ne dispose pas du statut JFL, est redésigné comme nouveau Libero. Après la redésignation, le Libero compte toujours comme JFL sur le terrain dans cette équipe.",
+      "c": "L'équipe a deux Liberos; l'un est JLF, l'autre non. Dans cette équipe, le Libero ne compte pas comme JFL sur le terrain.",
+      "d": "L'équipe a un Libero; ce joueur est JFL. Dans cette équipe, le Libero compte toujours comme JFL sur le terrain, c-à-d. aussi s’il ne se trouve pas sur le terrain.",
+      "e": "L'équipe a deux Liberos; les deux ne sont pas JLF. Dans cette équipe, le Libero ne compte pas comme JFL sur le terrain.",
+      "f": "L'équipe a deux Liberos; l'un est JLF, l'autre non. Dans cette équipe, le Libero ne compte comme JFL sur le terrain que si le Libero qui est JFL est sur le terrain.",
+      "g": "L'équipe a un Libero; ce joueur est JFL. Dans le troisième set, le Libero se blesse et un autre joueur, qui ne dispose pas du statut JFL, est redésigné comme nouveau Libero. Après la redésignation, le Libero ne compte plus comme JFL sur le terrain dans cette équipe."
+    },
+    "correct": [
+      "c",
+      "d",
+      "e",
+      "g"
+    ]
+  },
+  {
+    "question_number": 46,
+    "question": "A quel moment avant le match les ballons de match doivent-ils être distribués?",
+    "answers": {
+      "a": "Le 2ème arbitre distribue les trois ballons de match aux ramasseurs de balle avant la présentation des six de base des deux équipes.",
+      "b": "Le 2ème arbitre distribue deux ballons de match aux ramasseurs de balle après la présentation des six de base des deux équipes et avant le contrôle des positions; il donne le troisième ballon au joueur au service après le contrôle des positions.",
+      "c": "Le 2ème arbitre distribue les trois ballons de match aux ramasseurs de balle après la présentation des six de base des deux équipes et avant le contrôle des positions.",
+      "d": "Le 2ème arbitre distribue deux ballons de match aux ramasseurs de balle et le troisième ballon au joueur au service après la présentation des six de base des deux équipes et avant le contrôle des positions.",
+      "e": "Le 2ème arbitre distribue les trois ballons de match aux ramasseurs de balle après le contrôle des positions."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 47,
+    "question": "Lors d’un remplacement, on constate (avant le coup de sifflet pour le prochain service) que le nombre de JFL nécessaires sur le terrain n’est plus atteint après le remplacement. Quelles sont les possibilités de l'équipe et quelles sanctions les arbitres doivent-ils imposer? (Indiquez toutes les réponses applicables)",
+    "answers": {
+      "a": "L'équipe concernée a le droit d'annuler le remplacement. Pour le retard qui en résulte, l'équipe concernée sera sanctionnée avec un retard de jeu.",
+      "b": "L'équipe concernée peut continuer à jouer sur le terrain avec moins de JFL que nécessaire. Dans ce cas, une amende sera infligée conformément au catalogue des amendes. L'équipe concernée sera sanctionnée avec un retard de jeu.",
+      "c": "L'équipe concernée a le droit d’effectuer un nouveau remplacement au cours de la même interruption (si l'équipe a encore le droit de le faire) afin de se conformer aux règles JFL sur le terrain. Comme il n'y a pas de retard de jeu effectif (double remplacement ordinaire), aucune sanction ne sera donnée.",
+      "d": "L'équipe concernée peut continuer à jouer sur le terrain avec moins de JFL que nécessaire. Dans ce cas, une amende sera infligée conformément au catalogue des amendes. Aucune sanction pour retard de jeu ne sera donnée.",
+      "e": "L'équipe concernée a le droit d’effectuer un nouveau remplacement au cours de la même interruption (si l'équipe a encore le droit de le faire) afin de se conformer aux règles JFL sur le terrain. Pour le retard qui en résulte, l'équipe concernée sera sanctionnée avec un retard de jeu."
+    },
+    "correct": [
+      "a",
+      "d",
+      "e"
+    ]
+  },
+  {
+    "question_number": 48,
+    "question": "La langue peut être sélectionnée dans l'application eScoresheet. Quelle(s) langue(s) choisir pour les compétitions officielles de Swiss Volley?",
+    "answers": {
+      "a": "Langue maternelle du 1er arbitre (pour autant que cela soit l’une des quatre langues nationales de la Suisse)",
+      "b": "Allemand, français, italien ou anglais (les arbitres décident)",
+      "c": "Langue maternelle du marqueur (pour autant que cela soit l’une des quatre langues nationales de la Suisse)",
+      "d": "Les arbitres décident",
+      "e": "Langue maternelle du 2ème arbitre (pour autant que cela soit l’une des quatre langues nationales de la Suisse)",
+      "f": "Anglais",
+      "g": "Allemand, français, italien ou anglais (le marqueur décide)"
+    },
+    "correct": [
+      "f"
+    ]
+  },
+  {
+    "question_number": 49,
+    "question": "Dans l'application eScoresheet 'Swiss Volley', les joueurs des deux équipes se voient attribuer des couleurs spécifiques. Combien de couleurs sont utilisées et quelles catégories de joueurs sont spécialement marquées ? (LFP: locally formed player, c-à-d. JFL resp. LAS; aucune couleur est ici aussi considérée comme couleur)",
+    "answers": {
+      "a": "3; LFP 'normaux', non-LFP 'normaux' et Libero(s)",
+      "b": "2; LFP et non-LFP",
+      "c": "2; joueurs 'normaux' et Libero(s)",
+      "d": "4; LFP 'normaux', non-LFP 'normaux', Libero(s) LFP et Libero(s) non-LFP"
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 50,
+    "question": "Dans l'application eScoresheet, les sept options suivantes sont proposées sous Options - General. Quelles options doivent être choisies?",
+    "answers": {
+      "a": "Request to enter Libero at each start set",
+      "b": "Libero in automatically (to be confirmed)",
+      "c": "Confirm when Libero out",
+      "d": "Propose starting line-up from prior set (when available)",
+      "e": "Show a confirmation box (substitution and time-out)",
+      "f": "Manage captain on court",
+      "g": "Check accidental clicking of the buttons (assign point, time-out)"
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "e",
+      "g"
+    ]
+  },
+  {
+    "question_number": 51,
+    "question": "Dans quelle zone de l'application eScoresheet le nombre de spectateurs (spectators) doit-il être inscrit (au plus tard) à la fin du match?",
+    "answers": {
+      "a": "Options",
+      "b": "Match Info",
+      "c": "Official Form",
+      "d": "Roster",
+      "e": "Comments"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 52,
+    "question": "L'application eScoresheet comporte les deux champs 'Undo' et 'Replay'. Quelle(s) affirmation(s) est(sont) exacte(s)?",
+    "answers": {
+      "a": "Les deux champs sont de valeur égale; dans les deux cas, la dernière action saisie précédemment est annulée.",
+      "b": "Dans les deux cas, la dernière action saisie précédemment est annulée. Mais en utilisant 'Replay', une inscription est faite dans l'historique du match.",
+      "c": "La fonction 'Replay' doit être utilisée lorsque l’arbitre change sa décision initiale.",
+      "d": "La fonction 'Undo' doit être utilisée lorsque le marqueur a effectué une action incorrecte (clic au mauvais endroit)."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 53,
+    "question": "A la fin du match, l'une des deux équipes refuse de \"signer\" l’eScoresheet, c-à-d. de confirmer le résultat du match en entrant le mot de passe. Que doivent faire les arbitres dans une telle situation ? (Indiquez toutes les réponses applicables)",
+    "answers": {
+      "a": "Après le match, Swiss Volley (bureau) et la CFA (président) doivent être informés de l'incident au moyen d'un bref e-mail.",
+      "b": "L'équipe en question est sanctionnée avec un retard de jeu.",
+      "c": "L’eScoresheet du match ne peut pas être terminée. Le 1er arbitre doit appeler la hotline du Swiss Volley et agir selon ses instructions.",
+      "d": "L’eScoresheet du match ne peut pas être terminée. L’eScoresheet doit (si possible) être imprimée et sauvegardeé comme fichier pdf. L’impression et le fichier pdf sont à envoyer à Swiss Volley.",
+      "e": "L’eScoresheet doit être confirméeau nom de cette équipe par les arbitres au moyen du Master-Password.",
+      "f": "Avec la fonction 'Comments', les arbitres doivent faire une inscription correspondante dans les 'Scoresheet Notes' (ou la faire enregistrer par le marqueur).",
+      "g": "Les arbitres doivent convaincre l'équipe concernée, si nécessaire en la menaçant de sanctions, de confirmer le résultat du match en entrant le mot de passe.",
+      "h": "L’eScoresheet du match ne peut pas être terminée. L'ordinateur portable ne doit pas être éteint et doit être envoyé dans cet état à Swiss Volley (bureau) le plus rapidement possible. Swiss Volley clôturera alors le match."
+    },
+    "correct": [
+      "a",
+      "e",
+      "f"
+    ]
+  },
+  {
+    "question_number": 54,
+    "question": "Lesquelles de ces actions relatives à la première touche de balle sont correctes selon les règles?",
+    "answers": {
+      "a": "Lors de la réception du service, un joueur joue le ballon en passe haute et le ballon touche successivement une main puis l'autre durant une action.",
+      "b": "Le ballon est détourné par le bloc de l’équipe du joueur et le joueur joue le ballon avec son pied.",
+      "c": "Le ballon rebondit contre le bloc de l'adversaire et touche successivement la tête puis ses bras au cours d'une même action.",
+      "d": "Lors de la réception de l'attaque adverse, un joueur joue le ballon en passe haute et le ballon touche successivement une main puis l'autre durant une action."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 55,
+    "question": "Lorsque le 2ème arbitre contrôle la position des joueurs sur le terrain avant le début du set, il y a une divergence entre la fiche de position et la position des joueurs. Quelles affirmations sont correctes?",
+    "answers": {
+      "a": "Le coach peut demander un remplacement et remplacer le joueur indiqué sur la fiche de position par le joueur se trouvant actuellement sur le terrain.",
+      "b": "Le marqueur peut corriger la feuille de match en reprenant la position des joueurs sur le terrain.",
+      "c": "Les joueurs doivent corriger leur position en accord avec la fiche de position, sans pénalité.",
+      "d": "Les joueurs peuvent rectifier leur position conformément à la fiche de position et l’équipe est sanctionnée par un avertissement pour retard de jeu."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 56,
+    "question": "L'équipe A bloque de manière règlementaire l'attaque de l'adversaire avec les mains et le ballon entièrement dans l'espace adverse. Le ballon rebondit du bloc au-dessus de l'antenne et entre dans la zone libre de l'équipe A. Un joueur de l'équipe A court pour récupérer le ballon. Décide si ceci est légal ou non.",
+    "answers": {
+      "a": "Illégal, ballon out.",
+      "b": "Légal, laisser jouer.",
+      "c": "Double faute, échange à rejouer."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 57,
+    "question": "L'équipe A bloque de manière règlementaire le ballon avec les mains et le ballon en-dessus de son terrain de jeu. Le ballon rebondit au-dessus de l'antenne et entre dans la zone libre de l'équipe B. Un joueur de A court pour récupérer le ballon. Décide si ceci est légal ou non.",
+    "answers": {
+      "a": "Double faute, échange à rejouer.",
+      "b": "Légal, laisser jouer.",
+      "c": "Illégal, ballon out."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 58,
+    "question": "Quand on parle d'«interférence» dans l'environnement (large) du filet, laquelle/lesquelles des affirmations suivantes est/sont vraie(s) ?",
+    "answers": {
+      "a": "On parle d'une interférence lorsque le joueur se trouve sur la trajectoire de l'adversaire, l'empêchant ainsi de jouer le ballon.",
+      "b": "Si le contact avec un adversaire est accidentel, il doit quand même être considéré comme une interférence, même si cela n'a pas empêché l'adversaire de jouer le ballon.",
+      "c": "En pénétrant dans l'espace, le camp et/ou la zone libre adverses, le contact avec des joueurs fait automatiquement office d’interférence.",
+      "d": "Une intérférence peut être sanctionnée même s’il n’y a qu’une gêne, sans contact physique."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 59,
+    "question": "Lors d'un match, un joueur de l'équipe B frappe le ballon vers le bloqueur de l'équipe A. Les mains du bloqueur ne sont pas au-dessus du camp de l'équipe B. Le ballon provenant des mains du bloqueur, passe partiellement au-dessus de l'antenne en dehors de l'espace de passage et au-dessus du 1er arbitre dans la zone libre de l'équipe B (voir figure). Un deuxième joueur de l'équipe A a poursuivi le ballon pour le ramener de son côté du filet. Le juge de ligne a signalé la balle \"out\" et le 1er arbitre siffle la fin de l’échange de jeu remporté par B. Quelle devrait être l'interprétation des règles par le 1er arbitre?",
+    "answers": {
+      "a": "L'arbitre a eu raison de siffler.",
+      "b": "L'arbitre devrait décider de rejouer.",
+      "c": "L'arbitre n'aurait pas dû siffler."
+    },
+    "correct": [
+      "b",
+      "c"
+    ],
+    "image_url": "ZK_2022_question_059.png",
+    "linked_to": 59,
+    "link_order": 1
+  },
+  {
+    "question_number": 60,
+    "question": "Suite de la question précédente. La raison de cette décision est:",
+    "answers": {
+      "a": "que le ballon peut-être ramené s'il passe totalement ou partiellement en dehors de l'espace de passage.",
+      "b": "que le ballon ne peut pas passer au-dessus de l'antenne dans la zone libre.",
+      "c": "qu'un joueur ne peut pas récupérer un ballon provenant d'un contre."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 59,
+    "link_order": 2
+  },
+  {
+    "question_number": 61,
+    "question": "Lesquelles des affirmations suivantes relatives aux droits et/ou restrictions du coach d'une équipe sont correctes?",
+    "answers": {
+      "a": "Il peut donner des consignes en se tenant ou en se déplaçant dans la zone libre en face du banc de son équipe sans perturber ou retarder le jeu.",
+      "b": "Il ne peut pas quitter sa place sur le banc proche du marqueur, mais peut donner des consignes aux joueurs sur le terrain.",
+      "c": "Il peut interroger le marqueur sur le nombre de remplacement ou de temps-morts qu'il a déjà utilisé, si les informations ne sont pas indiquées sur le tableau d'affichage.",
+      "d": "Il peut demander des explications au 1er ou au 2ème arbitre concernant l'interprétation des règles."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 62,
+    "question": "Parmi les actions suivantes, lesquelles sont autorisées?",
+    "answers": {
+      "a": "Le joueur touche le camp adverse avec sa main, complètement de l'autre côté de la ligne centrale, mais ne gêne pas le jeu de l'adversaire.",
+      "b": "Le joueur touche le camp adverse avec son pied, complètement de l'autre côté de la ligne centrale, mais ne gêne pas le jeu de l'adversaire.",
+      "c": "Un attaquant, en atterrissant après avoir frappé le ballon, donne un coup sous le filet au contreur adverse, empêchant celui-ci de jouer le ballon.",
+      "d": "Un joueur pénètre sous le filet dans l'espace adverse avec son corps, mais pas avec les pieds, sans gêner le jeu de l'adversaire."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 63,
+    "question": "Quelles actions de service sont autorisées?",
+    "answers": {
+      "a": "Le joueur au service lance le ballon en l'air pour servir, laisse tomber le ballon au sol, puis le lance à nouveau en l'air et frappe le ballon, le tout dans les huit secondes après le coup de sifflet du 1er arbitre autorisant l'exécution du service.",
+      "b": "Le joueur au service bouge le ballon d'avant en arrière dans ses mains, puis le lance en l'air et frappe le ballon pour servir six secondes après le coup de sifflet du 1er arbitre autorisant l'exécution du service.",
+      "c": "Le joueur au service fait rebondir cinq fois le ballon, puis lance le ballon en l'air et le frappe pour servir sept secondes après le coup de sifflet du 1er arbitre autorisant l'exécution du service.",
+      "d": "Le joueur au service lance le ballon huit secondes après le coup de sifflet du 1er arbitre autorisant l'exécution du service, puis frappe le ballon une demi-seconde plus tard."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 64,
+    "question": "Lesquelles des affirmations suivantes représentent des actions régulières de jouer le ballon au-dessus du filet?",
+    "answers": {
+      "a": "Le passeur allant au-delà du filet pour jouer le ballon dans l'espace adverse et le ramener de son côté.",
+      "b": "Toucher le ballon dans l'espace adverse en même temps que la frappe d'attaque de l'adversaire.",
+      "c": "Toucher le ballon dans l'espace adverse par une action de contre après la frappe d'attaque de l'adversaire.",
+      "d": "Des adversaires de la ligne avant touchant simultanément le ballon lorsque le ballon se trouve directement au-dessus du sommet du filet."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 65,
+    "question": "Au moment du coup de sifflet du 1er arbitre pour autoriser le service, seuls cinq joueurs de l'équipe en réception sont sur le terrain de jeu. Le libéro et le joueur pour lequel il entre sont dans l'aire d’échauffement et ne montrent aucun signe de retour sur le terrain de jeu. Quelle est la réaction du 1er arbitre s'il ne constate cela que pendant l’échange?",
+    "answers": {
+      "a": "Si la situation n'est remarquée qu'après le coup d'envoi de l’échange suivant, l’échange erroné ne peut plus être rejoué.",
+      "b": "Faute du 1er arbitre. L'échange est immédiatement interrompu et rejoué sans aucune sanction.",
+      "c": "Le match continue. Après l'échange, l'équipe en réception est sanctionnée pour retard.",
+      "d": "L'échange doit immédiatement être interrompu. L'échange est rejoué. L'équipe en réception est sanctionnée pour retard.",
+      "e": "Le match continue. Après l'échange, le capitaine de jeu de l'équipe en réception est averti.",
+      "f": "Si la situation est découverte après la fin de l'échange, le résultat de cet échange devrait être annulé et l'échange rejoué sans aucune sanction."
+    },
+    "correct": [
+      "a",
+      "b",
+      "f"
+    ],
+    "linked_to": 65,
+    "link_order": 1
+  },
+  {
+    "question_number": 66,
+    "question": "Suite de la question précédente. Quelle est la réaction correcte des arbitres, s'ils constatent cela avant le coup de sifflet du 1er arbitre pour le service?",
+    "answers": {
+      "a": "L'équipe au service recevra un point en cas de pénalité pour l'équipe en réception.",
+      "b": "Sanctionner l'équipe en réception pour retard de jeu.",
+      "c": "Donner un avertissement à l'équipe en réception pour comportement incorrect mineur.",
+      "d": "L'équipe au service recevra un point en cas d'avertissement pour l'équipe en réception."
+    },
+    "correct": [
+      "a",
+      "b"
+    ],
+    "linked_to": 65,
+    "link_order": 2
+  },
+  {
+    "question_number": 67,
+    "question": "Après la deuxième touche d'une équipe, le ballon traverse le plan du filet en dehors de l’antenne vers la zone libre de l'adversaire. Le joueur #5 de l'équipe court après ce ballon pour le ramener dans son propre camp. A quel moment faut-il siffler une faute?",
+    "answers": {
+      "a": "Immédiatement lorsque le ballon traverse le plan du filet après la deuxième touche de l'équipe.",
+      "b": "Lorsque le ballon, après avoir été ramené correctement, est touché par un autre joueur de l'équipe.",
+      "c": "Lorsque le joueur #5 touche le ballon.",
+      "d": "Lorsque le ballon vole en dehors de la zone libre de l'adversaire (p.ex. par-dessus le banc de l'équipe adverse)."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 68,
+    "question": "Un bloqueur de l'équipe A veut contrer le ballon venant après la réception de l'adversaire vers son espace de jeu au-dessus du filet. Le passeur de l'équipe B joue le ballon à un coéquipier, mais le bloqueur touche la main du passeur au cours de la passe (au même moment). Quel joueur commet une faute?",
+    "answers": {
+      "a": "Faute de l'équipe A (bloqueur), si la main du passeur se trouve dans son propre espace de jeu.",
+      "b": "Double faute, l'échange sera rejoué.",
+      "c": "Faute de l'équipe A (bloqueur) dans tous les cas, le passeur ne peut jamais être gêné lorsqu'il joue le ballon.",
+      "d": "Faute de l'équipe B (passeur), si la main du passeur se trouve dans l'espace de jeu de l'adversaire."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 69,
+    "question": "Un attaquant frappe le ballon et après avoir atterri avec les deux pieds au sol, fait un petit pas, frôle le filet (à l’intérieur des antennes) et essaie de retrouver l'équilibre. Le ballon est toujours en jeu. Le joueur ne s'est pas servi du filet comme aide pour se stabiliser. Laquelle/lesquelles des affirmations suivantes est/sont correcte/s?",
+    "answers": {
+      "a": "L'action de reprise de contact avec le sol s'achève si le joueur est capable de démarrer une nouvelle action, ayant retrouvé son équilibre après l'atterrissage (a atterri en toute sécurité).",
+      "b": "Si l'arbitre considère ce mouvement du joueur comme étant encore „au cours de l'action de jouer le ballon“, il sifflera une faute au filet.",
+      "c": "Ceci ne peut jamais être une faute.",
+      "d": "Ceci est seulement une faute si le joueur a touché le ballon.",
+      "e": "L'action de reprise de contact avec le sol s'achève toujours au moment où le joueur touche le sol avec les deux pieds."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 70,
+    "question": "Un joueur atterrit en toute sécurité après le contre, se tourne et pousse le filet. Ensuite il s'étire pour jouer le ballon tombant au sol et ce faisant touche le filet au cours de cette nouvelle action. Laquelle/lesquelles des affirmations suivantes est/sont correcte/s?",
+    "answers": {
+      "a": "Seule une action de contre au filet doit être considérée comme une faute.",
+      "b": "Le contact du filet lors du mouvement de rotation n'est pas une faute.",
+      "c": "La première faute a lieu lorsqu'il s'étire pour jouer le ballon lors d'une nouvelle action et touche alors le filet.",
+      "d": "La première faute a lieu lorsqu'il se tourne."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 71,
+    "question": "Un joueur fait une passe au centre du filet pour une combinaison d'attaque. Un attaquant et un bloqueur étaient en position centrale et un autre joueur se trouvait un peu plus loin en position 2. Le ballon est allé vers l'attaquant central. Identifie ci-dessous ce qui est correct:",
+    "answers": {
+      "a": "Le bloqueur adverse commet une faute s'il touche le filet durant cette action de jeu.",
+      "b": "Le joueur en position 2 commet une faute s'il touche le filet durant cette action de jeu.",
+      "c": "Le passeur commet une faute s'il touche le filet durant cette action de jeu.",
+      "d": "L'attaquant commet une faute s'il touche le filet durant cette action de jeu."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 72,
+    "question": "Au milieu du 2ème set, un joueur remplaçant de l'équipe A entre dans la zone de remplacement et demande ainsi un remplacement. Le marqueur rend les arbitres attentifs au fait que le joueur ne figure pas dans la liste des joueurs sur la feuille de match. Lors du contrôle qui s'ensuit, il est constaté que ce joueur est déjà entré sur le terrain dans le premier set à 7:7 puis est sorti à 9:9 (sans que l'erreur ne soit constatée). Comment faut-il procéder?",
+    "answers": {
+      "a": "Le 1er set est attribué 25:0 à l'équipe B.",
+      "b": "Le remplacement n'est pas autorisé, il sera considéré comme demande non fondée.",
+      "c": "Le jeu se poursuit sans autres conséquences, car le premier set est fini.",
+      "d": "Le 1er set est attribué 25:7 à l'équipe B.",
+      "e": "Le remplacement n'est pas autorisé, l'équipe reçoit une sanction pour retard."
+    },
+    "correct": [
+      "d",
+      "e"
+    ]
+  },
+  {
+    "question_number": 73,
+    "question": "Le joueur #3 de l'équipe A est remplacé par le joueur #8. Après un échange le libéro entre sur le terrain pour le joueur #8. Peu après, au score de 14:15 pour l'équipe A, le libéro quitte le terrain et le joueur #3 entre. L'erreur n'est pas constatée et l'équipe B gagne le prochain échange. Score actuel 14:16. A ce moment l'équipe A réalise l'erreur, le joueur #8 s'empresse de courir sur le terrain, le joueur #3 sort. Avec quel résultat faut-il poursuivre le match?",
+    "answers": {
+      "a": "14:15 du point de vue de l’équipe A.",
+      "b": "14:17 du point de vue de l’équipe A.",
+      "c": "14:16 du point de vue de l’équipe A."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 74,
+    "question": "Le joueur remplaçant se tient prêt dans la zone de remplacement. Le joueur qui doit être remplacé retarde le remplacement en se dirigeant ostensiblement lentement en direction de la zone de remplacement. Il a préalablement déjà été averti pour comportement incorrect mineur par un carton jaune. Quelle est à présent la réaction de l‘arbitre ?",
+    "answers": {
+      "a": "Le remplacement du joueur est accordé, mais ensuite, le joueur remplacé sera sanctionné pour conduite grossière.",
+      "b": "Le remplacement n’est pas accordé et l’équipe est sanctionnée pour retard de jeu.",
+      "c": "Le remplacement n‘est pas accordé, car la demande est infondée.",
+      "d": "Le remplacement du joueur est accordé, mais ensuite l’équipe sera sanctionnée pour retard de jeu."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 75,
+    "question": "Au score de 14:14 l’équipe A demande le numéro du joueur au service. Le marqueur indique que le #3 est au service. L’équipe A remporte les deux points suivants et l’équipe B prend un temps-mort. Après le temps-mort, il est constaté que c’est le #7 et non pas le #3 qui aurait dû servir. Comment le match doit-il se poursuivre?",
+    "answers": {
+      "a": "L’équipe B gagne le service et un point. Le match continue à 16:15. Le temps-mort est maintenu.",
+      "b": "Le match se poursuit à 14:14 avec le joueur #7 au service pour l’équipe A. Le temps-mort est annulé et est à nouveau disponible pour l’équipe B.",
+      "c": "L’équipe B gagne le service et un point. Le match se poursuit à 14:15. Le temps-mort est annulé et est à nouveau disponible pour l’équipe B.",
+      "d": "Le match se poursuit à 14:14 avec le #7 au service pour l’équipe A. Le temps-mort est maintenu."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 76,
+    "question": "Lesquelles des actions d’attaque suivantes sont fausses ?",
+    "answers": {
+      "a": "Un joueur arrière effectue une frappe d’attaque après impulsion dans la zone avant alors que, au moment du contact, le ballon est totalement au-dessus du bord supérieur du filet.",
+      "b": "Un joueur effectue une frappe d’attaque sur le service de l’équipe adverse alors que le ballon est dans la zone arrière et entièrement au-dessus du bord supérieur du filet.",
+      "c": "Le Libéro effectue une frappe d’attaque après impulsion dans la zone avant alors que le ballon est partiellement au-dessus du bord supérieur du filet.",
+      "d": "Le Libéro effectue une frappe d‘attaque après impulsion dans la zone avant alors que le ballon est partiellement en-dessous du bord supérieur du filet."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 77,
+    "question": "Après une mauvaise réception, le ballon part en direction du camp adverse sous le filet (à env. un mètre de hauteur). Le passeur veut retourner le ballon dans son camp. Dans quelles situations cela est-il autorisé?",
+    "answers": {
+      "a": "Seulement si le ballon est encore entièrement dans son camp.",
+      "b": "En tout temps tant que le ballon n’a franchi que la moitié de l’espace inférieur du filet.",
+      "c": "Seulement si le passeur touche le ballon intégralement dans son camp.",
+      "d": "En tout temps tant que le ballon n’a pas complétement franchi l’espace inférieur du filet."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 78,
+    "question": "Le capitaine d’équipe #1 n’est pas sur le terrain de jeu. Le capitaine de jeu #5 est remplacé par le #7, le #9 devient le nouveau capitaine de jeu. Après un échange, le #5 revient sur le terrain de jeu. Qui est à présent le capitaine de jeu ?",
+    "answers": {
+      "a": "Le joueur #9, car il a été nommé en dernier comme capitaine de jeu.",
+      "b": "Le capitaine de jeu doit être redéfini, car il n’est pas clairement défini.",
+      "c": "Le joueur #1, car il est capitaine de l’équipe et que le capitaine de jeu n’est pas clairement défini.",
+      "d": "Le joueur #5, car il a été nommé en premier comme capitaine de jeu."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 79,
+    "question": "Parmi les actions de jeu suivantes, lesquelles doivent être sifflée par le 2ème arbitre dans la limite de son champ de compétence ?",
+    "answers": {
+      "a": "Tentative de contre d’un joueur de la ligne arrière (pas le Libéro).",
+      "b": "Contre effectif effectué par un joueur de la ligne arrière.",
+      "c": "Attaque fautive effectuée par un joueur arrière.",
+      "d": "Les fautes de position de l’équipe en réception."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 80,
+    "question": "Le coach-adjoint de l’équipe A remet au 2ème arbitre la fiche de position juste avant le début du set suivant. Lors de la vérification des positions sur le terrain, le 2ème arbitre constate que le joueur #5 se trouve sur le terrain au lieu du joueur #8 noté sur la fiche de position. Il informe le coach que le joueur #5 n’est pas autorisé à être sur le terrain sans remplacement régulier. Le coach répond qu’il peut encore modifier la formation de départ, étant donné que sa signature est manquante sur la fiche de position. Que doivent faire les arbitres ?",
+    "answers": {
+      "a": "Etant donné que le 2ème arbitre n’a pas constaté que la fiche de position n’était pas signée, le coach a le droit de corriger la fiche de position. L’équipe A est sanctionnée pour retard.",
+      "b": "Etant donné que le 2ème arbitre n’a pas constaté que la fiche de position n’était pas signée, le coach a le droit de corriger la fiche de position. Comme il s’agit d’une erreur du 2ème arbitre, l’équipe A ne peut pas être sanctionnée pour retard.",
+      "c": "Même si la signature manque sur la fiche de position, celle-ci reste valable. Aussi, le joueur #8 doit se rendre sur le terrain ou bien un remplacement régulier doit être demandé.",
+      "d": "Avant le début des prochains sets, le 2ème arbitre veille à ce que le coach de l’équipe A signe la fiche de position."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 81,
+    "question": "Après une mauvaise réception de service, le ballon traverse intégralement le plan vertical du filet en-dehors de l’espace de passage en direction de la zone libre adverse. Un joueur court après le ballon et renvoie le ballon à son équipe totalement à l’intérieur de l’espace de passage. Qu’indique le juge de ligne concerné ?",
+    "answers": {
+      "a": "Le juge de ligne lève le fanion verticalement au moment où le ballon traverse intégralement le plan vertical du filet en direction du camp de départ à l’intérieur de l’espace de passage.",
+      "b": "Le juge de ligne agite le fanion et montre l’antenne au moment où le ballon traverse intégralement le plan vertical du filet à l’intérieur de l’espace de passage en direction du camp de départ ou qu’il se trouve complétement au-dessus du camp adverse.",
+      "c": "Le juge de ligne lève le fanion verticalement au moment où le joueur touche le ballon dans la zone libre adverse.",
+      "d": "Le juge de ligne ne signale rien, car il n’y a pas eu de faute commise."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 82,
+    "question": "Quelles conditions doivent être remplies pour que le 1er arbitre puisse autoriser l’exécution du service ?",
+    "answers": {
+      "a": "Le joueur au service est dans la zone de service et en possession du ballon.",
+      "b": "Le joueur au service est dans la zone de service et les équipes sont prêtes à jouer.",
+      "c": "Le joueur au service est en possession du ballon et a un contact visuel avec le 1er arbitre.",
+      "d": "Le joueur au service est en possession du ballon et les équipes sont prêtes à jouer."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 83,
+    "question": "L’équipe A a déjà procédé à cinq remplacements au cours du 2ème set lorsqu’un joueur se blesse et ne peut plus continuer à jouer. Ce joueur est déjà sorti et revenu au cours de ce set. Comment le match se poursuit-il ?",
+    "answers": {
+      "a": "Un joueur ne peut pas être remplacé deux fois au cours d’un set. De ce fait, l’équipe A est déclarée incomplète pour le set en cours et perd le set.",
+      "b": "L’équipe A a droit à un remplacement exceptionnel. Tout joueur qui n’est pas sur le terrain de jeu au moment de la blessure, à l’exception du Libéro, du second Libéro ou du joueur régulier qu’il remplace, peut être remplaçant. Le nombre maximal de six remplacements par set est ainsi atteint, et seuls des remplacements exceptionnels sont encore possibles dans le set en cours.",
+      "c": "L’équipe A a droit à un remplacement exceptionnel. Tout joueur qui n’est pas sur le terrain de jeu au moment de la blessure, à l’exception du Libéro, du second Libéro ou du joueur régulier qu’il remplace, peut être remplaçant. L’équipe A bénéficie ainsi encore d’un autre remplacement régulier.",
+      "d": "Un joueur ne peut pas être remplacé deux fois au cours d’un set. De ce fait, l’équipe A est déclarée incomplète et perd le match."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 84,
+    "question": "Une équipe joue avec deux Libéros (L1 et L2). Le Libéro L1 est disqualifié, puis le Libéro L2 se blesse. Le coach de l’équipe redésigne un nouveau Libéro L3. Quelles affirmations sont correctes ?",
+    "answers": {
+      "a": "Si le capitaine d’équipe est redésigné comme Libéro L3, il doit d’abord déléguer tous ses privilèges.",
+      "b": "L’équipe ne peut pas jouer avec deux Libéros pour le reste du match.",
+      "c": "Si le Libéro L2 a récupéré de sa blessure, il peut agir comme second Libéro au côté du Libéro L3.",
+      "d": "L’équipe peut encore redésigner un autre joueur comme second Libéro L4."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 85,
+    "question": "L'équipe A joue avec un Libéro. Le Libéro se blesse. Le coach décide de redésigner un nouveau Libéro Quelles affirmations sont correctes ?",
+    "answers": {
+      "a": "Le joueur redésigné comme Libéro doit conserver sa fonction de Libéro pour le reste du match (excepté en cas de nouvelle re désignation du Libéro).",
+      "b": "Le Libéro blessé ne peut plus prendre part au jeu, mais il peut être assis sur le banc pendant le match.",
+      "c": "Le coach doit redésigner comme Libéro un joueur qui n’est pas sur le terrain de jeu au moment de la blessure.",
+      "d": "Le coach doit redésigner, comme nouveau Libéro, un joueur qui n’a pas encore joué dans ce set au moment de la blessure."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 86,
+    "question": "Le joueur #8 est enregistré comme capitaine d’équipe. Le joueur #12 est aussi enregistré comme coach. Le coach entre en jeu et demande un temps-mort immédiatement après. Jusqu’à ce moment, il n’y a pas encore eu de demande non-fondée, ni de retard de jeu. Au 1er set le coach a toutefois déjà été averti pour comportement incorrect mineur en recevant un carton jaune. Quelle est à présent la réaction correcte des arbitres ?",
+    "answers": {
+      "a": "La demande est refusée et le coach est sanctionné pour conduite grossière.",
+      "b": "La demande est refusée et l’équipe est sanctionnée pour retard de jeu.",
+      "c": "La demande est refusée, la première fois sans sanction pour retard, puis la deuxième et toutes les fois suivantes par une sanction pour retard.",
+      "d": "La demande est acceptée et le temps-mort est accordé."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 87,
+    "question": "Un échange est gagné par l’équipe A en réception. Au début de l’échange, le marqueur n’a pas pu voir le numéro du joueur au service. Ce n’est qu’à la fin de l’échange que le marqueur constate que c’est le faux joueur qui a servi et en informe immédiatement le 2ème arbitre. Quelle est la décision correcte des arbitres?",
+    "answers": {
+      "a": "L’équipe A reçoit un point en raison l’échange gagné. Suite à la faute de rotation, l’échange est rejoué avec le joueur correct de l’équipe B au service.",
+      "b": "L’échange est rejoué. Le score ne change pas, car les arbitres ont constaté la faute de rotation trop tard.",
+      "c": "L’équipe A reçoit deux points; un premier en raison de la faute de rotation de l’équipe B, un deuxième car l’échange était terminé et qu’il a été remporté par l’équipe A.",
+      "d": "L’équipe A reçoit un point en raison de la faute de rotation de l’équipe B. L’échange en soi est annulé."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 88,
+    "question": "Un joueur fait état pour la première fois d’un comportement incorrect. Dans quels cas faut-il sanctionner par une expulsion telle que prévue par les règles de volleyball ?",
+    "answers": {
+      "a": "Après plusieurs mauvaises réceptions, le joueur traite un des deux réceptionneurs de \"crétin\" et lui fait signe qu’il est cinglé.",
+      "b": "Le joueur menace du poing un juge de ligne.",
+      "c": "Le joueur essaie de frapper un joueur adverse, mais ne l’atteint pas.",
+      "d": "Après une décision de filet, le joueur fait un doigt d’honneur au 2ème arbitre."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 89,
+    "question": "Les inscriptions sur la feuille de match ont été confirmées par le capitaine de l’équipe et par le coach avant le match. Au 2ème set, le coach A veut remplacer le #7 de la formation de départ par le #15. Il n’y a pas de #15 inscrit sur la feuille de match. Le marqueur signale cela au 2ème arbitre. Quelles affirmations sont correctes ?",
+    "answers": {
+      "a": "Dans la mesure où le joueur est inscrit sur la feuille de match avec un autre numéro, le 1er arbitre accorde le remplacement et le numéro du joueur est corrigé sur la feuille de match sans sanction.",
+      "b": "Si le joueur n’est pas du tout inscrit sur la feuille de match, le 1er arbitre n’accorde pas le remplacement. Le coach A reçoit un avertissement.",
+      "c": "Si le joueur n’est pas du tout inscrit sur la feuille de match, le 1er arbitre n’accorde pas le remplacement. L’équipe A est sanctionnée pour retard.",
+      "d": "Dans la mesure où le joueur est inscrit sur la feuille de match avec un autre numéro, le 1er arbitre accorde le remplacement et le numéro du joueur est corrigé sur la feuille de match. L’équipe A est sanctionnée pour retard."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 90,
+    "question": "Le Libéro de l'équipe A défend une courte feinte jouée par l'attaquant de l'équipe B de manière acrobatique et peut garder le ballon en jeu. Après le contact du ballon, le Libéro glisse par terre et se retrouve sous le filet. Et finalement tout son corps se retrouve dans le camp de l’équipe B. Le Libéro se déplace alors immédiatement pour retourner dans son propre camp. Pendant toute l’action, ses deux pieds n’ont jamais touché le camp adverse. Et de plus il n’y a eu aucune interférence ni gêne pour l’adversaire. Quelle est la décision correcte des arbitres ?",
+    "answers": {
+      "a": "Les arbitres interrompent le match. Le Libéro commet une faute parce qu’il est finalement complètement dans le camp de l'adversaire et qu'aucune partie de son corps n'est en contact avec son propre camp.",
+      "b": "Les arbitres n'interrompent pas le match. Comme le Libéro ne touche pas le camp de l'adversaire avec ses pieds et ne gêne pas les joueurs adverses en jouant le ballon, il n'y a pas de faute."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 91,
+    "question": "L'équipe A sert. L'équipe B est en réception avec le passeur en position 6. Au moment du service, le joueur en opposition fait un pas et a alors un pied sur la ligne centrale, touchant le camp adverse avec une partie du pied, sans gêner toutefois les joueurs de l'équipe A. Quelle est la décision correcte des arbitres ?",
+    "answers": {
+      "a": "Les arbitres n'interrompent pas le match parce qu'il n'y a pas de faute.",
+      "b": "Les arbitres interrompent le match et décident d’une faute de l'équipe B, parce qu'un joueur de l'équipe B (le joueur en diagonale) touche le camp de l'adversaire au moment du service.",
+      "c": "Les arbitres n'interrompent pas le match. Il y a certes une faute l'équipe B, mais comme les joueurs de l'équipe A ne sont pas gênés dans leur action, cela ne devrait pas être sanctionné (\"keep the ball flying\")."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 92,
+    "question": "L'équipe A veut faire un double remplacement. Un joueur prêt à jouer entre dans la zone de remplacement, tandis que l'autre est toujours à la recherche de la bonne plaquette. Peu avant la fin du premier remplacement, le deuxième joueur entre lui aussi dans la zone de remplacement, prêt à jouer. Comment les arbitres devraient-ils réagir?",
+    "answers": {
+      "a": "Le 2ème arbitre n'autorise que le premier remplacement; le deuxième remplacement est rejeté sans conséquences car le deuxième joueur remplaçant n'était pas prêt à jouer au moment de la demande.",
+      "b": "Le 2ème arbitre rejette les deux remplacements parce que les deux remplaçants n'ont pas pénétré dans la zone de remplacement en même temps. Le 1er arbitre sanctionne l’équipe A pour retard de jeu.",
+      "c": "Le 2ème arbitre n'autorise que le premier remplacement; le deuxième remplacement est rejeté sans conséquences car le deuxième joueur remplaçant n'était pas prêt à jouer au moment de la demande. Le 1er arbitre sanctionne l’équipe A pour retard de jeu.",
+      "d": "Le 2ème arbitre autorise les deux remplacements. Comme le deuxième joueur remplaçant était prêt avant la fin du premier remplacement, il n'y a pas eu de retard. Dans un tel cas, les arbitres doivent interpréter les règles de manière généreuse."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 93,
+    "question": "L'équipe B demande un remplacement. Celui-ci est rejeté par le 2ème arbitre parce que le joueur remplaçant est entré dans la zone de remplacement avec une plaquette incorrecte. Comme l'équipe B avait déjà reçu un avertissement pour retard, elle était maintenant sanctionnée par le 1er arbitre avec une pénalité pour retard. L'équipe B demande ensuite un autre remplacement avant le prochain coup de sifflet. Comment les arbitres devraient-ils réagir?",
+    "answers": {
+      "a": "Les arbitres rejettent la deuxième demande de remplacement sans autre conséquence.",
+      "b": "Les arbitres autorisent ce remplacement.",
+      "c": "Les arbitres rejettent la deuxième demande de remplacement. Le 1er arbitre donne une nouvelle fois une sanction pour retard de jeu.",
+      "d": "Les arbitres rejettent la deuxième demande de remplacement. Le 2ème arbitre fait enregistrer une demande infondée sur la feuille de match."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 94,
+    "question": "L'équipe A demande un temps-mort alors qu'une demande de remplacement vient d’être rejetée durant la même interruption de jeu et que l'équipe a déjà été sanctionnée par un avertissement pour retard. Comment les arbitres devraient-ils réagir ?",
+    "answers": {
+      "a": "Les arbitres autorisent le temps-mort.",
+      "b": "Les arbitres rejettent la demande de temps-mort. Le 1er arbitre sanctionne l’équipe avec une pénalité pour retard.",
+      "c": "Les arbitres rejettent la demande de temps-mort. Le 2ème arbitre fait enregistrer une demande infondée sur la feuille de match.",
+      "d": "Les arbitres rejettent la demande de temps-mort sans autre conséquence."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 95,
+    "question": "Comment le 1er arbitre devrait-il réagir lorsqu'un capitaine de jeu lui demande de vérifier les positions des joueurs de l'équipe adverse?",
+    "answers": {
+      "a": "Répondre et donner une information détaillée sur les positions.",
+      "b": "Le 1er arbitre ne devrait pas répondre. Le capitaine de jeu peut demander uniquement la vérification des positions de sa propre équipe.",
+      "c": "Répondre et indiquer si les positions de l'équipe adverse sont correctes ou non.",
+      "d": "Répondre d'abord que par gestes. Les questions suivantes pourront être répondues oralement."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 96,
+    "question": "Le capitaine d'équipe se blesse avant le tirage au sort. Quel est le procédé correct pour désigner un nouveau capitaine d'équipe?",
+    "answers": {
+      "a": "Il est trop tard pour nommer un nouveau capitaine d'équipe. Le coach remplit les obligations du capitaine d'équipe et signera la feuille de match à la place du capitaine d'équipe.",
+      "b": "Le coach peut désigner un autre joueur en tant que nouveau capitaine d'équipe. Une bande de tape sera collée sous son numéro sur l'avant de son maillot et son numéro sera encerclé sur la feuille de match.",
+      "c": "Le coach peut désigner deux autres joueurs, qui agissent comme co-capitaines d'équipe. Les deux joueurs seront signalés sur la feuille de match en entourant leurs noms.",
+      "d": "Il est trop tard pour désigner un nouveau capitaine d'équipe. Le coach peut désigner un \"capitaine en jeu général\", qui reprendra les tâches du capitaine d'équipe et qui signera la feuille de match après la rencontre."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 97,
+    "question": "Une joueuse croit avoir vu une tache humide sur le sol. Elle appelle le coach-assistant vers la ligne latérale près du banc d'équipe, pour l'aider à trouver la tache, ce qui empêche le 1er arbitre de siffler pour poursuivre le jeu. Que devrait faire le 1er arbitre?",
+    "answers": {
+      "a": "Il devrait prier personnellement le coach-assistant de retourner vers le banc d'équipe.",
+      "b": "Il devrait laisser faire l'équipe et ne pas agir.",
+      "c": "Il devrait prier le coach-assistant, par l'intermédiaire du capitaine en jeu, de retourner vers le banc d'équipe.",
+      "d": "Il devrait prononcer une sanction pour retard de jeu contre l'équipe.",
+      "e": "Il devrait indiquer au 2ème arbitre de dire au capitaine en jeu qu'il prie le coach-assistant de retourner vers le banc d'équipe."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 98,
+    "question": "Après la frappe du service, le marqueur annonce qu'il s'agissait du mauvais serveur dans l'équipe A. Que se passe-t-il ensuite?",
+    "answers": {
+      "a": "Tous les points qui ont été marqués avec le faux joueur au service sont annulés. L'équipe A corrige ses positions et garde le droit au service. L'équipe B n'effectue pas de rotation.",
+      "b": "Tous les points qui ont été marqués avec le faux joueur au service sont annulés. L'équipe A corrige ses positions. L'équipe B reçoit un point, le droit au service et effectue une rotation d'une position.",
+      "c": "Tous les points qui ont été marqués avec le faux joueur au service sont annulés. L'équipe A corrige ses positions puis effectue une rotation. L'équipe B reçoit un point, le droit au service et n'effectue pas de rotation.",
+      "d": "Tous les points qui ont été marqués avec le faux joueur au service sont annulés. L'équipe A effectue une rotation. L'équipe B reçoit un point, le droit au service et effectue une rotation d'une position."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 99,
+    "question": "Le joueur A figure sur la fiche de positions et se blesse juste avant le début du match. Quelle est la procédure à suivre?",
+    "answers": {
+      "a": "L'équipe du joueur A débute le match avec seulement cinq joueurs sur le terrain. Un remplacement peut être demandé par le coach uniquement après un échange de jeu terminé. Le remplacement d'effectue ensuite de manière normale.",
+      "b": "Le joueur A peut être remplacé par n'importe quel joueur qui ne figure pas sur la fiche de positions. Le coach peut faire enregistrer le remplacement sur la feuille de match avant le premier service. L'équipe du joueur A débute le match L'information au 2ème arbitre est en option.",
+      "c": "La situation est traitée comme un remplacement usuel. Après le contrôle de la fiche de positions par le 2ème arbitre, le coach demande un remplacement au moyen du geste officiel. Le 2ème arbitre effectue lui aussi le geste du remplacement. Celui-ci est enregistré sur la feuille de match.",
+      "d": "Le remplacement du joueur A s'effectue au début du match sur le terrain. Avant le premier service, le capitaine de jeu doit demander un temps-mort et le coach doit annoncer le remplacement directement au marqueur. Celui-ci enregistre le tout sur la feuille de match."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 100,
+    "question": "Avant le troisième set, le 2ème arbitre siffle afin que les équipes retournent sur le terrain. Une des équipes ne réagit pas. Cette équipe n'a pas encore reçu de sanction pour retard de jeu. Comment les arbitres doivent-ils réagir?",
+    "answers": {
+      "a": "Siffler de nouveau, puis encore une fois. Si l'équipe ne réagit pas au troisième coup de sifflet, le 1er arbitre doit donner une pénalité pour retard de jeu (carton rouge au poignet).",
+      "b": "Octroi d'une \"sanction pour retard de jeu\" par le 1er arbitre (avertissement). Si l'équipe ne réagit toujours pas, le 1er arbitre devra octroyer une nouvelle sanction pour retard de jeu (pénalité).",
+      "c": "Donner une pénalité pour retard de jeu (carton rouge au poignet)",
+      "d": "le 2ème arbitre va vers l'équipe pour lui rappeler de retourner sur le terrain. Si l'équipe ne devait pas réagir, le 2ème arbitre donne une sanction pour retard de jeu (carton jaune au poignet)."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 101,
+    "question": "Le Libéro était sur le terrain pour le joueur A et a été expulsé pour la fin du set. Il y a trois possibilités de poursuivre la rencontre. Laquelle des propositions suivantes n'est PAS possible pour poursuivre la rencontre?",
+    "answers": {
+      "a": "Si l'équipe a deux Libéros, l'équipe peut décider d'expulser le deuxième Libéro pour le reste du match et ainsi permettre au Libéro en jeu de continuer de jouer dans le set.",
+      "b": "Si l'équipe n'a qu'un seul Libéro, elle peut immédiatement désigner un nouveau Libéro issu des joueurs qui ne se trouvent pas sur le terrain à ce moment-là (à l'exception du joueur échangé pour le Libéro). Le Libéro qui vient d'être expulsé n'est plus autorisé à jouer pour le reste du match.",
+      "c": "Si l'équipe n'a qu'un seul Libéro, le joueur A peut retourner sur le terrain. L'équipe peut continuer de jouer sans Libéro.",
+      "d": "Si l'équipe a deux Libéros, alors le deuxième Libéro peut immédiatement être échangé pour le Libéro en jeu qui vient d'être expulsé."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 102,
+    "question": "Le joueur A cours sur la tribune des spectateurs qui jouxte son propre terrain de jeu afin de jouer un ballon. Juste avant le contact du ballon, un spectateur frappe le ballon. Quelle est la réaction correcte de l'arbitre et pourquoi?",
+    "answers": {
+      "a": "Siffler. Faute. Le joueur n'a pas le droit de quitter la zone libre pour jouer un ballon depuis la zone des spectateurs.",
+      "b": "Siffler et geste \"out\" (geste #15). Les joueurs n'ont pas de priorité sur le ballon en dehors de l'aire de jeu.",
+      "c": "Siffler. Faute. Un joueur n'a jamais le droit de pénétrer dans la zone des spectateurs.",
+      "d": "Siffler. Faute. Il s'agit d'influences externes."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 103,
+    "question": "Le joueur A, un passeur, joue le ballon au-dessus du filet dans l'espace de jeu adverse vers son coéquipier pour l'attaque. Que doit décider l'arbitre?",
+    "answers": {
+      "a": "Ceci est dans tous les cas une faute, car les joueurs ne sont pas autorisés à pénétrer dans l'espace de jeu adverse (même si le ballon n'est pas touché).",
+      "b": "Rien. Cette action de jeu est conforme aux règles, puisqu'il le joueur A essaie de faire une passe et non pas d'attaquer soi-même.",
+      "c": "Rien. Cette action de jeu est conforme aux règles, puisqu'il n'y a pas eu de contact avec l'équipe adverse.",
+      "d": "Ceci est une faute, car au-dessus du bord supérieur du filet un joueur doit jouer le ballon dans son propre côté (sauf pour contrer)."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 104,
+    "question": "Le joueur A, bloqueur central, saute au filet afin de contrer et touche lors de sa tentative de contre la bande supérieure du filet. Il n'y a pas de contact avec le ballon. Que devrait-il se passer et pourquoi?",
+    "answers": {
+      "a": "Ce n'est pas une faute de filet, car le joueur A n'a pas touché le ballon.",
+      "b": "Ce n'est pas une faute, car un joueur au contre a le droit de toucher le filet durant une action de contre.",
+      "c": "C'est une faute de filet du joueur A (contact du filet au cours d'une action de jeu durant laquelle il tente de jouer le ballon).",
+      "d": "C'est une faute de filet du joueur A, car les joueurs n'ont jamais le droit de toucher la bande supérieure du filet."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 105,
+    "question": "Un joueur de la formation de départ a été remplacé et retourne ensuite sur le terrain. Peu après, il se blesse et n'est plus capable de continuer de jouer. Qui peut remplacer ce joueur?",
+    "answers": {
+      "a": "Le Libéro ou le joueur échangé par le Libéro actif.",
+      "b": "Aucun joueur. L'équipe doit continuer de jouer avec uniquement cinq joueurs.",
+      "c": "Chaque joueur qui ne se trouve pas sur le terrain à ce moment-là, sauf le Libéro ou son joueur échangé.",
+      "d": "Chaque joueur qui ne se trouve pas sur le terrain à ce moment-là."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 106,
+    "question": "L'équipe A remplace le joueur A par le joueur B. En même temps, la coach montre que le joueur C doit être échangé par le Libéro. Comment les arbitres devraient-ils décider?",
+    "answers": {
+      "a": "Autoriser soit le remplacement, soit l'échange. L'action non retenue pourra avoir lieu après le prochain échange de jeu.",
+      "b": "Autoriser soit le remplacement soit l'échange et prononcer une sanction pour retard de jeu contre l'équipe A. L'action non retenue pourra avoir lieu après le prochain échange de jeu.",
+      "c": "Si un remplacement ou un échange ont lieu simultanément, alors le seul joueur qui peut être échangé par le Libéro est celui qui vient d'être remplacé. L'arbitre devrait autoriser le joueur B à être échangé par le Libéro.",
+      "d": "Autoriser les deux: remplacement et échange."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 107,
+    "question": "L'équipe A a oublié de changer le Libéro alors que celui-ci arrivait en position IV après une rotation. Après trois points, l'arbitre réalise que le Libéro est illégalement sur le terrain. Lesquelles des possibilités suivantes sont des conséquences conformes aux règles de cette situation?",
+    "answers": {
+      "a": "Les points marqués par l'équipe A depuis qu'elle était en faute sont annulés.",
+      "b": "Les positions doivent être corrigées.",
+      "c": "Point et service à l'adversaire.",
+      "d": "Expulsion du Libéro."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 108,
+    "question": "Entre deux sets, le 1er arbitre donne un carton rouge pour conduite grossière à un joueur de l'équipe A. Celle-ci a le premier service au set suivant. Que se passe-t-il maintenant?",
+    "answers": {
+      "a": "L'équipe A débute le set à 0:1 et perd le droit au service.",
+      "b": "L'équipe A débute le set à 0:1 et conserve le droit au service.",
+      "c": "L'équipe A débute le set à 0:2 et conserve le droit au service.",
+      "d": "L'équipe A débute le set à 0:0 et conserve le droit au service."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 109,
+    "question": "Une équipe joue avec deux Libéros. Un Libéro est expulsé. Quelques échanges plus tard, l'autre Libéro est déclaré incapable de jouer. Quelle(s) affirmation(s) n'est (ne sont) PAS correcte(s)?",
+    "answers": {
+      "a": "Le coach redésigne immédiatement le joueur échangé par le Libéro incapable de jouer comme nouveau Libéro.",
+      "b": "Le Libéro incapable de jouer peut être remplacé par un nouveau Libéro. Seuls les joueurs qui n'ont pas encore participé à un remplacement peuvent être désignés.",
+      "c": "Le coach ne peut redésigner aucun autre joueur comme Libéro, puisque le Libéro expulsé peut rejouer au set suivant. Au 5ème set, une re-désignation serait autorisée."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 110,
+    "question": "Dans le 2ème set, le joueur #8 est averti formellement (carton jaune) pour comportement incorrect mineur. Dans le 4ème set, le joueur #2 de la même équipe a un comportement similaire. Comment faut-il procéder?",
+    "answers": {
+      "a": "Le joueur #2 reçoit un carton jaune pour comportement incorrect mineur.",
+      "b": "Le joueur #2 est averti oralement, puisqu'il n'avait pas encore reçu de carton jaune et qu'une équipe ne peut pas recevoir deux cartons jaunes dans le même match.",
+      "c": "Le joueur #2 reçoit une pénalité (carton rouge) pour comportement incorrect mineur répété de l'équipe."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 111,
+    "question": "Un ballon passe en-dessous du bas du filet entre le poteau et la prolongation de l'antenne en direction de l'adversaire. Quelle(s) affirmation(s) est(sont) correcte(s)?",
+    "answers": {
+      "a": "Si le ballon a entièrement traversé l’espace inférieur du plan vertical du filet, le geste #22 (*Ballon franchissant l'espace sous le filet\") est à montrer.",
+      "b": "Un joueur peut jouer dans l'espace adverse pour ramener le ballon qui a entièrement traversé le plan vertical du filet, pour autant qu'il puisse atteindre le ballon sans traverser la ligne médiane.",
+      "c": "Si le ballon a entièrement traversé l’espace inférieur du plan vertical du filet, le ballon est \"out\" (geste #15)."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 112,
+    "question": "Un joueur de l'équipe A attaque un ballon qui se trouve directement au-dessus du bord supérieur du filet. En même temps, le bloqueur de l'équipe B touche le ballon sans entrer dans l'espace adverse par-dessus le filet. Après le contact simultané, le ballon tombe dans la zone libre de l'équipe B. Que doit décider le 1er arbitre?",
+    "answers": {
+      "a": "Echange de jeu gagné par l'équipe B, car la faute est revient à l'équipe A (ballon tombe dans la zone libre de l'équipe B).",
+      "b": "Echange à rejouer (double faute) car ballon tenu au-dessus du bord supérieur du filet.",
+      "c": "Un bloqueur ne peut pas toucher le ballon avant ou en même temps que la frappe d'attaque. L'échange de jeu est donc gagné par l'équipe A."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 113,
+    "question": "Un ballon est joué par un joueur de l'équipe A et touche ensuite un officiel de l'équipe A. Quel geste doit être utilisé?",
+    "answers": {
+      "a": "Geste \"ballon touché\" (geste #24).",
+      "b": "Geste ballon \"out\" (geste #15)."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 113,
+    "link_order": 1
+  },
+  {
+    "question_number": 114,
+    "question": "Suite de la question précédente. Quel geste doit être utilisé si le ballon touche un officiel de l’équipe B adverse?",
+    "answers": {
+      "a": "Geste \"ballon touché\" (geste #24).",
+      "b": "Geste ballon \"out\" (geste #15)."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 113,
+    "link_order": 2
+  },
+  {
+    "question_number": 115,
+    "question": "Lors d'un match de LNA, quel arbitre siffle avant le début d'un set pour envoyer les équipes sur le terrain?",
+    "answers": {
+      "a": "Le 1er arbitre avant le 1er et le 5ème set, sinon le 2ème arbitre.",
+      "b": "Le 1er arbitre dans tous les cas.",
+      "c": "Le 2ème arbitre dans tous les cas.",
+      "d": "Aucun des arbitres avant le 1er set, puisque le speaker appelle les joueurs sur le terrain. Avant les sets 2 à 5, c'est le 2ème arbitre."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 116,
+    "question": "Au 3ème set sur le score de 17:9 et service pour l'équipe A, le joueur #11 de l'équipe A entre dans la zone de remplacement. Le joueur #3, qui avait débuté le set, se dirige vers la ligne latérale. A ce moment, le marqueur s'aperçoit que le joueur #3 ne figure pas dans la liste d'équipe. Il est de plus constaté que le joueur #3 est entré sur le terrain dans le 1er set sur le score de 19:11 pour ressortir sur le score de 24:19. Ce set a été gagné 25:21 par l'équipe A. De plus, il y a eu un avertissement pour retard de jeu à l'encontre de l'équipe A. Le 2ème set a été gagné par l'équipe A, sans que le joueur #3 ne soit engagé. Comment le corps arbitral doit-il traiter cette situation?",
+    "answers": {
+      "a": "Le 1er set est réévalué: l'équipe B le gagne 25:0. Le résultat du 2ème set reste tel quel. Pour le 3ème set en cours, les points acquis pas l'équipe A jusque-là sont annulés. Score du 3ème set 9:0 pour l'équipe B. Service à l'équipe B",
+      "b": "Le 1er set est réévalué: l'équipe B le gagne 25:19. Le résultat du 2ème set reste tel quel. Pour le 3ème set en cours, les points acquis pas l'équipe A jusque-là sont annulés. L'équipe A est de plus sanctionnée pour retard de jeu. Score du 3ème set 10:0 pour l'équipe B. Service: équipe B.",
+      "c": "Le 1er set est réévalué: l'équipe B le gagne 25:19. Le résultat du 2ème set reste tel quel. Pour le 3ème set en cours, l'équipe B reçoit un point et le droit au service, les points acquis pas l'équipe A jusque-là sont annulés. Score du 3ème set 10:0 pour l'équipe B",
+      "d": "Comme l'équipe A a engagé un joueur ne figurant pas dans la liste d'équipe, elle perd le match 0:3 (0:75 points)."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 117,
+    "question": "Un joueur de l'équipe A se blesse sérieusement durant un échange de jeu dans le premier set. Quelle(s) affirmation(s) est(sont) correcte(s)?",
+    "answers": {
+      "a": "Un joueur blessé doit être remplacé exceptionnellement. Du fait qu'il s'agit ici du premier remplacement de l'équipe A, celle-ci dispose toujours de 6 remplacements.",
+      "b": "Les soins médicaux donnés sur le terrain doivent être terminés au plus tard après 3 minutes. Par la suite, ils doivent être poursuivis en dehors du terrain.",
+      "c": "Un joueur remplacé exceptionnellement ne peut plus prendre part au match.",
+      "d": "L'arbitre interrompt le jeu, l'échange sera rejoué par la suite."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 118,
+    "question": "Le score est de 8:8 au troisième set. Après l'échange de jeu suivant, une dispute éclate sous le filet entre deux adversaires, ce qui fait que le 1er arbitre veut sanctionner ces deux joueurs pour conduite grossière. Comment la sanction doit-elle être donnée pour qu'elle soit conforme aux règles?",
+    "answers": {
+      "a": "Le 1er arbitre appelle les deux capitaines de jeu vers lui et sanctionne en premier le joueur dont l'équipe ne sera ensuite pas au service.",
+      "b": "Le 1er arbitre montre le carton rouge simultanément aux deux joueurs - sans s'adresser ni aux capitaines de jeu ni directement aux deux joueurs.",
+      "c": "Le 1er arbitre appelle les deux capitaines de jeu vers lui et sanctionne en premier le joueur dont l'équipe sera ensuite au service.",
+      "d": "Le 1er arbitre appelle les deux joueurs à sanctionner vers lui et sanctionne en premier celui dont l'équipe ne sera ensuite pas au service.",
+      "e": "Le 1er arbitre appelle les deux joueurs à sanctionner vers lui et sanctionne en premier celui dont l'équipe sera ensuite au service."
+    },
+    "correct": [
+      "e"
+    ]
+  },
+  {
+    "question_number": 119,
+    "question": "La passe est une technique jugée par le 1er arbitre. Qu'est-ce qui est correct?",
+    "answers": {
+      "a": "Le 1er arbitre considère automatiquement un ballon qui tourne comme une faute.",
+      "b": "Le 1er arbitre ne juge pas un ballon sur la base de sa rotation.",
+      "c": "Le 1er arbitre siffle uniquement si un doublé net a été vu.",
+      "d": "Le 1er arbitre interrompt (siffle) les contacts avec le ballon longs ou prolongés."
+    },
+    "correct": [
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 120,
+    "question": "A la fin d'un échange, le capitaine s'approche du 1er arbitre pour le questionner sur le maniement du ballon pendant le match. La réponse du 1er arbitre devrait d'abord être:",
+    "answers": {
+      "a": "Renvoyer le joueur et le sanctionner avec un carton rouge.",
+      "b": "Après une brève explication, donner un carton jaune pour comportement incorrect.",
+      "c": "Après une brève explication, prier le joueur de reprendre le jeu, étant donné que l'appréciation liée au maniement du ballon incombe complètement au 1er arbitre.",
+      "d": "Après une brève explication, donner un avertissement verbal."
+    },
+    "correct": [
+      "c"
+    ],
+    "linked_to": 120,
+    "link_order": 1
+  },
+  {
+    "question_number": 121,
+    "question": "Suite de la question précédente. Après le capitaine, un autre joueur vient pour questionner le 1er arbitre. Quelle doit être la réponse du 1er arbitre?",
+    "answers": {
+      "a": "Prier le joueur de reprendre le jeu, étant donné que l'appréciation liée au maniement du ballon incombe complètement au 1er arbitre.",
+      "b": "Donner un avertissement au joueur, verbalement ou avec un carton jaune.",
+      "c": "Renvoyer le joueur et refuser d'écouter.",
+      "d": "Sanctionner pour retard."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 120,
+    "link_order": 2
+  },
+  {
+    "question_number": 122,
+    "question": "Les équipes ont le droit de demander plusieurs interruptions de jeu consécutives au cours d'une même interruption, toutefois pas dans tous les cas. Veuillez répondre aux combinaisons qui, selon les règles, peuvent être accordées DURANT UNE SEULE INTERRUPTION: (Clé: R: remplacement / T: temps-mort / A: équipe A / B: équipe B)",
+    "answers": {
+      "a": "TA-TB-RA-TB-RB",
+      "b": "RA-RB-TA-TB-RA-TA",
+      "c": "RB-TB-RA-RB",
+      "d": "RA-TB-RB-TA-TB-TA",
+      "e": "TA-RA-TB-TA-RB",
+      "f": "TA-TA-TB-TB-TA-TB",
+      "g": "RA-RB-TA-TB-TA-TB"
+    },
+    "correct": [
+      "a",
+      "d",
+      "e",
+      "g"
+    ]
+  },
+  {
+    "question_number": 123,
+    "question": "Identifiez chaque étape qui n'est pas autorisée en cochant chaque case correspondante qui rend la séquence irrégulière. Considérez cette séquence:",
+    "answers": {
+      "a": "Libéro entre sur le terrain.",
+      "b": "Echange de jeu.",
+      "c": "Libéro quitte le terrain.",
+      "d": "Pendant l’échange suivant, le 1er arbitre siffle une double faute (pour rejouer l’échange).",
+      "e": "Libéro entre à nouveau sur le terrain.",
+      "f": "Le 1er arbitre siffle le service pour la répétition de l’échange."
+    },
+    "correct": [
+      "e"
+    ],
+    "linked_to": 123,
+    "link_order": 1
+  },
+  {
+    "question_number": 124,
+    "question": "Suite de la question précédente. Qu'est-ce qui est faux dans la séquence? C-à-d. pourquoi avez-vous choisi ce(s) point(s) de la séquence ?",
+    "answers": {
+      "a": "C’est une action irrégulière d’échange de Libéro.",
+      "b": "Le Libéro ne peut entrer sur le terrain qu’au début d’un set.",
+      "c": "Le Libéro soit être remplacé comme tout autre joueur.",
+      "d": "Seul le 2ème arbitre peut siffler une double faute.",
+      "e": "Le Libéro ne peut retourner sur le terrain qu’après un échange de jeu terminé.",
+      "f": "Le 1er arbitre na pas le droit de siffler de double faute.",
+      "g": "Rejouer un échange de jeu n’existe pas dans le volleyball.",
+      "h": "Le Libéro a beoin de l’autorisation du 2ème arbitre pour pénétrer sur le terrain.",
+      "i": "Il doit y avoir un échange de jeu terminé entre deux actions d’échanges de Libéro.",
+      "j": "Le Libéro a beoin de l’autorisation du 2ème arbitre pour sortir du terrain."
+    },
+    "correct": [
+      "a",
+      "e",
+      "i"
+    ],
+    "linked_to": 123,
+    "link_order": 2
+  },
+  {
+    "question_number": 125,
+    "question": "Le capitaine de jeu A a demandé un temps-mort en levant la main. Immédiatement après, l'entraîneur de l'équipe A a retiré ce temps-mort en criant \"non\" au 2ème arbitre. Quelle est maintenant la décision correcte?",
+    "answers": {
+      "a": "Un temps-mort doit être octroyé.",
+      "b": "Un temps-mort ne doit pas être octroyé."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 125,
+    "link_order": 1
+  },
+  {
+    "question_number": 126,
+    "question": "Suite de la question précédente. Raison de la décision:",
+    "answers": {
+      "a": "Seul le capitaine de jeu peut demander des temps-morts et des remplacements de joueurs.",
+      "b": "Seul le capitaine d'équipe peut demander des temps-morts et des remplacements de joueurs en l'absence de l'entraîneur.",
+      "c": "L'entraîneur est le premier dans la structure de commandement de l'équipe – le capitaine de jeu ne peut demander des temps-morts et des remplacements de joueurs qu'en l'absence de l'entraîneur."
+    },
+    "correct": [
+      "c"
+    ],
+    "linked_to": 125,
+    "link_order": 2
+  },
+  {
+    "question_number": 127,
+    "question": "Suite de la question précédente. Indiquez les actions supplémentaires du 1er arbitre, s'il y en a:",
+    "answers": {
+      "a": "Il s'agit dans tous les cas d'une demande non fondée.",
+      "b": "S'il n'y a pas de retard, le 1er arbitre devrait simplement poursuivre le jeu.",
+      "c": "S'il y a un retard, le 1er arbitre doit prononcer une sanction pour retard."
+    },
+    "correct": [
+      "a",
+      "c"
+    ],
+    "linked_to": 125,
+    "link_order": 3
+  },
+  {
+    "question_number": 128,
+    "question": "Au moment de la demande de remplacement, le joueur remplaçant portait encore sa veste de training. Est-ce que le 2ème arbitre doit autoriser le remplacement?",
+    "answers": {
+      "a": "Non.",
+      "b": "Oui."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 129,
+    "question": "Après qu'un remplacement a été demandé par l'entrée du remplaçant dans la zone de remplacement, le marqueur et le 2ème arbitre ont remarqué que le joueur avait la mauvaise plaquette de remplacement #7. L'entraîneur a \"changé d'avis\" à ce moment-là et a ordonné au remplaçant de prendre la plaquette #9 à la place. Quel joueur doit être remplacé?",
+    "answers": {
+      "a": "#9.",
+      "b": "Aucun joueur.",
+      "c": "#7."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 130,
+    "question": "Le joueur au service de l'équipe A tape la balle en dehors de la zone de service, entre dans la zone de service et sert, mais pendant tout ce temps, la balle était en dehors de la zone de service (même au moment de la frappe). Le 1er arbitre devrait...",
+    "answers": {
+      "a": "... faire exécuter le service une nouvelle fois.",
+      "b": "... autoriser le service.",
+      "c": "... siffler une faute."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 130,
+    "link_order": 1
+  },
+  {
+    "question_number": 131,
+    "question": "Suite de la question précédente. La raison de cette décision est...",
+    "answers": {
+      "a": "... que le joueur a commencé son mouvement en dehors de la zone de service.",
+      "b": "... que seule la position des pieds est déterminante.",
+      "c": "... que le ballon doit se trouver à l’intérieur de la zone de service au moment de la frappe du service."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 130,
+    "link_order": 2
+  },
+  {
+    "question_number": 132,
+    "question": "Un ballon servi par l'équipe A vole en direction de l'adversaire, touche le bord supérieur du filet et retombe ensuite du côté de A. Un joueur de l'équipe B passe les mains sous le filet et attrape le ballon avant qu'il ne touche le sol. Le 1er arbitre devrait...",
+    "answers": {
+      "a": "... siffler une faute du joueur de l’équipe B.",
+      "b": "... siffler une double faute et faire rejouer l’échange.",
+      "c": "... siffler une faute du joueur au service."
+    },
+    "correct": [
+      "c"
+    ],
+    "linked_to": 132,
+    "link_order": 1
+  },
+  {
+    "question_number": 133,
+    "question": "Suite de la question précédente. La raison de cette décision est...",
+    "answers": {
+      "a": "... que le service n’a pas été exécuté.",
+      "b": "... que le ballon n’a pas franchi le plan vertical du filet.",
+      "c": "... que le ballon était toujours en jeu."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 132,
+    "link_order": 2
+  },
+  {
+    "question_number": 134,
+    "question": "Un joueur a couru après le ballon en montant dans les tribunes de son côté du terrain et a renvoyé le ballon dans son propre terrain. Il s’agissait de la deuxième touche de balle. Le 1er arbitre devrait...",
+    "answers": {
+      "a": "... ne rien faire.",
+      "b": "... siffler une faute.",
+      "c": "... siffler un ballon tenu."
+    },
+    "correct": [
+      "a"
+    ],
+    "linked_to": 134,
+    "link_order": 1
+  },
+  {
+    "question_number": 135,
+    "question": "Suite de la question précédente. La raison de cette décision est...",
+    "answers": {
+      "a": "... que le joueur a pris appui sur une structure extérieure pour jouer le ballon.",
+      "b": "... que le joueur peut jouer le ballon en dehors de sa propre zone libre.",
+      "c": "... que le joueur ne peut jouer le ballon que dans l’aire de jeu."
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 134,
+    "link_order": 2
+  },
+  {
+    "question_number": 136,
+    "question": "En Suisse, lors des compétitions officielles, une équipe est composée au maximum de...",
+    "answers": {
+      "a": "... 12 joueurs, un coach, deux coach-adjoints, un physiothérapeute et un médecin.",
+      "b": "... 12 joueurs, un coach, un coach-adjoint, un physiothérapeute et un médecin.",
+      "c": "... 14 joueurs, un coach, deux coach-adjoints, un physiothérapeute et un médecin.",
+      "d": "... 14 joueurs, un coach, un coach-adjoint, un entraîneur athlétique, un physiothérapeute et un médecin."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 137,
+    "question": "Dans laquelle des situations suivantes y a-t-il une faute qui entraîne un point pour l'équipe en réception?",
+    "answers": {
+      "a": "Le joueur au service de l'équipe A touche le ballon des deux mains au moment de servir, alors que l'équipe B commet une faute de position.",
+      "b": "Le joueur de service de l'équipe A touche le ballon pour servir tout en étant sur la ligne de fond, alors que l'équipe B commet une faute de position.",
+      "c": "L'équipe B commet une faute de position et le service de l'équipe A va dans le filet.",
+      "d": "Le joueur de service de l'équipe A commet une faute de rotation, alors que l'équipe B commet une faute de position."
+    },
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 138,
+    "question": "Un joueur attaque et, après avoir frappé la balle, touche les mailles du filet pendant qu’il atterrit.",
+    "answers": {
+      "a": "Le contact avec le filet est une faute et devrait être sifflé en premier lieu par le 1er arbitre.",
+      "b": "Le contact avec le filet n'est pas une faute, car un tel contact n’est une faute que pendant la frappe du ballon.",
+      "c": "Le contact avec le filet est une faute qui devrait être sifflée en premier lieu par le 2ème arbitre, car il s'agit de la partie inférieure du filet.",
+      "d": "Le contact avec le filet n'est pas une faute, car seul le contact avec la bande supérieure du filet est une faute."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 139,
+    "question": "Après avoir sifflé une faute de filet, le 2ème arbitre indique...",
+    "answers": {
+      "a": "... uniquement le geste #19 \"Filet touché par un joueur\" et le joueur.",
+      "b": "... le geste #19 \"Filet touché par un joueur\", et après le 1er arbitre l’équipe qui aura le prochain service.",
+      "c": "... le geste #19 \"Filet touché par un joueur\", le joueur puis immédiatement l’équipe qui aura le prochain service.",
+      "d": "... le geste #19 \"Filet touché par un joueur\", le joueur (si nécessaire) et après le 1er arbitre l’équipe qui aura le prochain service."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 140,
+    "question": "Indiquez la ou les affirmations correctes:",
+    "answers": {
+      "a": "Un joueur peut utiliser le filet à l'intérieur des antennes comme support ou aide à la stabilisation.",
+      "b": "Un joueur peut toucher les mailles du filet en dehors de l'antenne, à condition que cela n'influence pas le déroulement du jeu.",
+      "c": "Un joueur influence le jeu en touchant l'antenne pendant une action où il joue le ballon.",
+      "d": "Le juge de ligne est chargé de signaler un joueur qui touche la partie inférieure de l'antenne."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 141,
+    "question": "Durant le service, le joueur en position 6 essuie brièvement avec la main un endroit mouillé sur le sol. Ce faisant, la position de ses pieds est „correcte“ par rapport au joueur en position 3 (c-à-d qu’il se trouve „derrière“ celui-ci), toutefois sa main se trouve plus près de la ligne centrale que les pieds du joueurs en position 3. S’agit-il d’une faute?",
+    "answers": {
+      "a": "Non.",
+      "b": "Oui, si la main touche effectivement le sol au moment du service.",
+      "c": "Oui, dans tous les cas."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 142,
+    "question": "Un joueur de l’équipe A se blesse, l’arbitre interrompt l’échange immédiatement. Pendant qu’un médecin se charge du joueur blessé sur le terrain, un joueur de l’équipe B est disqualifié. Lesquelles des affirmations suivantes sont correctes?",
+    "answers": {
+      "a": "Si l’équipe B ne peut pas remplacer normalement le joueur disqualifié, elle sera déclarée incomplète.",
+      "b": "Si l’équipe B peut remplacer normalement le joueur disqualifié, ceci est autorisé par l’arbitre.",
+      "c": "L’équipe B est dans tous les cas déclarée incomplète."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 143,
+    "question": "L’équipe “A” joue avec un Libéro. Celui-ci se blesse lors d'une action de jeu. L’échange doit être répété. L'entraîneur décide de désigner immédiatement un nouveau Libéro. Le Libéro blessé quitte le terrain, alors que le Libéro nouvellement désigné prend simultanément sa position sur le terrain. Est-ce autorisé?",
+    "answers": {
+      "a": "Oui.",
+      "b": "Non, l'entraîneur n'a pas le droit de désigner un nouveau Libéro durant la rencontre.",
+      "c": "Non, il doit d'abord y avoir un échange de jeu avant que le Libéro ne puisse être remplacé."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 144,
+    "question": "Le Libéro de l'équipe “A” se blesse. L'entraîneur se décide de désigner un nouveau Libéro. Laquelle des affirmations suivantes est/sont correcte/s?",
+    "answers": {
+      "a": "Le Libéro blessé ne peut plus entrer en jeu, mais peut s'asseoir sur le banc ou se trouver dans l’aire d'échauffement durant la rencontre.",
+      "b": "Le joueur désigné comme nouveau Libéro doit exercer la fonction de Libéro durant toute la rencontre (à l’exception d’une nouvelle re-désignation du Libéro)",
+      "c": "L'entraîneur doit désigner comme nouveau Libéro un joueur qui n'est pas sur le terrain au moment de la blessure."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 145,
+    "question": "Un joueur blessé remplacé de manière exceptionnelle a-t-il le droit de rester assis sur le banc pendant la suite de la rencontre?",
+    "answers": {
+      "a": "Oui, il peut s'asseoir sur le banc.",
+      "b": "Non, il n'a pas le droit de s'asseoir sur le banc.",
+      "c": "Oui, mais seulement après avoir reçu l’autorisation du 1er arbitre."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 146,
+    "question": "Durant le 2ème set, le Libéro de l'équipe “A” a eu soudainement des vertiges et de forts maux de tête et se sentit très mal. Durant le changement de côté, le médecin de l'équipe constate une forte fièvre (40°). Est-ce que l'entraîneur a le droit de désigner dans ce cas un nouveau Libéro?",
+    "answers": {
+      "a": "Oui.",
+      "b": "Non, l'entraîneur ne peut désigner un nouveau Libéro qu'en cas de blessure (avec l'accord préalable du 1er arbitre).",
+      "c": "La décision appartient à l'appréciation du 1er arbitre."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 147,
+    "question": "Durant un échange, le ballon touche l'antenne du côté du 2ème arbitre. Quelle est la décision correcte du 2ème arbitre?",
+    "answers": {
+      "a": "Le 2ème arbitre siffle et montre la faute (out).",
+      "b": "Le 2ème arbitre fait un pas vers le côté de l'équipe qui a commis la faute, effectue le geste out sans toutefois siffler, afin d'aider le 1er arbitre.",
+      "c": "Le 2ème arbitre ne montre rien."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 148,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 1. Frappe d'attaque d'un joueur avant après une passe en touche haute (avec les doigts) du Libéro se situant dans la zone avant. Le ballon était au moment de la frappe entièrement au-dessus du bord supérieur du filet et le joueur attaquant a sauté depuis la zone arrière.",
+    "answers": {
+      "a": "Faute; 2ème arbitre.",
+      "b": "Pas de faute.",
+      "c": "Faute; 1er arbitre.",
+      "d": "Faute; 1er et 2ème arbitre."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 149,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 2. Tentative de bloc d'un joueur arrière.",
+    "answers": {
+      "a": "Faute; 2ème arbitre.",
+      "b": "Pas de faute.",
+      "c": "Faute; 1er et 2ème arbitre.",
+      "d": "Faute; 1er arbitre."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 150,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 3. Après le service, le ballon traverse le plan vertical du filet du côté du 2ème arbitre à l'extérieur de l'espace de passage.",
+    "answers": {
+      "a": "Faute; 1er arbitre.",
+      "b": "Faute; 2ème arbitre.",
+      "c": "Pas de faute.",
+      "d": "Faute; 1er et 2ème arbitre."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 151,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 4. Un joueur touche le filet à l'extérieur de l'antenne du côté du 1er arbitre durant une action de jeu avec ballon.",
+    "answers": {
+      "a": "Faute; 1er et 2ème arbitre.",
+      "b": "Faute; 2ème arbitre.",
+      "c": "Faute; 1er arbitre.",
+      "d": "Pas de faute."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 152,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 5. Frappe d'attaque complète du Libéro (avec les doigts) de la zone arrière, alors que le ballon se trouvant intégralement au-dessus du plan vertical du filet.",
+    "answers": {
+      "a": "Faute; 2ème arbitre.",
+      "b": "Faute; 1er et 2ème arbitre.",
+      "c": "Faute; 1er arbitre.",
+      "d": "Pas de faute."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 153,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 6. Le ballon touche le plafond de la salle.",
+    "answers": {
+      "a": "Pas de faute.",
+      "b": "Faute; 2ème arbitre.",
+      "c": "Faute; 1er et 2ème arbitre.",
+      "d": "Faute; 1er arbitre."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 154,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 7. Frappe d'attaque complète d'un joueur arrière, le ballon se trouve au moment de la frappe intégralement au dessus du plan vertical du filet, le joueur arrière touche au moment de son élan la ligne d'attaque avec la pointe du pied.",
+    "answers": {
+      "a": "Faute; 1er et 2ème arbitre.",
+      "b": "Faute; 1er arbitre.",
+      "c": "Faute; 2ème arbitre.",
+      "d": "Pas de faute."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 155,
+    "question": "Indique si les situations décrites ci-dessous sont irrégulières. Si oui, quel arbitre est compétent pour siffler dans cette situation? 8. Un joueur touche l'antenne au-dessus du bord supérieur du filet du côté du 2ème arbitre durant une action de jeu avec ballon.",
+    "answers": {
+      "a": "Faute; 2ème arbitre.",
+      "b": "Pas de faute.",
+      "c": "Faute; 1er arbitre.",
+      "d": "Faute; 1er et 2ème arbitre."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 156,
+    "question": "Les joueurs avants de l'équipe “A” au service forment un groupe directement devant deux joueurs en réception. Le capitaine adverse prie le 1er arbitre d'informer le groupe de se placer de manière que ses joueurs en réception puissent voir le joueur au service.",
+    "answers": {
+      "a": "Le 1er arbitre n'est pas obligé de répondre à la demande du capitaine, mais il lui est permis d’informer l'équipe du risque éventuel d'écran.",
+      "b": "Le 1er arbitre est tenu d'informer le groupe pour qu'il se positionne individuellement.",
+      "c": "Le 1er ne doit pas répondre à la demande du capitaine."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 157,
+    "question": "Le joueur #8 est inscrit comme capitaine d'équipe sur la feuille de match. L'entraîneur inscrit (joueur #12) entre en jeu suite à un remplacement et, après quelques échanges, demande un temps-mort (le joueur #8 est à ce moment-là également sur le terrain).",
+    "answers": {
+      "a": "Les arbitres acceptent la demande et accordent le temps-mort.",
+      "b": "Les arbitres rejettent la demande et donnent une sanction pour retard de jeu.",
+      "c": "Les arbitres rejettent la demande. La première fois sans sanction, toute autre demande non fondée sera sanctionnée par un retard de jeu."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 158,
+    "question": "Un joueur au bloc de l'équipe “A” au service est près du filet au moment du service et touche avec une partie de son pied le camp adverse.",
+    "answers": {
+      "a": "Le 1er arbitre siffle une faute de position.",
+      "b": "Le 2ème arbitre siffle une faute de position.",
+      "c": "L'arbitre laisse le jeu se poursuivre."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 159,
+    "question": "L'équipe “A” demande un remplacement après le coup de sifflet du 1er arbitre autorisant le service. Le buzzer a été pressé par le marqueur. C'est déjà la deuxième fois durant la même rencontre.",
+    "answers": {
+      "a": "Les arbitres ne réagissent pas à la demande de l'entraîneur, puisqu'elle n'a causé aucun retard de jeu.",
+      "b": "Le 1er arbitre avertit l'équipe pour retard de jeu après l'échange.",
+      "c": "L'arbitre arrête immédiatement l'échange et donne à l’équipe un avertissement pour retard de jeu."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 160,
+    "question": "L’entraîneur de l’équipe “A” effectue un changement et demande un temps-mort juste après. Avant que le jeu ne reprenne, il demande un nouveau changement. L’arbitre peut-il l’accorder?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non"
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 160,
+    "link_order": 1
+  },
+  {
+    "question_number": 161,
+    "question": "Suite de la question précédente. Dans le cas ci-dessus, l’entraîneur peut-il demander un nouveau temps-mort au lieu du 2ème changement, sans que le jeu n’ait repris après le 1er temps-mort?",
+    "answers": {
+      "a": "Non",
+      "b": "Oui"
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 160,
+    "link_order": 2
+  },
+  {
+    "question_number": 162,
+    "question": "Le 2ème arbitre est en droit de siffler les fautes suivantes pendant le déroulement du jeu:",
+    "answers": {
+      "a": "Faute de position de l’équipe en réception.",
+      "b": "Quatre touches d’une équipe.",
+      "c": "Contact avec le filet.",
+      "d": "Bloc d’arrière.",
+      "e": "Pénétration sous le filet dans le terrain adverse.",
+      "f": "Pénétration non autorisée dans l’espace de jeu adverse au-dessus du filet.",
+      "g": "Faute d’attaque d’un joueur arrière.",
+      "h": "Faute en jouant le ballon (porté, doublé).",
+      "i": "Faute de position de l’équipe au service."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "g"
+    ]
+  },
+  {
+    "question_number": 163,
+    "question": "Les positions des joueurs débutant le set sont les suivantes (commençant par position 1): 1, 2, 3, 4, 5, 6. Le dernier joueur au service était le joueur #1. Les positions du schéma sont ainsi:",
+    "answers": {
+      "a": "Correctes pour les joueurs avants et arrières.",
+      "b": "Correctes pour les joueurs avants, fausses pour les joueurs arrières.",
+      "c": "Correctes pour les joueurs arrières, fausses pour les joueurs avants."
+    },
+    "correct": [
+      "a"
+    ],
+    "image_url": "ZK_2022_question_156.png"
+  },
+  {
+    "question_number": 164,
+    "question": "Les positions des joueurs débutant le set sont les suivantes (commençant par position 1): 4, 9, 7, 2, 5 et 1. Le joueur #5 est remplacé par le joueur #3. Le Libéro remplace le joueur #7. Le dernier joueur au service était le joueur #2. Les positions du schéma sont ainsi:",
+    "answers": {
+      "a": "Correctes.",
+      "b": "Fausses entre les joueurs 9 et 3.",
+      "c": "Fausses entre les joueurs 4 et 9."
+    },
+    "correct": [
+      "c"
+    ],
+    "image_url": "ZK_2022_question_157.png"
+  },
+  {
+    "question_number": 165,
+    "question": "La réception ratée de l’équipe “B” passe à l’extérieur de l’espace de passage dans la zone libre de l’équipe “A”. Le Libéro \"B\" atteint le ballon et le joue en passe haute à l’extérieur de l’espace de passage en direction de son propre camp. Un attaquant \"B\" joue le ballon, lequel est alors entièrement au-dessus du bord supérieur du filet, dans le terrain adverse. L’arbitre siffle une faute à l’équipe “B”, car l’attaque a été effectuée après une passe haute du Libéro. Agit-il correctement?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 166,
+    "question": "Un seul joueur est prêt à entrer selon les règles, l’autre cherchant la plaquette numérotée. Les arbitres autorisent un changement de joueur et rejettent le second. Le jeu reprend sans retard de jeu et sans sanction de la part des arbitres. Est-ce correct?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non"
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 167,
+    "question": "Lors d’une mauvaise réception, le passeur pénétrant de la ligne arrière de l’équipe “A” participe au bloc à deux. Le bloc a été effectué par le bloqueur de l’équipe “A” (joueur avant). Les arbitres ont autorisé à l’équipe “A” trois nouvelles touches du ballon. Ont-ils agi correctement?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 168,
+    "question": "Lors de la troisième touche du ballon de l’équipe “A” exactement au-dessus du filet, il y a un contact simultané du ballon par l’attaquant A et le bloqueur B. Le ballon touche ensuite l’antenne. Le 1er arbitre siffle une faute du bloqueur. Est-ce correct?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 169,
+    "question": "Le 1er arbitre donne le gain de l’échange de jeu à l’équipe A. Celle-ci effectue tout de suite un remplacement de joueur. Puis le 1er arbitre corrige sa décision et donne le gain de l’échange de jeu à l’équipe B. Quelles affirmations s’appliquent à la situation créée?",
+    "answers": {
+      "a": "L’équipe A peut ‘ristourner‘ le remplacement (c.-à-d. qu’elle peut revenir en arrière sans conséquences et reprendre sa position antérieure).",
+      "b": "L’équipe A peut pas ‘ristourner‘ le remplacement, mais elle peut immédiatement effectuer le remplacement du joueur qui vient d’entrer (pour autant que cela soit réglementairement possible).",
+      "c": "L’équipe A doit jouer le prochain échange de jeu avec le joueur remplaçant."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 170,
+    "question": "Un joueur arrière de l’équipe A attaque et frappe la balle à côté du bloc à trois de l’équipe B. Au moment de la frappe d’attaque, le ballon se situe entièrement au-dessus du plan vertical du filet, et le bloc de b ne touche pas le ballon après la frappe d’attaque. Le joueur arrière de A touche la ligne d’attaque lors de son impulsion; le Libéro participe au bloc de B. Quelle procédure des arbitres est correcte?",
+    "answers": {
+      "a": "Les arbitres décident d’attribuer le point à A, car le Libéro effectue une tentative de bloc.",
+      "b": "Les arbitres décident d’attribuer le point à B en raison de la faute du joueur arrière.",
+      "c": "Les arbitres optent pour une double faute."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 171,
+    "question": "Le Libéro de l’équipe A est en position 5 et doit réceptionner. A gagne l’échange de jeu et effectue une rotation. Le Libéro quitte le terrain de jeu, le bloqueur central échangé revient sur le terrain. Par la suite, le 1er arbitre sanctionne d’un carton jaune le nouveau serveur de A en position 1. Le droit au service par en conséquence à l’équipe B et B obtient un point. A souhaite maintenant échanger le joueur en position 1 (l’autre bloqueur central) par le Libéro, comme de coutume. Que décident les arbitres?",
+    "answers": {
+      "a": "Les arbitres autorisent l’échange. Cet échange est inscrit dans la case ‘Remarques‘ comme échange exceptionnel. A joue donc le prochain échange de jeu avec le Libéro en réception en position 1.",
+      "b": "Les arbitres n’autorisent pas l’échange. A joue donc le prochain échange de jeu avec le bloqueur central en réception en position 1.",
+      "c": "Les arbitres autorisent l’échange. A joue donc le prochain échange de jeu avec le Libéro en réception en position 1."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 172,
+    "question": "Le capitaine d’équipe est remplacé, un autre joueur devient le capitaine en jeu. Quelles affirmations sont correctes?",
+    "answers": {
+      "a": "En tant que capitaine en jeu, ce joueur peut transmettre au 1er arbitre une demande d’un membre de l’équipe.",
+      "b": "Si ce joueur est à nouveau au début du set suivant dans le six de base et que le capitaine d’équipe n’y figure pas, alors ce joueur est ‘automatiquement’ à nouveau le capitaine en jeu.",
+      "c": "En tant que capitaine en jeu, ce joueur peut demander au 1er arbitre de vérifier la hauteur du filet."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 173,
+    "question": "L’équipe A gagne l’échange de jeu. Immédiatement après a lieu une scène dans laquelle un joueur de chaque équipe a simultanément une conduite grossière. Dans quel ordre les sanctions (cartons jaunes) sont-elles prononcées à l’encontre de ces joueurs ?",
+    "answers": {
+      "a": "L’ordre est laissé à l’appréciation du 1er arbitre.",
+      "b": "D’abord au joueur de l’équipe A.",
+      "c": "D’abord au joueur de l’équipe B."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 174,
+    "question": "Après le coup de sifflet pour le service, le 1er arbitre remarque qu’il y a 7 joueurs sur le terrain dans une équipe; le Libéro est entré sur le terrain, le joueur à échanger concerné ne s’en est pas aperçu. Le 1er arbitre arrête le jeu. Comment doit-il procéder par la suite?",
+    "answers": {
+      "a": "Il décide que cette équipe a commis une faute de position.",
+      "b": "Il sanctionne cette équipe pour retard de jeu.",
+      "c": "Il laisse sortir du terrain le joueur à échanger et siffle à nouveau pour le service sans autre conséquence."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 175,
+    "question": "L’équipe A sert. L’équipe B gagne l’échange de jeu. Le prochain joueur de cette équipe à servir selon l’ordre de rotation va au service. Avant le coup de sifflet du 1er arbitre, le 2ème arbitre remarque que ce joueur était en faute de position sur le précédent service de A. Quelles affirmations sont correctes?",
+    "answers": {
+      "a": "L’équipe B est sanctionnée pour faute de position.",
+      "b": "L’équipe B n’est pas sanctionnée, le jeu se poursuit sans intervention des arbitres.",
+      "c": "L’équipe B est sanctionnée pour faute de rotation."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 176,
+    "question": "En LNB, un joueur remplaçant entre dans la zone de remplacement. Une fois que le 2ème arbitre a sifflé, l’entraîneur donne au joueur remplaçant une autre plaquette numérotée, car le joueur s’était visiblement présenté dans la zone de remplacement avec une mauvaise plaquette. Comment faut-il procéder?",
+    "answers": {
+      "a": "Le remplacement est effectué sans conséquence selon la plaquette numérotée originale.",
+      "b": "Le remplacement est effectué sans conséquence selon la nouvelle plaquette numérotée.",
+      "c": "Le 2ème arbitre rejette la demande de remplacement, le 1er arbitre prononce une sanction pour retard de jeu.",
+      "d": "Le 1er arbitre rejette la demande de remplacement et prononce une sanction pour retard de jeu."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 177,
+    "question": "Un joueur remplaçant entre dans la zone de remplacement durant le coup de sifflet du 1er arbitre pour le service. Quelles affirmations s’appliquent?",
+    "answers": {
+      "a": "L’action du joueur remplaçant est – dans tous les cas – à sanctionner comme retard.",
+      "b": "L’action du joueur remplaçant constitue une demande non fondée.",
+      "c": "Le 2ème arbitre doit interrompre le jeu et la demande de remplacement doit être acceptée."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 178,
+    "question": "Le Libéro de l’équipe A entre sur le terrain. Le 1er arbitre siffle pour le prochain échange de jeu puis siffle à nouveau peu après le service, car un autre ballon a roulé sur le terrain de jeu. Quelles affirmations sur la situation ainsi créée sont correctes?",
+    "answers": {
+      "a": "L’équipe B peut demander un temps-mort (1er ou 2ème temps-mort dans ce set).",
+      "b": "L’équipe A peut échanger le Libéro dans tous les cas",
+      "c": "L’équipe A peut échanger le Libéro, si celui-ci s’est blessé dans l’intervalle."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 179,
+    "question": "Une équipe joue avec 2 Libéros (L1 et L2). Libéro L1 est disqualifié. Quelles affirmations s’appliquent pour la suite de la rencontre?",
+    "answers": {
+      "a": "Si plus tard le Libéro L2 est expulsé, l’équipe peut redésigner un nouveau Libéro.",
+      "b": "Si plus tard le Libéro L2 se blesse, l’équipe peut redésigner un nouveau Libéro.",
+      "c": "Si plus tard le Libéro L2 est également disqualifié, l’équipe peut redésigner un nouveau Libéro."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 180,
+    "question": "Lors d’un bloc 'à un' d’un joueur avant, celui-ci touche le ballon d’attaque adverse. Dans quels cas l’équipe peut-elle effectuer trois nouvelles touches de balle?",
+    "answers": {
+      "a": "Le bloqueur ne passe aucune partie de son corps au-dessus du filet, le ballon touche une de ses mains.",
+      "b": "Le bloqueur passe une main au-dessus du filet, le ballon touche cette main puis directement après également sa tête.",
+      "c": "Le bloqueur passe une main au-dessus du filet, le ballon ne touche que sa tête sous le plan vertical du filet."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 181,
+    "question": "Au moment du service, un joueur arrière de l’équipe en réception se trouve à même hauteur que son joueur avant. Quelles affirmations sont correctes?",
+    "answers": {
+      "a": "Est considéré comme faute, si service devient fautif après la frappe de la balle",
+      "b": "Est considéré comme faute, même si le joueur au service commet une faute au moment de la frappe de la balle",
+      "c": "Pas de faute, si le pied arrière du joueur arrière se situe derrière le pied avant du joueur avant.",
+      "d": "Pas de faute, car le joueur arrière ne se trouve pas entièrement devant son joueur avant."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 182,
+    "question": "L’entraîneur demande pour la première fois un temps-mort au 2ème arbitre, mais le 1er arbitre a déjà sifflé pour le service. Le 2ème arbitre interrompt le jeu. Comment faut-il procéder si l’équipe n’avait jusque-là pas encore reçu de sanction pour retard de jeu?",
+    "answers": {
+      "a": "’équipe obtient le temps-mort demandé.",
+      "b": "La demande est rejetée sans sanction et le 1er arbitre siffle à nouveau pour le service.",
+      "c": "Le 1er arbitre ignore le coup de sifflet du 2ème arbitre et laisse le jeu se dérouler, pour autant que les joueurs n’aient pas interrompu l’échange de jeu.",
+      "d": "Le temps-mort n’est pas accordé et l’équipe reçoit une sanction pour retard de jeu. Le service est à nouveau autorisé."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 183,
+    "question": "Quelles demandes d’interruptions réglementaires sont non fondées?",
+    "answers": {
+      "a": "La demande est faite en même temps que le coup de sifflet du 1er arbitre autorisant le service.",
+      "b": "L’entraîneur demande un temps-mort après un remplacement, sans que le jeu n’ai repris entre-temps.",
+      "c": "L’entraîneur demande un temps-mort et ensuite, sans que le jeu n’ait repris entre-temps, deux remplacements par l’entrée simultanée dans la zone de remplacement de deux joueurs remplaçants.",
+      "d": "Le capitaine de jeu demande un temps-mort parce que l‘entraîneur se situe dans l’aire d’échauffement."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 184,
+    "question": "Quelles sont les caractéristiques correctes d’un ballon de volley?",
+    "answers": {
+      "a": "Circonférence 66 – 68 cm; poids 260 – 280 g; pression 0.275 – 0.325 kg/cm2",
+      "b": "Circonférence 65 – 67 cm; poids 260 – 280 g; pression 0.275 – 0.325 kg/cm2",
+      "c": "Circonférence 65 – 67 cm; poids 260 – 280 g; pression 0.300 – 0.325 kg/cm2",
+      "d": "Circonférence 66 – 68 cm; poids 250 – 270 g; pression 0.300 – 0.325 kg/cm2"
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 185,
+    "question": "Quelles sont les dimensions correctes des prolongations des lignes d’attaque?",
+    "answers": {
+      "a": "Par prolongation 5 traits de 20 cm espacés chacun de 15 cm",
+      "b": "Par prolongation 5 traits de 15 cm espacés chacun de 25 cm",
+      "c": "Par prolongation 5 traits de 15 cm espacés chacun de 20 cm",
+      "d": "Par prolongation 5 traits de 20 cm espacés chacun de 20 cm",
+      "e": "Par prolongation 5 traits de 20 cm espacés chacun de 25 cm"
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 186,
+    "question": "Lors de compétitions officielles de Swiss Volley dans les catégories nationales (LNA, LNB et 1L), les maillots des joueurs doivent être numérotés de 1 à ...",
+    "answers": {
+      "a": "20 (LNB)",
+      "b": "20 (LNA)",
+      "c": "99 (1L)",
+      "d": "18 (LNA, LNB et 1L)",
+      "e": "24 (LNA, LNB et 1L)",
+      "f": "99 (LNA)",
+      "g": "20 (1L)",
+      "h": "99 (LNB)"
+    },
+    "correct": [
+      "a",
+      "f",
+      "g"
+    ]
+  },
+  {
+    "question_number": 187,
+    "question": "Le coach remet la fiche de position au 2ème arbitre juste avant le début du set. Après l’enregistrement de la formation de départ sur la feuille de match (e-Scoresheet), le 2ème arbitre vérifie les positions sur le terrain. Il constate alors que le joueur #5 est sur le terrain au lieu du joueur #8 noté sur la fiche de position. Quelle est la décision correcte des arbitres?",
+    "answers": {
+      "a": "Sur demande du coach, le marqueur change le #8 en #5 sur la feuille de match. Il n’y a aucune sanction.",
+      "b": "Sur demande du coach, le marqueur change le #8 en #5 sur la feuille de match. L’équipe est sanctionnée pour retard.",
+      "c": "Le joueur #8 doit se rendre sur le terrain conformément à la fiche de position. Ensuite, le coach peut demander un remplacement réglementaire pour le joueur #5. L’équipe est sanctionnée pour retard.",
+      "d": "Selon la fiche de position le joueur #8 devrait se rendre sur le terrain Toutefois, le coach peut demander un remplacement régulier pour le joueur #5. Il n’y a pas de sanction."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 188,
+    "question": "Indique (oui / non) si les situations évoquées sont des échanges de jeu terminés respectivement non terminés:",
+    "answers": {
+      "a": "Après une touche simultanée au-dessus du filet durant laquelle le ballon est „tenu“, le ballon touche le sol à l’extérieur du terrain.",
+      "b": "Lors d’une touche simultanée au-dessus du filet (ballon „tenu“, il reste immobile), le ballon touche l‘antenne.",
+      "c": "Le joueur est expulsé (cartons jaune et rouge ensemble).",
+      "d": "Une équipe est sanctionnée pour retard de jeu (carton rouge).",
+      "e": "Au moment de la frappe du ballon au service, une faute de position est sifflée simultanément tant à l’équipe au service qu’à celle en réception.",
+      "f": "Au moment de la frappe du ballon au service, une faute de position est sifflée à l’équipe en réception simultanément à une faute de rotation à l’équipe au service.",
+      "g": "Durant un échange de jeu, un ballon roule du ramasseur de balles sur le terrain et le jeu est interrompu par l’arbitre.",
+      "h": "Après le service, le ballon touche le sol à l’extérieur du terrain adverse."
+    },
+    "correct": [
+      "a",
+      "d",
+      "f",
+      "h"
+    ]
+  },
+  {
+    "question_number": 189,
+    "question": "Quelles combinaisons d’équipes sont autorisées dans les ligues nationales A et B?",
+    "answers": {
+      "a": "11 joueurs « normaux » plus 2 libéros.",
+      "b": "12 joueurs « normaux » plus 1 libéro.",
+      "c": "12 joueurs, pas de libéro.",
+      "d": "9 joueurs « normaux » plus 2 libéros.",
+      "e": "14 joueurs, pas de libéro."
+    },
+    "correct": [
+      "a",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 190,
+    "question": "L’entraîneur est disqualifié. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Par la suite, le capitaine de jeu peut exiger des temps morts en tout temps.",
+      "b": "L’entraîneur adjoint n’est pas autorisé à reprendre les missions de l’entraîneur, car celui-ci quitte l’équipe à la suite d’une sanction.",
+      "c": "L’entraîneur adjoint peut reprendre les missions de l’entraîneur (sur demande du capitaine de jeu). Si ceci est le cas, il n’est pas permis au capitaine de jeu d’exiger des temps morts par la suite.",
+      "d": "L’entraîneur adjoint peut reprendre les missions de l’entraîneur (sur demande du capitaine de jeu). Si ce n’est pas le cas, le capitaine de jeu peut exiger des temps morts par la suite."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 191,
+    "question": "Une équipe exige un temps-mort après le coup d’envoi du 1er arbitre. Il s’agit de la première demande non fondée de l’équipe. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "S’il n’y a pas de retard, le 2ème arbitre rejette la demande. Après la fin de l’échange de jeu, la demande non fondée est notée dans le champ des sanctions dans la rubrique prévue à cet effet. Il n’y a pas de sanction.",
+      "b": "Le jeu est interrompu aussitôt. On sanctionne l’équipe pour retard. La demande non fondée est notée dans le champ des sanctions dans la nouvelle rubrique.",
+      "c": "Le jeu est interrompu. La demande non fondée est notée dans le champ des sanctions dans la nouvelle rubrique. Il n’y a pas de sanction."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 192,
+    "question": "Dans quels cas de comportement non correct peut-on prononcer une disqualification ?",
+    "answers": {
+      "a": "lors d’un geste diffamatoire",
+      "b": "lors d’une attaque physique",
+      "c": "lors d’un comportement agressif"
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 193,
+    "question": "Tourné vers le 2ème arbitre, l’entraîneur fait le signe de la main voulant dire «remplacement». Un remplaçant sort de derrière le banc des joueurs, cherche la bonne plaquette de remplacement et apparaît dans la zone de remplacement. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Le 2ème arbitre ne réagit pas au signe de la main de l’entraîneur, le remplacement est refusé, l’équipe est sanctionnée pour retard.",
+      "b": "Le 2ème arbitre confirme la demande de remplacement au moment où le remplaçant entre dans la zone de remplacement (à condition que le 1er arbitre n’ait pas encore donné le coup de sifflet du service).",
+      "c": "Le 2ème arbitre siffle lorsqu’il voit le signe de la main de l’entraîneur. Puis, le remplacement est refusé, l’équipe est sanctionnée pour retard.",
+      "d": "Si la demande de remplacement est confirmée et que le remplaçant n’est pas prêt à jouer lorsqu’il entre dans la zone de remplacement, le remplacement n’est pas autorisé et l’équipe est sanctionnée pour retard."
+    },
+    "correct": [
+      "b",
+      "d"
+    ]
+  },
+  {
+    "question_number": 194,
+    "question": "Lors d’un échange de jeu, un joueur de l’équipe A se blesse. Le 1er arbitre interrompt l’échange de jeu et décide de « rejouer ». Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Si l’équipe B n’a pas remplacé de joueur avant le début de l’échange de jeu interrompu, elle peut demander un remplacement maintenant.",
+      "b": "Si le joueur ne peut pas continuer à jouer, il doit être remplacé",
+      "c": "Aucune des équipes ne peut demander de temps-mort."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 195,
+    "question": "Entre le coup de sifflet du 1er arbitre et le service, l’équipe adverse procède encore à une action d’échange du libéro. Le jeu est aussitôt interrompu, l’équipe concernée est sanctionnée pour retard. Est-ce conforme au règlement?",
+    "answers": {
+      "a": "Toujours si cette équipe a déjà été sanctionnée pour retard auparavant.",
+      "b": "Oui, dans tous les cas.",
+      "c": "Seulement si cette équipe a déjà effectué une telle action de remplacement retardée."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 196,
+    "question": "Après réception, le ballon passe au-dessous du filet en direction du camp adverse. Avant que le ballon ait traversé le plan vertical du filet, le passeur le relance dans son propre camp. Est-ce permis?",
+    "answers": {
+      "a": "Seulement si le ballon est touché dans son propre camp.",
+      "b": "Oui, et le ballon peut être aussi être touché dans l’espace adverse.",
+      "c": "Non, si le ballon a déjà traversé en partie le plan vertical du filet"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 197,
+    "question": "Un joueur touche le camp adverse. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Le contact avec toute la main n’est pas une faute à condition qu’il n’y ait pas d’interférence dans le jeu adverse.",
+      "b": "Le contact avec le pied n’est pas une faute à condition qu’une partie du pied se trouve sur la ligne centrale.",
+      "c": "Le contact avec le genou n’est pas une faute à condition qu’il n’y ait pas d’interférence dans le jeu adverse."
+    },
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 198,
+    "question": "Un joueur arrière participe à un contre à trois. Dans quels cas cette situation entraîne-t-elle une faute?",
+    "answers": {
+      "a": "Il est le Libéro et la balle d’attaque adverse ne touche aucun des bloqueurs",
+      "b": "La balle d’attaque adverse touche un autre joueur du bloc, mais pas lui-même",
+      "c": "Il n’est pas le Libéro, et la balle d’attaque adverse ne touche aucun des bloqueurs."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 199,
+    "question": "Un joueur touche le filet. Dans quels cas s’agit-il d’une faute?",
+    "answers": {
+      "a": "Après sa frappe d’attaque, un attaquant effleure le bord supérieur du filet avec la main.",
+      "b": "Lors de sa passe, le passeur touche nettement le filet sous la bande blanche du bord supérieur du filet.",
+      "c": "Le joueur touche la bande blanche du bord supérieur du filet à l’extérieur de l’antenne."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 200,
+    "question": "Au moment du service, un joueur touche la ligne centrale avec un pied, sans la dépasser. Est-ce une faute?",
+    "answers": {
+      "a": "Non.",
+      "b": "Oui, dans chaque cas.",
+      "c": "Seulement si le pied dépasse l’axe de la ligne centrale."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 201,
+    "question": "Lors d’une réception ratée, le ballon vole à l’extérieur de l’antenne vers la zone libre de l’adversaire. Un joueur renvoie le ballon dans son propre camp. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Renvoyer le ballon est conforme aux Règles uniquement s’il traverse le plan vertical du filet entièrement dans l’espace externe du même côté du filet.",
+      "b": "Le joueur qui relance le ballon n’a jamais le droit de toucher le camp adverse.",
+      "c": "Le joueur qui relance le ballon n’a pas le droit de toucher le camp adverse, sauf si son pied se trouve sur la ligne centrale ou au-dessus de celle-ci.",
+      "d": "Le joueur qui relance le ballon peut sauter sur le banc de l’équipe adverse."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 202,
+    "question": "Le ballon réceptionné par l’équipe A vole au-dessus du filet vers le camp adverse. Un joueur avant de l’équipe B saute pour contrer. Le passeur de l’équipe A touche le ballon encore tout juste avant le plan vertical du filet et, alors qu’il passe le ballon à son attaquant, le bloqueur touche sa main. Le bloqueur a-t-il commis une faute?",
+    "answers": {
+      "a": "Seulement si le fait d’avoir touché la main gêne la passe.",
+      "b": "Non, puisqu’il n’a pas touché le ballon.",
+      "c": "Oui, dans tous les cas."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 203,
+    "question": "Une équipe joue avec 2 Libéros. Au 2ème set, l’entraîneur voudrait échanger le Libéro qui joue par le Libéro remplaçant. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Lors de cet échange, le Libéro en train de jouer ne doit pas se trouver sur le terrain de jeu.",
+      "b": "Cet échange est possible et ne peut être annulé dans le prochain set que si le nouveau Libéro se blesse.",
+      "c": "Cet échange est possible sans autre justification."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 204,
+    "question": "Une équipe joue avec 1 Libéro. Pendant le match, l’entraîneur veut désigner un autre joueur (ne se trouvant pas sur le terrain) comme nouveau Libéro. Quelles affirmations sont justes?",
+    "answers": {
+      "a": "Une re-désignation est autorisée dans tous les cas.",
+      "b": "La re-désignation n’est autorisée dans aucun cas puisque l’équipe n’a pas de Libéro de remplacement.",
+      "c": "Si le Libéro s’est blessé, la re-désignation est permise."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 205,
+    "question": "Le Libéro remplace le joueur #5 sur le terrain. Au prochain changement inverse, le joueur #7 remplace le Libéro sur le terrain. Comment agir au moment où on le remarque?",
+    "answers": {
+      "a": "Avant le prochain service, la position des joueurs doit être corrigée, l’équipe est sanctionnée pour retard.",
+      "b": "La position des joueurs n’est pas corrigée, un remplacement (7 pour 5) est enregistré, l’équipe est sanctionnée pour retard.",
+      "c": "Après l’exécution du service, la position des joueurs doit être corrigée, tous les points accordés à l’équipe depuis le changement erroné sont annulés, l’adversaire reçoit un point et le service."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 206,
+    "question": "Le joueur au service effectue le service en dehors de la zone de service. Au même moment, le 2ème arbitre siffle une faute de position de l'équipe en réception. Le 1er arbitre décide...",
+    "answers": {
+      "a": "... échange à rejouer.",
+      "b": "... faute de l’équipe au servie."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 207,
+    "question": "Pendant la pause entre deux sets, les joueurs de l'équipe A souhaitent s'échauffer sur le terrain avec le ballon. L'arbitre l'interdit. A-t-il agi correctement?",
+    "answers": {
+      "a": "Non.",
+      "b": "Oui."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 208,
+    "question": "Le 2ème arbitre ne se présente pas à un match de championnat. Aucun arbitre n'est présent parmi les spectateurs. Le 1er arbitre...",
+    "answers": {
+      "a": "... n'est pas autorisé à diriger le match seul et rentre chez lui.",
+      "b": "... dirige le match seul.",
+      "c": "... dirige le match avec l'accord des deux équipes, ensemble avec l’entraîneur d’une des deux équipes."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 209,
+    "question": "L'équipe recevante provoque le retard du début du match (avec un motif vérifiable et suffisant). Dans les ligues nationales, le report du nouveau début de match peut être au maximum de...",
+    "answers": {
+      "a": "... 60 minutes.",
+      "b": "... 15 minutes, si le match en question est suivi d'un deuxième match dans la même salle et si la durée d'utilisation de la salle est limitée.",
+      "c": "... 30 minutes."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 210,
+    "question": "Les deux capitaines d'équipe ne peuvent pas se mettre d'accord sur un échauffement commun au filet. L’échauffement séparé (5 minutes chacun) commence par...",
+    "answers": {
+      "a": "... l’équipe qui sera la première en réception.",
+      "b": "... l‘équipe à domicile.",
+      "c": "... l’équipe visiteuse.",
+      "d": "... l’équipe qui aura le premier service."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 211,
+    "question": "Pour l'évaluation d'une frappe d'attaque par un joueur arrière dans la zone avant, les critères suivants sont déterminants:",
+    "answers": {
+      "a": "La position du ballon par rapport à la bande supérieure du filet.",
+      "b": "La hauteur de contact avec le ballon par rapport à la bande supérieure du filet."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 212,
+    "question": "Le bloc est effectif...",
+    "answers": {
+      "a": "... dès que le ballon est touché par un joueur au bloc.",
+      "b": "... lorsque le ballon est entièrement passé dans l’espace adverse après avoir été touché par le bloc."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 213,
+    "question": "La frappe d’attaque est considérée comme exécutée...",
+    "answers": {
+      "a": "... lorsque le ballon a traverse entièrement le plan vertical du filet.",
+      "b": "... lorsque le ballon est touché par un adversaire.",
+      "c": "... au moment du contact du ballon par l’attaquant."
+    },
+    "correct": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question_number": 214,
+    "question": "Par frappe d’attaque on entend...",
+    "answers": {
+      "a": "... toutes les actions où le ballon est joué au-dessus de la bande supérieure du filet en direction de l'adversaire, à l'exception du service et du bloc.",
+      "b": "... toutes les actions où le ballon est joué en direction de l'adversaire, à l'exception du service et du bloc."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 215,
+    "question": "Un joueur blessé ne peut pas être remplacé, que ce soit de manière régulière ou exceptionnelle. L'arbitre...",
+    "answers": {
+      "a": "... accorde au joueur trois minutes de temps de récupération, mais seulement une seule fois au même joueur pendant la rencontre.",
+      "b": "... déclare l’équipe incomplète et met fin à la rencontre."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 216,
+    "question": "L'équipe refuse de jouer au troisième set. Le premier arbitre déclare que l'équipe ne s'est pas présentée. Comment faut-il poursuivre?",
+    "answers": {
+      "a": "On attribue à son adversaire les sets manquants pour gagner le match. L’équipe qui ne s’est pas présentée conserve les points et les sets acquis.",
+      "b": "Le résultat final est 0:3 pour le match et 0:25 pour chaque set."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 217,
+    "question": "Le marqueur ne reçoit pas la composition de l'équipe pour le set suivant à temps. Comment faut-il procéder?",
+    "answers": {
+      "a": "Il le signale sans délai au 2ème arbitre.",
+      "b": "Pour cette raison, il écrit automatiquement la composition de l'équipe du set précédent."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 218,
+    "question": "L’entraîneur demande pour la deuxième fois un 7ème changement de joueur. L’arbitre considère ceci comme...",
+    "answers": {
+      "a": "... une première demande non fondée et ne prononce aucune autre sanction.",
+      "b": "... une demande non fondée répétée et sanctionne l’équipe pour retard de jeu."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 219,
+    "question": "Le ballon approche du sol. Un joueur joue le ballon de telle manière que le ballon touche tant ses doigts que le sol. Le 1er arbitre ne le voit pas, mais le 2ème arbitre a vu la situation. Quelle est la bonne manière de procéder?",
+    "answers": {
+      "a": "Le 2ème arbitre siffle le contact du ballon avec le sol.",
+      "b": "Les arbitres laissent le jeu se poursuivre. Après l’échange de jeu, lorsque le 2ème arbitre informe le 1er arbitre de la situation, le 1er arbitre donne à remettre."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 220,
+    "question": "Un joueur arrière „A“ saute derrière la ligne d’attaque. Le ballon se situe après le service adverse au-dessus de la zone avant „A“ et est entièrement au-dessus du bord supérieur du filet. Le joueur arrière „A“ joue le ballon dans le terrain „B“. Que faut-il décider?",
+    "answers": {
+      "a": "Le 1er arbitre siffle, l’échange de jeu est gagné par l’équipe „B“.",
+      "b": "Le 1er arbitre ne siffle pas, l’action est correcte.",
+      "c": "Le 1er arbitre siffle, l’échange de jeu est gagné par l’équipe „A“."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 221,
+    "question": "Après un échange de jeu, le joueur „A“ demande à l’arbitre la permission d’attacher son lacet. Il n’en résulte pas de retard effectif. Quelle est la bonne manière de procéder?",
+    "answers": {
+      "a": "L’arbitre autorise le joueur à attacher son lacet.",
+      "b": "L’arbitre décide qu’il s’agit d’un retard de jeu de l’équipe „A“."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 222,
+    "question": "L’équipe A est au service et fait une faute de rotation, p.ex. le faux joueur effectue le service. En même temps, l’équipe B qui est en réception est en faute de position. Quelle est la bonne décision?",
+    "answers": {
+      "a": "Point pour l’équipe B",
+      "b": "Double faute, échange à rejouer",
+      "c": "Point pour l’équipe A"
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 223,
+    "question": "Après un temps-mort, un faux joueur se prépare pour effectuer le service. L’arbitre siffle pour autoriser le service. L’équipe s’aperçoit de son erreur avant que le service ne soit effectué et le bon joueur va au service. Le 1er arbitre siffle à nouveau pour autoriser le service. A-t-il agi correctement?",
+    "answers": {
+      "a": "Non",
+      "b": "Oui"
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 224,
+    "question": "Après le coup de sifflet du 1er arbitre autorisant le service, le 2ème arbitre réagit de manière tardive à une demande de temps-mort et siffle également. Que faut-il décider?",
+    "answers": {
+      "a": "Comme l’échange avait été autorisé, le service doit être effectué dans les 8 secondes. Le temps-mort n’est pas accordé.",
+      "b": "Le 1er arbitre doit décider une double faute et autoriser à nouveau le service. Le temps-mort n’est pas accordé et une sanction pour retard de jeu est prononcée.",
+      "c": "Le 1er arbitre doit décider une double faute. Si la demande de temps-mort est renouvelée, celui-ci sera accordé."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 225,
+    "question": "Après que l’équipe A ait marqué plusieurs points sur son service, une faute de rotation est constatée dans cette équipe. Comment procéder?",
+    "answers": {
+      "a": "Si le moment peut être constaté, tous les points marqués depuis le début de la faute sont enlevés à l’équipe A. Les points de l’adversaire restent acquis et le dernier échange est accordé à l’adversaire.",
+      "b": "Seul le dernier point marqué est enlevé à l’équipe A et attribué à l’adversaire. Les autres points sont considérés comme „joués“ et restent acquis."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 226,
+    "question": "L’équipe A a 7 joueurs à disposition, dont un Libéro. Au 2ème set, un joueur (pas le Libéro) se blesse et ne peut pas continuer de jouer. Comment la rencontre peut-elle continuer?",
+    "answers": {
+      "a": "L’équipe A est déclarée incomplète pour le 2ème set et perd celui-ci. Comme aucun autre joueur n’est à disposition, le Libéro peut joueur le 3ème set après un remplacement exceptionnel comme joueur „normal“.",
+      "b": "L’équipe A est déclarée incomplète et perd la rencontre.",
+      "c": "Le Libéro peut immédiatement remplacer le joueur blessé."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 227,
+    "question": "Quelles sanctions ont pour conséquence supplémentaire le gain d’un point pour l’adversaire?",
+    "answers": {
+      "a": "Cartons jaune et rouge ensemble.",
+      "b": "Carton jaune.",
+      "c": "Carton rouge."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 228,
+    "question": "Dans le 1er set, l’équipe A a été sanctionnée d’un avertissement pour retard de jeu. Dans le set suivant, un autre joueur commet la même infraction. Comment l’arbitre doit-il décider?",
+    "answers": {
+      "a": "Les sanctions pour retard de jeu sont des sanctions d’équipe et gardent leur validité durant toute la rencontre. De ce fait, une „pénalité pour retard de jeu“ doit être prononcée, ce qui a pour conséquence la perte d’un échange de jeu.",
+      "b": "Les sanctions pour retard de jeu sont des sanctions personnelles. De ce fait, un nouvel avertissement doit être prononcé.",
+      "c": "Comme les deux retards de jeu ont eu lieu dans des sets différents, un nouvel avertissement doit être prononcé."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 229,
+    "question": "En raison de l’architecture peu heureuse de la salle, une zone au milieu de la salle n’est pas entièrement visible sur toute la hauteur par les arbitres. Une balle haute est jouée, qui quitte brièvement le champ de vision des arbitres. Le 1er arbitre estime que le ballon n’a pas forcément touché le plafond, mais il ne peut pas l’exclure. Comment doit-il décider?",
+    "answers": {
+      "a": "Le jeu doit être interrompu uniquement si une des équipes réclame une faute. L’arbitre décide une double faute et l’échange est à rejouer.",
+      "b": "Comme une faute ne peut pas être exclue selon l’estimation de l’arbitre, il doit en tous les cas décider une double faute et l’échange est à rejouer.",
+      "c": "Le jeu doit être interrompu uniquement si une des équipes réclame une faute. L’arbitre décide d’accorder le point à l’équipe qui n’a pas causé la faute.",
+      "d": "Le jeu se poursuit, car aucun des arbitres n’a observé une faute manifeste."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 230,
+    "question": "Un joueur avant effectue un bloc. Ce faisant, il touche le ballon dans l’espace de jeu adverse en même temps que la frappe d’attaque de l’adversaire. L’attaque est effectuée par l’adversaire entièrement au-dessus de la bande supérieure du filet par un joueur arrière dans la zone avant. Comment faut-il décider?",
+    "answers": {
+      "a": "Faute du bloqueur.",
+      "b": "Double faute, échange à rejouer.",
+      "c": "Faute de l’attaquant."
+    },
+    "correct": [
+      "c"
+    ],
+    "linked_to": 230,
+    "link_order": 1
+  },
+  {
+    "question_number": 231,
+    "question": "Suite de la question précédente. Quelle est la bonne décision si le bloqueur est un joueur arrière?",
+    "answers": {
+      "a": "Faute de l’attaquant",
+      "b": "Double faute, échange à rejouer",
+      "c": "Faute du bloqueur"
+    },
+    "correct": [
+      "b"
+    ],
+    "linked_to": 230,
+    "link_order": 2
+  },
+  {
+    "question_number": 232,
+    "question": "Le ballon est passé en passe haute par le Libéro et l’attaquant frappe le ballon au-dessus du bord supérieur du filet. Ceci est autorisé si, au moment de la passe, le Libéro est...",
+    "answers": {
+      "a": "Dans la zone avant et que l’attaque a lieu depuis la zone avant.",
+      "b": "Dans la zone avant et que l’attaquant a pris son élan au moins derrière la ligne d’attaque.",
+      "c": "Dans la zone arrière et que l’attaque a lieu depuis la zone avant par un joueur avant.",
+      "d": "Dans la zone arrière et que l’attaquant a pris son élan au moins derrière la ligne d’attaque."
+    },
+    "correct": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "question_number": 233,
+    "question": "Sur le score de 24:20 pour l’équipe A, l’équipe adverse frappe une attaque „out“. Les arbitres n’ont pas vu qu’un joueur de l’équipe A avait touché le ballon au bloc. Le 1er arbitre décide d’accorder le point à l’équipe A et termine ainsi le set. Ce n’est que maintenant que le bloqueur reconnaît avoir touché le ballon. Le 1er arbitre reste sur sa décision et la motive du fait que le set est terminé et qu’il ne peut donc revenir sur sa décision. Agit-il correctement?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non, le point doit être attribué à l’équipe B.",
+      "c": "Non, l’échange devrait être rejoué."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 234,
+    "question": "Que signifie ce geste de l’arbitre?",
+    "answers": {
+      "a": "Bloc d’arrière",
+      "b": "Pénétration non autorisée dans l’espace de jeu adverse au-dessus du filet",
+      "c": "Faute d’attaque d’un Libéro",
+      "d": "Faute d’attaque d’un joueur arrière",
+      "e": "Bloc du Libéro",
+      "f": "Faute d’attaque après une passe haute du Libéro situé dans la zone avant",
+      "g": "Attaque directement sur le service adverse"
+    },
+    "correct": [
+      "c",
+      "d",
+      "f",
+      "g"
+    ],
+    "image_url": "ZK_2022_question_227.png"
+  },
+  {
+    "question_number": 235,
+    "question": "En cas de désaccord entre la feuille de position et la position effective des joueurs sur le terrain (Libéro inclus) avant le premier service du premier set, la règle suivante s’applique:",
+    "answers": {
+      "a": "Les joueurs doivent se positionner conformément à la feuille de position, sans autre sanction.",
+      "b": "Les joueurs doivent se positionner conformément à la feuille de position et l’équipe reçoit un avertissement pour retard de jeu en guise de sanction.",
+      "c": "Le marqueur doit corriger la feuille de position et la feuille de match."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 236,
+    "question": "La première touche d’une équipe est une faute lorsque:",
+    "answers": {
+      "a": "Après un bloc de l’adversaire, le ballon touche la tête de l’attaquant (situé au moment du contact entièrement en dessous de la bande supérieure du filet), va dans le filet et le même joueur la rejoue ensuite.",
+      "b": "Lors de la réception d’une attaque de l’adversaire la balle est jouée en passe haute, les deux mains touchant le ballon l’une après l’autre durant cette action.",
+      "c": "Le ballon rebondissant sur son propre bloc est joué volontairement avec le pied par l’un des bloqueurs."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 237,
+    "question": "Après avoir lancé en l’air par le serveur, le ballon touche tant le pied du serveur que le sol. Que décide le 1er arbitre?",
+    "answers": {
+      "a": "L’équipe au service reçoit une sanction pour retard de jeu et le 1er arbitre autorise le même joueur à servir à nouveau.",
+      "b": "Cette action est une faute de service.",
+      "c": "Une deuxième tentative de service doit être effectuée sans retard dans les 8 secondes après le coup de sifflet du 1er arbitre."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 238,
+    "question": "Le joueur au service fait rebondir involontairement le ballon sur son pied après le coup de sifflet du 1er arbitre autorisant le service, et le ballon roule sur le terrain:",
+    "answers": {
+      "a": "Le 1er arbitre autorise une nouvelle tentative de service.",
+      "b": "Cette action n’est pas une faute de service. Le joueur a le droit d’exécuter le service dans les 8 secondes.",
+      "c": "C’est une faute de service."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 239,
+    "question": "Durant le 1er set, le 2ème arbitre s’aperçoit que le coach est assis sur le banc d’équipe, mais du côté le plus éloigné du marqueur. Le 2ème arbitre demande au coach qu’il prenne la place qui lui est dévolue sur le banc. Le coach s’y oppose.",
+    "answers": {
+      "a": "Le 1er arbitre exige que le coach prenne sa place correcte ou qu’il se lève dans la zone libre devant son banc d’équipe.",
+      "b": "Le 1er arbitre ignore le coach. Il appartient au 2ème arbitre de contrôler les bancs d’équipe.",
+      "c": "Le 1er arbitre donne un carton jaune et exige qu’il prenne sa place correcte ou qu’il se lève dans la zone libre devant son banc d’équipe."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 240,
+    "question": "Est-ce une faute si un joueur passe les mains au-dessus du côté de l’adversaire et frappe la balle au lieu de la bloquer?",
+    "answers": {
+      "a": "Non, si le premier contact a eu lieu dans l’espace de jeu adverse.",
+      "b": "Oui, si le premier contact a eu lieu dans l’espace de jeu adverse.",
+      "c": "Non, si le premier contact a eu lieu dans son propre espace de jeu.",
+      "d": "Oui, si le premier contact a eu lieu dans son propre espace de jeu."
+    },
+    "correct": [
+      "b",
+      "c"
+    ]
+  },
+  {
+    "question_number": 241,
+    "question": "L'équipe \"A\" gagne l’échange et se rend au service. Après le coup de sifflet, le joueur au service lance le ballon en l'air de manière à ce qu'il touche le plafond. Sans laisser tomber le ballon, le joueur au service frappe le ballon et effectue le service. Le 1er arbitre:",
+    "answers": {
+      "a": "L’équipe „B“ gagne l’échange – exécution irrégulière du service.",
+      "b": "Doit siffler et le service est répété.",
+      "c": "Autorise l’exécution du service."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 242,
+    "question": "Après la première touche, l'équipe recevante \"A\" envoie le ballon dans la zone libre de l'équipe adverse \"B\", le ballon ayant entièrement traversé le plan vertical du filet dans l’espace extérieur. Un des joueurs de l'équipe \"A\" veut atteindre ce ballon en utilisant le poteau du filet pour changer rapidement sa direction de course. Il renvoie ensuite le ballon dans son propre espace de jeu, le ballon passant à nouveau entièrement dans l’espace extérieur du même côté du terrain. L'arbitre:",
+    "answers": {
+      "a": "Laisse le jeu se poursuivre.",
+      "b": "Siffle une faure de l’équipe recevantre „A“.",
+      "c": "Fait rejouer l’échange."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 243,
+    "question": "Une équipe joue sans entraîneur ni entraîneur adjoint. Le capitaine de l'équipe est le joueur #1. Au deuxième set, le joueur #1 est assis sur le banc de l'équipe et demande un temps mort au 2ème arbitre. Le 2ème arbitre:",
+    "answers": {
+      "a": "Autorise le temps-mort.",
+      "b": "Autorisera le temps-mort et avertira le capitaine de l'équipe, car seul le capitaine de jeu a le droit de demander des interruptions de jeu régulières.",
+      "c": "N’autorise pas le temps-mort – seul le capitaine de jeu a le droit de demander des temps-morts et des remplacement."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 244,
+    "question": "Un joueur de l'équipe \"A\" se rend au service. Le joueur au service effectue le service dans le temps imparti, mais le ballon va dans le filet, juste en dessous du bord supérieur du filet. Les mailles du filet se déchirent et la balle passe à travers le filet dans le terrain de l'équipe \"B\".",
+    "answers": {
+      "a": "L’arbitre décide de faire rejouer l’échange.",
+      "b": "L’arbitre laisse le jeu se poursuivre.",
+      "c": "L’équipe \"B\" gagne l’échange de jeu."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 245,
+    "question": "La position des joueurs est déterminée et contrôlée en conséquence par...",
+    "answers": {
+      "a": "... la position de leurs corps, par rapport au plan vertical du filet.",
+      "b": "... la position de leurs pieds en contact avec le sol.",
+      "c": "... la position d'une partie de leurs corps en contact avec le sol (mains, pieds, genoux, etc.)."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 246,
+    "question": "Un joueur de l'équipe \"A\" effectue une frappe d'attaque. Le ballon vole à proximité de l'antenne en direction de l’espace externe. Un joueur de l'équipe \"B\" bloque cette attaque dans l’espace adverse, à l'extérieur de l'antenne. Après le bloc, le ballon touche le sol dans le terrain de l'équipe \"A\".",
+    "answers": {
+      "a": "Faute de l’équipe \"A\" en attaque.",
+      "b": "L’échange doit être rejoué.",
+      "c": "Faute de l’équipe \"B\" au bloc."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 247,
+    "question": "Avant le début du match, le Libéro enregistré sur l’eScoresheet se blesse. Le coach demande une re-désignation du Libéro. Le nouveau Libéro doit être le joueur #1 qui est déjà inscrit dans l’eScoresheet comme joueur pour le premier set. Comment faut-il procéder?",
+    "answers": {
+      "a": "L'arbitre autorise la re-désignation avant le début du match. Le joueur #1 est remplacé de manière régulière (score 0:0). Le numéro du nouveau Libéro doit être inscrit sur l‘eScoresheet sous remarques.",
+      "b": "L’arbitre rejette le demande et la re-désignation ne peut avoir lieu qu’après le premier échange du premier set. Toutes les circonstances doivent être inscrites dans l’eScoresheet sous remarques.",
+      "c": "L’arbitre autorise la re-désignation, les positions dans l’eScoresheet sont réintroduites et le joueur #1 peut jouer comme nouveau Libéro dans le premier set. Toutes les circonstances doivent être inscrites dans l’eScoresheet sous remarques."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 248,
+    "question": "Dans le 2ème set, le joueur #10 remplace le joueur #2 de l'équipe \"A\". Dans le même set, le joueur #2 est remplacé en retour par le #10. Plus tard (dans le même set), le joueur #2 est disqualifié. L'arbitre:",
+    "answers": {
+      "a": "Refuse un \"remplacement exceptionnel\" et déclare l'équipe incomplète pour ce set. Le jeu reprend avec le 3ème set. Le joueur #2 ne peut pas continuer à jouer dans ce match",
+      "b": "Autorise un \"remplacement exceptionnel\" du joueur #2 par n'importe quel joueur assis sur le banc. Le joueur #2 doit se rendre dans le vestiaire de l'équipe pour le reste du match.",
+      "c": "Refuse un \"remplacement exceptionnel\", déclare l'équipe incomplète pour le match et met fin au match. L'équipe incomplète conserve ses points et ses sets."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 249,
+    "question": "Après avoir frappé Le ballon, le joueur touche les cordes qui fixent le filet au poteau.",
+    "answers": {
+      "a": "Aucune faute n'est commise, si ce contact n'influence pas le jeu.",
+      "b": "L'arbitre siffle la faute \"contact du joueur avec le filet\".",
+      "c": "L'arbitre ne doit en aucun cas interrompre le jeu."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 250,
+    "question": "Après la réception au sol des joueurs de bloc de l'équipe \"A\", l'un d'entre eux tombe au sol avec la cheville tordue. Les joueurs de l'équipe adverse réussissent à jouer le ballon et préparent l'attaque suivante. L'arbitre:_____v",
+    "answers": {
+      "a": "N’interrompt pas l’échange.",
+      "b": "Doit immédiatement arrêter l’échange et permettre à l'assistance médicale de pénétrer sur le terrain. L’échange sera répété.",
+      "c": "Interrompt l’échange et ordonne un temps-mort à l’équipe \"A\"."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 251,
+    "question": "Le joueur #3 de l'équipe \"A\" attaque, le ballon se trouvant alors dans la zone avant et entièrement au-dessus du bord supérieur du filet. L'attaque touceh le sol à l’intérieur du terrain adverse. L'arbitre donne l’échange en faveur de l'équipe \"A\". Une fois que les joueurs se sont remis correctement en place, l'arbitre remarque que le joueur #3 est un joueur arrière. L'arbitre :",
+    "answers": {
+      "a": "Ne change pas sa décision.",
+      "b": "Modifie sa décision et l’échange précédent est gagné par l'équipe \"B\".",
+      "c": "Décide de faire rejouer l’échange."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 252,
+    "question": "Le passeur avant de l'équipe \"A\" essaie de jouer un ballon qui vient d'un coéquipier. Pour ce faire, il saute et joue le ballon d'une main au-dessus du filet. Au moment où il touche le ballon, sa main se trouve dans le camp adverse. Le ballon ainsi joué vole du côté du passeur, parallèlement au filet, en direction d'un attaquant de l'équipe \"A\". Le bloc de l'équipe \"B\" touche le ballon avant l'attaquant de l'équipe \"A\", de sorte que l'attaquant \"A\" ne peut pas effectuer l'attaque. Le 1er arbitre:",
+    "answers": {
+      "a": "Siffle un faute du bloc „B“.",
+      "b": "Siffle une faute du passeur „A“.",
+      "c": "Ne siffle pas, aucun faute n’a été commise."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 253,
+    "question": "L'équipe en réception est mal positionnée au moment du service. Au moment de sauter pour un service smashé, le joueur au service touche la ligne de fond. L'arbitre:",
+    "answers": {
+      "a": "Décide d’une „doubel faute“ – l’échange est répété.",
+      "b": "Donne l’échange à l'équipe qui sert – faute de position de l'équipe en réception.",
+      "c": "Donne l’échange à l'équipe qui réceptionne – faute du joueur au service."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 254,
+    "question": "Un joueur touche le terrain de son adversaire avec ses doigts sous le filet, la paume de sa main étant au-dessus de la ligne médiane. L'arbitre:",
+    "answers": {
+      "a": "Siffle un epénétration non autorisée sous le filet dans l’espace adverse.",
+      "b": "Ne siffle que si la paume de la main n’est pas en contact avec la ligne médiane.",
+      "c": "Ne siffle pas, car cette pénétration ne gêne pas l’adversaire."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 255,
+    "question": "Le Libéro de l'équipe \"A\" fait une passe haute jouée avec les doigts dans la zone avant. Un attaquant joue le ballon, qui se trouve entièrement au-dessus du bord supérieur du filet, en direction de l'adversaire. La frappe d’attaque touche le bloc de l'adversaire, auquel participe également un joueur arrière. Après le contact avec le bloc, le ballon reste toujours en jeu. L'arbitre siffle:",
+    "answers": {
+      "a": "Echange gagné par l’équipe \"A\" (attaque).",
+      "b": "Echange gagné par l’équipe \"B\" (bloc).",
+      "c": "Eéchange à rejouer, double faute."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 256,
+    "question": "Après un contact simultané du ballon au-dessus du filet par deux adversaires (les deux joueurs essaient de frapper le ballon), le ballon touche le sol entièrement en dehors de la ligne latérale de l'équipe \"A\". L’échange:",
+    "answers": {
+      "a": "Doit être sifflé dans tous les cas lorsque le contact a eu lieu entièrement au-dessus du terrain de jeu de l'équipe adverse.",
+      "b": "Est gagné par l’équipe \"B\".",
+      "c": "Doit être rejoué.",
+      "d": "Est gagné par l’équipe \"A\"."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 257,
+    "question": "Avant de servir, le capitaine de jeu demande à l'arbitre de vérifier les positions de l'équipe adverse. L'arbitre:",
+    "answers": {
+      "a": "Donne une sanction pour retard à l’équipe.",
+      "b": "Informe le capitaine si l'adversaire est correctement positionné ou non. L'arbitre n'est pas autorisé à montrer la feuille de positions de l'adversaire ou à dire quel joueur est avant ou arrière.",
+      "c": "Rejette la demande sans autre conséquence."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 258,
+    "question": "Un joueur de l'équipe \"A\" bloque l'attaque de l'équipe \"B\", de telle manière que le ballon traverse l'espace de l'équipe \"B\" et passe ensuite sous le filet dans l'espace de l'équipe \"A\" qui bloque. L'arbitre:",
+    "answers": {
+      "a": "Siffle une faute de l’équipe \"A\" (bloc).",
+      "b": "Siffle une faute de l’équipe \"B\" (attaque).",
+      "c": "Fais rejouer l’échange."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 259,
+    "question": "Si un joueur se blesse pendant le match, il faut procéder comme suit:",
+    "answers": {
+      "a": "Le joueur doit bénéficier immédiatement et dans tous les cas d'un temps de récupération de 3 minutes, mais seulement une fois par joueur et par match.",
+      "b": "Un temps de récupération de 3 minutes doit être accordé au joueur s'il ne peut être remplacé ni régulièrement ni exceptionnellement, cependant seulement une fois par joueur et par match.",
+      "c": "L'équipe doit d'abord utiliser ses temps-morts, ce n'est qu'ensuite qu'un temps de récupération de 3 minutes lui est accordé, mais seulement une fois par joueur et par match."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 260,
+    "question": "Après une réception ratée de l'équipe \"A\", le ballon vole rapidement en direction du filet. Un joueur de l'équipe \"B\" bouge clairement les bras avec l'intention de frapper le ballon à travers le filet dans le terrain adverse, de sorte que l'équipe qui réceptionne n'a aucune chance de jouer le ballon. L'arbitre décide:",
+    "answers": {
+      "a": "Echange gagné par l’équipe \"B\" – ballon „in“.",
+      "b": "Echange gagné par l’équipe \"A\" – faute de filet de l’équipe \"B\".",
+      "c": "Echange à rejouer – „double faute“."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 261,
+    "question": "Après la disqualification d'un coach, il faut faire attention à:",
+    "answers": {
+      "a": "Seul le capitaine d'équipe peut assumer les tâches du coach..",
+      "b": "Le coach-adjoint peut reprendre les tâches du coach dès que le capitaine de jeu en a informé l’arbitre.",
+      "c": "Le coach-adjoint reprend automatiquement les tâches du coach."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 262,
+    "question": "Le coach „A“ demande un changement de joueur selon les règles. Alors que le joueur se trouvait déjà dans la zone de remplacement, il retire sa demande. Les arbitres acceptent ceci et sanctionnent l’équipe „A“ pour comportement incorrect. Est-ce correct?",
+    "answers": {
+      "a": "Oui",
+      "b": "Non"
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 263,
+    "question": "Dans quel cas un joueur peut-il bloquer le service?",
+    "answers": {
+      "a": "Le service de l’adversaire ne peut jamais être bloqué.",
+      "b": "Uniquement si le ballon reste entièrement dans le terrain de jeu du bloqueur après le contact du bloc."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 264,
+    "question": "Deux fautes sont commises en même temps par des adversaires, le 1er arbitre décide DOUBLE FAUTE. L’entraîneur „A“ demande un remplacement.",
+    "answers": {
+      "a": "Le remplacement n’est pas accordé. Il sera considéré comme une demande non fondée.",
+      "b": "Le remplacement est accordé.",
+      "c": "Le remplacement n’est pas accordé. L’équipe ne reçoit pas de sanction."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 265,
+    "question": "L’équipe „A“ joue le ballon de telle manière qu’il touche le 2ème arbitre. Le 1er arbitre décide:",
+    "answers": {
+      "a": "faute de l’équipe „A“.",
+      "b": "échange à remettre."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 266,
+    "question": "Après le bloc „A“, un bloqueur tombe sur le terrain, gravement blessé. Juste après la blessure, le ballon touche le sol. Comment faut-il procéder?",
+    "answers": {
+      "a": "Le 1er arbitre interrompt immédiatement le jeu et autorise l’assistance médicale à pénétrer sur le terrain. L’échange de jeu sera rejoué.",
+      "b": "Le 1er arbitre autorise l’assistance médicale à pénétrer sur le terrain après l’échange de jeu (ballon touche le sol). L’équipe „B“ obtient le point et le droit au service."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 267,
+    "question": "Pendant un temps-mort, les remplaçants utilisent un ballon de volleyball dans l’aire d’échauffement. Les arbitres:",
+    "answers": {
+      "a": "Peuvent autoriser l'utilisation d'un médecine-ball lourd ou de bandes élastiques.",
+      "b": "autorisent les joueurs à s’échauffer avec le ballon.",
+      "c": "Interdisent l’utilisation d’un ballon de volleyball."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "question_number": 268,
+    "question": "Lors d’une action de jeu dans la zone libre devant le banc de l’équipe „A“, un joueur „A“ heurte son propre entraîneur, lequel est debout dans la zone autorisée, et ne peut ensuite plus atteindre le ballon. Comment faut-il procéder?",
+    "answers": {
+      "a": "L’échange de jeu est à rejouer.",
+      "b": "Faute de l’équipe „A“."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 269,
+    "question": "Qui est reponsable de la disciplie de l’équipe durant un match?",
+    "answers": {
+      "a": "Uniquement le coach.",
+      "b": "Uniquement le capitaine d’équipe.",
+      "c": "Le capitaine d’équipe et le coach, à parts égales."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 270,
+    "question": "Dans quelles zones le coach d'une équipe peut-il se déplacer librement pendant le match?",
+    "answers": {
+      "a": "Il peut dans tous les cas se déplacer dans la zone libre depuis le prolongement de la ligne d'attaque jusqu'à l’extrémité de sa moitié de terrain.",
+      "b": "Il peut se déplacer dans la zone libre, depuis le prolongement de la ligne d'attaque jusqu'à l’aire d'échauffement, pour autant que celle-ci se trouve dans le coin de la zone de compétition.",
+      "c": "Il peut se placer dans la zone de service.",
+      "d": "Il peut dans tous les cas se déplacer dans la zone libre depuis le prolongement de la ligne d'attaque jusqu'à la fin de la zone libre.",
+      "e": "Il peut se tenir ou se déplacer à l'intérieur de la zone libre située devant son banc d'équipe."
+    },
+    "correct": [
+      "a",
+      "b",
+      "e"
+    ]
+  },
+  {
+    "question_number": 271,
+    "question": "Après un échange long et intense, un joueur fait signe à un quick-mopper de venir sur le terrain et d'essuyer une tache humide au sol. Comment les arbitres réagissent-ils?",
+    "answers": {
+      "a": "Si le 1er arbitre estime qu'il est nécessaire d'essuyer une tache humide, il laisse entrer les quick-moppers sur le terrain et autorise l'essuyage.",
+      "b": "Le 2ème arbitre doit contrôler les quick-moppers dans leur travail et il est le seul à pouvoir les envoyer sur le terrain.",
+      "c": "Si le 1er arbitre prononce une sanction pour retard de jeu, il fait venir le capitaine du match et l'en informe en lui montrant le carton et le geste correspondants.",
+      "d": "Si le 1er arbitre estime qu'il n'est pas nécessaire de faire entrer les quick-moppers sur le terrain et que cela ne vise qu'à retarder le jeu, il prononce une sanction pour retard de jeu."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 272,
+    "question": "Après la deuxième touche de l'équipe A, le ballon traverse le plan du filet en dehors de l'antenne et entre dans la zone libre de l'équipe adverse. Le joueur #5 de l'équipe A court après le ballon pour le renvoyer dans son propre côté de terrain. A ce moment, le 2ème arbitre siffle une faute de filet de l'équipe B et l'équipe A gagne l’échange de jeu. Les arbitres agissent-ils correctement?",
+    "answers": {
+      "a": "Oui, si le joueur adverse a provoqué le contact avec le filet pendant une action de jouer le ballon, cette décision est correcte.",
+      "b": "Oui, dans tous les cas.",
+      "c": "Non."
+    },
+    "correct": [
+      "c"
+    ]
+  },
+  {
+    "question_number": 273,
+    "question": "Au moment où le joueur de service correct lance et frappe le ballon, les deux équipes sont à l'intérieur de leurs propres camps, mais pas selon l'ordre de rotation. Comment les arbitres doivent-ils prendre leur décision?",
+    "answers": {
+      "a": "Faute de l'équipe au service.",
+      "b": "Faute de l'équipe qui reçoit.",
+      "c": "Répétition du coup de jeu."
+    },
+    "correct": [
+      "b"
+    ]
+  },
+  {
+    "question_number": 274,
+    "question": "De quelles possibilités dispose le 1er arbitre s'il estime que certains joueurs de l'équipe au service ont les mains plus hautes que la tête pendant le service?",
+    "answers": {
+      "a": "Il peut appeler le capitaine de jeu et lui signaler qu'en cas de récidive, cela sera jugé comme écran intentionnel.",
+      "b": "Il peut le sanctionner comme un retard de jeu et faire rejouer l’échange de jeu.",
+      "c": "Comme il a déjà exhorté l'équipe verbalement pour cette raison, il sanctionne cela comme un écran intentionnel et prononce en plus un carton jaune pour antisportivité.",
+      "d": "Il peut donner un avertissement verbal à l'équipe qui sert pour des comportements incorrects mineurs.",
+      "e": "Il peut le sanctionner comme une faute."
+    },
+    "correct": [
+      "a",
+      "e"
+    ]
+  },
+  {
+    "question_number": 275,
+    "question": "Parmi les positions des mains suivantes des joueurs de l'équipe au service, lesquelles sont correctes au moment du service ?",
+    "answers": {
+      "a": "Les deux mains sont croisées derrière la tête.",
+      "b": "Une main est posée sur la tête, l'autre main est placée sur la tête (paume vers l'avant).",
+      "c": "Une main au maximum est plus haute que la tête",
+      "d": "Il pose une main sur sa tête et laisse pendre l'autre main."
+    },
+    "correct": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "question_number": 276,
+    "question": "Pour l’équipe au service, les joueurs en position 2, 3 et 4 ont les mains en dessous du niveau de la tête, tandis que le joueur en position 5 a les mains au-dessus du niveau de la tête. Le ballon est envoyé à l'adversaire via la position 2. Est-ce conforme aux règles?",
+    "answers": {
+      "a": "Non.",
+      "b": "Oui, dans tous les cas.",
+      "c": "Oui, parce que le service ne passe pas au-dessus du joueur concerné et que la trajectoire du ballon n'est donc pas cachée."
+    },
+    "correct": [
+      "a"
+    ]
+  },
+  {
+    "question_number": 277,
+    "question": "Le ballon est passé en passe haute par le Libéro et l’attaquant frappe le ballon au-dessus du bord supérieur du filet. Ceci est autorisé si, au moment de la passe, ...",
+    "answers": {
+      "a": "un pied du Libéro se trouve dans la zone avant et l'autre dans la zone arrière et que l'attaque a lieu depuis la zone avant.",
+      "b": "un pied du Libéro se trouve dans la zone arrière et l’autre dans la zone avant, le pied en zone avant étant levé en l'air au moment de la passe et n'ayant donc plus de contact avec le sol, et que l’attaquant a pris son élan au moins derrière la ligne d’attaque.",
+      "c": "le Libéro se trouve avec les deux pieds dans la zone avant et que l’attaquant a pris son élan au moins derrière la ligne d’attaque.",
+      "d": "le Libéro se trouve avec les deux pieds dans la zone arrière et que l’attaque a lieu depuis la zone avant par un joueur avant."
+    },
+    "correct": [
+      "d"
+    ]
+  },
+  {
+    "question_number": 278,
+    "question": "L'attaquant de l'équipe A frappe le ballon dans la partie supérieure du filet lors de la troisième touche; ensuite, le ballon est touché une quatrième fois par l'équipe A, sans qu'aucun joueur adverse n'ait touché le ballon. L'arbitre fait le geste suivant pour indiquer la faute:",
+    "answers": {
+      "a": "Quatre touches (geste #18), si le troisième et le quatrième contact ont été effectués par le même joueur.",
+      "b": "Double contact (geste #17), si le troisième et le quatrième contact ont été effectués par le même joueur.",
+      "c": "Quatre touches (geste #18), si le troisième et le quatrième contact ont été effectués par des joueurs différents.",
+      "d": "Faute de frappe d’attaque (geste #21)."
+    },
+    "correct": [
+      "a",
+      "c"
+    ]
+  }
+]
