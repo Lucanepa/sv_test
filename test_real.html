@@ -704,6 +704,7 @@
         let currentTestQuestions = [];
         let currentQuestionIndex = 0;
         let userAnswers = {};
+        let answerOrders = {};
         let isReviewMode = false;
 
         // ===== Data Loading =====
@@ -758,6 +759,7 @@
         function startNewTest() {
             currentQuestionIndex = 0;
             userAnswers = {};
+            answerOrders = {};
             isReviewMode = false;
 
             const selectedQuestionNumbers = new Set();
@@ -918,12 +920,18 @@
                 diagramEl.removeAttribute('src');
             }
 
-            // Answer options — reshuffled every time (intentional)
+            // Answer options — shuffled once per question, reused on re-render (incl. review)
             const answersContainer = document.getElementById('answers');
             answersContainer.innerHTML = '';
 
             const answerEntries = Object.entries(question.answers);
-            const shuffledAnswers = shuffleArray([...answerEntries]);
+            let orderKeys = answerOrders[index];
+            if (!orderKeys) {
+                orderKeys = shuffleArray(answerEntries.map(([k]) => k));
+                answerOrders[index] = orderKeys;
+            }
+            const entryMap = Object.fromEntries(answerEntries);
+            const shuffledAnswers = orderKeys.map(k => [k, entryMap[k]]);
 
             shuffledAnswers.forEach(([key, value]) => {
                 const answerDiv = document.createElement('div');
