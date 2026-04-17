@@ -538,7 +538,7 @@
             }
 
             // Question text
-            var highlightedQuestion = highlightSearchTerm(question.question, searchTerm);
+            var highlightedQuestion = highlightSearchTerm(formatQuestionText(question.question), searchTerm);
 
             // Answers
             var answersHTML = '';
@@ -570,7 +570,7 @@
             var linkedHTML = '';
             if (question.linked_questions && question.linked_questions.length > 0) {
                 var subCards = question.linked_questions.map(function(lq) {
-                    var lqHighlightedText = highlightSearchTerm(lq.question, searchTerm);
+                    var lqHighlightedText = highlightSearchTerm(formatQuestionText(lq.question), searchTerm);
 
                     var lqAnswersHTML = '';
                     var lqKeys = Object.keys(lq.answers);

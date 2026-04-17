@@ -411,7 +411,7 @@
             questionNumber.querySelector('span').textContent = t('question') + ' ' + question.question_number;
 
             // Question text
-            questionText.textContent = question.question;
+            questionText.textContent = formatQuestionText(question.question);
 
             // Diagram
             if (question.image_url) {
@@ -474,7 +474,7 @@
                 linkOrder + '/' + totalLinked + '</span>';
 
             // Question text
-            questionText.textContent = question.question;
+            questionText.textContent = formatQuestionText(question.question);
 
             // Diagram
             if (question.image_url) {

@@ -149,6 +149,7 @@
             font-size: 15px;
             line-height: 1.7;
             color: var(--text-primary);
+            white-space: pre-line;
             margin-bottom: 20px;
             text-align: justify;
         }
@@ -908,7 +909,7 @@
             numberEl.textContent = t('question') + ' ' + (index + 1) + ' / ' + currentTestQuestions.length;
 
             // Question text
-            document.getElementById('question-text').textContent = question.question;
+            document.getElementById('question-text').textContent = formatQuestionText(question.question);
 
             // Diagram
             const diagramEl = document.getElementById('diagram');

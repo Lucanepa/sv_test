@@ -453,3 +453,15 @@ function highlightSearchTerm(text, searchTerm) {
     var regex = new RegExp('(' + escaped + ')', 'gi');
     return text.replace(regex, '<span class="highlight">$1</span>');
 }
+
+/**
+ * Insert a paragraph break before numbered scenarios in multi-part questions
+ * (e.g. "...in this situation? 1. ..." becomes "...in this situation?\n\n1. ...").
+ * Relies on CSS `white-space: pre-line` on the rendering element.
+ * @param {string} text
+ * @returns {string}
+ */
+function formatQuestionText(text) {
+    if (!text) return text;
+    return text.replace(/\?\s+(\d+\.\s)/g, '?\n\n$1');
+}
