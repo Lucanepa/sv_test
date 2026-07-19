@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Mode - SSK ZK Prep</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f4">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c1917">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -101,9 +105,9 @@
         }
 
         .question-indicator.answered {
-            border-color: var(--bg-elevated);
-            background: var(--bg-elevated);
-            color: var(--text-primary);
+            border-color: var(--selected);
+            background: var(--selected-bg);
+            color: var(--selected);
         }
 
         .question-indicator.answered.current {
@@ -221,7 +225,7 @@
 
         .nav-circle:hover:not(:disabled) {
             background: var(--accent-hover);
-            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
+            box-shadow: 0 4px 16px color-mix(in srgb, var(--accent) 35%, transparent);
         }
 
         .nav-circle:disabled {
@@ -344,25 +348,25 @@
         .performance-badge.tier-excellent {
             background: var(--correct-bg);
             color: var(--correct);
-            border: 1px solid rgba(34, 197, 94, 0.3);
+            border: 1px solid color-mix(in srgb, var(--correct) 30%, transparent);
         }
 
         .performance-badge.tier-good {
-            background: var(--accent-subtle);
-            color: var(--accent);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background: color-mix(in srgb, var(--correct) 8%, transparent);
+            color: var(--correct);
+            border: 1px solid color-mix(in srgb, var(--correct) 30%, transparent);
         }
 
         .performance-badge.tier-sufficient {
-            background: rgba(234, 179, 8, 0.12);
-            color: #eab308;
-            border: 1px solid rgba(234, 179, 8, 0.3);
+            background: color-mix(in srgb, #d97706 12%, transparent);
+            color: #d97706;
+            border: 1px solid color-mix(in srgb, #d97706 30%, transparent);
         }
 
         .performance-badge.tier-fail {
             background: var(--incorrect-bg);
             color: var(--incorrect);
-            border: 1px solid rgba(239, 68, 68, 0.3);
+            border: 1px solid color-mix(in srgb, var(--incorrect) 30%, transparent);
         }
 
         .performance-desc {
@@ -1102,15 +1106,15 @@
                 badgeClass = 'tier-good';
                 badgeText = t('gut');
                 badgeDesc = t('gut_desc');
-                iconBg = 'var(--accent-subtle)';
-                resultsIcon.style.color = 'var(--accent)';
+                iconBg = 'color-mix(in srgb, var(--correct) 8%, transparent)';
+                resultsIcon.style.color = 'var(--correct)';
                 activeTier = 'good';
             } else if (score >= 66) {
                 badgeClass = 'tier-sufficient';
                 badgeText = t('genuegend');
                 badgeDesc = t('genuegend_desc');
-                iconBg = 'rgba(234, 179, 8, 0.12)';
-                resultsIcon.style.color = '#eab308';
+                iconBg = 'color-mix(in srgb, #d97706 12%, transparent)';
+                resultsIcon.style.color = '#d97706';
                 activeTier = 'sufficient';
             } else {
                 badgeClass = 'tier-fail';

@@ -326,6 +326,8 @@ var UI_STRINGS = {
         ungenuegend: 'UNGENÜGEND',
         ungenuegend_desc: 'Note 1 — Dispensation für die laufende Saison',
         gradeWarning: 'Wird im Theorietest in zwei aufeinanderfolgenden Jahren nicht mindestens einmal GUT erreicht (≥ 80%), erfolgt eine Dispensation.',
+        disclaimerTitle: 'Privates Lerntool — inoffiziell',
+        disclaimerBody: 'Dieses Tool ist vollständig privat und eine nach bestem Wissen wortgetreue Kopie der offiziellen Prüfungsfragen, ausschliesslich zum persönlichen Training. Allfällige Fehler oder Abweichungen sind nicht Swiss Volley zuzuschreiben. Kein offizielles Produkt von Swiss Volley — Nutzung ausschliesslich in inoffiziellem Rahmen.',
     },
     en: {
         subtitle: 'Swiss Volleyball Referee Exam Training',
@@ -379,6 +381,8 @@ var UI_STRINGS = {
         ungenuegend: 'INSUFFICIENT',
         ungenuegend_desc: 'Grade 1 — Dispensation for the current season',
         gradeWarning: 'If GOOD (≥ 80%) is not achieved at least once in two consecutive years, a dispensation will follow.',
+        disclaimerTitle: 'Private study tool — unofficial',
+        disclaimerBody: 'This tool is kept completely private and is a best-effort verbatim copy of the official exam questions, intended solely for personal training. Any errors or inconsistencies, if present, are not attributable to Swiss Volley. Not an official Swiss Volley product — to be used in a fully unofficial manner.',
     },
     fr: {
         subtitle: 'Préparation examen arbitre volleyball suisse',
@@ -432,6 +436,8 @@ var UI_STRINGS = {
         ungenuegend: 'INSUFFISANT',
         ungenuegend_desc: 'Note 1 — Dispensation pour la saison en cours',
         gradeWarning: "Si BIEN (≥ 80%) n'est pas atteint au moins une fois en deux années consécutives, une dispensation s'ensuit.",
+        disclaimerTitle: 'Outil d’étude privé — non officiel',
+        disclaimerBody: 'Cet outil reste entièrement privé et constitue une copie des questions d’examen officielles, fidèle dans la mesure du possible, destinée uniquement à l’entraînement personnel. Toute erreur ou incohérence éventuelle n’est pas imputable à Swiss Volley. Ce n’est pas un produit officiel de Swiss Volley — utilisation exclusivement à titre non officiel.',
     },
     it: {
         subtitle: 'Preparazione esame arbitro pallavolo svizzera',
@@ -485,6 +491,8 @@ var UI_STRINGS = {
         ungenuegend: 'INSUFFICIENTE',
         ungenuegend_desc: 'Nota 1 — Dispensazione per la stagione in corso',
         gradeWarning: 'Se BUONO (≥ 80%) non viene raggiunto almeno una volta in due anni consecutivi, segue una dispensazione.',
+        disclaimerTitle: 'Strumento di studio privato — non ufficiale',
+        disclaimerBody: 'Questo strumento è mantenuto completamente privato ed è una copia, per quanto possibile fedele, delle domande d’esame ufficiali, destinata esclusivamente all’allenamento personale. Eventuali errori o incongruenze non sono attribuibili a Swiss Volley. Non è un prodotto ufficiale di Swiss Volley — da utilizzare esclusivamente in ambito non ufficiale.',
     }
 };
 

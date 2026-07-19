@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f4">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c1917">
     <title>SSK ZK Prep</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -254,6 +258,38 @@
             width: 14px;
             height: 14px;
         }
+
+        /* Unofficial-use disclaimer */
+        .disclaimer {
+            margin-top: 16px;
+            padding: 14px 16px;
+            text-align: left;
+            background: var(--accent-subtle);
+            border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+            border-radius: var(--radius-md);
+        }
+
+        .disclaimer-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+
+        .disclaimer-title svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        .disclaimer p {
+            font-size: 0.75rem;
+            line-height: 1.55;
+            color: var(--text-secondary);
+        }
     </style>
 </head>
 <body>
@@ -319,6 +355,13 @@
                 <span>Loading questions...</span>
             </div>
             <div class="question-count" style="margin-top: 6px; font-size: 0.6875rem;" id="metaInfo"></div>
+            <div class="disclaimer">
+                <div class="disclaimer-title">
+                    <i data-lucide="shield-alert"></i>
+                    <span id="disclaimerTitle"></span>
+                </div>
+                <p id="disclaimerBody"></p>
+            </div>
         </footer>
 
     </div>
@@ -496,6 +539,9 @@
             cards[1].querySelector('.mode-desc').textContent = t('testModeDesc');
             cards[2].querySelector('.mode-title').textContent = t('checkQuestions');
             cards[2].querySelector('.mode-desc').textContent = t('checkQuestionsDesc');
+
+            document.getElementById('disclaimerTitle').textContent = t('disclaimerTitle');
+            document.getElementById('disclaimerBody').textContent = t('disclaimerBody');
         }
 
         // --- Init ---
