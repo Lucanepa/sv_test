@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Questions - SSK ZK Prep</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* --- Check Questions Page --- */
+
+        .page-container {
+            max-width: 1400px;
+        }
+
+        /* Header */
+        .page-header {
+            position: relative;
+        }
+
+        .count-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent-subtle);
+            color: var(--accent);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+
+        .count-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Search bar */
+        .search-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 12px 0;
+            background: var(--bg-base);
+        }
+
+        .search-wrapper {
+            position: relative;
+        }
+
+        .search-wrapper .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-wrapper .search-icon svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 16px 14px 48px;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.875rem;
+            transition: border-color var(--transition), box-shadow var(--transition);
+            outline: none;
+        }
+
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        /* Questions grid */
+        .questions-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        @media (min-width: 1080px) {
+            .questions-grid {
+                grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+                gap: 20px;
+            }
+        }
+
+        /* Question card */
+        .question-card {
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+
+        .question-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .question-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .q-number-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            line-height: 1.4;
+            flex-shrink: 0;
+        }
+
+        .q-linked-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--correct);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            line-height: 1.4;
+            flex-shrink: 0;
+        }
+
+        .question-text {
+            font-size: 0.875rem;
+            line-height: 1.65;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            white-space: pre-line;
+            text-align: justify;
+        }
+
+        /* Answer options inside check view */
+        .check-answers {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .check-answers .answer-option {
+            margin: 0;
+            cursor: default;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px 14px;
+        }
+
+        .check-answers .answer-option:hover {
+            background: var(--bg-elevated);
+            border-color: var(--border);
+        }
+
+        .check-answers .answer-option.correct:hover {
+            background: var(--correct-bg);
+            border-color: var(--correct);
+        }
+
+        .answer-key {
+            font-weight: 600;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+            min-width: 18px;
+        }
+
+        .answer-option.correct .answer-key {
+            color: var(--correct);
+        }
+
+        .answer-value {
+            flex: 1;
+        }
+
+        .answer-check {
+            flex-shrink: 0;
+            color: var(--correct);
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .answer-check svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Diagram */
+        .diagram-wrap {
+            margin: 14px 0;
+            text-align: center;
+        }
+
+        .diagram-wrap .diagram {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Linked questions nested section */
+        .linked-section {
+            margin-top: 18px;
+            padding: 16px;
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.15);
+            border-radius: var(--radius-md);
+        }
+
+        .linked-section-title {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--correct);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .linked-section-title svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .linked-sub-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px;
+            margin-bottom: 10px;
+        }
+
+        .linked-sub-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .linked-sub-card .question-text {
+            font-size: 0.8125rem;
+            margin-bottom: 10px;
+        }
+
+        .linked-sub-card .check-answers .answer-option {
+            padding: 8px 12px;
+            font-size: 0.8125rem;
+        }
+
+        /* No results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+        }
+
+        .no-results-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            width: 56px;
+            height: 56px;
+            background: var(--bg-surface);
+            border-radius: 50%;
+            color: var(--text-muted);
+        }
+
+        .no-results-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .no-results-text {
+            font-size: 0.9375rem;
+            font-weight: 500;
+        }
+
+        .no-results-sub {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Loading state */
+        .loading-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Search highlight */
+        .highlight {
+            background: rgba(59, 130, 246, 0.3);
+            padding: 1px 3px;
+            border-radius: 3px;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 640px) {
+            .page-header h1 {
+                font-size: 0.875rem;
+            }
+
+            .search-input {
+                font-size: 1rem;
+            }
+
+            .question-card-header {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+
+        <!-- Header -->
+        <header class="page-header">
+            <a href="index.html" class="back-btn" aria-label="Back to home">
+                <i data-lucide="arrow-left"></i>
+            </a>
+            <h1 data-i18n="checkQuestions">Check Questions</h1>
+            <div class="count-badge" id="countBadge">
+                <i data-lucide="database"></i>
+                <span id="countText">--</span>
+            </div>
+        </header>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <div class="search-wrapper">
+                <span class="search-icon"><i data-lucide="search"></i></span>
+                <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search questions, answers, or question number..."
+                    autocomplete="off"
+                >
+            </div>
+        </div>
+
+        <!-- Questions list -->
+        <div class="questions-grid" id="questionsGrid">
+            <div class="loading-state" id="loadingState">Loading questions...</div>
+        </div>
+
+    </div>
+
+    <script src="shared.js"></script>
+    <script src="lucide.min.js"></script>
+    <script>
+        let allQuestions = [];
+        let filteredQuestions = [];
+
+        // ---- Data Loading ----
+
+        async function loadQuestions() {
+            try {
+                var data = await loadQuestionData();
+                allQuestions = processQuestionsForCheck(data);
+                filteredQuestions = allQuestions.slice();
+                updateCount(filteredQuestions.length);
+                displayQuestions();
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                document.getElementById('questionsGrid').innerHTML =
+                    '<div class="no-results">' +
+                        '<div class="no-results-icon"><i data-lucide="alert-triangle"></i></div>' +
+                        '<div class="no-results-text">' + t('errorLoading') + '</div>' +
+                    '</div>';
+                createIconsSafe();
+            }
+        }
+
+        // ---- Question Processing ----
+
+        function processQuestionsForCheck(originalQuestions) {
+            var processedQuestions = [];
+            var processedLinks = new Set();
+            var linkGroups = buildLinkGroups(originalQuestions);
+
+            originalQuestions.forEach(function(question) {
+                if (processedLinks.has(question.question_number)) return;
+
+                if (question.linked_to) {
+                    var linkedQuestions = linkGroups.get(question.linked_to);
+                    linkedQuestions.forEach(function(linkedQ) {
+                        processedQuestions.push({
+                            question_number: linkedQ.question_number,
+                            question: linkedQ.question,
+                            answers: linkedQ.answers,
+                            correct: linkedQ.correct,
+                            image_url: linkedQ.image_url || null,
+                            is_linked: true,
+                            link_group: question.linked_to,
+                            link_order: linkedQ.link_order,
+                            link_total: linkedQuestions.length,
+                            prefix: '',
+                            linked_questions: linkedQuestions.filter(function(q) {
+                                return q.question_number !== linkedQ.question_number;
+                            })
+                        });
+                        processedLinks.add(linkedQ.question_number);
+                    });
+                } else if (!isLinkedTarget(question, originalQuestions)) {
+                    processedQuestions.push({
+                        question_number: question.question_number,
+                        question: question.question,
+                        answers: question.answers,
+                        correct: question.correct,
+                        image_url: question.image_url || null,
+                        is_linked: false,
+                        link_group: null,
+                        link_order: null,
+                        link_total: 0,
+                        prefix: '',
+                        linked_questions: []
+                    });
+                }
+            });
+
+            return processedQuestions;
+        }
+
+        // ---- Search ----
+
+        function handleSearch(event) {
+            var searchTerm = normalizeForSearch(event.target.value).trim();
+
+            if (searchTerm === '') {
+                filteredQuestions = allQuestions.slice();
+            } else {
+                filteredQuestions = allQuestions.filter(function(question) {
+                    // Search in question text
+                    if (normalizeForSearch(question.question).indexOf(searchTerm) !== -1) {
+                        return true;
+                    }
+
+                    // Search in answer texts
+                    var answerText = normalizeForSearch(Object.values(question.answers).join(' '));
+                    if (answerText.indexOf(searchTerm) !== -1) {
+                        return true;
+                    }
+
+                    // Search by question number
+                    if (question.question_number.toString().indexOf(searchTerm) !== -1) {
+                        return true;
+                    }
+
+                    // Search in linked sub-questions
+                    if (question.linked_questions && question.linked_questions.length > 0) {
+                        for (var i = 0; i < question.linked_questions.length; i++) {
+                            var lq = question.linked_questions[i];
+                            if (normalizeForSearch(lq.question).indexOf(searchTerm) !== -1) {
+                                return true;
+                            }
+                            var lqAnswers = normalizeForSearch(Object.values(lq.answers).join(' '));
+                            if (lqAnswers.indexOf(searchTerm) !== -1) {
+                                return true;
+                            }
+                        }
+                    }
+
+                    return false;
+                });
+            }
+
+            updateCount(filteredQuestions.length);
+            displayQuestions();
+        }
+
+        // ---- Rendering ----
+
+        function updateCount(count) {
+            document.getElementById('countText').textContent = count + ' ' + t('questions');
+        }
+
+        function displayQuestions() {
+            var container = document.getElementById('questionsGrid');
+
+            if (filteredQuestions.length === 0) {
+                container.innerHTML =
+                    '<div class="no-results">' +
+                        '<div class="no-results-icon"><i data-lucide="search-x"></i></div>' +
+                        '<div class="no-results-text">' + t('noResults') + '</div>' +
+                        '<div class="no-results-sub">' + t('noResultsSub') + '</div>' +
+                    '</div>';
+                createIconsSafe();
+                return;
+            }
+
+            container.innerHTML = filteredQuestions.map(function(q) {
+                return createQuestionHTML(q);
+            }).join('');
+
+            createIconsSafe();
+        }
+
+        function createQuestionHTML(question) {
+            var searchTerm = document.getElementById('searchInput').value.trim();
+
+            // Header badges
+            var numberBadge = '<span class="q-number-badge">#' + escapeHtml(question.question_number) + '</span>';
+
+            var linkedBadge = '';
+            if (question.is_linked) {
+                linkedBadge = '<span class="q-linked-badge">' + t('linked') + ' ' +
+                    escapeHtml(question.link_order) + '/' + escapeHtml(question.link_total) + '</span>';
+            }
+
+            // Question text
+            var highlightedQuestion = highlightSearchTerm(formatQuestionText(question.question), searchTerm);
+
+            // Answers
+            var answersHTML = '';
+            var answerKeys = Object.keys(question.answers);
+            for (var i = 0; i < answerKeys.length; i++) {
+                var key = answerKeys[i];
+                var value = question.answers[key];
+                var isCorrect = question.correct.indexOf(key) !== -1;
+                var highlightedAnswer = highlightSearchTerm(value, searchTerm);
+                var optionClass = isCorrect ? 'answer-option correct' : 'answer-option';
+
+                answersHTML +=
+                    '<div class="' + optionClass + '">' +
+                        '<span class="answer-value">' + highlightedAnswer + '</span>' +
+                        (isCorrect ? '<span class="answer-check"><i data-lucide="check"></i></span>' : '') +
+                    '</div>';
+            }
+
+            // Diagram
+            var diagramHTML = '';
+            if (question.image_url) {
+                diagramHTML =
+                    '<div class="diagram-wrap">' +
+                        '<img src="' + escapeHtml(question.image_url) + '" class="diagram" alt="Question diagram" loading="lazy">' +
+                    '</div>';
+            }
+
+            // Linked sub-questions
+            var linkedHTML = '';
+            if (question.linked_questions && question.linked_questions.length > 0) {
+                var subCards = question.linked_questions.map(function(lq) {
+                    var lqHighlightedText = highlightSearchTerm(formatQuestionText(lq.question), searchTerm);
+
+                    var lqAnswersHTML = '';
+                    var lqKeys = Object.keys(lq.answers);
+                    for (var j = 0; j < lqKeys.length; j++) {
+                        var lKey = lqKeys[j];
+                        var lValue = lq.answers[lKey];
+                        var lIsCorrect = lq.correct.indexOf(lKey) !== -1;
+                        var lHighlighted = highlightSearchTerm(lValue, searchTerm);
+                        var lClass = lIsCorrect ? 'answer-option correct' : 'answer-option';
+
+                        lqAnswersHTML +=
+                            '<div class="' + lClass + '">' +
+                                '<span class="answer-value">' + lHighlighted + '</span>' +
+                                (lIsCorrect ? '<span class="answer-check"><i data-lucide="check"></i></span>' : '') +
+                            '</div>';
+                    }
+
+                    var lqDiagramHTML = '';
+                    if (lq.image_url) {
+                        lqDiagramHTML =
+                            '<div class="diagram-wrap">' +
+                                '<img src="' + escapeHtml(lq.image_url) + '" class="diagram" alt="Question diagram" loading="lazy">' +
+                            '</div>';
+                    }
+
+                    return '<div class="linked-sub-card">' +
+                        '<div class="question-text">' + lqHighlightedText + '</div>' +
+                        lqDiagramHTML +
+                        '<div class="check-answers">' + lqAnswersHTML + '</div>' +
+                    '</div>';
+                }).join('');
+
+                linkedHTML =
+                    '<div class="linked-section">' +
+                        '<div class="linked-section-title">' +
+                            '<i data-lucide="link"></i>' +
+                            t('linkedQuestions') +
+                        '</div>' +
+                        subCards +
+                    '</div>';
+            }
+
+            return '<div class="card question-card">' +
+                '<div class="question-card-header">' +
+                    numberBadge +
+                    linkedBadge +
+                '</div>' +
+                '<div class="question-text">' + highlightedQuestion + '</div>' +
+                diagramHTML +
+                '<div class="check-answers">' + answersHTML + '</div>' +
+                linkedHTML +
+            '</div>';
+        }
+
+        // ---- Keyboard Shortcuts ----
+
+        document.addEventListener('keydown', function(e) {
+            // Ctrl/Cmd + F to focus search
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
+                e.preventDefault();
+                document.getElementById('searchInput').focus();
+            }
+
+            // Escape to clear search
+            if (e.key === 'Escape') {
+                var searchInput = document.getElementById('searchInput');
+                if (searchInput.value) {
+                    clearTimeout(searchDebounceTimer);
+                    searchInput.value = '';
+                    handleSearch({ target: searchInput });
+                    searchInput.blur();
+                }
+            }
+        });
+
+        // ---- Translations ----
+
+        function applyTranslations() {
+            document.querySelector('.page-header h1').textContent = t('checkQuestions');
+            document.querySelector('#searchInput').placeholder = t('search');
+            var loadingEl = document.getElementById('loadingState');
+            if (loadingEl) loadingEl.textContent = t('loading');
+            createIconsSafe();
+        }
+
+        // ---- Init ----
+
+        var searchDebounceTimer = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            createIconsSafe();
+            applyTranslations();
+
+            document.getElementById('searchInput').addEventListener('input', function(event) {
+                clearTimeout(searchDebounceTimer);
+                searchDebounceTimer = setTimeout(function() {
+                    handleSearch(event);
+                }, 150);
+            });
+
+            loadQuestions();
+        });
+    </script>
+</body>
+</html>

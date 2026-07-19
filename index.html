@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSK ZK Prep</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* --- Landing Page Specific --- */
+        .landing-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header — compact */
+        .landing-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .landing-header .icon-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--accent-subtle);
+            border-radius: 50%;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .landing-header .icon-wrap svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .landing-header h1 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Section labels */
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        /* Level toggle */
+        .level-toggle {
+            display: flex;
+            gap: 0;
+            margin-bottom: 20px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .level-btn {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--bg-surface);
+            border: none;
+            color: var(--text-secondary);
+            font-family: inherit;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+
+        .level-btn:first-child {
+            border-right: 1px solid var(--border);
+        }
+
+        .level-btn:hover {
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
+        }
+
+        .level-btn.active {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Language selector — compact inline row */
+        .lang-grid {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            background: var(--bg-surface);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition);
+            position: relative;
+            font-family: inherit;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+        }
+
+        .lang-btn:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
+        }
+
+        .lang-btn .lang-name {
+            display: none; /* hidden — compact mode */
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            transition: color var(--transition);
+        }
+
+        .lang-btn .check-icon {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            color: var(--accent);
+            opacity: 0;
+            transition: opacity var(--transition);
+        }
+
+        .lang-btn .check-icon {
+            display: none;
+        }
+
+        .lang-btn.active {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Mode cards */
+        .mode-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .mode-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .mode-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mode-card .mode-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: var(--accent-subtle);
+            border-radius: var(--radius-sm);
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .mode-card .mode-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .mode-card .mode-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .mode-card .mode-title {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .mode-card .mode-desc {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .mode-card .mode-arrow {
+            color: var(--text-muted);
+            flex-shrink: 0;
+            transition: color var(--transition), transform var(--transition);
+        }
+
+        .mode-card .mode-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .mode-card:hover .mode-arrow {
+            color: var(--accent);
+            transform: translateX(2px);
+        }
+
+        /* Footer */
+        .landing-footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .landing-footer .question-count {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .landing-footer .question-count svg {
+            width: 14px;
+            height: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+
+        <!-- Header -->
+        <header class="landing-header">
+            <div class="icon-wrap">
+                <i data-lucide="circle-dot"></i>
+            </div>
+            <h1>SSK ZK Prep</h1>
+        </header>
+
+        <!-- Language Selector -->
+        <p class="section-label">Language</p>
+        <div class="lang-grid" id="langGrid">
+            <button class="lang-btn" data-lang="de" onclick="selectLang('de')">DE</button>
+            <button class="lang-btn" data-lang="en" onclick="selectLang('en')">EN</button>
+            <button class="lang-btn" data-lang="fr" onclick="selectLang('fr')">FR</button>
+            <button class="lang-btn" data-lang="it" onclick="selectLang('it')">IT</button>
+        </div>
+
+        <!-- Level Toggle -->
+        <p class="section-label" id="levelLabel">Level</p>
+        <div class="level-toggle" id="levelToggle">
+            <button class="level-btn active" data-level="national" onclick="selectLevel('national')" id="btn-national">National</button>
+            <button class="level-btn" data-level="regional" onclick="selectLevel('regional')" id="btn-regional">Regional</button>
+        </div>
+
+        <!-- Mode Selector -->
+        <p class="section-label">Study Mode</p>
+        <div class="mode-cards">
+            <a href="card_game.html" class="mode-card">
+                <div class="mode-icon"><i data-lucide="layers"></i></div>
+                <div class="mode-info">
+                    <div class="mode-title">Card Game</div>
+                    <div class="mode-desc">Flashcard-style practice, one question at a time</div>
+                </div>
+                <div class="mode-arrow"><i data-lucide="chevron-right"></i></div>
+            </a>
+            <a href="test_real.html" class="mode-card">
+                <div class="mode-icon"><i data-lucide="clipboard-check"></i></div>
+                <div class="mode-info">
+                    <div class="mode-title">Test Mode</div>
+                    <div class="mode-desc">Simulate the real exam with 25 random questions</div>
+                </div>
+                <div class="mode-arrow"><i data-lucide="chevron-right"></i></div>
+            </a>
+            <a href="check_question.html" class="mode-card">
+                <div class="mode-icon"><i data-lucide="search"></i></div>
+                <div class="mode-info">
+                    <div class="mode-title">Check Questions</div>
+                    <div class="mode-desc">Browse and search all questions with answers</div>
+                </div>
+                <div class="mode-arrow"><i data-lucide="chevron-right"></i></div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="landing-footer">
+            <div class="question-count" id="questionCount">
+                <i data-lucide="database"></i>
+                <span>Loading questions...</span>
+            </div>
+            <div class="question-count" style="margin-top: 6px; font-size: 0.6875rem;" id="metaInfo"></div>
+        </footer>
+
+    </div>
+
+    <script src="shared.js"></script>
+    <script src="lucide.min.js"></script>
+    <script>
+        // Initialize Lucide icons
+        if (window.lucide) lucide.createIcons();
+
+        // --- Language Selection ---
+        const LANGUAGES = ['de', 'en', 'fr', 'it'];
+
+        function getSelectedLang() {
+            const stored = localStorage.getItem('selectedLang');
+            if (LANGUAGES.includes(stored)) return stored;
+
+            // Detect from browser language (e.g. "de-CH" -> "de")
+            const browserLangs = navigator.languages || [navigator.language || ''];
+            for (const bl of browserLangs) {
+                const code = bl.split('-')[0].toLowerCase();
+                if (LANGUAGES.includes(code)) return code;
+            }
+
+            return 'en';
+        }
+
+        function selectLang(lang) {
+            localStorage.setItem('selectedLang', lang);
+            updateLangButtons(lang);
+            applyTranslations();
+            loadQuestions(lang);
+        }
+
+        function updateLangButtons(activeLang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === activeLang);
+            });
+        }
+
+        // --- Question Loading & Caching ---
+        let loadRequestId = 0;
+
+        async function loadQuestions(lang) {
+            const requestId = ++loadRequestId;
+            const countEl = document.getElementById('questionCount');
+
+            // checkDataVersion (shared.js) clears stale caches on change
+            const meta = await checkDataVersion();
+            if (meta) {
+                document.getElementById('metaInfo').textContent =
+                    'Test Data: ' + meta.testYear + ' · Last updated: ' + meta.lastUpdated;
+            }
+
+            // Try cache first
+            const cacheKey = 'offlineQuestions_' + lang;
+            const cached = localStorage.getItem(cacheKey);
+
+            if (cached) {
+                try {
+                    const data = JSON.parse(cached);
+                    if (requestId === loadRequestId) {
+                        updateCount(filterByLevel(data).length, lang);
+                    }
+                    cacheDiagrams(data).catch(() => {});
+                    return data;
+                } catch (e) {
+                    localStorage.removeItem(cacheKey);
+                }
+            }
+
+            // Fetch from network
+            try {
+                if (requestId === loadRequestId) {
+                    countEl.querySelector('span').textContent = t('loading');
+                }
+                const response = await fetch('questions_' + lang + '.json');
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                const data = await response.json();
+
+                // Cache questions (quota failure is non-fatal)
+                try {
+                    localStorage.setItem(cacheKey, JSON.stringify(data));
+                } catch (e) {
+                    console.warn('Could not cache questions for', lang, e);
+                }
+
+                // Cache diagram images as base64
+                await cacheDiagrams(data);
+
+                if (requestId === loadRequestId) {
+                    updateCount(filterByLevel(data).length, lang);
+                }
+                return data;
+            } catch (err) {
+                console.warn('Could not load questions for', lang, err);
+                if (requestId === loadRequestId) {
+                    countEl.querySelector('span').textContent = 'Offline - no cached data for ' + lang.toUpperCase();
+                }
+                return null;
+            }
+        }
+
+        async function cacheDiagrams(questions) {
+            const diagramsKey = 'offlineDiagrams';
+            let diagrams = {};
+            try {
+                const existing = localStorage.getItem(diagramsKey);
+                if (existing) diagrams = JSON.parse(existing);
+            } catch (e) { /* start fresh */ }
+
+            for (const q of questions) {
+                if (q.image_url && !diagrams[q.image_url]) {
+                    try {
+                        const imgResponse = await fetch(q.image_url);
+                        if (!imgResponse.ok) throw new Error('HTTP ' + imgResponse.status);
+                        const imgBlob = await imgResponse.blob();
+                        const base64 = await blobToBase64(imgBlob);
+                        diagrams[q.image_url] = base64;
+                    } catch (imgErr) {
+                        console.warn('Could not cache diagram:', q.image_url);
+                    }
+                }
+            }
+
+            try {
+                localStorage.setItem(diagramsKey, JSON.stringify(diagrams));
+            } catch (e) {
+                console.warn('Could not save diagrams to localStorage:', e);
+            }
+        }
+
+        function blobToBase64(blob) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        function updateCount(count, lang) {
+            const countEl = document.getElementById('questionCount');
+            countEl.querySelector('span').textContent = count + t('questionsLoaded') + ' (' + lang.toUpperCase() + ')';
+        }
+
+        // --- Level Selection ---
+        function selectLevel(level) {
+            localStorage.setItem('selectedLevel', level);
+            updateLevelButtons(level);
+            // Reload count with filter applied
+            loadQuestions(getSelectedLang());
+        }
+
+        function updateLevelButtons(activeLevel) {
+            document.querySelectorAll('.level-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.level === activeLevel);
+            });
+        }
+
+        // --- Translations ---
+        function applyTranslations() {
+            var labels = document.querySelectorAll('.section-label');
+            labels[0].textContent = t('language');
+            labels[1].textContent = t('level');
+            labels[2].textContent = t('studyMode');
+
+            document.getElementById('btn-national').textContent = t('national');
+            document.getElementById('btn-regional').textContent = t('regional');
+
+            var cards = document.querySelectorAll('.mode-card');
+            cards[0].querySelector('.mode-title').textContent = t('cardGame');
+            cards[0].querySelector('.mode-desc').textContent = t('cardGameDesc');
+            cards[1].querySelector('.mode-title').textContent = t('testMode');
+            cards[1].querySelector('.mode-desc').textContent = t('testModeDesc');
+            cards[2].querySelector('.mode-title').textContent = t('checkQuestions');
+            cards[2].querySelector('.mode-desc').textContent = t('checkQuestionsDesc');
+        }
+
+        // --- Init ---
+        localStorage.removeItem('offlineQuestions'); // legacy unsuffixed cache key
+        const currentLang = getSelectedLang();
+        const currentLevel = getSelectedLevel();
+        updateLangButtons(currentLang);
+        updateLevelButtons(currentLevel);
+        applyTranslations();
+        loadQuestions(currentLang);
+    </script>
+</body>
+</html>
