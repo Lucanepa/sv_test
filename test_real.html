@@ -13,6 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            var t = localStorage.getItem('selectedTheme');
+            var stored = t === 'light' || t === 'dark';
+            if (!stored) {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+            if (stored) {
+                var color = t === 'dark' ? '#1c1917' : '#f5f5f4';
+                document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+                    m.setAttribute('content', color);
+                });
+            }
+        })();
+    </script>
     <style>
         /* --- Test Page Layout --- */
         .test-layout {
@@ -567,6 +583,10 @@
             </a>
             <h1>Test Mode</h1>
             <div class="header-actions">
+                <button class="back-btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
                 <button class="btn btn-primary" id="start-btn" onclick="startNewTest()">
                     <i data-lucide="shuffle"></i> New Test
                 </button>

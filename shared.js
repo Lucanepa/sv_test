@@ -21,6 +21,29 @@ function getSelectedLang() {
     return 'en';
 }
 
+// --- Theme (light / dark) ---
+
+var THEME_COLORS = { light: '#f5f5f4', dark: '#1c1917' };
+
+/**
+ * Apply a theme: set the html attribute driving all CSS tokens and keep
+ * the browser-chrome theme-color metas in sync.
+ * @param {string} theme - 'light' or 'dark'
+ */
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (meta) {
+        meta.setAttribute('content', THEME_COLORS[theme]);
+    });
+}
+
+/** Toggle between light and dark and persist the choice. */
+function toggleTheme() {
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('selectedTheme', next);
+    applyTheme(next);
+}
+
 // --- Level (National / Regional) ---
 
 function getSelectedLevel() {

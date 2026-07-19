@@ -13,6 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            var t = localStorage.getItem('selectedTheme');
+            var stored = t === 'light' || t === 'dark';
+            if (!stored) {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+            if (stored) {
+                var color = t === 'dark' ? '#1c1917' : '#f5f5f4';
+                document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+                    m.setAttribute('content', color);
+                });
+            }
+        })();
+    </script>
     <style>
         /* --- Landing Page Specific --- */
         .landing-container {
@@ -53,6 +69,10 @@
             font-size: 1.125rem;
             font-weight: 700;
             color: var(--text-primary);
+        }
+
+        .landing-header .theme-toggle {
+            margin-left: auto;
         }
 
         /* Section labels */
@@ -301,6 +321,10 @@
                 <i data-lucide="circle-dot"></i>
             </div>
             <h1>SSK ZK Prep</h1>
+            <button class="back-btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+                <i data-lucide="moon" class="icon-moon"></i>
+                <i data-lucide="sun" class="icon-sun"></i>
+            </button>
         </header>
 
         <!-- Language Selector -->
