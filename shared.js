@@ -129,7 +129,7 @@ async function checkDataVersion() {
         var response = await fetch('metadata.json', { cache: 'no-store' });
         if (!response.ok) return null;
         var metadata = await response.json();
-        var version = String(metadata.lastUpdated || '');
+        var version = String(metadata.dataVersion || metadata.lastUpdated || '');
         if (version && localStorage.getItem(DATA_VERSION_KEY) !== version) {
             SUPPORTED_LANGS.forEach(function (lang) {
                 localStorage.removeItem('offlineQuestions_' + lang);

@@ -10,6 +10,9 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 META="$SCRIPT_DIR/metadata.json"
 
 TODAY=$(date +%d.%m.%y)
+# Second-resolution stamp used for cache invalidation (lastUpdated is
+# day-granular, so two same-day updates would otherwise be missed)
+VERSION=$(date +%Y%m%d%H%M%S)
 
 if [ -n "$1" ]; then
     YEAR="$1"
@@ -25,8 +28,9 @@ fi
 cat > "$META" <<EOF
 {
   "testYear": $YEAR,
-  "lastUpdated": "$TODAY"
+  "lastUpdated": "$TODAY",
+  "dataVersion": "$VERSION"
 }
 EOF
 
-echo "Updated metadata.json: testYear=$YEAR, lastUpdated=$TODAY"
+echo "Updated metadata.json: testYear=$YEAR, lastUpdated=$TODAY, dataVersion=$VERSION"
