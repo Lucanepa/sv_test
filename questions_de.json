@@ -1,6 +1,8 @@
 [
   {
     "question_number": 1,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 1,
     "question": "Was fällt in den Aufgaben- und Entscheidungsbereich des 2. Schiedsrichters?",
     "answers": {
       "a": "Das Matchblatt nach Spielende zu überprüfen.",
@@ -18,6 +20,8 @@
   },
   {
     "question_number": 2,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 2,
     "question": "Der Ball überfliegt das Netz ausserhalb des Überquerungssektors in die gegnerische Freizone. In welchen Fällen hat der zuständige Linienrichter dies umgehend anzuzeigen?",
     "answers": {
       "a": "Es geschieht nach der dritten Ballberührung der (annehmenden) Mannschaft.",
@@ -33,6 +37,8 @@
   },
   {
     "question_number": 3,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 3,
     "question": "Eine Gruppe von Spielern verdeckt bei eigenem Aufschlag dem Gegner die Sicht auf den Aufschlagspieler und den Aufschlag. Ist das ein Sichtblock?",
     "answers": {
       "a": "Ja, in jedem Fall.",
@@ -45,6 +51,8 @@
   },
   {
     "question_number": 4,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 4,
     "question": "In welchen der folgenden Fälle darf der Ball mehrere Körperteile eines Spielers nacheinander berühren?",
     "answers": {
       "a": "Bei der Annahme des gegnerischen Aufschlags in der Technik des oberen Zuspiels, wenn die mehrfachen Berührungen innerhalb derselben Aktion geschehen.",
@@ -57,6 +65,8 @@
   },
   {
     "question_number": 5,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 5,
     "question": "Der 1. Schiedsrichter entscheidet nach einem Spielzug für Mannschaft A. Diese nimmt sofort eine Auswechslung vor (es handelt sich um die erste Auswechslung in diesem Satz). Danach revidiert der Schiedsrichter seine Entscheidung und gibt den Punkt an Mannschaft B. Mannschaft A möchte die Auswechslung rückgängig machen. Kann der Schiedsrichter dies erlauben?",
     "answers": {
       "a": "Ja, ohne weitere Einschränkungen.",
@@ -69,6 +79,8 @@
   },
   {
     "question_number": 6,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 6,
     "question": "Ein Vorderspieler springt zu früh zu einem Block und berührt den Ball nach dem Angriff des Gegners 'im Herunterkommen' mit dem Kopf unterhalb der Netzoberkante. Stehen der Mannschaft anschliessend noch drei Ballberührungen zu?",
     "answers": {
       "a": "Nein, in keinem Fall.",
@@ -81,6 +93,8 @@
   },
   {
     "question_number": 7,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 7,
     "question": "Spieler Nr. 8 wird wegen einer (geringfügigen) Unkorrektheit mit der gelben Karte verwarnt. Im weiteren Spielverlauf zeigt ein Spieler derselben Mannschaft ein gleichartiges Fehlverhalten. Welche der folgenden Reaktionen des 1. Schiedsrichters sind in dieser Situation möglich?",
     "answers": {
       "a": "Er kann den betreffenden Spieler bestrafen (rote Karte).",
@@ -93,6 +107,8 @@
   },
   {
     "question_number": 8,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 8,
     "question": "Spieler Nr. 9 wird wegen ungebührlichem Verhalten bestraft (rote Karte). Kein Mitglied der Mannschaft wurde bisher mit einer gelben Karte verwarnt. Im weiteren Spielverlauf kommt es (erstmals) zu einer geringfügigen Unkorrektheit durch einen Spieler derselben Mannschaft. Kann dieser Spieler verbal oder durch Zeigen der gelben Karte verwarnt werden?",
     "answers": {
       "a": "Ja, falls es sich nicht um den Spieler Nr. 9 handelt.",
@@ -105,6 +121,8 @@
   },
   {
     "question_number": 9,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 9,
     "question": "Nach dem Gewinn eines Spielzuges führt die Mannschaft einen Libero-Austausch durch. Nach dem Anpfiff zum Aufschlag pfeift der 1. Schiedsrichter 8 Sekunden später wieder ab, da der Aufschlagspieler den Aufschlag bis dahin noch nicht ausgeführt hat. Darf die Mannschaft einen erneuten Libero-Austausch vornehmen?",
     "answers": {
       "a": "Ja.",
@@ -117,6 +135,8 @@
   },
   {
     "question_number": 10,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 10,
     "question": "Mannschaft A tauscht den Libero ein, unmittelbar danach führt Mannschaft B einen Spielerwechsel durch, daraufhin wird der Libero von Mannschaft A wieder ausgetauscht. Die Schiedsrichter bemerken dies zum Zeitpunkt des zweiten Austauschs. Wie haben sie zu verfahren?",
     "answers": {
       "a": "Der zweite Austausch wird ohne weitere Konsequenzen rückgängig gemacht.",
@@ -129,6 +149,8 @@
   },
   {
     "question_number": 11,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 11,
     "question": "Eine Mannschaft spielt mit einem Libero. Der Trainer bezeichnet diesen als nicht mehr spielfähig und benennt sofort einen neuen Libero. Ist dies möglich?",
     "answers": {
       "a": "Nur dann, wenn der bisherige Libero sich gerade nicht auf dem Feld befindet.",
@@ -141,6 +163,8 @@
   },
   {
     "question_number": 12,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 12,
     "question": "Eine Mannschaft spielt mit 2 Liberos (L1 und L2). Libero L1 verletzt sich und ist nicht mehr in der Lage weiterzuspielen. Welche Aussagen treffen für den weiteren Spiel-verlauf zu?",
     "answers": {
       "a": "Wenn Libero L2 sich verletzt, kann die Mannschaft einen neuen Libero benennen.",
@@ -156,6 +180,8 @@
   },
   {
     "question_number": 13,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 13,
     "question": "Im Verlauf eines Satzes wurden die Spieler Nr. 4 (für Nr. 3) und Nr. 6 (für Nr. 5) ein-gewechselt. Danach erscheinen die Spieler Nr. 3 (mit Auswechseltafel Nr. 4) und Nr. 5 (mit Auswechseltafel Nr. 10) in der Auswechselzone und beantragen damit einen Doppelwechsel. Wie ist zu verfahren?",
     "answers": {
       "a": "Der Spielerwechsel '3 für 4' wird erlaubt, der andere Spielerwechsel nicht. Das Spiel wird ohne weitere Konsequenzen fortgesetzt.",
@@ -168,6 +194,8 @@
   },
   {
     "question_number": 14,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 14,
     "question": "Eine Mannschaft beantragt einen Doppelwechsel, nachdem sie im Verlauf des Satzes bereits 5 Auswechslungen durchgeführt hat. Wie ist zu verfahren?",
     "answers": {
       "a": "Beide Spielerwechsel werden nicht erlaubt. Die Mannschaft erhält eine Sanktion wegen Verzögerung.",
@@ -180,6 +208,8 @@
   },
   {
     "question_number": 15,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 15,
     "question": "Ein Spieler wurde gegen den Libero ausgetauscht, sitzt auf der Mannschaftsbank und wird wegen einer Unsportlichkeit hinausgestellt (der Libero befindet sich auf Position 6). Wie ist weiter zu verfahren?",
     "answers": {
       "a": "Der Libero darf zunächst weiter auf dem Feld bleiben. Erst wenn er das Feld wieder verlassen soll, muss ein Auswechselspieler für den hinausgestellten Spieler bestimmt werden und auf das Feld kommen.",
@@ -193,6 +223,8 @@
   },
   {
     "question_number": 16,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 16,
     "question": "Der Libero der servierenden Mannschaft kommt anstelle eines Hinterspielers auf das Spielfeld, wobei die Austauschaktion nach dem Pfiff zur Ausführung des Aufschlags, aber vor dem Schlagen des Balles stattfindet. Dies geschieht bereits zum zweiten Mal in diesem Spiel. Welches ist die korrekte Reaktion des 1. Schiedsrichters?",
     "answers": {
       "a": "Er pfeift und sanktioniert die servierende Mannschaft mit einem Positionsfehler.",
@@ -206,6 +238,8 @@
   },
   {
     "question_number": 17,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 17,
     "question": "Welche dieser «Blockaktionen» durch einen Hinterspieler ist/sind zulässig?",
     "answers": {
       "a": "Der Hinterspieler streckt seine Hände in Richtung Netzoberkante, ohne jedoch über die Netzoberkante zu reichen, und berührt den Ball unterhalb der Netz-oberkante.",
@@ -220,6 +254,8 @@
   },
   {
     "question_number": 18,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 18,
     "question": "Ein Spieler der annehmenden Mannschaft macht eine schlechte Serviceannahme. Der Ball fliegt ausserhalb der Antenne über die vertikale Netzebene in die Freizone des Gegners. Ein anderer Spieler der annehmenden Mannschaft rennt dem Ball nach und spielt ihn aus der gegnerischen Freizone zurück auf die eigene Spielfeldseite. In welchen Fällen ist dies erlaubt?",
     "answers": {
       "a": "Der Ball wird auf derselben Seite des Feldes zwischen Netz und Pfosten zurückgespielt, ohne dass er dabei Kabel oder Seile des Netzes berührt.",
@@ -233,6 +269,8 @@
   },
   {
     "question_number": 19,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 19,
     "question": "Welche der folgenden Situationen sind bezüglich des Spielens des Balles über dem Netz regelkonform?",
     "answers": {
       "a": "Der Zuspieler reicht über die Netzoberkante und berüht den von seiner Mannschaft kommenden Ball im gegnerischen Raum, um ihn auf seine Spielfeldseite zurückzuspielen.",
@@ -247,6 +285,8 @@
   },
   {
     "question_number": 20,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 20,
     "question": "Der Mannschaftskapitän der Mannschaft A befindet sich nicht auf dem Spielfeld. Nach einem langen Spielzug ist sich die Mannschaft nicht sicher, wer als nächstes aufschlagen muss. Wem ist es gestattet, den 2. Schiedsrichter zu fragen, wer als nächstes zum Aufschlag kommt?",
     "answers": {
       "a": "Dem Trainerassistenten.",
@@ -260,6 +300,8 @@
   },
   {
     "question_number": 21,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 21,
     "question": "Als Mannschaft A aufschlägt, trifft der Ball einen eigenen Spieler am Rücken. Zugleich pfeift der 2. Schiedsrichter einen Positionsfehler bei Mannschaft B. Welche Entscheidung(en) ist/sind korrekt?",
     "answers": {
       "a": "Doppelfehler; Mannschaft B serviert.",
@@ -273,6 +315,8 @@
   },
   {
     "question_number": 22,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 22,
     "question": "Zwei gegnerische Spieler berühren den Ball direkt über dem Netz gleichzeitig. Welche der folgenden Aussagen ist/sind regelkonform?",
     "answers": {
       "a": "Wenn der Ball danach die Antenne berührt, wird der Spielzug wiederholt.",
@@ -288,6 +332,8 @@
   },
   {
     "question_number": 23,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 23,
     "question": "Eine ausnahmsweise Auswechslung muss auf dem Matchblatt eingetragen und in der Gesamtzahl der Auswechslungen in diesem Satz und im Spiel mitgezählt werden. Ist diese Aussage richtig oder falsch?",
     "answers": {
       "a": "Falsch",
@@ -299,6 +345,8 @@
   },
   {
     "question_number": 24,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 24,
     "question": "Wer darf sich während des Spiels über einen längeren Zeitraum in der eigenen Freizone vor der Mannschaftsbank aufhalten?",
     "answers": {
       "a": "Trainer, Trainerassistent, Physiotherapeut und Arzt.",
@@ -312,6 +360,8 @@
   },
   {
     "question_number": 25,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 25,
     "question": "Spieler A ist der falsche Aufschlagspieler und führt den Aufschlag aus. Was sollte geschehen?",
     "answers": {
       "a": "Der Schreiber wartet, bis der Spielzug abgeschlossen ist, und macht den 2. Schiedsrichter auf den Regelverstoss aufmerksam. Der 1. Schiedsrichter muss eine Sanktion wegen Verzögerung aussprechen und der Gegner erhält das Aufschlagrecht. Sollte der Gegner den Spielzug gewonnen haben, erhält der Gegner auch einen Punkt.",
@@ -326,6 +376,8 @@
   },
   {
     "question_number": 26,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 26,
     "question": "Der Libero kommt für Spieler A auf das Spielfeld. Auf der Mannschaftsbank angelangt, agiert Spieler A ungebührlich gegenüber den Schiedsrichtern und erhält dafür eine Bestrafung. Spieler A flucht nun und schreit, woraufhin er hinausgestellt und schliesslich disqualifiziert wird. Wie gehen der Libero-Austausch und die Auswechslung von statten?",
     "answers": {
       "a": "Der Libero kann auf dem Spielfeld bleiben. Spieler A wird regulär (wenn möglich, ansonsten ausnahmsweise) mit einem anderen Spieler gewechselt, der auf der Mannschaftsbank sitzt.",
@@ -339,6 +391,8 @@
   },
   {
     "question_number": 27,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 27,
     "question": "Wie ist das Vorgehen des 2. Schiedsrichters, wenn das Aufstellungsblatt von Mannschaft A nicht mit den Startpositionen auf dem Feld übereinstimmt?",
     "answers": {
       "a": "Sich zum Trainer zu begeben und ihn informieren, dass seine Mannschaft eine Sanktion wegen Verzögerung erhalten wird.",
@@ -352,6 +406,8 @@
   },
   {
     "question_number": 28,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 28,
     "question": "Mannschaft A hat alle möglichen (regulären) Auswechslungen durchgeführt. Der Libero sitzt auf der Mannschaftsbank. Einer der Spieler auf dem Spielfeld wird hinausgestellt. Wie wird das Spiel fortgesetzt?",
     "answers": {
       "a": "Der Libero kann für den hinausgestellten Spieler eingetauscht werden.",
@@ -365,6 +421,8 @@
   },
   {
     "question_number": 29,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 29,
     "question": "Spielerin A blockt den Ball. Der Ball trifft ihr Gesicht und geht über die Antenne in die gegnerische Freizone. Ihre Mitspielerin B verfolgt den Ball und spielt ihn ebenfalls über die Antenne zurück auf die eigene Netzseite. Was ist die korrekte Handlung der Schiedsrichter / der Linienrichter und warum?",
     "answers": {
       "a": "Nichts. Dieses Spielen des Balles ist regelgerecht.",
@@ -378,6 +436,8 @@
   },
   {
     "question_number": 30,
+    "triagonal_quiz": "1-30",
+    "triagonal_pos": 30,
     "question": "Ein Spieler betritt die Auswechselzone. Ein zweiter Spieler (noch im Trainingsanzug) verlässt in diesem Moment erst die Aufwärmfläche und läuft in Richtung Auswechselzone. Wie ist das Vorgehen des 2. Schiedsrichters in diesem Moment?",
     "answers": {
       "a": "Eine einzelne Auswechslung mit dem Spieler durchführen, der sich in der Auswechselzone befindet und eine Sanktion wegen Verzögerung gegen die Mannschaft aussprechen.",
@@ -393,6 +453,8 @@
   },
   {
     "question_number": 31,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 1,
     "question": "Drei Spieler betreten die Auswechselzone. Nachdem der Antrag vom Schreiber erkannt und akzeptiert wird, entscheidet der Trainer, nur zwei Auswechslungen vornehmen zu lassen. Wie ist das korrekte Vorgehen des 2. Schiedsrichters?",
     "answers": {
       "a": "Den Trainer informieren, dass er eine Auszeit nehmen muss, um die Anzahl der Auswechslungen zu ändern.",
@@ -406,6 +468,8 @@
   },
   {
     "question_number": 32,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 2,
     "question": "Spieler A ist bereit zu spielen und betritt die Auswechselzone während einer Unter-brechung. Nachdem der Antrag vom Schreiber erkannt und akzeptiert wird, ändert die Trainerin ihre Meinung und beordert den Spieler zurück zur Aufwärmfläche. Wie sollen die Schiedsrichter entscheiden?",
     "answers": {
       "a": "Die Auswechslung wird annulliert. Keine Sanktion.",
@@ -419,6 +483,8 @@
   },
   {
     "question_number": 33,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 3,
     "question": "Beim Seitenwechsel nach dem 2. Satz bezichtigt Spieler #13 der Mannschaft A den 1. Schiedsrichter \"blind zu sein\" und rüttelt danach heftig am Schiedsrichterstuhl. Wie soll der 1. Schiedsrichter reagieren?",
     "answers": {
       "a": "Der 1. Schiedsrichter bittet den Spielkapitän der Mannschaft A während der Satzpause zu sich und erläutert ihm, dass er Spieler #13 wegen aggressiven Verhaltens sanktionieren wird. Nachdem der 2. Schiedsrichter die Aufstellung zum 3. Satz kontrolliert hat, stellt der 1. Schiedsrichter Spieler #13 hinaus (Handzeichen #7).",
@@ -433,6 +499,8 @@
   },
   {
     "question_number": 34,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 4,
     "question": "Welche Aussage(n) trifft (treffen) zu?",
     "answers": {
       "a": "Wenn während des Aufschlags ein Mitspieler des Aufschlagspielers nicht vollständig im Spielfeld (mit einem Fuss in der Freizone) steht und die annehmende Mannschaft einen Positionsfehler begeht, muss auf Spielzug-wiederholung entschieden werden.",
@@ -449,6 +517,8 @@
   },
   {
     "question_number": 35,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 5,
     "question": "Eine Mannschaft spielt mit einem Libero. Welche Aussage(n) ist (sind) korrekt?",
     "answers": {
       "a": "Für einen hinausgestellten Libero darf der Trainer eine Libero-Neubennung vornehmen.",
@@ -463,6 +533,8 @@
   },
   {
     "question_number": 36,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 6,
     "question": "Eine Mannschaft hat 7 Spieler, von denen einer ein Libero ist. Ein Spieler (Pos. VI) wird im 2. Satz hinausgestellt. Welche Möglichkeit(en) hat die Mannschaft?",
     "answers": {
       "a": "Der Trainer erklärt sich zum Spielertrainer und wechselt mit dem sanktionier-ten Spieler.",
@@ -476,6 +548,8 @@
   },
   {
     "question_number": 37,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 7,
     "question": "Welche(r) Sachverhalt(e) wird (werden) im Matchblatt eingetragen?",
     "answers": {
       "a": "Eine ausnahmsweise Auswechslung.",
@@ -492,6 +566,8 @@
   },
   {
     "question_number": 38,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 8,
     "question": "Nach einer missglückten Annahme fliegt der Ball auf der eigenen Seite an die in der Skizze rot markierten Stelle. Der Libero erläuft den Ball und spielt diesen im oberen Zuspiel zurück ins eigene Spielfeld. Wie müssen die Schiedsrichter entscheiden?",
     "answers": {
       "a": "Die Schiedsrichter unterbrechen das Spiel und entscheidet auf Ball \"Aus\" (Handzeichen #15).",
@@ -507,6 +583,8 @@
   },
   {
     "question_number": 39,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 9,
     "question": "Ein Spieler betritt während des Pfiffs zum Aufschlag die Auswechselzone. Welche Aussage ist korrekt?",
     "answers": {
       "a": "Die Aktion des Spielers stellt einen nicht ordnungsgemässen Antrag dar.",
@@ -519,6 +597,8 @@
   },
   {
     "question_number": 40,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 10,
     "question": "Ein Trainer beantragt eine Auszeit. Der 2. Schiedsrichter pfeift. Danach wird er vom Schreiber aufmerksam gemacht, dass es die 3. Auszeit in diesem Satz sei. Die Mann-schaft hat im Spielverlauf noch keinen nicht ordnungsgemässen Antrag gestellt. Wie ist zu verfahren?",
     "answers": {
       "a": "Die Auszeit wird abgebrochen und das Spiel ohne weitere Konsequenzen fortgeführt.",
@@ -532,6 +612,8 @@
   },
   {
     "question_number": 41,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 11,
     "question": "Welche Aussage(n) trifft (treffen) zu?",
     "answers": {
       "a": "Während eines Spiels kann der 2. Schiedsrichter den erkrankten 1. Schieds-richter ersetzen. Falls sich kein Ersatz-Schiedsrichter finden lässt, kann das Spiel nur mit Zustimmung der Mannschaftskapitäne fortgesetzt werden.",
@@ -545,6 +627,8 @@
   },
   {
     "question_number": 42,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 12,
     "question": "Wann muss der Schreiber in der eScoresheet-Applikation jeweils auf das Feld 'Start Rally' klicken?",
     "answers": {
       "a": "Im Moment des Pfiffs des 1. Schiedsrichters zur Bewilligung des Aufschlags.",
@@ -558,6 +642,8 @@
   },
   {
     "question_number": 43,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 13,
     "question": "Wie viele lokal ausgebildete Spieler (LAS) müssen in der NLA und der NLB jeweils \"auf dem Spielfeld\" sein.",
     "answers": {
       "a": "NLA: 2; NLB: 2",
@@ -572,6 +658,8 @@
   },
   {
     "question_number": 44,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 14,
     "question": "Im Bereich 'Roster' der eScoresheet-Applikation muss die Mannschaftszusammen-setzung eingetragen werden. Welche Funktionen können und dürfen für offizielle Wett-kämpfe von Swiss Volley im unteren Teil für die Mannschaftsmitglieder auf der Bank ausgewählt werden?",
     "answers": {
       "a": "Physiotherapist",
@@ -591,6 +679,8 @@
   },
   {
     "question_number": 45,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 15,
     "question": "Mannschaften können in der eScoresheet-Applikation einen oder zwei Libero(s) eintragen lassen. Diese beiden Spieler sind individuell jeweils LAS oder nicht. Welche Aussage(n) dazu ist (sind) richtig?",
     "answers": {
       "a": "Die Mannschaft hat einen Libero; dieser Spieler ist LAS. In dieser Mannschaft zählt der Libero nur dann als LAS auf dem Spielfeld, wenn er sich auch effektiv auf dem Spielfeld befindet.",
@@ -610,6 +700,8 @@
   },
   {
     "question_number": 46,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 16,
     "question": "Zu welchem Zeitpunkt werden vor dem Spiel die Matchbälle verteilt?",
     "answers": {
       "a": "Der 2. Schiedsrichter verteilt die drei Matchbälle an die Ballholer nach der Präsentation der Anfangsspieler der beiden Mannschaften und vor der Kontrolle der Anfangsaufstellungen.",
@@ -624,6 +716,8 @@
   },
   {
     "question_number": 47,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 17,
     "question": "Bei einem Spielerwechsel wird (vor dem Anpfiff zum nächsten Aufschlag) festgestellt, dass sich nach der Auswechslung nicht mehr die notwendige Anzahl LAS auf dem Spielfeld befinden. Welche Möglichkeiten hat die betreffende Mannschaft und welche Sanktionen müssen die Schiedsrichter aussprechen? (alle zutreffenden Antworten angeben)",
     "answers": {
       "a": "Die betreffende Mannschaft hat das Recht, den Spielerwechsel rückgängig zu machen. Für die daraus resultierende Verzögerung ist die betreffende Mann-schaft mit einer Sanktion wegen Spielverzögerung zu belegen.",
@@ -640,6 +734,8 @@
   },
   {
     "question_number": 48,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 18,
     "question": "In der eScoresheet-Applikation kann die Sprache ausgewählt werden. Welche Sprache(n) soll(en) für offizielle Wettkämpfe von Swiss Volley ausgewählt werden?",
     "answers": {
       "a": "die Schiedsrichter entscheiden",
@@ -656,6 +752,8 @@
   },
   {
     "question_number": 49,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 19,
     "question": "In der eScoresheet-Applikation 'Swiss Volley' werden die Spieler beider Teams mit bestimmten Farben hinterlegt. Wie viele Farben werden verwendet und welche Spielerkategorien werden besonders gekennzeichnet? (LFP: local formed player, d.h. LAS bzw. JFL; keine Farbe gilt hier ebenfalls als Farbe)",
     "answers": {
       "a": "4; 'normale' LFP, 'normale' Non-LFP, LFP Libero(s) und Non-LFP Libero(s)",
@@ -669,6 +767,8 @@
   },
   {
     "question_number": 50,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 20,
     "question": "In der eScoresheet-Applikation werden unter Options - General die nachfolgenden sieben Optionen zur Auswahl angeboten. Welche Optionen sollen ausgewählt werden?",
     "answers": {
       "a": "Manage captain on court",
@@ -689,6 +789,8 @@
   },
   {
     "question_number": 51,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 21,
     "question": "In welchem Bereich der eScoresheet-Applikation muss (spätestens) am Ende des Spiels die Anzahl Zuschauer (spectators) eingetragen werden?",
     "answers": {
       "a": "Official Form",
@@ -703,6 +805,8 @@
   },
   {
     "question_number": 52,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 22,
     "question": "Die eScoresheet-Applikation verfügt über die beiden Felder 'Undo' und 'Replay'. Welche Aussage(n) dazu ist (sind) richtig?",
     "answers": {
       "a": "In beiden Aktionen wird die letzte zuvor getätigte Aktion widerrufen. Bei der Verwendung von 'Replay' erfolgt aber ein Eintrag in der History des Spiels.",
@@ -718,6 +822,8 @@
   },
   {
     "question_number": 53,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 23,
     "question": "Nach Ende des Spiels weigert sich eine der beiden Mannschaften, das eScoresheet zu \"unterschreiben\", d.h. das Resultat des Spiels mit der Eingabe des Passwortes zu bestätigen. Wie sollen die Schiedsrichter in einer solchen Situation verfahren? (alle zutreffenden Antworten angeben)",
     "answers": {
       "a": "Mit der Funktion 'Comments' ist durch die Schiedsrichter in den 'Scoresheet Notes' ein entsprechender Eintrag vorzunehmen (bzw. durch den Schreiber vornehmen zu lassen).",
@@ -737,6 +843,8 @@
   },
   {
     "question_number": 54,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 24,
     "question": "Welche dieser Spielhandlungen – die erste Ballberührung einer Mannschaft betreffend – sind gemäss den Regeln korrekt?",
     "answers": {
       "a": "Während der Aufschlag-Annahme spielt ein Spieler den Ball mit einem oberen Finger-Zuspiel und der Ball berührt hintereinander die eine und die andere Hand innerhalb einer Aktion.",
@@ -753,6 +861,8 @@
   },
   {
     "question_number": 55,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 25,
     "question": "Als der 2. Schiedsrichter die Positionen der Spieler auf dem Spielfeld vor dem Satzbeginn kontrolliert, stellt er eine Abweichung zwischen dem Aufstellungsblatt und den Positionen der Spieler fest. Welche der folgenden Aussagen sind korrekt?",
     "answers": {
       "a": "Die Spieler müssen ihre Positionen gemäss Aufstellungsblatt ohne Bestrafung korrigieren.",
@@ -767,6 +877,8 @@
   },
   {
     "question_number": 56,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 26,
     "question": "Mannschaft A blockt den gegnerischen Angriff regulär, wobei sich die Hände und der Ball vollständig im gegnerischen Raum befinden. Der Ball springt über die Antenne in den freien Spielraum über der Freizone von Mannschaft A. Ein Spieler von A rennt, um den Ball zurückzuspielen. Entscheide, ob dies regulär ist oder nicht.",
     "answers": {
       "a": "Reguläres Spiel, weiterspielen.",
@@ -779,6 +891,8 @@
   },
   {
     "question_number": 57,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 27,
     "question": "Mannschaft A blockt den gegnerischen Angriff regulär, wobei sich die Hände und der Ball über der eigenen Spielfeldhälfte befinden. Der Ball springt über die Antenne in den freien Spielraum über der Freizone von Mannschaft B. Ein Spieler von A rennt, um den Ball zurückzuspielen. Entscheide, ob dies regulär ist oder nicht.",
     "answers": {
       "a": "Reguläres Spiel, weiterspielen.",
@@ -791,6 +905,8 @@
   },
   {
     "question_number": 58,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 28,
     "question": "Wenn man im (weiteren) Umfeld des Netzes von «Beeinflussung» spricht, welche der folgenden Aussagen ist/sind wahr?",
     "answers": {
       "a": "Wenn der Kontakt mit einem Gegner zufällig ist, gilt dies dennoch als Beeinflussung, selbst wenn es den Gegner nicht daran hinderte, den Ball zu spielen.",
@@ -805,6 +921,8 @@
   },
   {
     "question_number": 59,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 29,
     "question": "Während eines Spiels schlug ein Spieler von Mannschaft B den Ball gegen den gegnerischen Blockspieler (Mannschaft A). Die Hände des Blockspielers waren nicht über der Spielfeldhälfte von B. Der Ball ging von den Händen des Blockspielers über die Antenne, teilweise ausserhalb des Überquerungssektors und über den 1. Schiedsrichter in die Freizone von B (siehe Diagramm). Ein zweiter Spieler von A rannte dem Ball nach, um ihn auf seine Seite des Netzes zurückzuspielen. Der Linienrichter zeigte den Ball \"aus\" an und der 1. Schiedsrichter pfiff den Spielzug zu Gunsten von B ab. Wie sollte die Regelauslegung des 1. Schiedsrichters lauten?",
     "answers": {
       "a": "Der Schiedsrichter hätte nicht pfeifen sollen.",
@@ -819,6 +937,8 @@
   },
   {
     "question_number": 60,
+    "triagonal_quiz": "31-60",
+    "triagonal_pos": 30,
     "question": "Weiterführung der vorhergehenden Frage: Der Grund für diese Entscheidung ist:",
     "answers": {
       "a": "Ein Spieler darf keinen Ball zurückspielen, der von einem Block kommt.",
@@ -831,6 +951,8 @@
   },
   {
     "question_number": 61,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 1,
     "question": "Welche der folgenden Aussagen in Bezug auf die Befugnisse und/oder Restriktionen des Trainers eines Teams sind korrekt?",
     "answers": {
       "a": "Er darf den Schreiber fragen, wie viele Auswechslungen oder Auszeiten er bereits genommen hat, wenn diese Informationen nicht auf der elektronischen Anzeigetafel angezeigt werden.",
@@ -845,6 +967,8 @@
   },
   {
     "question_number": 62,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 2,
     "question": "Welche der folgenden Aktionen sind erlaubt?",
     "answers": {
       "a": "Ein Spieler dringt mit seinem Körper, aber nicht den Füssen, in den gegnerischen Raum unter dem Netz ein, aber er beeinflusst das gegnerische Spiel nicht.",
@@ -859,6 +983,8 @@
   },
   {
     "question_number": 63,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 3,
     "question": "Welche Aufschlaghandlung/en sind erlaubt?",
     "answers": {
       "a": "Ein Aufschlagspieler prellt den Ball fünf Mal, wirft dann den Ball hoch und berührt ihn für den Aufschlag sieben Sekunden nach dem Pfiff des 1. Schiedsrichters zur Genehmigung des Aufschlags.",
@@ -873,6 +999,8 @@
   },
   {
     "question_number": 64,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 4,
     "question": "Welche der folgenden Aussagen stehen für reguläre Ballspiel-Aktionen oberhalb der Netzoberkante?",
     "answers": {
       "a": "Gleichzeitiges Berühren des Balls von gegnerischen Vorderspielern, wenn sich der Ball direkt über der Netzoberkante befindet.",
@@ -888,6 +1016,8 @@
   },
   {
     "question_number": 65,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 5,
     "question": "Im Moment des Pfiffs des 1. Schiedsrichters zum Aufschlag stehen bei der annehmenden Mannschaft nur fünf Spieler auf dem Feld. Der Libero und der durch ihn ersetzte Spieler stehen in der Aufwärmfläche und machen keine Anstalten, das Feld zu betreten. Wie ist die Reaktion der Schiedsrichter, wenn sie dies erst während des Spielzuges bemerken?",
     "answers": {
       "a": "Wird die Situation erst nach Anpfiff des nächsten Spielzugs bemerkt, kann der fehlerhafte Spielzug nicht mehr wiederholt werden.",
@@ -905,6 +1035,8 @@
   },
   {
     "question_number": 66,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 6,
     "question": "Weiterführung der vorhergehenden Frage: Was ist die korrekte Reaktion der Schiedsrichter, wenn sie dies vor dem Pfiff des 1. Schiedsrichters zum Aufschlag bemerken?",
     "answers": {
       "a": "Aussprechen einer Verwarnung wegen geringfügigem unkorrektem Verhalten für die annehmende Mannschaft.",
@@ -919,6 +1051,8 @@
   },
   {
     "question_number": 67,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 7,
     "question": "Nach der zweiten Ballberührung einer Mannschaft überquert der Ball die Netzebene ausserhalb der Antenne in die gegnerische Freizone. Spieler #5 dieser Mannschaft rennt dem Ball nach, um ihn in die eigene Spielfeldhälfte zurückzuspielen. In welchem Moment ist ein Fehler zu pfeifen?",
     "answers": {
       "a": "Wenn Spieler #5 den Ball berührt.",
@@ -932,6 +1066,8 @@
   },
   {
     "question_number": 68,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 8,
     "question": "Ein Blockspieler von Mannschaft A will den Ball blocken, der nach der gegnerischen Annahme in Richtung seines Spielraums über das Netz fliegt. Der Passeur von Mannschaft B spielt den Ball zurück zu einem Mitspieler, aber der Blockspieler berührt die Hand des Passeurs während des Zuspiels (im gleichen Moment). Welcher Spieler begeht einen Fehler?",
     "answers": {
       "a": "Doppelfehler, Spielzug wird wiederholt.",
@@ -946,6 +1082,8 @@
   },
   {
     "question_number": 69,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 9,
     "question": "Ein Angreifer schlägt den Ball und macht beim Landen, beim Berühren des Bodens mit beiden Füssen, einen kleinen Schritt und berührt dabei das Netz (innerhalb der Antennen); dabei versucht er, das Gleichgewicht wiederzuerlangen. Der Ball ist immer noch im Spiel. Der Spieler hat das Netz nicht als Stabilisierungshilfe verwendet. Welche der folgenden Aussagen ist/sind korrekt?",
     "answers": {
       "a": "Dies ist nur ein Fehler, wenn der Spieler den Ball berührt hat.",
@@ -961,6 +1099,8 @@
   },
   {
     "question_number": 70,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 10,
     "question": "Ein Spieler landet sicher nach einem Block, dreht sich und schiebt das Netz beiseite. Danach streckt er sich, um den auf den Boden fallenden Ball zu spielen, wobei er während dieser neuen Aktion das Netz berührt. Welche der folgenden Aussagen ist/sind korrekt?",
     "answers": {
       "a": "Die Berührung des Netzes beim Drehen ist kein Fehler.",
@@ -975,6 +1115,8 @@
   },
   {
     "question_number": 71,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 11,
     "question": "Ein Spieler spielt den Ball in der Mitte des Netzes zu einem Kombinationsangriff zu. Ein Angreifer und ein Blockspieler waren auf der Mitte-Position und ein weiterer Spieler in einiger Distanz auf Position 2. Der Ball ging zum Mittelangreifer. Bezeichne die richtige/n Aussage/n:",
     "answers": {
       "a": "Der gegnerische Blockspieler begeht einen Fehler, wenn er das Netz während dieser Spielaktion berührt.",
@@ -990,6 +1132,8 @@
   },
   {
     "question_number": 72,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 12,
     "question": "Mitte des 2. Satzes erscheint ein Auswechselspieler von Mannschaft A in der Auswechselzone und beantragt damit einen Spielerwechsel. Der Schreiber macht die Schiedsrichter darauf aufmerksam, dass dieser Spieler nicht in der Mannschaftsliste des Matchblatts eingetragen ist. Bei der darauffolgenden genaueren Kontrolle wird zudem festgestellt, dass dieser Spieler auch im 1. Satz beim Stand von 7:7 eingewechselt und beim Stand von 9:9 wieder ausgewechselt wurde (ohne dass der Fehler bemerkt wurde). Wie ist zu verfahren?",
     "answers": {
       "a": "Der 1. Satz wird mit 25:0 für Mannschaft B gewertet.",
@@ -1005,6 +1149,8 @@
   },
   {
     "question_number": 73,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 13,
     "question": "Spieler #3 von Mannschaft A wird ersetzt durch Spieler #8. Ein Spielzug später kommt der Libero für Spieler #8 auf das Spielfeld. Kurz danach, beim Spielstand von 14:15 aus Sicht von Mannschaft A, verlässt der Libero das Spielfeld und Spieler #3 kommt rein. Der Fehler bleibt unbemerkt und Mannschaft B gewinnt den nächsten Spielzug. In diesem Moment realisiert Mannschaft A den Fehler, Spieler #8 rennt schnell auf das Spielfeld, Spieler #3 geht raus. Bei welchem Spielstand wird das Spiel fortgesetzt?",
     "answers": {
       "a": "14:15 aus Sicht von Mannschaft A.",
@@ -1017,6 +1163,8 @@
   },
   {
     "question_number": 74,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 14,
     "question": "Der einzuwechselnde Spieler steht korrekt in der Auswechselzone bereit. Der Spieler, der ausgewechselt werden soll, verzögert die Auswechslung, indem er sich betont langsam in Richtung Auswechselzone begibt. Er war zuvor bereits wegen eines geringfügigen Fehlverhaltens durch Zeigen der gelben Karte verwarnt worden. Wie ist jetzt die Reaktion der Schiedsrichter?",
     "answers": {
       "a": "Die Auswechslung wird zurückgewiesen, weil ein unberechtigter Antrag vorliegt.",
@@ -1030,6 +1178,8 @@
   },
   {
     "question_number": 75,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 15,
     "question": "Beim Spielstand von 14:14 fragt Mannschaft A nach dem korrekten Aufschlagspieler. Der Schreiber erklärt, dass #3 am Aufschlag sei. Die Mannschaft A gewinnt die nächsten zwei Punkte und Mannschaft B nimmt eine Auszeit. Nach der Auszeit wird klar, dass nicht #3 sondern #7 der richtige Aufschlagspieler gewesen wäre. Wie ist das Spiel fortzusetzen?",
     "answers": {
       "a": "Mannschaft B erhält den Aufschlag und einen Punkt. Das Spiel geht bei 14:15 weiter. Die Auszeit wird annulliert und steht Mannschaft B erneut zur Verfügung.",
@@ -1043,6 +1193,8 @@
   },
   {
     "question_number": 76,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 16,
     "question": "Welche der folgenden Angriffsaktionen sind fehlerhaft?",
     "answers": {
       "a": "Ein Spieler führt einen Angriffsschlag direkt nach dem Aufschlag der gegnerischen Mannschaft aus, wobei sich der Ball in der Hinterzone vollständig oberhalb der Netzoberkante befindet.",
@@ -1056,6 +1208,8 @@
   },
   {
     "question_number": 77,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 17,
     "question": "Nach einer schlechten Annahme fliegt der Ball unter dem Netz hindurch (in ca. einem Meter Höhe) in Richtung der gegnerischen Spielfeldhälfte. Der Zuspieler will den Ball zurück in seine Spielfeldhälfte spielen. In welchen Fällen ist dies erlaubt?",
     "answers": {
       "a": "Nur wenn sich der Ball noch vollständig in der eigenen Spielfeldhälfte befindet.",
@@ -1070,6 +1224,8 @@
   },
   {
     "question_number": 78,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 18,
     "question": "Der Mannschaftskapitän #1 ist nicht auf dem Spielfeld. Der Spielkapitän #5 wird durch #7 ersetzt, #9 wird der neue Spielkapitän. Nach einem Spielzug kommt #5 zurück auf das Spielfeld. Wer ist jetzt Spielkapitän?",
     "answers": {
       "a": "Spieler #5, weil er zuerst als Spielkapitän benannt wurde.",
@@ -1083,6 +1239,8 @@
   },
   {
     "question_number": 79,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 19,
     "question": "Welche der folgenden Aktionen während des Spiels hat der 2. Schiedsrichter innerhalb seines Zuständigkeitsbereichs zu pfeifen?",
     "answers": {
       "a": "Ausgeführter Block eines Hinterspielers.",
@@ -1098,6 +1256,8 @@
   },
   {
     "question_number": 80,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 20,
     "question": "Der Trainerassistent von Mannschaft A übergibt das Aufstellungsblatt kurz vor Beginn des nächsten Satzes dem 2. Schiedsrichter. Bei der Kontrolle der Positionen auf dem Spielfeld stellt der 2. Schiedsrichter fest, dass sich Spieler #5 statt des auf dem Aufstel-lungsblatt eingetragenen Spielers #8 auf dem Spielfeld befindet. Er informiert den Trainer, dass Spieler #5 ohne normale Auswechslung nicht auf dem Spielfeld sein darf. Der Trainer antwortet, dass er die Startaufstellung noch ändern könne, da auf dem Auf-stellungsblatt seine Unterschrift fehlt. Was haben die Schiedsrichter zu tun?",
     "answers": {
       "a": "Da der 2. Schiedsrichter nicht gemerkt hat, dass das Aufstellungsblatt nicht unterschrieben war, hat der Trainer das Recht, das Aufstellungsblatt zu korrigieren. Die Mannschaft A wird wegen Verzögerung sanktioniert.",
@@ -1112,6 +1272,8 @@
   },
   {
     "question_number": 81,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 21,
     "question": "Der Ball überquert nach einer schlechten Serviceannahme die senkrechte Ebene des Netzes vollständig ausserhalb des Über-querungssektors in Richtung der gegnerischen Freizone. Ein Spieler rennt dem Ball hin-terher und spielt den Ball vollständig innerhalb des Überquerungssektors zu seiner Mannschaft zurück. Was zeigt der zuständige Linienrichter an?",
     "answers": {
       "a": "Der Linienrichter schwenkt in dem Moment die Fahne und zeigt auf die Antenne, wenn der Ball vollständig innerhalb des Überquerungssektors die senkrechte Ebene des Netzes in Richtung der ursprünglichen Spielfeldhälfte überquert oder er sich vollständig über dem gegnerischen Spielfeld befindet.",
@@ -1125,6 +1287,8 @@
   },
   {
     "question_number": 82,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 22,
     "question": "Welche Bedingungen müssen erfüllt sein, damit der 1. Schiedsrichter den Aufschlag bewilligen darf?",
     "answers": {
       "a": "Der Aufschlagspieler ist im Ballbesitz und beide Mannschaften sind spielbereit.",
@@ -1138,6 +1302,8 @@
   },
   {
     "question_number": 83,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 23,
     "question": "Mannschaft A hat im laufenden 2. Satz bereits fünf Mal gewechselt, als sich ein Spieler verletzt und nicht weiterspielen kann. Dieser Spieler wurde im laufenden Satz bereits einmal aus- und wieder eingewechselt. Wie wird das Spiel fortgesetzt?",
     "answers": {
       "a": "Mannschaft A hat das Recht auf eine ausnahmsweise Auswechslung. Jeder Spieler, der zum Zeitpunkt der Verletzung nicht auf dem Spielfeld ist – ausgenommen der Libero, der zweite Libero oder deren reguläre Austauschspieler – kann eingesetzt werden. Damit ist die maximale Anzahl von sechs Auswechslungen pro Satz erreicht, und es sind im laufenden Satz nur noch ausnahmsweise Auswechslungen erlaubt.",
@@ -1151,6 +1317,8 @@
   },
   {
     "question_number": 84,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 24,
     "question": "Eine Mannschaft spielt mit zwei Liberos (L1 und L2). Libero L1 wird disqualifiziert, danach verletzt sich Libero L2. Der Trainer der Mannschaft benennt einen neuen Libero L3. Welche Aussagen sind korrekt?",
     "answers": {
       "a": "Falls der Mannschaftskapitän zu Libero L3 benannt werden soll, muss er zunächst alle seine diesbezüglichen Rechte abgeben.",
@@ -1164,6 +1332,8 @@
   },
   {
     "question_number": 85,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 25,
     "question": "Mannschaft A spielt nur mit einem Libero. Der Libero verletzt sich. Der Trainer entschei-det sich, einen neuen Libero zu benennen. Welche der Aussagen sind korrekt?",
     "answers": {
       "a": "Der Trainer muss einen Spieler als neuen Libero benennen, der im Moment der Verletzung nicht auf dem Spielfeld gestanden ist.",
@@ -1178,6 +1348,8 @@
   },
   {
     "question_number": 86,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 26,
     "question": "Spieler #8 ist als Mannschaftskapitän eingetragen. Spieler #12 ist gleichzeitig als Trainer eingetragen. Der Trainer wird eingewechselt und beantragt unmittelbar danach eine Auszeit. Ein nicht ordnungsgemässer Antrag oder eine Spielverzögerung lag bis zu diesem Zeitpunkt noch nicht vor. Im 1. Satz war der Trainer aber bereits wegen gering-fügiger Unkorrektheiten durch Zeigen der gelben Karte verwarnt worden. Was ist jetzt die korrekte Reaktion der Schiedsrichter?",
     "answers": {
       "a": "Der Antrag wird zurückgewiesen und die Mannschaft wegen Verzögerung sanktioniert.",
@@ -1191,6 +1363,8 @@
   },
   {
     "question_number": 87,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 27,
     "question": "Ein Spielzug wird von der annehmenden Mannschaft A gewonnen. Zu Beginn des Spielzuges hatte der Schreiber die Nummer des Aufschlagspielers nicht erkennen können. Erst nachdem der Spielzug beendet ist, stellt der Schreiber fest, dass der falsche Spieler den Aufschlag ausgeführt hat und teilt dies sofort dem 2. Schiedsrichter mit. Wie entscheiden die Schiedsrichter korrekt?",
     "answers": {
       "a": "Der Spielzug wird wiederholt. Der Spielstand ändert sich nicht, weil die Schiedsrichter den Rotationsfehler zu spät erkannt haben.",
@@ -1204,6 +1378,8 @@
   },
   {
     "question_number": 88,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 28,
     "question": "Ein Spieler zeigt zum ersten Mal ein Fehlverhalten. In welchen Fällen ist die Hinaus-stellung die in den Volleyballregeln vorgesehene Sanktion?",
     "answers": {
       "a": "Der Spieler versucht, einen Gegenspieler zu schlagen, trifft ihn aber nicht.",
@@ -1218,6 +1394,8 @@
   },
   {
     "question_number": 89,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 29,
     "question": "Die Eintragungen im Matchblatt (e-Scoresheet) sind vor dem Spiel durch den Mann-schaftskapitän und den Trainer bestätigt worden. Im 2. Satz will der Trainer A die #7 der Startaufstellung durch die #15 ersetzen. Eine #15 ist im Matchblatt nicht eingetragen. Der Schreiber meldet dies dem 2. Schiedsrichter, nachdem die #15 die Auswechselzone betreten hat. Welche der Aussagen sind korrekt?",
     "answers": {
       "a": "Wenn der Spieler gar nicht im Matchblatt erfasst ist, bewilligt der 1. Schiedsrichter den Spielerwechsel nicht. Mannschaft A wird wegen Verzögerung sanktioniert.",
@@ -1232,6 +1410,8 @@
   },
   {
     "question_number": 90,
+    "triagonal_quiz": "61-90",
+    "triagonal_pos": 30,
     "question": "Der Libero der Mannschaft A verteidigt eine kurz gespielte Finte des Angreifers der Mannschaft B akrobatisch und kann den Ball im Spiel halten. Nach der Ballberührung rutscht der Libero am Boden liegend unter dem Netz hindurch; schlussendlich liegt sein ganzer Körper komplett im Spielfeld der Mannschaft B. Der Libero bewegt sich dann sofort wieder in seine eigene Spielfeldhälfte. Während der ganzen Aktion berühren seine beiden Füsse nie das gegnerische Spielfeld. Auch behindert er dabei die Spieler der Mannschaft B nicht. Wie entscheiden die Schiedsrichter korrekt?",
     "answers": {
       "a": "Die Schiedsrichter unterbrechen das Spiel. Weil der Libero schlussendlich komplett in der gegnerischen Sielfeldhälfte liegt und kein Körperteil mehr Kontakt zur eigenen Spielfeldhälfte hat, liegt ein Fehler vor.",
@@ -1243,6 +1423,8 @@
   },
   {
     "question_number": 91,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 1,
     "question": "Mannschaft A schlägt auf. Mannschaft B nimmt mit dem Zuspieler auf Position 6 an. Beim Lösen vom Netz macht der Diagonalspieler der Mannschaft B einen Schritt und steht im Moment des Aufschlages mit einem Fuss auf der Mittellinie. Dabei berührt er auch das gegnerische Spielfeld, aber ohne die Spieler der Mannschaft A zu behindern. Wie entscheiden die Schiedsrichter korrekt?",
     "answers": {
       "a": "Die Schiedsrichter unterbrechen das Spiel nicht, weil kein Fehler vorliegt.",
@@ -1255,6 +1437,8 @@
   },
   {
     "question_number": 92,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 2,
     "question": "Mannschaft A will eine Doppelauswechslung durchführen. Ein Spieler betritt die Aus-wechselzone spielbereit, während der zweite immer noch die richtige Auswechseltafel sucht. Kurz bevor die erste Auswechslung abgeschlossen wird, betritt auch der zweite Spieler spielbereit die Auswechselzone. Wie sollen die Schiedsrichter reagieren?",
     "answers": {
       "a": "Der 2. Schiedsrichter erlaubt nur die erste Auswechslung; die zweite Auswechslung wird ohne Konsequenzen zurückgewiesen, weil der zweite Auswechselspieler im Moment des Antrages nicht spielbereit war.",
@@ -1268,6 +1452,8 @@
   },
   {
     "question_number": 93,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 3,
     "question": "Mannschaft B beantragt eine Auswechslung. Diese wird vom 2. Schiedsrichter zurückgewiesen, weil der Auswechselspieler die Auswechselzone mit einer falschen Auswechseltafel betrat. Weil Mannschaft B schon eine Verwarnung für Verzögerung erhalten hatte, wurde sie jetzt vom 1. Schiedsrichter mit einer Bestrafung für Verzögerung sanktioniert. In der Folge beantragt Mannschaft B vor dem erneuten Anpfiff noch einmal eine Auswechslung. Wie sollen die Schiedsrichter reagieren?",
     "answers": {
       "a": "Die Schiedsrichter erlauben diese Auswechslung.",
@@ -1281,6 +1467,8 @@
   },
   {
     "question_number": 94,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 4,
     "question": "Mannschaft A beantrag eine Auszeit, nachdem in derselben Spielunterbrechung bereits ein Antrag auf Auswechslung zurückgewiesen und die Mannschaft mit einer Verwarnung für Verzögerung sanktioniert wurde. Wie sollen die Schiedsrichter reagieren?",
     "answers": {
       "a": "Die Schiedsrichter weisen den Antrag auf Auszeit zurück. Der 2. Schiedsrichter lässt auf dem Matchblatt einen nicht ordnungsgemässen Antrag eintragen.",
@@ -1294,6 +1482,8 @@
   },
   {
     "question_number": 95,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 5,
     "question": "Wie sollte der 1. Schiedsrichter reagieren, wenn ein Spielkapitän danach fragt, die Positionen der Spieler der gegnerischen Mannschaft zu überprüfen?",
     "answers": {
       "a": "Antworten und eine detaillierte Information zu den Positionen liefern.",
@@ -1307,6 +1497,8 @@
   },
   {
     "question_number": 96,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 6,
     "question": "Der Mannschaftskapitän verletzt sich vor der Auslosung. Welches ist das richtige Vorgehen, um einen neuen Mannschaftskapitän zu benennen?",
     "answers": {
       "a": "Es ist zu spät, um einen neuen Mannschaftskapitän zu benennen. Der Trainer erfüllt die Pflichten des Mannschaftskapitäns während des Spiels und unterschreibt das Matchblatt anstelle des Mannschaftskapitäns.",
@@ -1320,6 +1512,8 @@
   },
   {
     "question_number": 97,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 7,
     "question": "Eine Spielerin glaubt, einen nassen Fleck auf dem Boden bemerkt zu haben. Sie ruft den Trainerassistenten an die Seitenlinie nahe der Mannschaftsbank, um bei der Suche nach dem Fleck zu helfen, wodurch der 1. Schiedsrichter das Spiel nicht sofort wieder anpfeifen konnte. Was sollte der 1. Schiedsrichter tun?",
     "answers": {
       "a": "Er sollte den 2. Schiedsrichter anweisen, dem Spielkapitän zu sagen, den Trainerassistenten zu informieren, zur Mannschaftsbank zurückzugehen.",
@@ -1335,6 +1529,8 @@
   },
   {
     "question_number": 98,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 8,
     "question": "Nach dem Schlagen des Aufschlags meldet der Schreiber einen falschen Aufschlagspieler bei der Mannschaft A. Was passiert als nächstes?",
     "answers": {
       "a": "Sämtliche Punkte, die nachvollziehbar mit dem falschen Aufschlagspieler erzielt wurden, werden gestrichen. Mannschaft A korrigiert die Aufstellung und rotiert dann. Mannschaft B erhält einen Punkt und das Aufschlagsrecht und rotiert nicht.",
@@ -1348,6 +1544,8 @@
   },
   {
     "question_number": 99,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 9,
     "question": "Spieler A ist auf dem Aufstellungsblatt vorhanden, verletzt sich aber unmittelbar vor dem Spiel. Wie ist der weitere Ablauf?",
     "answers": {
       "a": "Spieler A kann durch irgendeinen Spieler ersetzt werden, der nicht auf dem Aufstellungsblatt vermerkt ist. Der Trainer kann die Auswechslung auf dem Matchblatt vor dem ersten Aufschlag durch den Schreiber vornehmen lassen. Das Informieren des 2. Schiedsrichters ist optional.",
@@ -1361,6 +1559,8 @@
   },
   {
     "question_number": 100,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 10,
     "question": "Vor dem dritten Satz pfeift der 2. Schiedsrichter die Mannschaften auf das Spielfeld zurück. Eine Mannschaft reagiert nicht. Diese Mannschaft hat noch keine Sanktion wegen Verzögerung erhalten. Wie sollen die Schiedsrichter reagieren?",
     "answers": {
       "a": "Aussprechen einer \"Sanktion wegen Verzögerung\" durch den 1. Schiedsrichter (Verwarnung). Wenn die Mannschaft immer noch nicht reagiert, muss der 1. Schiedsrichter eine weitere Sanktion wegen Verzögerung aussprechen (Bestrafung).",
@@ -1374,6 +1574,8 @@
   },
   {
     "question_number": 101,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 11,
     "question": "Der Libero war auf dem Spielfeld für Spieler A und wurde für den Satz hinausgestellt. Es gibt drei Möglichkeiten, wie das Spiel weitergeführt werden kann. Welche von den folgenden Vorschlägen ist KEINE Möglichkeit, wie das Spiel fortgesetzt werden kann?",
     "answers": {
       "a": "Wenn die Mannschaft zwei Liberos hat, kann die Mannschaft entscheiden, den zweiten Libero für den Rest des Spiels hinauszustellen und damit dem amtierenden Libero erlauben, im Satz weiter zu spielen.",
@@ -1387,6 +1589,8 @@
   },
   {
     "question_number": 102,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 12,
     "question": "Spieler A rennt auf die Zuschauertribüne, die an seiner Spielfeldhälfte angrenzt, um den Ball zu spielen. Gerade vor dem Ballkontakt, schlägt ein Zuschauer den Ball weg. Welches ist die korrekte Handlung des Schiedsrichters und warum?",
     "answers": {
       "a": "Pfeifen. Fehler. Der Spieler darf die Freizone nicht verlassen, um einen Ball im Zuschauerraum zu spielen.",
@@ -1400,6 +1604,8 @@
   },
   {
     "question_number": 103,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 13,
     "question": "Spieler A, ein Zuspieler, reicht über die Netzoberkante auf die gegnerische Seite und spielt den Ball einem Mitspieler zum Angriff zu. Was sollte der Schiedsrichter entscheiden?",
     "answers": {
       "a": "Nichts. Dieses Spielen des Balles ist regelgerecht, da Spieler A versucht, zuzuspielen und nicht selber anzugreifen.",
@@ -1413,6 +1619,8 @@
   },
   {
     "question_number": 104,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 14,
     "question": "Spieler A, ein Mittelblocker, springt am Netz hoch um zu blocken und berührt beim Blockversuch die Netzoberkante. Es gibt keinen Ballkontakt. Was sollte geschehen und warum?",
     "answers": {
       "a": "Dies ist kein Netzfehler, da es einem Blockspieler während des Spielens erlaubt ist, das Netz zu berühren.",
@@ -1426,6 +1634,8 @@
   },
   {
     "question_number": 105,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 15,
     "question": "Ein Spieler der Startaufstellung wurde ausgewechselt und kommt später wieder zurück auf das Spielfeld. Kurz darauf verletzt er sich und ist nicht mehr fähig, weiterzuspielen. Wer kann für diesen Spieler eingewechselt werden?",
     "answers": {
       "a": "Der Libero oder der Spieler, der für den amtierenden Libero derzeit ausgetauscht ist.",
@@ -1439,6 +1649,8 @@
   },
   {
     "question_number": 106,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 16,
     "question": "Mannschaft A wechselt Spieler A für Spieler B aus. Gleichzeitig zeigt die Trainerin an, dass Spieler C mit dem Libero tauschen soll. Was sollten die Schiedsrichter entscheiden?",
     "answers": {
       "a": "Entweder den Austausch oder die Auswechslung erlauben. Die nicht gewählte Aktion kann am Ende des nächsten Spielzugs vollzogen werden.",
@@ -1452,6 +1664,8 @@
   },
   {
     "question_number": 107,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 17,
     "question": "Mannschaft A vergisst, den Libero auszutauschen, als dieser auf Position IV rotiert. Nach drei Punkten realisiert der Schiedsrichter, dass sich der Libero unrechtmässig auf dem Spielfeld befindet. Welche der folgenden Möglichkeiten sind regelgerechte Folgen dieses Sachverhalts?",
     "answers": {
       "a": "Hinausstellung des Liberos.",
@@ -1467,6 +1681,8 @@
   },
   {
     "question_number": 108,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 18,
     "question": "Zwischen zwei Sätzen gibt der 1. Schiedsrichter einem Spieler von Mannschaft A eine rote Karte für ungebührliches Verhalten. Mannschaft A hat den ersten Aufschlag des nächsten Satzes. Was geschieht jetzt?",
     "answers": {
       "a": "Mannschaft A beginnt den Satz mit 0:2 und behält das Aufschlagsrecht.",
@@ -1480,6 +1696,8 @@
   },
   {
     "question_number": 109,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 19,
     "question": "Eine Mannschaft spielt mit zwei Liberos. Ein Libero wird hinausgestellt. Einige Spielzüge später wird der andere Libero für nicht mehr spielfähig erklärt. Welche Aussage(n) ist (sind) NICHT richtig?",
     "answers": {
       "a": "Der Trainer darf keinen anderen Spieler als Libero neubenennen, da der hinausgestellte Spieler im nächsten Satz wieder spielen darf. Im 5. Satz wäre eine Neubennung erlaubt.",
@@ -1494,6 +1712,8 @@
   },
   {
     "question_number": 110,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 20,
     "question": "Spieler #8 wird im 2. Satz wegen geringfügigen Unkorrektheiten formell verwarnt (gelbe Karte). Im 4. Satz zeigt Spieler #2 derselben Mannschaft ein vergleichbares Verhalten. Wie ist zu verfahren?",
     "answers": {
       "a": "Spieler #2 erhält für geringfügige Unkorrektheiten die gelbe Karte.",
@@ -1506,6 +1726,8 @@
   },
   {
     "question_number": 111,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 21,
     "question": "Ein Ball fliegt unterhalb der Netzunterkante zwischen Pfosten und Verlängerung der Antenne Richtung gegnerisches Spielfeld. Welche Aussage(n) ist (sind) richtig?",
     "answers": {
       "a": "Hat der Ball die untere Netzebene vollständig durchquert, ist Handzeichen #22 (\"Ball durchquert die senkrechte Ebene unterhalb des Netzes\") zu zeigen.",
@@ -1518,6 +1740,8 @@
   },
   {
     "question_number": 112,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 22,
     "question": "Ein Spieler der Mannschaft A greift einen Ball an, der sich direkt oberhalb der Netzoberkante befindet. Gleichzeitig berührt ein Blockspieler der Mannschaft B den Ball, ohne über das Netz zu greifen. Nach der gleichzeitigen Berührung fällt der Ball in die Freizone von Mannschaft B. Wie hat der 1. Schiedsrichter zu entscheiden?",
     "answers": {
       "a": "Spielzugewinn von Mannschaft B, da der Fehler der Mannschaft A zugeschrieben wird (Ball fällt in die Freizone der Mannschaft B).",
@@ -1530,6 +1754,8 @@
   },
   {
     "question_number": 113,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 23,
     "question": "Ein Ball wird von einem Spieler der Mannschaft A gespielt und berührt danach einen Offiziellen der Mannschaft A. Welches Handzeichen ist zu zeigen?",
     "answers": {
       "a": "Handzeichen \"Ball berührt\" (Handzeichen #24).",
@@ -1541,6 +1767,8 @@
   },
   {
     "question_number": 114,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 24,
     "question": "Weiterführung der vorhergehenden Frage: Welches Handzeichen ist zu verwenden, wenn der Ball einen Offiziellen der gegnerischen Mannschaft B berührt?",
     "answers": {
       "a": "Handzeichen \"Ball berührt\" (Handzeichen #24).",
@@ -1552,6 +1780,8 @@
   },
   {
     "question_number": 115,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 25,
     "question": "Welcher Schiedsrichter pfeift, um in einem NLA-Spiel die Mannschaften vor Beginn eines Satzes auf das Spielfeld zu schicken?",
     "answers": {
       "a": "Vor dem 1. Satz keiner der Schiedsrichter, der Speaker ruft die Spieler auf das Feld; vor dem 2. bis 5. Satz der 2. Schiedsrichter.",
@@ -1565,6 +1795,8 @@
   },
   {
     "question_number": 116,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 26,
     "question": "Im 3. Satz beim Spielstand von 17:9 und Aufschlag für Mannschaft A betritt der Spieler #11 der Mannschaft A die Auswechselzone. Aus dem Spiel kommt Spieler #3, der seit Beginn des Satzes eingesetzt war, zur Seitenlinie. In dem Moment bemerkt der Schreiber, dass der Spieler #3 nicht in der Mannschaftsliste vermerkt ist. Zudem wird festgestellt, dass Spieler #3 schon im 1. Satz beim Spielstand von 19:11 eingewechselt und beim Spielstand von 24:19 wieder ausgewechselt wurde. Dieser Satz ging mit 25:21 an Mannschaft A. Ausserdem kam es zu einer Verwarnung wegen Verzögerung gegen Mannschaft A. Der 2. Satz wurde von Mannschaft A gewonnen, ohne dass Spieler #3 eingesetzt wurde. Wie hat das Schiedsgericht diesen Sachverhalt zu behandeln?",
     "answers": {
       "a": "Der 1. Satz wird neu bewertet: Mannschaft B gewinnt diesen mit 25:0. Das Ergebnis des 2. Satzes bleibt bestehen. Im laufenden 3. Satz werden die bis dahin erzielten Punkte von Mannschaft A aberkannt. Spielstand im 3. Satz: 9:0 für Mannschaft B. Aufschlag für Mannschaft B.",
@@ -1578,6 +1810,8 @@
   },
   {
     "question_number": 117,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 27,
     "question": "Während eines Spielzugs im ersten Satz verletzt sich ein Spieler von Mannschaft A ernsthaft. Welche Aussage(n) ist (sind) korrekt?",
     "answers": {
       "a": "Ein verletzter Spieler muss ausnahmsweise ausgewechselt werden. Sofern dies die erste Auswechslung von Mannschaft A ist, stehen der Mannschaft weitere sechs Auswechslungen zur Verfügung.",
@@ -1592,6 +1826,8 @@
   },
   {
     "question_number": 118,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 28,
     "question": "Im dritten Satz eines Spiels steht es 8:8. Nach dem folgenden Spielzug kommt es zu einer Auseinandersetzung zweier gegnerischer Spieler unter dem Netz, die den 1. Schiedsrichter veranlasst, gegen beide Spieler eine Bestrafung wegen ungebührlichen Verhaltens auszusprechen. Wie muss die Sanktion regelgerecht ausgesprochen werden?",
     "answers": {
       "a": "Der 1. Schiedsrichter holt beide Spielkapitäne zu sich und erteilt zuerst dem Spieler der nicht als nächstes aufschlagenden Mannschaft die Sanktion.",
@@ -1606,6 +1842,8 @@
   },
   {
     "question_number": 119,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 29,
     "question": "Obere Finger-Zuspiele sind eine Technik, die der 1. Schiedsrichter beurteilt. Welche der folgenden Aussagen sind korrekt?",
     "answers": {
       "a": "Der 1. Schiedsrichter bewertet einen drehenden Ball automatisch als fehlerhaft.",
@@ -1621,6 +1859,8 @@
   },
   {
     "question_number": 120,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 30,
     "question": "Am Ende eines Spielzugs kommt der Kapitän zum 1. Schiedsrichter, um ihn über das Ballhandling während des Spiels zu befragen. Die Antwort des 1. Schiedsrichters sollte zunächst sein:",
     "answers": {
       "a": "Den Spieler wegwinken und mit einer roten Karte bestrafen.",
@@ -1634,6 +1874,8 @@
   },
   {
     "question_number": 121,
+    "triagonal_quiz": "91-121",
+    "triagonal_pos": 31,
     "question": "Weiterführung der vorhergehenden Frage: Nach dem Kapitän kam ein anderer Spieler, um den 1. Schiedsrichter zu befragen. Welche Antwort sollte der 1. Schiedsrichter geben?",
     "answers": {
       "a": "Aussprechen einer Verzögerungssanktion.",
@@ -1647,6 +1889,8 @@
   },
   {
     "question_number": 122,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 1,
     "question": "Mannschaften haben das Recht, in einer Unterbrechung mehrere Spielunterbrechungen hintereinander zu beantragen, allerdings nicht in allen Fällen. Bitte beantworten Sie, welche Kombinationen gemäss den Regeln INNERHALB EINER EINZIGEN UNTERBRECHUNG gewährt werden dürfen: Schlüssel: S: Auswechslung / T: Auszeit / A: Mannschaft A / B: Mannschaft B",
     "answers": {
       "a": "SA-SB-TA-TB-SA-TA",
@@ -1666,6 +1910,8 @@
   },
   {
     "question_number": 123,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 2,
     "question": "Bezeichnen Sie jeden einzelnen Schritt, der nicht erlaubt ist, indem Sie jede entsprechende Box anwählen, welche die Sequenz regelwidrig macht. Betrachten Sie diese Sequenz:",
     "answers": {
       "a": "Libero betritt das Spielfeld.",
@@ -1681,6 +1927,8 @@
   },
   {
     "question_number": 124,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 3,
     "question": "Weiterführung der vorhergehenden Frage: Was ist falsch an der Sequenz? D.h. warum haben Sie diese/n Punkt/e der Sequenz gewählt?",
     "answers": {
       "a": "Der Libero muss wie jeder andere Spieler ausgewechselt werden.",
@@ -1702,6 +1950,8 @@
   },
   {
     "question_number": 125,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 4,
     "question": "Der Spielkapitän A verlangte durch Zeigen des Handzeichens eine Auszeit. Sofort danach zog der Trainer von Mannschaft A diese Auszeit zurück, indem er dem 2. Schiedsrichter “Nein.” zurief. Was ist jetzt die korrekte Entscheidung?",
     "answers": {
       "a": "Auszeit muss gewährt werden.",
@@ -1713,6 +1963,8 @@
   },
   {
     "question_number": 126,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 5,
     "question": "Weiterführung der vorhergehenden Frage:Grund für die Entscheidung:",
     "answers": {
       "a": "Nur der Spielkapitän darf Auszeiten und Spielerauswechslungen beantragen.",
@@ -1725,6 +1977,8 @@
   },
   {
     "question_number": 127,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 6,
     "question": "Weiterführung der vorhergehenden Frage: Geben Sie die zusätzlichen Handlungen des 1. Schiedsrichters an, falls es solche gibt:",
     "answers": {
       "a": "Wenn es keine Verzögerung gibt, sollte der 1. Schiedsrichter einfach das Spiel fortsetzen.",
@@ -1738,6 +1992,8 @@
   },
   {
     "question_number": 128,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 7,
     "question": "Im Moment des Auswechslung-Antrages trug der Auswechselspieler noch seine Trainingsanzug-Jacke. Soll der 2. Schiedsrichter die Auswechslung genehmigen?",
     "answers": {
       "a": "Ja.",
@@ -1749,6 +2005,8 @@
   },
   {
     "question_number": 129,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 8,
     "question": "Nachdem eine Auswechslung durch das Betreten der Auswechselzone durch den Auswechselspieler beantragt wurde, bemerkten der Schreiber und der 2. Schiedsrichter, dass der Spieler die falsche Auswechseltafel Nr. 7 trug. Der Trainer “änderte in diesem Moment seine Meinung” und wies den Auswechselspieler an, stattdessen Tafel Nr. 9 zu nehmen. Welcher Spieler muss ausgewechselt werden?",
     "answers": {
       "a": "Nr. 7.",
@@ -1761,6 +2019,8 @@
   },
   {
     "question_number": 130,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 9,
     "question": "Der Aufschlagspieler von Mannschaft A tippt den Ball ausserhalb der Aufschlagzone auf, tritt in die Aufschlagzone und schlägt dann auf; während des ganzen Vorgangs war der Ball allerdings ausserhalb der Aufschlagzone (auch im Moment des Schlages). Der 1. Schiedsrichter sollte ...",
     "answers": {
       "a": "... einen Fehler pfeifen.",
@@ -1773,6 +2033,8 @@
   },
   {
     "question_number": 131,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 10,
     "question": "Weiterführung der vorhergehenden Frage: Der Grund für diese Entscheidung ist, ...",
     "answers": {
       "a": "... dass nur die Position der Füsse von Bedeutung ist.",
@@ -1785,6 +2047,8 @@
   },
   {
     "question_number": 132,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 11,
     "question": "Ein von Mannschaft A aufgeschlagener Ball fliegt in Richtung Gegner, bleibt aber an der Netzoberkante hängen und fällt dann auf der Netzseite von A runter. Ein Spieler von Mannschaft B reicht unter dem Netz hindurch und fängt den Ball bevor er den Boden berührt. Der 1. Schiedsrichter sollte ...",
     "answers": {
       "a": "... einen Fehler vom Spieler der Mannschaft B pfeifen.",
@@ -1797,6 +2061,8 @@
   },
   {
     "question_number": 133,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 12,
     "question": "Weiterführung der vorhergehenden Frage: Der Grund für diese Entscheidung ist, ...",
     "answers": {
       "a": "... dass der Ball den Überquerungssektor nicht durchquert hat.",
@@ -1809,6 +2075,8 @@
   },
   {
     "question_number": 134,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 13,
     "question": "Ein Spieler rannte auf seiner Spielfeldseite die Tribüne hinauf dem Ball hinterher und spielte den Ball mit der zweiten Berührung von einer Position oberhalb des Spielfeldes zurück ins eigene Spielfeld. Der 1. Schiedsrichter sollte ...",
     "answers": {
       "a": "... nichts tun.",
@@ -1821,6 +2089,8 @@
   },
   {
     "question_number": 135,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 14,
     "question": "Weiterführung der vorhergehenden Frage: Der Grund für diese Entscheidung ist, ...",
     "answers": {
       "a": "... dass der Spieler den Ball ausserhalb seiner eigenen Freizone spielen darf.",
@@ -1833,6 +2103,8 @@
   },
   {
     "question_number": 136,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 15,
     "question": "In der Schweiz besteht bei offiziellen Wettspielen eine Mannschaft aus maximal ...",
     "answers": {
       "a": "... 12 Spielern, einem Trainer, zwei Trainerassistenten, einem Physiotherapeuten und einem Arzt.",
@@ -1846,6 +2118,8 @@
   },
   {
     "question_number": 137,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 16,
     "question": "In welcher der folgenden Situationen gibt es einen Fehler, der zu einem Punkt der annehmenden Mannschaft führt?",
     "answers": {
       "a": "Der Aufschlagspieler von Mannschaft A begeht einen Rotationsfehler, und Mannschaft B begeht einen Positionsfehler.",
@@ -1861,6 +2135,8 @@
   },
   {
     "question_number": 138,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 17,
     "question": "Ein Spieler greift an und berührt nach dem Schlagen des Balles die Netzmaschen während der Landung.",
     "answers": {
       "a": "Die Netzberührung ist kein Fehler, da sie nur während der Schlagbewegung einen Fehler darstellt.",
@@ -1874,6 +2150,8 @@
   },
   {
     "question_number": 139,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 18,
     "question": "Nachdem er einen Netzfehler gepfiffen hat, zeigt der 2. Schiedsrichter ...",
     "answers": {
       "a": "... nur das Handzeichen Nr. 19 „Netzberührung durch einen Spieler“ und den Spieler.",
@@ -1887,6 +2165,8 @@
   },
   {
     "question_number": 140,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 19,
     "question": "Bezeichnen Sie die richtige/n Aussage/n:",
     "answers": {
       "a": "Der Linienrichter ist dafür verantwortlich anzuzeigen, wenn ein Spieler den unteren Teil der Antenne berührt.",
@@ -1901,6 +2181,8 @@
   },
   {
     "question_number": 141,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 20,
     "question": "Während des Aufschlags wischt der Spieler auf der Position 6 mit der Hand kurz über eine nasse Stelle auf dem Boden. Dabei ist seine Fussstellung 'korrekt' in Bezug auf den Spieler auf Position 3 (d.h. er steht hinter diesem), seine Hand befindet sich jedoch näher zur Mittellinie als die Füsse des Spielers auf der Position 3. Ist das ein Fehler?",
     "answers": {
       "a": "Ja, in jedem Fall.",
@@ -1913,6 +2195,8 @@
   },
   {
     "question_number": 142,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 21,
     "question": "Ein Spieler von Mannschaft A verletzt sich, der Schiedsrichter unterbricht den Spielzug sofort. Während sich ein Arzt um den verletzten Spieler auf dem Feld kümmert, wird ein Spieler der Mannschaft B disqualifiziert. Welche der folgenden Aussagen treffen zu?",
     "answers": {
       "a": "Falls Mannschaft B den disqualifizierten Spieler nicht normal auswechseln kann, wird sie für unvollständig erklärt.",
@@ -1925,6 +2209,8 @@
   },
   {
     "question_number": 143,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 22,
     "question": "Team “A” spielt mit einem Libero. Dieser verletzt sich während einer Spielaktion. Der Spielzug muss wiederholt werden. Der Trainer entscheidet sich, sofort einen neuen Libero zu benennen. Der verletzte Libero verlässt das Feld, während gleichzeitig der neubenannte Libero seine Position auf dem Feld einnimmt. Ist das erlaubt?",
     "answers": {
       "a": "Nein, es ist dem Trainer nicht erlaubt, während des Matches einen neuen Libero zu benennen.",
@@ -1937,6 +2223,8 @@
   },
   {
     "question_number": 144,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 23,
     "question": "Der Libero von Team “A” verletzt sich. Der Trainer entscheidet sich, einen neuen Libero zu benennen. Welche der folgenden Aussagen ist/sind korrekt?",
     "answers": {
       "a": "Der als neuer Libero benannte Spieler muss die Funktion als Libero für den Rest des Spieles beibehalten (ausgenommen bei erneuter Neubenennung des Liberos).",
@@ -1950,6 +2238,8 @@
   },
   {
     "question_number": 145,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 24,
     "question": "Ist es einem verletzten, ausnahmsweise ausgewechselten Spieler erlaubt, während des Spiels auf der Bank zu sitzen?",
     "answers": {
       "a": "Ja, aber nur nach Erlaubnis des 1. Schiedsrichters.",
@@ -1962,6 +2252,8 @@
   },
   {
     "question_number": 146,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 25,
     "question": "Dem Libero von Team “A” wurde es während des 2. Satzes plötzlich schwindlig, er hatte starke Kopfschmerzen und fühlte sich sehr krank. Während des Seitenwechsels stellte der Teamarzt bei ihm hohes Fieber (40°) fest. Ist es dem Trainer in diesem Fall erlaubt, einen neuen Libero zu benennen?",
     "answers": {
       "a": "Ja.",
@@ -1974,6 +2266,8 @@
   },
   {
     "question_number": 147,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 26,
     "question": "Während eines Spielzuges berührt der Ball die Antenne auf der Seite des 2. Schiedsrichters. Was ist die korrekte Entscheidung des 2. Schiedsrichters?",
     "answers": {
       "a": "Der 2. Schiedsrichter zeigt nichts an.",
@@ -1986,6 +2280,8 @@
   },
   {
     "question_number": 148,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 27,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 1. Erfolgter Angriffsschlag des Vorderspielers nach einem oberen Finger-Zuspiel des Liberos aus der Vorderzone. Der Ball war im Moment des Angriffsschlags mit ganzem Umfang über der Netzoberkante und der Angriffsspieler ist in der Hinterzone abgesprungen.",
     "answers": {
       "a": "Kein Fehler.",
@@ -1999,6 +2295,8 @@
   },
   {
     "question_number": 149,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 28,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 2. Blockversuch eines Hinterspielers.",
     "answers": {
       "a": "Fehler; 1. Schiedsrichter.",
@@ -2012,6 +2310,8 @@
   },
   {
     "question_number": 150,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 29,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 3. Der Ball überquert auf der Seite des 2. Schiedsrichters die senkrechte Netzebene ausserhalb des Überquerungssektors in Richtung des gegnerischen Feldes.",
     "answers": {
       "a": "Kein Fehler.",
@@ -2025,6 +2325,8 @@
   },
   {
     "question_number": 151,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 30,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 4. Ein Spieler berührt während einer Spielaktion mit Ball das Netz ausserhalb der Antenne auf der Seite des 1. Schiedsrichters.",
     "answers": {
       "a": "Fehler; 1. und 2. Schiedsrichter.",
@@ -2038,6 +2340,8 @@
   },
   {
     "question_number": 152,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 31,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 5. Erfolgter Angriffsschlag des Liberos (Spiel mit Fingern) aus Hinterzone, wenn der Ball im Moment der Berührung mit vollem Umfang über der Netzoberkante war.",
     "answers": {
       "a": "Fehler; 1. und 2. Schiedsrichter.",
@@ -2051,6 +2355,8 @@
   },
   {
     "question_number": 153,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 32,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 6. Der Ball berührt die Hallendecke.",
     "answers": {
       "a": "Kein Fehler.",
@@ -2064,6 +2370,8 @@
   },
   {
     "question_number": 154,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 33,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 7. Erfolgter Angriffsschlag eines Hinterspielers, der Ball ist im Moment der Berührung mit vollem Umfang über der Netzoberkante, der Hinterspieler berührt beim Absprung mit der Fussspitze die Angriffslinie.",
     "answers": {
       "a": "Fehler; 1. Schiedsrichter.",
@@ -2077,6 +2385,8 @@
   },
   {
     "question_number": 155,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 34,
     "question": "Gib an, ob die nachfolgend geschilderten Situationen regelwidrig sind. Wenn ja, in den Kompetenzbereich welches Schiedsrichters fällt es, in dieser Situation zu pfeifen? 8. Ein Spieler berührt während einer Spielaktion mit Ball die Antenne oberhalb der Netzoberkante auf der Seite des 2. Schiedsrichters.",
     "answers": {
       "a": "Fehler; 2. Schiedsrichter.",
@@ -2090,6 +2400,8 @@
   },
   {
     "question_number": 156,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 35,
     "question": "Die Vorderspieler der aufschlagenden Mannschaft stehen direkt vor zwei Annahmespielern in einer Gruppe zusammen. Der gegnerische Kapitän bittet den 1. Schiedsrichter darum, die Gruppe zu informieren, sich so hinzustellen, dass seine Annahmespieler den Aufgabespieler sehen können.",
     "answers": {
       "a": "Der 1. Schiedsrichter ist verpflichtet, die Gruppe zu informieren, sich einzeln aufzustellen.",
@@ -2102,6 +2414,8 @@
   },
   {
     "question_number": 157,
+    "triagonal_quiz": "122-150",
+    "triagonal_pos": 36,
     "question": "Spieler Nr. 8 ist als Mannschaftskapitän in der Mannschaftsliste eingetragen. Der eingetragene Trainer (Spieler Nr. 12) wird eingewechselt und beantragt nach ein paar Spielzügen eine Auszeit (Spieler Nr. 8 war in diesem Moment ebenfalls auf dem Feld).",
     "answers": {
       "a": "Die Schiedsrichter weisen den Antrag zurück. Im ersten Fall ohne Sanktion, jeder weitere nicht ordnungsgemässe Antrag wird mit einer Sanktion wegen Verzögerung geahndet.",
@@ -2114,6 +2428,8 @@
   },
   {
     "question_number": 158,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 1,
     "question": "Ein Blockspieler der aufschlagenden Mannschaft steht während des Aufschlags nahe beim Netz und berührt mit einem Teil seines Fusses das gegnerische Spielfeld.",
     "answers": {
       "a": "Der 2. Schiedsrichter pfeift Positionsfehler.",
@@ -2126,6 +2442,8 @@
   },
   {
     "question_number": 159,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 2,
     "question": "Das Team “A” beantragt nach dem Pfiff des 1. Schiedsrichters zur Aufschlagsfreigabe eine Auswechslung. Der Summer wurde vom Scorer gedrückt. Es ist bereits das zweite Mal im gleichen Spiel.",
     "answers": {
       "a": "Der Schiedsrichter stoppt den Spielzug sofort und erteilt dem Team eine Sanktion wegen Verzögerung.",
@@ -2138,6 +2456,8 @@
   },
   {
     "question_number": 160,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 3,
     "question": "Der Trainer von Team “A” führt eine Auswechslung durch und nimmt gleich darauf eine Auszeit. Bevor das Spiel wieder aufgenommen wird, beantragt er eine weitere Auswechslung. Darf der Schiedsrichter dies gestatten?",
     "answers": {
       "a": "Ja.",
@@ -2149,6 +2469,8 @@
   },
   {
     "question_number": 161,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 4,
     "question": "Weiterführung der vorhergehenden Frage: Darf der Trainer im obigen Fall anstelle der 2. Auswechslung eine weitere Auszeit nehmen, ohne dass das Spiel nach der 1. Auszeit fortgesetzt wurde?",
     "answers": {
       "a": "Nein.",
@@ -2160,6 +2482,8 @@
   },
   {
     "question_number": 162,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 5,
     "question": "Während des Spiels ist der 2. Schiedsrichter berechtigt, die folgenden Fehler abzupfeifen:",
     "answers": {
       "a": "Fehlerhafter Angriffsschlag eines Hinterspielers.",
@@ -2182,6 +2506,8 @@
   },
   {
     "question_number": 163,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 6,
     "question": "Die Startaufstellung der Spieler, die den Satz beginnen, ist die Folgende (beginnend von Pos. 1): 1, 2, 3, 4, 5, 6. Der letzte Spieler am Aufschlag war Nr. 1. Die Positionen in der Zeichnung sind somit:",
     "answers": {
       "a": "Korrekt bezüglich der Hinterspieler, falsch bezüglich der Vorderspieler.",
@@ -2195,6 +2521,8 @@
   },
   {
     "question_number": 164,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 7,
     "question": "Die Startaufstellung der Spieler, die den Satz beginnen, ist die Folgende (beginnend von Pos. 1): 4, 9, 7, 2, 5 und 1. Spieler Nr. 5 wird durch Spieler Nr. 3 ausgewechselt. Der Libero ersetzt Spieler Nr. 7. Der letzte Spieler am Aufschlag war Spieler Nr. 2. Die Positionen in der Zeichnung sind somit:",
     "answers": {
       "a": "Falsch und zwar zwischen Spieler 9 und 3.",
@@ -2208,6 +2536,8 @@
   },
   {
     "question_number": 165,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 8,
     "question": "Die missglückte Ballannahme des Teams „B“ fliegt ausserhalb des Überquerungssektors in die Freizone des Teams „A“. Libero „B“ erreicht den Ball und spielt ihn mit oberem Zuspiel von der Freizone des Gegners aus ausserhalb des Überquerungssektors zurück in das eigene Spielfeld. Ein Angreifer „B“ spielt den Ball, welcher sich ganz oberhalb der Netzkante befindet, ins gegnerische Feld. Der Schiedsrichter pfeift einen Fehler des Teams „B“, weil der abgeschlossene Angriff nach einem oberen Zuspiel des Liberos erfolgte. Handelte er richtig?",
     "answers": {
       "a": "Nein.",
@@ -2219,6 +2549,8 @@
   },
   {
     "question_number": 166,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 9,
     "question": "Zum Spielerwechsel ist ein Spieler regelkonform bereit, der andere ist mit dem Suchen der Auswechseltafel bei der Spielerbank beschäftigt. Die Schiedsrichter erlauben einen Spielerwechsel, der zweite Spielerwechsel wird abgewiesen, da er auch nach dem ersten Spielerwechsel immer noch am Suchen war. Ohne Spielverzögerung und ohne Sanktion lassen die Schiedsrichter weiterspielen. Ist dies korrekt?",
     "answers": {
       "a": "Nein.",
@@ -2230,6 +2562,8 @@
   },
   {
     "question_number": 167,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 10,
     "question": "Bei einer schlechten Annahme beteiligt sich der aus der zweiten Linie penetrierende Zuspieler (Hinterspieler) des Teams „A“ am Zweierblock. Der Block wurde durch den Blockspieler des Teams „A“ (Vorderspieler) ausgeführt. Die Schiedsrichter bewilligten dem Team „A“ drei weitere Berührungen. Handelten Sie richtig?",
     "answers": {
       "a": "Nein.",
@@ -2241,6 +2575,8 @@
   },
   {
     "question_number": 168,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 11,
     "question": "Bei der dritten Ballberührung des Teams „A“ über der Netzkante kommt es zur gleichzeitigen Ballberührung durch den Angreifer „A“ und den Blockspieler „B“ (vollumfänglich im Spielraum des Teams „A“). Anschliessend berührt der Ball die Antenne. Der 1. Schiedsrichter pfeift einen Fehler des Blockspielers. Ist dies korrekt?",
     "answers": {
       "a": "Ja.",
@@ -2252,6 +2588,8 @@
   },
   {
     "question_number": 169,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 12,
     "question": "Der 1. Schiedsrichter entscheidet auf Spielzuggewinn für Mannschaft A. Diese führt sofort einen Spielerwechsel durch. Danach korrigiert der 1. Schiedsrichter seine Entscheidung und gibt den Spielzuggewinn an Mannschaft B. Welche Aussagen treffen für die entstandene Situation zu?",
     "answers": {
       "a": "Mannschaft A muss den nächsten Spielzug mit dem eingewechselten Spieler spielen.",
@@ -2264,6 +2602,8 @@
   },
   {
     "question_number": 170,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 13,
     "question": "Ein Hinterspieler der Mannschaft A greift an und schlägt den Ball an einem Dreierblock von Mannschaft B vorbei ins Feld von B. Der Ball befindet sich im Moment des Angriffsschlags vollständig oberhalb der Netzoberkante, der Block von B berührt den Ball nach dem Angriffsschlag nicht. Der Hinterspieler von A berührt beim Absprung die Angriffslinie; am Block von B beteiligt sich der Libero. Welches Vorgehen der Schiedsrichter ist richtig?",
     "answers": {
       "a": "Die Schiedsrichter entscheiden auf Doppelfehler.",
@@ -2276,6 +2616,8 @@
   },
   {
     "question_number": 171,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 14,
     "question": "Bei Mannschaft A ist der Libero auf Position 5 und muss annehmen. A gewinnt den Spielzug und rotiert um eine Position. Der Libero verlässt das Spielfeld, der ausgetauschte Mittelblocker kommt zurück auf das Feld. Der 1. Schiedsrichter bestraft in der Folge den neuen Aufschlagspieler von A auf Position 1 mit einer roten Karte. Als Konsequenz wechselt das Servicerecht zur Mannschaft B und B erhält einen Punkt. A will nun den Spieler auf Position 1 (den anderen Mittelblocker) wie gewohnt mit dem Libero austauschen. Wie entscheiden die Schiedsrichter?",
     "answers": {
       "a": "Die Schiedsrichter erlauben den Austausch nicht. A spielt also den nächsten Spielzug mit dem Mittelblocker in der Annahme auf Position 1.",
@@ -2288,6 +2630,8 @@
   },
   {
     "question_number": 172,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 15,
     "question": "Der Mannschaftskapitän wird ausgewechselt, ein anderer Spieler wird Spielkapitän. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Als Spielkapitän darf dieser Spieler beim 1. Schiedsrichter beantragen, die Netzhöhe zu überprüfen.",
@@ -2301,6 +2645,8 @@
   },
   {
     "question_number": 173,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 16,
     "question": "Mannschaft A gewinnt den Spielzug. Unmittelbar danach kommt es gleichzeitig zu einem ungebührlichen Verhalten je eines Spielers beider Mannschaften. In welcher Reihenfolge werden die Bestrafungen (rote Karten) an diese Spieler ausgesprochen?",
     "answers": {
       "a": "Zuerst an den Spieler der Mannschaft B.",
@@ -2313,6 +2659,8 @@
   },
   {
     "question_number": 174,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 17,
     "question": "Nach dem Pfiff zum Aufschlag bemerkt der 1. Schiedsrichter, dass bei einer Mannschaft sieben Spieler auf dem Feld stehen; ein Libero ist auf das Feld gekommen, der betreffende Austauschspieler hat dies übersehen. Der 1. Schiedsrichter stoppt das Spiel. Wie hat er dann zu verfahren?",
     "answers": {
       "a": "Er entscheidet auf Positionsfehler dieser Mannschaft.",
@@ -2325,6 +2673,8 @@
   },
   {
     "question_number": 175,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 18,
     "question": "Mannschaft A schlägt auf. Mannschaft B gewinnt den Spielzug. Der gemäss Rotationsfolge nächste Aufschlagspieler dieser Mannschaft geht zum Aufschlag. Vor Anpfiff des 1. Schiedsrichters bemerkt der 2. Schiedsrichter, dass dieser Spieler beim vorherigen Aufschlag von A auf einer falschen Position gestanden ist. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Mannschaft B wird nicht bestraft, das Spiel wird ohne Eingriff der Schiedsrichter fortgeführt.",
@@ -2337,6 +2687,8 @@
   },
   {
     "question_number": 176,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 19,
     "question": "Ein Auswechselspieler betritt in der NLB die Auswechselzone. Nachdem der 2. Schiedsrichter gepfiffen hat, gibt der Trainer dem Auswechselspieler eine andere Nummerntafel, da der Spieler versehentlich mit einer falschen Tafel in die Auswechselzone getreten ist. Wie ist zu verfahren?",
     "answers": {
       "a": "Die Auswechslung wird ohne Konsequenzen gemäss der ursprünglichen Nummerntafel durchgeführt.",
@@ -2350,6 +2702,8 @@
   },
   {
     "question_number": 177,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 20,
     "question": "Ein Auswechselspieler betritt die Auswechselzone während des Anpfiffs des 1. Schiedsrichters zum Aufschlag. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Der 2. Schiedsrichter soll das Spiel unterbrechen und der Antrag auf Auswechslung soll akzeptiert werden.",
@@ -2362,6 +2716,8 @@
   },
   {
     "question_number": 178,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 21,
     "question": "Der Libero von Mannschaft A kommt auf das Feld. Der 1. Schiedsrichter pfeift den nächsten Spielzug an und kurz nach dem Aufschlag wieder ab, da ein zweiter Ball ins Spielfeld rollt. Welche Aussagen treffen für die dadurch entstandene Situation zu?",
     "answers": {
       "a": "Mannschaft A darf den Libero wieder austauschen, wenn dieser sich mittlerweile verletzt hat.",
@@ -2374,6 +2730,8 @@
   },
   {
     "question_number": 179,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 22,
     "question": "Eine Mannschaft spielt mit 2 Liberos (L1 und L2). Libero L1 wird disqualifiziert. Welche Aussagen treffen für den weiteren Spielverlauf zu?",
     "answers": {
       "a": "Wenn sich Libero L2 später verletzt, kann die Mannschaft einen neuen Libero benennen.",
@@ -2388,6 +2746,8 @@
   },
   {
     "question_number": 180,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 23,
     "question": "Bei einem 'Einerblock' eines Vorderspielers berührt dieser den gegnerischen Angriffsball. In welchen Fällen darf die Mannschaft danach drei weitere Ballberührungen ausführen?",
     "answers": {
       "a": "Der Blockspieler reicht mit keinem Körperteil über die Netzoberkante, der Angriffsball berührt eine seiner Hände.",
@@ -2401,6 +2761,8 @@
   },
   {
     "question_number": 181,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 24,
     "question": "Im Augenblick des Aufschlags befindet sich ein Hinterspieler der annehmenden Mannschaft auf gleicher Höhe mit seinem Vorderspieler. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Wird als Fehler gewertet, auch wenn der Aufschlagspieler einen Fehler im Moment des Schlagens des Balles begeht.",
@@ -2415,6 +2777,8 @@
   },
   {
     "question_number": 182,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 25,
     "question": "Der Trainer beantragt beim 2. Schiedsrichter zum ersten Mal eine Auszeit, doch der 1. Schiedsrichter hat bereits zum Aufschlag gepfiffen. Der 2. Schiedsrichter unterbricht das Spiel. Wie ist zu verfahren, wenn die Mannschaft bislang noch keine Sanktion wegen Verzögerung erhalten hatte?",
     "answers": {
       "a": "Die Mannschaft erhält die beantragte Auszeit.",
@@ -2428,6 +2792,8 @@
   },
   {
     "question_number": 183,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 26,
     "question": "Welche Anträge auf reguläre Spielunterbrechungen sind nicht ordnungsgemäss?",
     "answers": {
       "a": "Der Spielkapitän beantragt eine Auszeit, weil sich der Trainer auf der Aufwärmfläche befindet.",
@@ -2442,6 +2808,8 @@
   },
   {
     "question_number": 184,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 27,
     "question": "Welches sind die korrekten Merkmale eines Volleyballes?",
     "answers": {
       "a": "Umfang 66 – 68 cm; Gewicht 260 – 280 g; Innendruck 0.275 – 0.325 kg/cm2",
@@ -2455,6 +2823,8 @@
   },
   {
     "question_number": 185,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 28,
     "question": "Welches sind die korrekten Abmessungen der Verlängerungen der Angriffslinien?",
     "answers": {
       "a": "Pro Verlängerung 5 Linienstücke à 20 cm mit jeweils 20 cm Abstand.",
@@ -2469,6 +2839,8 @@
   },
   {
     "question_number": 186,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 29,
     "question": "Bei offiziellen Wettspielen von Swiss Volley in der Kategorie National (NLA, NLB und 1L) müssen die Trikots der Spieler von 1 bis ... nummeriert sein.",
     "answers": {
       "a": "18 (NLA, NLB und 1L)",
@@ -2488,6 +2860,8 @@
   },
   {
     "question_number": 187,
+    "triagonal_quiz": "151-180",
+    "triagonal_pos": 30,
     "question": "Der Trainer übergibt das Aufstellungsblatt kurz vor Beginn des Satzes dem 2. Schiedsrichter. Nach dem Eintragen der Startaufstellung im Matchblatt (e-Scoresheet) kontrolliert der 2. Schiedsrichter die Aufstellung auf dem Spielfeld. Er stellt dabei fest, dass sich Spieler #5 statt des auf dem Aufstellungsblatt eingetragenen Spielers #8 auf dem Spielfeld befindet. Wie entscheiden die Schiedsrichter korrekt?",
     "answers": {
       "a": "Der Spieler #8 muss entsprechend dem Aufstellungsblatt auf das Spielfeld. Danach kann der Trainer eine normale Auswechslung gegen Spieler #5 beantragen. Die Mannschaft wird wegen Verzögerung sanktioniert.",
@@ -2501,6 +2875,8 @@
   },
   {
     "question_number": 188,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 1,
     "question": "In welchen der aufgeführten Situationen handelt es sich um einen abgeschlossenen Spielzug?",
     "answers": {
       "a": "Eine Mannschaft wird wegen Spielverzögerung bestraft (rote Karte).",
@@ -2521,6 +2897,8 @@
   },
   {
     "question_number": 189,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 2,
     "question": "Welche Mannschaftszusammensetzungen sind in der NLA + NLB zugelassen?",
     "answers": {
       "a": "12 Spieler, kein Libero.",
@@ -2537,6 +2915,8 @@
   },
   {
     "question_number": 190,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 3,
     "question": "Der Trainer wird disqualifiziert. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Der Trainerassistent darf die Aufgaben des Trainers übernehmen. Falls dies nicht geschieht, darf der Spielkapitän in der Folgezeit Auszeiten beantragen.",
@@ -2551,6 +2931,8 @@
   },
   {
     "question_number": 191,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 4,
     "question": "Eine Mannschaft beantragt eine Auszeit nach dem Anpfiff des 1. Schiedsrichters. Es handelt sich um den ersten unberechtigten Antrag der Mannschaft. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Das Spiel wird sofort unterbrochen, die Mannschaft wird mit einer Verzögerungs-Sanktion belegt. Der unberechtigte Antrag wird in der neuen Rubrik im Sanktionenfeld eingetragen.",
@@ -2563,6 +2945,8 @@
   },
   {
     "question_number": 192,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 5,
     "question": "In welchen Fällen unkorrekten Verhaltens ist eine Disqualifikation auszusprechen?",
     "answers": {
       "a": "Bei einer diffamierenden Geste.",
@@ -2576,6 +2960,8 @@
   },
   {
     "question_number": 193,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 6,
     "question": "Der Trainer führt, zum 2. Schiedsrichter gewandt, das Handzeichen „Wechsel“ aus. Ein Wechselspieler kommt von hinter der Spielerbank angelaufen, sucht die richtige Wechseltafel und erscheint dann in der Wechselzone. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Der 2. Schiedsrichter bestätigt den Wechselantrag in dem Moment, in dem der Wechselspieler die Wechselzone betritt (vorausgesetzt, der 1. Schiedsrichter hat noch nicht zum Aufschlag angepfiffen).",
@@ -2590,6 +2976,8 @@
   },
   {
     "question_number": 194,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 7,
     "question": "Während eines Spielzugs verletzt sich ein Spieler der Mannschaft A. Der 1. Schiedsrichter unterbricht den Spielzug sofort und entscheidet auf „Wiederholung“. Welche Aussagen treffen in dieser Situation zu?",
     "answers": {
       "a": "Keine der Mannschaften darf eine Auszeit beantragen.",
@@ -2603,6 +2991,8 @@
   },
   {
     "question_number": 195,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 8,
     "question": "Zwischen dem Anpfiff des 1. Schiedsrichters und der Ausführung des Aufschlags führt die gegnerische Mannschaft noch eine Libero-Austauschaktion durch. Das Spiel wird sofort unterbrochen, die betreffende Mannschaft wird mit einer Verzögerungs-Sanktion belegt. Ist das regelgerecht?",
     "answers": {
       "a": "Ja, in jedem Fall.",
@@ -2615,6 +3005,8 @@
   },
   {
     "question_number": 196,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 9,
     "question": "Der Ball fliegt nach der Annahme unterhalb des Netzes in Richtung gegnerisches Feld. Bevor er die senkrechte Netzebene vollständig überquert hat, spielt der Zuspieler ihn ins eigene Feld zurück. Ist das erlaubt?",
     "answers": {
       "a": "Nur, wenn die Ballberührung im eigenen Feld stattfindet.",
@@ -2627,6 +3019,8 @@
   },
   {
     "question_number": 197,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 10,
     "question": "Ein Spieler berührt das gegnerische Feld. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Die Berührung ist kein Fehler, wenn sie mit der kompletten Hand geschieht und das gegnerische Spiel dadurch nicht beeinflusst wird.",
@@ -2641,6 +3035,8 @@
   },
   {
     "question_number": 198,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 11,
     "question": "Ein Hinterspieler nimmt an einem „Dreierblock“ teil. In welchen Fällen führt das zu einem Fehler?",
     "answers": {
       "a": "Er ist der Libero, und der gegnerische Angriffsball berührt keinen der Blockspieler.",
@@ -2654,6 +3050,8 @@
   },
   {
     "question_number": 199,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 12,
     "question": "Ein Spieler berührt das Netz. In welchen Fällen handelt es sich um einen Fehler?",
     "answers": {
       "a": "Der Spieler berührt das weisse Band an der Netzoberkante ausserhalb der Antenne.",
@@ -2667,6 +3065,8 @@
   },
   {
     "question_number": 200,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 13,
     "question": "Im Moment des Aufschlags berührt ein Spieler mit einem Fuss die Mittellinie, ohne diese zu übertreten. Ist das ein Fehler?",
     "answers": {
       "a": "Ja, in jedem Fall.",
@@ -2679,6 +3079,8 @@
   },
   {
     "question_number": 201,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 14,
     "question": "Nach einer missglückten Annahme fliegt der Ball außerhalb der Antenne in die Freizone des Gegners. Ein Spieler spielt den Ball in das eigene Feld zurück. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Das Zurückspielen ist nur dann regelgerecht, wenn der Ball dabei die Netzebene vollständig im Bereich des Aussensektors auf derselben Netzseite durchquert.",
@@ -2692,6 +3094,8 @@
   },
   {
     "question_number": 202,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 15,
     "question": "Der von Mannschaft A angenommene Ball fliegt über Netzkantenhöhe in Richtung gegnerisches Spielfeld. Ein Vorderspieler von Mannschaft B springt zum Block. Der Zuspieler von Mannschaft A erreicht den Ball noch knapp vor der Netzebene und während er den Ball einem seiner Angreifer zuspielt, berührt der Blockspieler seine Hand. Ist das ein Fehler des Blockspielers?",
     "answers": {
       "a": "Nur, wenn die Berührung der Hand das Zuspiel „verdirbt“.",
@@ -2704,6 +3108,8 @@
   },
   {
     "question_number": 203,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 16,
     "question": "Eine Mannschaft spielt mit 2 Liberos. Im 2. Satz möchte der Trainer den amtierenden Libero durch den zweiten Libero austauschen. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Dieser Austausch ist möglich, kann aber im nächsten Satz nur wieder rückgängig gemacht werden, wenn sich der neue Libero verletzt.",
@@ -2716,6 +3122,8 @@
   },
   {
     "question_number": 204,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 17,
     "question": "Eine Mannschaft spielt mit 1 Libero. Während des Spiels will der Trainer einen anderen (nicht auf dem Spielfeld befindlichen) Spieler als neuen Libero benennen. Welche Aussagen treffen zu?",
     "answers": {
       "a": "Die Neubenennung ist in keinem Fall erlaubt, da die Mannschaft keinen zweiten Libero hat.",
@@ -2728,6 +3136,8 @@
   },
   {
     "question_number": 205,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 18,
     "question": "Der Libero kommt für Spieler Nr. 5 auf das Feld. Beim nächsten „Rücktausch“ kommt Spieler Nr. 7 für den Libero auf das Feld. Wie ist zu dem Zeitpunkt, in dem dies bemerkt wird, zu verfahren?",
     "answers": {
       "a": "Ist dies erst nach Ausführung des Aufschlags bemerkt worden, so ist die fehlerhaft gewordene Aufstellung zu korrigieren, alle durch die Mannschaft seit dem fehlerhaften Rücktausch erzielten Punkte werden annulliert, der Gegner erhält einen Punkt und den Aufschlag.",
@@ -2741,6 +3151,8 @@
   },
   {
     "question_number": 206,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 19,
     "question": "Der Aufschlagspieler führt den Aufschlag ausserhalb der Aufschlagzone aus. Gleichzeitig pfeift der 2. Schiedsrichter einen Aufstellungsfehler der annehmenden Mannschaft. Der 1. Schiedsrichter entscheidet ...",
     "answers": {
       "a": "... auf Fehler der aufschlagenden Mannschaft.",
@@ -2752,6 +3164,8 @@
   },
   {
     "question_number": 207,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 20,
     "question": "Während der Pause zwischen zwei Sätzen möchten sich die Spieler der Mannschaft A mit dem Ball auf dem Spielfeld aufwärmen. Der Schiedsrichter hat dies verboten. Handelte er richtig?",
     "answers": {
       "a": "Nein.",
@@ -2763,6 +3177,8 @@
   },
   {
     "question_number": 208,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 21,
     "question": "Der 2. Schiedsrichter erscheint nicht zu einem Meisterschaftsspiel. Unter den Zuschauern ist kein Schiedsrichter anwesend. Der 1. Schiedsrichter ...",
     "answers": {
       "a": "... leitet das Spiel alleine.",
@@ -2775,6 +3191,8 @@
   },
   {
     "question_number": 209,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 22,
     "question": "Das Heimteam verursacht einen verspäteten Spielbeginn (mit nachweisbarer und ausreichender Begründung). Die Verschiebung des neuen Spielbeginns beträgt in den nationalen Ligen höchstens ...",
     "answers": {
       "a": "... 15 Minuten, wenn auf das betreffende Spiel noch ein zweites Spiel in der gleichen Halle folgt und wenn die Benützungsdauer der Halle beschränkt ist.",
@@ -2788,6 +3206,8 @@
   },
   {
     "question_number": 210,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 23,
     "question": "Die beiden Mannschaftskapitäne können sich nicht auf ein gemeinsames Einspielen am Netz einigen. Das aufeinanderfolgende Einspielen (je 5 Minuten) beginnt ...",
     "answers": {
       "a": "... das Gastteam.",
@@ -2801,6 +3221,8 @@
   },
   {
     "question_number": 211,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 24,
     "question": "Für die Beurteilung eines Angriffsschlages durch einen Hinterspieler in der Vorder-zone ist entscheidend:",
     "answers": {
       "a": "Die Lage des Balles im Bezug zur Netzoberkante.",
@@ -2812,6 +3234,8 @@
   },
   {
     "question_number": 212,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 25,
     "question": "Der Block ist ausgeführt, ...",
     "answers": {
       "a": "... wann immer der Ball von einem Blockspieler berührt wird.",
@@ -2823,6 +3247,8 @@
   },
   {
     "question_number": 213,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 26,
     "question": "Der Angriffsschlag gilt als ausgeführt ...",
     "answers": {
       "a": "..., wenn der Ball die senkrechte Ebene des Netzes vollständig überquert hat.",
@@ -2836,6 +3262,8 @@
   },
   {
     "question_number": 214,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 27,
     "question": "Unter Angriffsschlag versteht man ...",
     "answers": {
       "a": "... alle Handlungen, bei denen der Ball in Richtung des Gegners gespielt wird, ausgenommen Aufschlag und Block.",
@@ -2847,6 +3275,8 @@
   },
   {
     "question_number": 215,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 28,
     "question": "Ein verletzter Spieler kann weder regulär noch ausnahmsweise ausgewechselt werden. Der Schiedsrichter ...",
     "answers": {
       "a": "... gewährt dem Spieler drei Minuten Wiederherstellungszeit, aber dem gleichen Spieler nur einmal während der Begegnung.",
@@ -2858,6 +3288,8 @@
   },
   {
     "question_number": 216,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 29,
     "question": "Die Mannschaft weigert sich, zum dritten Satz anzutreten. Der 1. Schiedsrichter erklärt die Mannschaft als nicht angetreten. Wie ist weiter vorzugehen?",
     "answers": {
       "a": "Der gegnerischen Mannschaft werden die zum Spielgewinn fehlende Sätze zuerkannt. Die nicht angetretene Mannschaft behält ihre Punkte und Sätze.",
@@ -2869,6 +3301,8 @@
   },
   {
     "question_number": 217,
+    "triagonal_quiz": "181-210",
+    "triagonal_pos": 30,
     "question": "Der Schreiber bekommt die Mannschaftsaufstellung für den nächsten Satz nicht zur Zeit. Wie ist weiter vorzugehen?",
     "answers": {
       "a": "Er meldet dies ohne Verzögerung dem 2. Schiedsrichter.",
@@ -2880,6 +3314,8 @@
   },
   {
     "question_number": 218,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 1,
     "question": "Der Trainer verlangt zum zweiten Mal einen 7. Spielerwechsel. Der Schiedsrichter beurteilt dies als ...",
     "answers": {
       "a": "... wiederholten nicht ordnungsgemässen Antrag und spricht eine Sanktion wegen Spielverzögerung aus.",
@@ -2891,6 +3327,8 @@
   },
   {
     "question_number": 219,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 2,
     "question": "Der Ball fliegt in Richtung Spielfläche. Ein Spieler spielt den Ball so, dass der Ball sowohl seine Finger wie auch die Spielfläche berührt. Der 1. Schiedsrichter sieht dies nicht, der 2. Schiedsrichter kann die Situation erkennen. Wie ist die richtige Vorgehensweise?",
     "answers": {
       "a": "Die Schiedsrichter lassen weiterspielen. Nachdem der 2. Schiedsrichter den 1. Schiedsrichter nach Beendigung des Spielzuges über die Situation informiert hat, entscheidet der 1. Schiedsrichter auf Wiederholung.",
@@ -2902,6 +3340,8 @@
   },
   {
     "question_number": 220,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 3,
     "question": "Ein Hinterspieler „A“ springt hinter der Angriffslinie ab. Der Ball befindet sich nach dem gegnerischen Aufschlag über der Vorderzone „A“ und ist ganz oberhalb der Netzoberkante. Der Hinterspieler „A“ spielt den Ball ins Feld „B“. Wie ist zu entscheiden?",
     "answers": {
       "a": "Der 1. Schiedsrichter pfeift, die Mannschaft „B“ erhält den Ball.",
@@ -2914,6 +3354,8 @@
   },
   {
     "question_number": 221,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 4,
     "question": "Nach Beendigung eines Spielzuges bittet Spieler „A“ den Schiedsrichter um Bewilligung, seine Schuhe zu binden. Eine effektive Verzögerung entsteht dadurch nicht. Wie ist die richtige Vorgehensweise?",
     "answers": {
       "a": "Der Schiedsrichter entscheidet auf Verzögerung der Mannschaft „A“.",
@@ -2925,6 +3367,8 @@
   },
   {
     "question_number": 222,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 5,
     "question": "Mannschaft A hat Aufschlag und begeht einen Rotationsfehler, z.B. der falsche Spieler führt den Aufschlag aus. Gleichzeitig begeht die annehmende Mannschaft B einen Aufstellungsfehler. Wie ist zu entscheiden?",
     "answers": {
       "a": "Doppelfehler, Wiederholung des Ballwechsels.",
@@ -2937,6 +3381,8 @@
   },
   {
     "question_number": 223,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 6,
     "question": "Nach einer Auszeit bereitet sich ein falscher Spieler auf den Aufschlag vor. Der Schiedsrichter gibt den Aufschlag frei. Bevor der Aufschlag ausgeführt wird, bemerkt die Mannschaft den Fehler und der richtige Spieler geht zum Aufschlag. Erneut pfeift der 1. Schiedsrichter zur Ausführung des Aufschlags. Hat der Schiedsrichter richtig gehandelt?",
     "answers": {
       "a": "Ja.",
@@ -2948,6 +3394,8 @@
   },
   {
     "question_number": 224,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 7,
     "question": "Nachdem der 1. Schiedsrichter bereits zur Ausführung des Aufschlags gepfiffen hat, reagiert der 2. Schiedsrichter verspätet auf einen Antrag auf Auszeit und pfeift ebenfalls. Wie muss entschieden werden?",
     "answers": {
       "a": "Der 1. Schiedsrichter muss auf Doppelfehler entscheiden und dann das Spiel erneut freigeben. Die Auszeit wird nicht gewährt und eine Sanktion wegen Verzögerung ausgesprochen.",
@@ -2960,6 +3408,8 @@
   },
   {
     "question_number": 225,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 8,
     "question": "Nachdem Mannschaft A mehrere Punkte bei eigenem Aufschlag erzielt hat, wird bei dieser Mannschaft ein Rotationsfehler festgestellt. Wie ist vorzugehen?",
     "answers": {
       "a": "Lediglich der zuletzt erzielte Punkt wird der Mannschaft A aberkannt und dem Gegner gutgeschrieben, die anderen Punkte werden als „gespielt“ angesehen und bleiben erhalten.",
@@ -2971,6 +3421,8 @@
   },
   {
     "question_number": 226,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 9,
     "question": "Mannschaft A hat 7 Spieler zur Verfügung, darunter einen Libero. Im 2. Satz verletzt sich ein Spieler (nicht der Libero) und kann nicht weiterspielen. Wie geht das Spiel weiter?",
     "answers": {
       "a": "Mannschaft A wird für den 2. Satz für unvollständig erklärt und verliert diesen. Da kein anderer Spieler zur Verfügung steht, kann der Libero im 3. Satz nach einer ausnahmsweisen Auswechslung als „normaler“ Spieler am Spiel teilnehmen.",
@@ -2983,6 +3435,8 @@
   },
   {
     "question_number": 227,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 10,
     "question": "Welche Sanktionen haben zusätzlich einen Punktgewinn des Gegners zur Folge?",
     "answers": {
       "a": "Rote Karte.",
@@ -2995,6 +3449,8 @@
   },
   {
     "question_number": 228,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 11,
     "question": "Im 1. Satz hat die Mannschaft A eine Verwarnung wegen Verzögerung erhalten. Im darauffolgenden Satz begeht ein anderer Spieler dieser Mannschaft ein vergleichbares Vergehen. Wie muss der Schiedsrichter entscheiden?",
     "answers": {
       "a": "Da beide Verzögerungen in zwei unterschiedlichen Sätzen begangen wurden, wird eine weitere Verwarnung ausgesprochen.",
@@ -3007,6 +3463,8 @@
   },
   {
     "question_number": 229,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 12,
     "question": "Bedingt durch die ungünstige Architektur der Sporthalle befindet sich in der Hallenmitte ein Bereich, der von den Schiedsrichtern nicht in der kompletten Höhe einzusehen ist. Es wird ein hoher Ball gespielt, der das Sichtfeld der Schiedsrichter kurzzeitig verlässt. Nach Einschätzung des 1. Schiedsrichters ist eine Deckenberührung des Balls nicht zwingend aufgetreten, aber auch nicht auszuschliessen. Wie muss er entscheiden?",
     "answers": {
       "a": "Nur wenn eine der Mannschaften einen Fehler reklamiert, muss das Spiel unterbrochen werden. Der Schiedsrichter entscheidet auf Doppelfehler und Wiederholung des Ballwechsels.",
@@ -3020,6 +3478,8 @@
   },
   {
     "question_number": 230,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 13,
     "question": "Ein Vorderspieler führt einen Block aus. Dabei berührt er den Ball im gegnerischen Spielraum gleichzeitig mit dem Angriffsschlag des Gegners. Der Angriff wird von der gegnerischen Mannschaft durch einen Hinterspieler aus der Vorderzone vollständig oberhalb der Netzoberkante ausgeführt. Wie ist zu entscheiden?",
     "answers": {
       "a": "Doppelfehler, Wiederholung des Ballwechsels.",
@@ -3032,6 +3492,8 @@
   },
   {
     "question_number": 231,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 14,
     "question": "Weiterführung der vorhergehenden Frage: Wie lautet die richtige Entscheidung, wenn der Blockspieler ein Hinterspieler ist?",
     "answers": {
       "a": "Doppelfehler, Wiederholung des Ballwechsels.",
@@ -3044,6 +3506,8 @@
   },
   {
     "question_number": 232,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 15,
     "question": "Der Ball wird vom Libero im oberen Zuspiel gestellt, der Angreifer schlägt den Ball über Netzhöhe. Dies ist erlaubt, wenn sich der Libero beim Zuspiel in der ...",
     "answers": {
       "a": "Hinterzone befindet und der Angriff aus der Vorderzone durch einen Vorderspieler erfolgt.",
@@ -3058,6 +3522,8 @@
   },
   {
     "question_number": 233,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 16,
     "question": "Beim Spielstand von 24:20 für Mannschaft A schlägt die gegnerische Mannschaft einen Angriffsball ins Aus. Die Schiedsrichter übersehen dabei eine Ballberührung eines Blockspielers von Mannschaft A. Der 1. Schiedsrichter entscheidet auf Punkt für Mannschaft A und beendet den Satz. Erst jetzt gibt der Blockspieler die Ballberührung zu. Der 1. Schiedsrichter bleibt aber bei seiner Entscheidung mit der Begründung, der Satz sei schon beendet und die Entscheidung könne daher nicht mehr zurück genommen werden. Handelt er richtig?",
     "answers": {
       "a": "Ja.",
@@ -3070,6 +3536,8 @@
   },
   {
     "question_number": 234,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 17,
     "question": "Was bedeutet dieses Handzeichen des Schiedsrichters?",
     "answers": {
       "a": "Fehler beim Angriffsschlag eines Liberos.",
@@ -3090,6 +3558,8 @@
   },
   {
     "question_number": 235,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 18,
     "question": "Bei einer Nichtübereinstimmung zwischen Aufstellungsblatt und aktueller Aufstellung der Spieler (inklusive Libero) vor dem ersten Service im ersten Satz gilt Folgendes:",
     "answers": {
       "a": "Die Spieler müssen sich entsprechend dem Aufstellungsblatt aufstellen, ohne weitere Sanktionen.",
@@ -3102,6 +3572,8 @@
   },
   {
     "question_number": 236,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 19,
     "question": "Beim ersten Schlag einer Mannschaft ist es ein Fehler, wenn ...",
     "answers": {
       "a": "... bei der Annahme des gegnerischen Angriffsschlages der Ball mit oberem Fingerzuspiel gespielt wird und dabei beide Hände nacheinander innerhalb einer Aktion berührt.",
@@ -3114,6 +3586,8 @@
   },
   {
     "question_number": 237,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 20,
     "question": "Nachdem der Aufschlagspieler den Ball hochgeworfen hat, berührt der Ball sowohl den Fuss des Aufschlagspielers wie auch den Boden. Wie entscheidet der 1. Schiedsrichter?",
     "answers": {
       "a": "Die aufschlagende Mannschaft erhält eine Sanktion wegen Spielverzögerung und der 1. Schiedsrichter erlaubt dem gleichen Spieler nochmals aufzuschlagen.",
@@ -3126,6 +3600,8 @@
   },
   {
     "question_number": 238,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 21,
     "question": "Der Aufschlagspieler prellt den Ball nach der Bewilligung des Aufschlags durch den 1. Schiedsrichter unbeabsichtigt auf seinen Fuss, danach rollt der Ball ins Feld:",
     "answers": {
       "a": "Der 1. Schiedsrichter bewilligt einen weiteren Aufschlagversuch.",
@@ -3138,6 +3614,8 @@
   },
   {
     "question_number": 239,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 22,
     "question": "Während dem ersten Satz bemerkt der 2. Schiedsrichter, dass der Coach am vom Schreibertisch entferntesten Ende der Spielerbank sitzt. Der 2. Schiedsrichter verlangt vom Coach, dass dieser seine korrekte Position auf der Bank einnimmt. Der Coach verweigert dies.",
     "answers": {
       "a": "Der 1. Schiedsrichter gibt dem Coach eine gelbe Karte und beharrt darauf, dass der Coach die korrekte Position auf der Bank einnimmt oder aufsteht und sich in der freien Zone vor seiner Mannschaftsbank bewegt.",
@@ -3150,6 +3628,8 @@
   },
   {
     "question_number": 240,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 23,
     "question": "Ist es ein Fehler, wenn ein Spieler mit den Händen über das Netz reicht und den Ball schlägt, statt ihn zu blockieren?",
     "answers": {
       "a": "Nein, sofern der erste Kontakt im eigenen Spielraum stattgefunden hat.",
@@ -3164,6 +3644,8 @@
   },
   {
     "question_number": 241,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 24,
     "question": "Mannschaft \"A\" gewinnt den Spielzug und geht zum Aufschlag. Nach dem Anpfiff wirft der Aufschlagspieler den Ball hoch, so dass der Ball die Decke berührt. Ohne den Ball fallenzulassen schlägt der Aufschlagspieler den Ball und führt den Aufschlag aus. Der 1. Schiedsrichter:",
     "answers": {
       "a": "Muss pfeifen und der Aufschlag wird wiederholt.",
@@ -3176,6 +3658,8 @@
   },
   {
     "question_number": 242,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 25,
     "question": "Die annehmende Mannschaft „A“ spielt den Ball nach der ersten Berührung in die Freizone des Gegners „B“, wobei der Ball die Netzebene vollständig im Bereich des Aussensektors durchquert hat. Einer der Spieler der Mannschaft „A“ will diesen Ball erreichen, dabei benützt er den Netzpfosten um seine Laufrichtung schnell zu ändern. Danach spielt er den Ball in den eigenen Spielraum zurück, der Ball fliegt dabei wieder vollständig durch den Aussensektor auf derselben Seite des Feldes. Der Schiedsrichter:",
     "answers": {
       "a": "Lässt den Spielzug wiederholen.",
@@ -3188,6 +3672,8 @@
   },
   {
     "question_number": 243,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 26,
     "question": "Eine Mannschaft spielt ohne Trainer und Trainerassistent. Der Mannschaftskapitän ist Spieler Nr. 1. Im zweiten Satz, sitzt der Spieler Nr. 1 auf der Mannschaftsbank und beantragt beim 2. Schiedsrichter eine Auszeit. Der 2. Schiedsrichter:",
     "answers": {
       "a": "Bewilligt die Auszeit.",
@@ -3200,6 +3686,8 @@
   },
   {
     "question_number": 244,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 27,
     "question": "Ein Spieler der Mannschaft „A“ geht zum Aufschlag. Der Aufschlagspieler führt den Aufschlag innerhalb der vorgeschriebenen Zeit aus, der Ball fliegt jedoch ins Netz, knapp unterhalb der Netzoberkante. Die Netzmaschen zerreissen und der Ball fliegt durch das Netz in die Spielfläche der Mannschaft „B“.",
     "answers": {
       "a": "Die Mannschaft \"B\" gewinnt den Spielzug.",
@@ -3212,6 +3700,8 @@
   },
   {
     "question_number": 245,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 28,
     "question": "Die Position der Spieler wird bestimmt und kontrolliert entsprechend ...",
     "answers": {
       "a": "... der Stellung ihrer Körper, bezogen auf die Netzebene.",
@@ -3224,6 +3714,8 @@
   },
   {
     "question_number": 246,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 29,
     "question": "Ein Spieler der Mannschaft \"A\" führt einen Angriffsschlag aus. Der Ball fliegt in der Nähe der Antenne in Richtung Aussensektor. Ein Spieler der Mannschaft \"B\" blockiert diesen Angriff im gegnerischem Raum ausserhalb der Antenne. Nach dem Block berührt der Ball den Boden der Spielfläche der Mannschaft \"A\".",
     "answers": {
       "a": "Fehler der angreifenden Mannschaft \"A\".",
@@ -3236,6 +3728,8 @@
   },
   {
     "question_number": 247,
+    "triagonal_quiz": "211-240",
+    "triagonal_pos": 30,
     "question": "Vor Spielbeginn verletzt sich der im e-Scoorsheet eingetragene Libero. Der Trainer bittet um Neubenennung des Liberos. Der neue Libero soll der Spieler Nr. 1 sein, welcher bereits in der Aufstellung im e-Scoorsheet für den ersten Satz eingetragen ist. Wie ist vorzugehen?",
     "answers": {
       "a": "Der Schiedsrichter erlaubt die Neubenennung, die Aufstellung im e-Scoorsheet für den ersten Satz wird neu ausgefüllt, und der Spieler Nr. 1 kann als neuer Libero im ersten Satz spielen. Alle Umstände müssen im e-Scoorsheet unter Bemerkungen eingetragen werden.",
@@ -3248,6 +3742,8 @@
   },
   {
     "question_number": 248,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 1,
     "question": "Im 2. Satz wechselt der Spieler Nr. 10 den Spieler Nr. 2 der Mannschaft \"A\" aus. Im gleichen Satz wird der Spieler Nr. 2 für die Nr. 10 zurück gewechselt. Später (im gleichen Satz) wird Spieler Nr. 2 disqualifiziert. Der Schiedsrichter:",
     "answers": {
       "a": "Verweigert eine „ausnahmsweise Auswechslung“, erklärt die Mannschaft für unvollständig für das Spiel und beendet das Spiel. Die unvollständige Mannschaft behält ihre Punkte und Sätze.",
@@ -3260,6 +3756,8 @@
   },
   {
     "question_number": 249,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 2,
     "question": "Nach dem Schlagen des Balls berührt der Spieler die Seile, die das Netz am Pfosten befestigen.",
     "answers": {
       "a": "Der Schiedsrichter darf den Spielzug in keinem Fall unterbrechen.",
@@ -3272,6 +3770,8 @@
   },
   {
     "question_number": 250,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 3,
     "question": "Nach der Landung der Blockspieler der Mannschaft \"A\" bleibt einer von ihnen mit verdrehtem Knöchel am Boden liegen. Die Spieler der gegnerischen Mannschaft sind beim Spielen des Balls erfolgreich und bereiten den nächsten Angriff vor. Der Schiedsrichter:",
     "answers": {
       "a": "Unterbricht das Spiel nicht.",
@@ -3284,6 +3784,8 @@
   },
   {
     "question_number": 251,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 4,
     "question": "Der Spieler Nr. 3 der Mannschaft \"A\" greift an, der Ball befindet sich dabei in der Vorderzone und ist vollständig oberhalb der Netzoberkante. Der Angriffsball landet auf der gegnerischen Spielfläche. Der Schiedsrichter entscheidet den Spielzug für die Mannschaft \"A\". Nachdem sich die Spieler wieder richtig aufgestellt haben, bemerkt der Schiedsrichter, dass der Spieler Nr. 3 ein Hinterspieler ist. Der Schiedsrichter:",
     "answers": {
       "a": "Ändert seine Entscheidung, und den vorherigen Spielzug gewinnt die Mannschaft \"B\".",
@@ -3296,6 +3798,8 @@
   },
   {
     "question_number": 252,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 5,
     "question": "Der vordere Zuspieler der Mannschaft \"A\" versucht einen Ball zu spielen, welcher von einem Mitspieler kommt. Dabei springt er auf und schlägt den Ball mit einer Hand über dem Netz. Im Moment der Ballberührung ist seine Hand im gegnerischen Raum. Der so gespielte Ball fliegt auf der Seite des Zuspielers, parallel zum Netz, in Richtung eines Angreifers der Mannschaft \"A\". Der Block der Mannschaft \"B\" berührt den Ball vor dem Angreifer der Mannschaft „A“, so dass der Angreifer „A“ den Angriff nicht ausführen kann. Der 1. Schiedsrichter:",
     "answers": {
       "a": "Pfeift nicht, kein Fehler wurde begangen.",
@@ -3308,6 +3812,8 @@
   },
   {
     "question_number": 253,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 6,
     "question": "Die Annahmemannschaft ist im Moment des Aufschlags falsch aufgestellt. Beim Absprung zum Sprungservice berührt der Aufschlagspieler die Grundlinie. Der Schiedsrichter:",
     "answers": {
       "a": "Entscheidet auf „Doppelfehler“ – der Spielzug wird wiederholt.",
@@ -3320,6 +3826,8 @@
   },
   {
     "question_number": 254,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 7,
     "question": "Ein Spieler berührt mit seinen Fingern unter dem Netz die Spielfläche des Gegners, dabei ist seine Handfläche über der Mittellinie. Der Schiedsrichter:",
     "answers": {
       "a": "Pfeift nur im Fall, dass die Handfläche nicht in Kontakt mit der Mittellinie ist.",
@@ -3332,6 +3840,8 @@
   },
   {
     "question_number": 255,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 8,
     "question": "Der Libero der Mannschaft \"A\" macht in der Vorderzone ein oberes Finger-Zuspiel. Ein Angriffspieler spielt den Ball, der sich vollständig über der Netzoberkante befindet in Richtung des Gegners. Der Angriffsball berührt den Block des Gegners, an dem auch ein Hinterspieler teilnimmt. Nach der Blockberührung bleibt der Ball immer noch im Spiel. Der Schiedsrichter pfeift:",
     "answers": {
       "a": "Spielzug gewinnt die Mannschaft \"B\" (Block).",
@@ -3344,6 +3854,8 @@
   },
   {
     "question_number": 256,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 9,
     "question": "Nach gleichzeitiger Ballberührung über dem Netz durch zwei Gegner (beide Spieler versuchen, den Ball zu schlagen), landet der Ball vollständig ausserhalb der Seitenlinie der Mannschaft „A“ auf dem Boden. Der Spielzug:",
     "answers": {
       "a": "Gewinnt die Mannschaft \"B\".",
@@ -3357,6 +3869,8 @@
   },
   {
     "question_number": 257,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 10,
     "question": "Vor dem Aufschlag bittet der Spielkapitän den Schiedsrichter die gegnerische Aufstellung zu überprüfen. Der Schiedsrichter:",
     "answers": {
       "a": "Weist die Bitte ohne andere Folgen zurück.",
@@ -3369,6 +3883,8 @@
   },
   {
     "question_number": 258,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 11,
     "question": "Ein Spieler der Mannschaft \"A\" blockiert den Angriff der Mannschaft \"B\", so dass der Ball durch den Raum der Mannschaft „B“ und anschliessend unter dem Netz in den Raum der blockierenden Mannschaft „A“ fliegt. Der Schiedsrichter:",
     "answers": {
       "a": "Pfeift einen Fehler der Mannschaft \"B\" (Angriff).",
@@ -3381,6 +3897,8 @@
   },
   {
     "question_number": 259,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 12,
     "question": "Wenn sich ein Spieler während des Spiels verletzt, ist wie folgt vorzugehen:",
     "answers": {
       "a": "Dem Spieler muss sofort und in jedem Fall eine Wiederherstellungszeit von 3 Minuten gewährt werden, aber nur einmal je Spieler in einem Spiel.",
@@ -3393,6 +3911,8 @@
   },
   {
     "question_number": 260,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 13,
     "question": "Nach einer missglückten Annahme der Mannschaft „A“ fliegt der Ball scharf in Richtung Netz. Ein Spieler der Mannschaft „B“ bewegt seine Arme klar mit der Absicht, den Ball durch das Netz ins gegnerische Feld zu schlagen, so dass die annehmende Mannschaft keine Chance hat, den Ball zu spielen. Der Schiedsrichter entscheidet:",
     "answers": {
       "a": "Spielzug gewinnt die Mannschaft \"A\" – Netzfehler der Mannschaft \"B\".",
@@ -3405,6 +3925,8 @@
   },
   {
     "question_number": 261,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 14,
     "question": "Nachdem ein Trainer disqualifiziert wurde, gilt es zu beachten:",
     "answers": {
       "a": "Der Trainerassistent übernimmt automatisch die Aufgaben des Trainers.",
@@ -3417,6 +3939,8 @@
   },
   {
     "question_number": 262,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 15,
     "question": "Trainer „A“ verlangt regelkonform einen Spielerwechsel. Als der Spieler schon in der Auswechselzone ist, macht er seinen Antrag rückgängig. Die Schiedsrichter akzeptieren dies und bestrafen die Mannschaft „A“ wegen unkorrekten Verhaltens. Ist dies korrekt?",
     "answers": {
       "a": "Ja.",
@@ -3428,6 +3952,8 @@
   },
   {
     "question_number": 263,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 16,
     "question": "In welchem Fall darf ein Spieler den Service blocken?",
     "answers": {
       "a": "Nur wenn der Ball nach der Blockberührung in der Spielfeldhälfte des Blockspielers bleibt.",
@@ -3439,6 +3965,8 @@
   },
   {
     "question_number": 264,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 17,
     "question": "Zwei Fehler wurden von Gegnern gleichzeitig begangen, der 1. Schiedsrichter entscheidet auf DOPPELFEHLER. Trainer „A“ verlangt einen Spielerwechsel.",
     "answers": {
       "a": "Der Spielerwechsel wird nicht bewilligt. Er wird als nicht ordnungsgemässer Antrag gewertet.",
@@ -3451,6 +3979,8 @@
   },
   {
     "question_number": 265,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 18,
     "question": "Mannschaft „A“ spielt den Ball so, dass er den 2. Schiedsrichter berührt. Der 1. Schiedsrichter entscheidet:",
     "answers": {
       "a": "Fehler der Mannschaft „A“.",
@@ -3462,6 +3992,8 @@
   },
   {
     "question_number": 266,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 19,
     "question": "Nach der Landung des Blocks „A“ bleibt ein Blockspieler schwer verletzt auf dem Boden liegen. Unmittelbar nach der Verletzung berührt der Blockabpraller die Spielfläche. Wie ist vorzugehen?",
     "answers": {
       "a": "Nach Beendigung des Spielzugs (Ball berührt Boden) erlaubt der 1. Schieds-richter der medizinischen Hilfe das Feld zu betreten. Mannschaft „B“ erhält den Punkt und Aufschlagsrecht.",
@@ -3473,6 +4005,8 @@
   },
   {
     "question_number": 267,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 20,
     "question": "Während einer Auszeit verwenden die Auswechselspieler in der Aufwärmfläche einen Volleyball. Die Schiedsrichter:",
     "answers": {
       "a": "Können die Verwendung eines schweren Medizinballs oder von Gummiseilen gestatten.",
@@ -3486,6 +4020,8 @@
   },
   {
     "question_number": 268,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 21,
     "question": "Bei einer Spielaktion in der Freizone vor der Auswechselbank „A“ kollidiert ein Spieler „A“ mit dem eigenen, im bewilligten Raum stehenden Trainer so, dass er den Ball nicht mehr erreichen kann. Wie ist vorzugehen?",
     "answers": {
       "a": "Spielzug wird wiederholt.",
@@ -3497,6 +4033,8 @@
   },
   {
     "question_number": 269,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 22,
     "question": "Für die Mannschaftsdisziplin während der Begegnung trägt die Verantwortung:",
     "answers": {
       "a": "Der Mannschaftskapitän und der Trainer zu gleichen Teilen.",
@@ -3509,6 +4047,8 @@
   },
   {
     "question_number": 270,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 23,
     "question": "In welchen Bereichen darf sich der Trainer einer Mannschaft während des Spiels frei bewegen?",
     "answers": {
       "a": "Er darf sich in jedem Fall in der Freizone von der Verlängerung der Angriffslinie bis zum Ende der Freizone bewegen.",
@@ -3525,6 +4065,8 @@
   },
   {
     "question_number": 271,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 24,
     "question": "Nach einem langen und intensiven Ballwechsel winkt ein Spieler einem Quickmopper, dass dieser auf das Spielfeld kommen und einen nassen Fleck am Boden wegwischen soll. Wie reagieren die Schiedsrichter?",
     "answers": {
       "a": "Falls nach Ansicht des 1. Schiedsrichters Bedarf ist, einen nassen Fleck wegzuwischen, lässt der 1. Schiedsrichter die Quickmopper auf das Feld kommen und gestattet das Wischen.",
@@ -3539,6 +4081,8 @@
   },
   {
     "question_number": 272,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 25,
     "question": "Nach der zweiten Ballberührung der Mannschaft A überquert der Ball die Netzebene ausserhalb der Antenne in die gegnerische Freizone. Spieler #5 der Mannschaft A rennt dem Ball nach, um ihn in die eigene Spielfeldhälfte zurückzuspielen. In diesem Moment pfeift der 2. Schiedsrichter einen Netzfehler der Mannschaft B und Mannschaft A gewinnt den Spielzug. Handeln die Schiedsrichter korrekt?",
     "answers": {
       "a": "Ja, sofern der gegnerische Spieler die Netzberührung während einer Ballspielaktion verursacht hat, ist dieser Entscheid korrekt.",
@@ -3551,6 +4095,8 @@
   },
   {
     "question_number": 273,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 26,
     "question": "Im Moment, in dem der korrekte Aufschlagspieler den Ball aufwirft und schlägt, stehen beide Mannschaften innerhalb ihres Spielfeldes, jedoch nicht entsprechend der Rotationsfolge. Wie haben die Schiedsrichter zu entscheiden?",
     "answers": {
       "a": "Fehler der annehmenden Mannschaft.",
@@ -3563,6 +4109,8 @@
   },
   {
     "question_number": 274,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 27,
     "question": "Welche Möglichkeiten hat der 1. Schiedsrichter, wenn er der Meinung ist, dass einige Spieler der aufschlagenden Mannschaft während des Aufschlags die Hände höher als den Kopf halten?",
     "answers": {
       "a": "Er kann die aufschlagende Mannschaft wegen geringfügiger Unkorrektheiten mündlich verwarnen.",
@@ -3578,6 +4126,8 @@
   },
   {
     "question_number": 275,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 28,
     "question": "Welche der folgenden Handstellungen der Spieler der aufschlagenden Mannschaft sind im Moment des Aufschlags erlaubt?",
     "answers": {
       "a": "Eine Hand liegt auf dem Kopf auf, die andere Hand lässt er hängen.",
@@ -3592,6 +4142,8 @@
   },
   {
     "question_number": 276,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 29,
     "question": "Bei der aufschlagenden Mannschaft haben die Spieler auf den Positionen 2, 3 und 4 ihre Hände unterhalb Kopfhöhe, während der Spieler auf Position 5 seine Hände über Kopfhöhe hält. Der Ball wird über die Position 2 zum Gegner gespielt. Ist dies regelkonform?",
     "answers": {
       "a": "Ja, in jedem Fall.",
@@ -3604,6 +4156,8 @@
   },
   {
     "question_number": 277,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 30,
     "question": "Der Ball wird vom Libero im oberen Zuspiel gestellt, der Angreifer schlägt den Ball über Netzhöhe. Dies ist erlaubt, wenn sich der Libero beim Zuspiel ...",
     "answers": {
       "a": "mit einem Fuss in der Hinterzone und mit dem anderen in der Vorderzone befindet, wobei er im Moment des Zuspiels den Fuss in der Vorderzone in die Luft hebt und somit keinen Kontakt mehr zum Boden hat, und der Angreifer mindestens hinter der Angriffslinie abspringt.",
@@ -3617,6 +4171,8 @@
   },
   {
     "question_number": 278,
+    "triagonal_quiz": "241-271",
+    "triagonal_pos": 31,
     "question": "Der Angreifer der Mannschaft A schlägt den Ball mit der dritten Berührung in die Netzoberkante; danach wird der Ball ein viertes Mal von Mannschaft A berührt, ohne dass ein gegnerischer Spieler den Ball berührt hätte. Der Schiedsrichter zeigt folgendes Handzeichen, um den Fehler anzuzeigen:",
     "answers": {
       "a": "Vier Berührungen (Handzeichen #18), wenn die dritte und vierte Berührung durch verschiedene Spieler erfolgt ist.",

@@ -254,6 +254,22 @@ function shuffleArray(array) {
     return shuffled;
 }
 
+// --- Triagonal Reference ---
+
+/**
+ * Human-readable pointer to where a question lives on the triagonal
+ * e-learning platform: quiz range + position inside that quiz
+ * (triagonal shows no per-question catalog numbers, only "Question N"
+ * within each range-titled quiz).
+ * @param {Object} question
+ * @returns {string} e.g. " (T 181–210 · Q9)" or '' when unknown
+ */
+function triagonalRef(question) {
+    if (!question || !question.triagonal_quiz) return '';
+    return ' (T ' + String(question.triagonal_quiz).replace('-', '–') +
+        ' · Q' + question.triagonal_pos + ')';
+}
+
 // --- Linked Question Helpers ---
 
 /**

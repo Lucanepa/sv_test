@@ -157,6 +157,20 @@
             flex-shrink: 0;
         }
 
+        .q-triagonal-badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.6875rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            line-height: 1.4;
+            flex-shrink: 0;
+        }
+
         .q-linked-badge {
             display: inline-flex;
             align-items: center;
@@ -445,6 +459,8 @@
                             answers: linkedQ.answers,
                             correct: linkedQ.correct,
                             image_url: linkedQ.image_url || null,
+                            triagonal_quiz: linkedQ.triagonal_quiz,
+                            triagonal_pos: linkedQ.triagonal_pos,
                             is_linked: true,
                             link_group: question.linked_to,
                             link_order: linkedQ.link_order,
@@ -463,6 +479,8 @@
                         answers: question.answers,
                         correct: question.correct,
                         image_url: question.image_url || null,
+                        triagonal_quiz: question.triagonal_quiz,
+                        triagonal_pos: question.triagonal_pos,
                         is_linked: false,
                         link_group: null,
                         link_order: null,
@@ -554,7 +572,11 @@
             var searchTerm = document.getElementById('searchInput').value.trim();
 
             // Header badges
-            var numberBadge = '<span class="q-number-badge">#' + escapeHtml(question.question_number) + '</span>';
+            var numberBadge = '<span class="q-number-badge">#' + escapeHtml(question.question_number) + '</span>' +
+                (question.triagonal_quiz
+                    ? '<span class="q-triagonal-badge">T ' + escapeHtml(String(question.triagonal_quiz).replace('-', '–')) +
+                      ' · Q' + escapeHtml(question.triagonal_pos) + '</span>'
+                    : '');
 
             var linkedBadge = '';
             if (question.is_linked) {
