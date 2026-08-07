@@ -53,4 +53,12 @@ python3 -m http.server 8000
 npx serve .
 ```
 
+**Checking triagonal for new/changed questions:** harvest the platform with the local (gitignored) `extract_questions.py`, then diff it against the committed data:
+
+```bash
+./compare_triagonal.py harvest_de.json de     # exits 1 if anything differs
+```
+
+`compare_triagonal.py` needs no network and no credentials — it only compares. It matches questions by text (not by `question_number`, which is internal numbering) and compares answers and correct answers **by text rather than by a/b/c key**, so the per-language key order that differs by design never shows up as a false difference. It reports only; porting any real difference across all four language files is a manual, verbatim job.
+
 When modifying the question JSONs, ensure the structure matches: `question_number` (int), `question` (string), `answers` (object), `correct` (array of answer keys). For linked questions, include `linked_to` (int, base question number), `link_order` (int, 1-based sequence position). Apply structural changes to all four language files, then run `./update_questions.sh`.
