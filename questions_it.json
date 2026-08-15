@@ -1979,7 +1979,9 @@
     },
     "correct": [
       "b"
-    ]
+    ],
+    "linked_to": 125,
+    "link_order": 1
   },
   {
     "question_number": 126,
@@ -1994,8 +1996,8 @@
     "correct": [
       "a"
     ],
-    "linked_to": 126,
-    "link_order": 1
+    "linked_to": 125,
+    "link_order": 2
   },
   {
     "question_number": 127,
@@ -2011,8 +2013,8 @@
       "b",
       "c"
     ],
-    "linked_to": 126,
-    "link_order": 2
+    "linked_to": 125,
+    "link_order": 3
   },
   {
     "question_number": 128,
@@ -2117,7 +2119,9 @@
     },
     "correct": [
       "a"
-    ]
+    ],
+    "linked_to": 134,
+    "link_order": 1
   },
   {
     "question_number": 135,
@@ -2131,7 +2135,9 @@
     },
     "correct": [
       "a"
-    ]
+    ],
+    "linked_to": 134,
+    "link_order": 2
   },
   {
     "question_number": 136,

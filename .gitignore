@@ -11,3 +11,7 @@ diff_*.html
 
 # Diagrams downloaded by extraction script
 diagrams/
+
+# Raw platform harvests + diff reports (staging area for catalog updates;
+# never the live questions_<lang>.json)
+harvest/
