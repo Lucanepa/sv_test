@@ -185,6 +185,51 @@
             margin: 20px 0;
         }
 
+        .answer-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .answer-text {
+            flex: 1;
+        }
+
+        .answer-indicator {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer-indicator svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .answer-indicator.indicator-correct {
+            color: var(--correct);
+        }
+
+        .answer-indicator.indicator-incorrect {
+            color: var(--incorrect);
+        }
+
+        .answer-indicator.indicator-missed {
+            color: var(--missed);
+        }
+
+        .missed-label {
+            flex-shrink: 0;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--missed);
+        }
+
         /* Review-mode answer states */
         .answer-option.correct-review {
             border-color: var(--correct);
@@ -196,6 +241,15 @@
             border-color: var(--incorrect);
             background: var(--incorrect-bg);
             color: var(--incorrect);
+        }
+
+        /* A correct answer the user failed to select: still flagged as correct,
+           but visually distinct from one they got right. */
+        .answer-option.missed-review {
+            border-color: var(--missed);
+            border-style: dashed;
+            background: var(--missed-bg);
+            color: var(--text-primary);
         }
 
         .answer-option.user-selected-review {
@@ -967,6 +1021,19 @@
             }
 
             // Answer options — shuffled once per question, reused on re-render (incl. review)
+            const reviewIndicator = (state, icon) => {
+                const span = document.createElement('span');
+                span.className = 'answer-indicator indicator-' + state;
+                span.innerHTML = '<i data-lucide="' + icon + '"></i>';
+                return span;
+            };
+            const missedLabel = () => {
+                const span = document.createElement('span');
+                span.className = 'missed-label';
+                span.textContent = t('missedAnswer');
+                return span;
+            };
+
             const answersContainer = document.getElementById('answers');
             answersContainer.innerHTML = '';
 
@@ -985,6 +1052,7 @@
                 answerDiv.dataset.answer = key;
 
                 const text = document.createElement('span');
+                text.className = 'answer-text';
                 text.textContent = value;
                 answerDiv.appendChild(text);
 
@@ -1003,12 +1071,21 @@
                         answerDiv.classList.add('user-selected-review');
                     }
 
-                    if (isCorrect) {
+                    if (isCorrect && wasSelected) {
                         answerDiv.classList.add('correct-review');
                         answerDiv.classList.remove('selected');
+                        answerDiv.appendChild(reviewIndicator('correct', 'check'));
+                    } else if (isCorrect) {
+                        // Correct, but the user did not pick it — must look different from a
+                        // correct answer they did pick, otherwise "all green" reads as a pass.
+                        answerDiv.classList.add('missed-review');
+                        answerDiv.classList.remove('selected');
+                        answerDiv.appendChild(missedLabel());
+                        answerDiv.appendChild(reviewIndicator('missed', 'alert-circle'));
                     } else if (wasSelected) {
                         answerDiv.classList.add('incorrect-review');
                         answerDiv.classList.remove('selected');
+                        answerDiv.appendChild(reviewIndicator('incorrect', 'x'));
                     }
                 } else {
                     const handleSelection = () => {
