@@ -1124,6 +1124,10 @@
 
             // Re-render Lucide icons in nav controls
             createIconsSafe();
+
+            // Land at the top of the new question instead of wherever the
+            // previous one left the page scrolled.
+            scrollToElementTop(document.querySelector('.question-card'));
         }
 
         // ===== Navigation =====

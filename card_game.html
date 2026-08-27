@@ -460,6 +460,10 @@
 
             // Re-create Lucide icons for dynamically added elements
             createIconsSafe();
+
+            // Land at the top of the new question instead of wherever the
+            // previous one's feedback left the page scrolled.
+            scrollToElementTop(document.getElementById('question-card'));
         }
 
         function displaySingleQuestion(question) {

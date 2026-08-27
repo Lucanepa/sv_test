@@ -638,3 +638,32 @@ function formatQuestionText(text) {
     if (!text) return text;
     return text.replace(/\?\s+(\d+\.\s)/g, '?\n\n$1');
 }
+
+// --- Scroll ---
+
+/**
+ * Bring the top of an element back into view, but only when it has scrolled
+ * off the top — navigating between questions otherwise leaves the reader
+ * parked wherever the previous (long) question ended. A no-op while the
+ * element's top is already visible, so short questions never jump.
+ * @param {Element} element
+ * @param {number} [offset] Pixels of breathing room above the element (default 16)
+ */
+function scrollToElementTop(element, offset) {
+    if (!element || typeof element.getBoundingClientRect !== 'function') return;
+
+    var rect = element.getBoundingClientRect();
+    if (rect.top >= 0) return;
+
+    var gap = typeof offset === 'number' ? offset : 16;
+    var top = Math.max(rect.top + window.pageYOffset - gap, 0);
+
+    var reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    try {
+        window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+    } catch (e) {
+        window.scrollTo(0, top); // older browsers: no options object
+    }
+}
