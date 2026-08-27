@@ -278,7 +278,7 @@
             <div class="answers" id="answers"></div>
 
             <div class="controls">
-                <button class="btn btn-primary" id="check-btn" onclick="checkAnswer()" disabled>
+                <button class="btn btn-primary" id="check-btn" onclick="checkAnswer()">
                     <i data-lucide="check-circle"></i>
                     Check Answer
                 </button>
@@ -445,7 +445,8 @@
             var nextBtnText = document.getElementById('next-btn-text');
 
             checkBtn.classList.remove('hidden');
-            checkBtn.disabled = true;
+            // Stays enabled with nothing selected: "none of the answers" is a valid answer
+            checkBtn.disabled = false;
             nextBtn.classList.add('hidden');
             nextBtnText.textContent = t('next');
             feedback.classList.add('hidden');
@@ -576,10 +577,6 @@
             var el = document.querySelector('[data-answer="' + answerKey + '"]');
             if (!el) return;
             el.classList.toggle('selected');
-
-            // Enable check button if at least one answer selected
-            var selected = document.querySelectorAll('.answer-option.selected');
-            document.getElementById('check-btn').disabled = selected.length === 0;
         }
 
         // --- Check Answer ---

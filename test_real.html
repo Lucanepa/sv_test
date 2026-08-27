@@ -1157,10 +1157,8 @@
         // ===== Check Answer Correctness =====
         function checkAnswerCorrectness(questionIndex) {
             const question = currentTestQuestions[questionIndex];
-            const selectedAnswers = userAnswers[questionIndex];
-
-            if (!selectedAnswers || selectedAnswers.length === 0) return false;
-
+            // No selection is a valid answer ("none of the answers are correct")
+            const selectedAnswers = userAnswers[questionIndex] || [];
             const correctAnswers = question.correct;
             return selectedAnswers.length === correctAnswers.length &&
                 selectedAnswers.every(answer => correctAnswers.includes(answer));
