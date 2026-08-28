@@ -859,83 +859,46 @@
             answerOrders = {};
             isReviewMode = false;
 
-            const selectedQuestionNumbers = new Set();
-            const finalTestQuestions = [];
-            const allShuffledQuestions = shuffleArray([...questions]);
+            // Each draw is a unit: a standalone question, or a whole linked group.
+            // Shuffling units rather than questions keeps a 2- or 3-part linked
+            // group from getting two or three chances to be drawn.
+            const seenGroups = new Set();
+            const units = [];
 
-            console.log('Starting new test - shuffling all ' + questions.length + ' questions');
-
-            let i = 0;
-            while (finalTestQuestions.length < 25 && i < allShuffledQuestions.length) {
-                const question = allShuffledQuestions[i];
-
-                if (selectedQuestionNumbers.has(question.question_number)) {
-                    i++;
-                    continue;
-                }
-
+            questions.forEach(question => {
                 if (question.is_linked) {
-                    const linkGroup = questions.filter(q =>
+                    if (seenGroups.has(question.link_group)) return;
+                    seenGroups.add(question.link_group);
+                    units.push(questions.filter(q =>
                         q.is_linked && q.link_group === question.link_group
-                    );
-
-                    if (finalTestQuestions.length + linkGroup.length <= 25) {
-                        linkGroup.forEach(linkedQ => {
-                            if (!selectedQuestionNumbers.has(linkedQ.question_number)) {
-                                finalTestQuestions.push({
-                                    ...linkedQ,
-                                    is_linked: true,
-                                    link_group: question.link_group,
-                                    link_order: linkedQ.link_order,
-                                    prefix: ''
-                                });
-                                selectedQuestionNumbers.add(linkedQ.question_number);
-                            }
-                        });
-                    }
+                    ));
                 } else {
-                    const isReferenced = questions.find(q =>
-                        q.linked_to === question.question_number
-                    );
-
-                    if (!isReferenced) {
-                        finalTestQuestions.push({
-                            ...question,
-                            is_linked: false,
-                            link_group: null,
-                            link_order: null,
-                            prefix: ''
-                        });
-                        selectedQuestionNumbers.add(question.question_number);
-                    }
+                    units.push([question]);
                 }
+            });
 
-                i++;
+            // Soft recency: questions from the last few tests start with a lower
+            // weight, so they come round less often without ever being excluded.
+            const ages = recentQuestionAges();
+            const unitWeight = unit => {
+                let age;
+                unit.forEach(q => {
+                    const questionAge = ages.get(q.question_number);
+                    if (questionAge === undefined) return;
+                    age = (age === undefined) ? questionAge : Math.min(age, questionAge);
+                });
+                return recencyWeight(age);
+            };
+
+            const finalTestQuestions = [];
+
+            for (const unit of weightedShuffle(units, unitWeight)) {
+                if (finalTestQuestions.length + unit.length > 25) continue;
+                unit.forEach(q => finalTestQuestions.push({ ...q, prefix: '' }));
+                if (finalTestQuestions.length === 25) break;
             }
 
-            // Fill remaining slots if needed
-            if (finalTestQuestions.length < 25) {
-                const remainingQuestions = questions.filter(q =>
-                    !selectedQuestionNumbers.has(q.question_number) &&
-                    !q.is_linked &&
-                    !questions.find(refQ => refQ.linked_to === q.question_number)
-                );
-
-                const additionalShuffled = shuffleArray([...remainingQuestions]);
-                for (let j = 0; j < additionalShuffled.length && finalTestQuestions.length < 25; j++) {
-                    const question = additionalShuffled[j];
-                    if (!selectedQuestionNumbers.has(question.question_number)) {
-                        finalTestQuestions.push({
-                            ...question,
-                            is_linked: false,
-                            link_group: null,
-                            link_order: null,
-                            prefix: ''
-                        });
-                        selectedQuestionNumbers.add(question.question_number);
-                    }
-                }
-            }
+            rememberExamQuestions(finalTestQuestions.map(q => q.question_number));
 
             // Stable sort: linked groups stay consecutive
             finalTestQuestions.sort((a, b) => {

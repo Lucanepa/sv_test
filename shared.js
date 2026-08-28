@@ -254,6 +254,98 @@ function shuffleArray(array) {
     return shuffled;
 }
 
+/**
+ * Weighted shuffle (Efraimidis-Spirakis). Items with a higher weight tend to
+ * come out earlier, but every item can still land anywhere - nothing is excluded.
+ * @param {Array} items
+ * @param {Function} weightOf - item -> weight in (0, 1]
+ * @returns {Array} New shuffled array
+ */
+function weightedShuffle(items, weightOf) {
+    var randomValues = new Uint32Array(items.length);
+
+    try {
+        crypto.getRandomValues(randomValues);
+    } catch (e) {
+        for (var i = 0; i < items.length; i++) {
+            randomValues[i] = Math.floor(Math.random() * 0x100000000);
+        }
+    }
+
+    return items
+        .map(function (item, index) {
+            var u = (randomValues[index] + 1) / 4294967297;  // uniform in (0, 1)
+            var w = weightOf(item);
+            return { item: item, key: Math.pow(u, 1 / (w > 0 ? w : 1e-6)) };
+        })
+        .sort(function (a, b) { return b.key - a.key; })
+        .map(function (entry) { return entry.item; });
+}
+
+// --- Exam recency ---
+//
+// Exam mode remembers the question numbers of the last few tests so it can
+// make them less likely to come round again straight away. This is a soft
+// preference, not a filter: a recent question can still be drawn, it just
+// starts with a lower weight. Best-effort - if localStorage is unavailable the
+// selection simply falls back to an unweighted draw.
+
+var RECENT_EXAMS_KEY = 'recentExamQuestions';
+var RECENT_EXAMS_MEMORY = 4;   // how many past tests to remember
+var RECENT_MIN_WEIGHT = 0.3;   // weight of a question seen in the test just before
+
+/**
+ * @returns {Array<Array<number>>} Question numbers per past test, newest first.
+ */
+function getRecentExams() {
+    try {
+        var stored = JSON.parse(localStorage.getItem(RECENT_EXAMS_KEY));
+        return Array.isArray(stored) ? stored.filter(Array.isArray) : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+/**
+ * @param {Array<number>} questionNumbers - the test that was just started
+ */
+function rememberExamQuestions(questionNumbers) {
+    try {
+        var exams = getRecentExams();
+        exams.unshift(questionNumbers);
+        localStorage.setItem(RECENT_EXAMS_KEY, JSON.stringify(exams.slice(0, RECENT_EXAMS_MEMORY)));
+    } catch (e) {
+        // Storage full or unavailable - recency is a nicety, not a requirement.
+    }
+}
+
+/**
+ * How many tests ago each question was last seen (1 = the test just before).
+ * @returns {Map<number, number>}
+ */
+function recentQuestionAges() {
+    var ages = new Map();
+
+    getRecentExams().forEach(function (questionNumbers, index) {
+        questionNumbers.forEach(function (number) {
+            if (!ages.has(number)) ages.set(number, index + 1);
+        });
+    });
+
+    return ages;
+}
+
+/**
+ * Weight for a question that was last seen `age` tests ago: RECENT_MIN_WEIGHT
+ * for the most recent test, rising back to 1 as it falls out of memory.
+ * @param {number|undefined} age - undefined when the question is not remembered
+ * @returns {number}
+ */
+function recencyWeight(age) {
+    if (age === undefined) return 1;
+    return RECENT_MIN_WEIGHT + (1 - RECENT_MIN_WEIGHT) * (age - 1) / RECENT_EXAMS_MEMORY;
+}
+
 // --- Triagonal Reference ---
 
 /**
