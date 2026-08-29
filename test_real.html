@@ -70,7 +70,7 @@
 
         /* --- Left Sidebar: Question Overview --- */
         .sidebar {
-            width: 240px;
+            width: 270px;
             flex-shrink: 0;
             position: sticky;
             top: 16px;
@@ -87,13 +87,15 @@
 
         .question-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 8px;
         }
 
         .question-indicator {
-            width: 40px;
-            height: 40px;
+            /* Sized from the grid track, not fixed, so the row cannot
+               overflow the sidebar card. */
+            width: 100%;
+            aspect-ratio: 1;
             display: flex;
             align-items: center;
             justify-content: center;
