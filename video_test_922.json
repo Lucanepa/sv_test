@@ -1,0 +1,305 @@
+{
+  "title": {
+    "fr": "Suivi de l'atelier ZK 2026 “Règle 9.2.2” (Test)",
+    "en": "ZK 2026 workshop follow-up: “Rule 9.2.2” (test)"
+  },
+  "prompt": {
+    "fr": "Décision \"Legal Play\" / \"Fault\" prise par l'arbitre (cliquez sur votre choix))",
+    "en": "Referee's decision: \"Legal Play\" / \"Fault\" (click your choice)"
+  },
+  "answers": {
+    "a": "Legal Play",
+    "b": "Fault"
+  },
+  "videoBase": "https://readvolley-media.openvolley.app/sv_test/rule-9-2-2/",
+  "source": "https://swissvolley.triagonal.net/online/mod/quiz/view.php?id=1943",
+  "items": [
+    {
+      "n": 1,
+      "video": "video_001.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play (en matière de maniement du ballon)\n• Action visant à contrer un ballon venant de l'adversaire\n• Joueur près du filet\n• Partie du corps située au-dessus du bord du filet au moment du contact avec le ballon\n• Bloc effectif",
+        "en": "Legal Play (ball handling)\n• Action aimed at countering a ball coming from the opponent\n• Player close to the net\n• Part of the body above the top of the net at the moment of contact with the ball\n• Completed block"
+      }
+    },
+    {
+      "n": 2,
+      "video": "video_002.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play (deuxième touche de balle de l'attaquant HUN)\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Ballon limite – Dans le cadre d'une ligne technique appliquée jusqu'à présent dans le match, le ballon peut également être sifflé comme un ballon tenu.",
+        "en": "Legal Play (second ball contact by the HUN attacker)\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Borderline ball – Depending on the technical line applied so far in the match, the ball could also be whistled as a held ball."
+      }
+    },
+    {
+      "n": 3,
+      "video": "video_003.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play (deuxième balle d'attaque de l'attaquant NED)\n• Action effectuée d'une seule main\n• Temps de contact court\n• Frappe effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play (second-ball attack by the NED attacker)\n• One-handed action\n• Short contact time\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 4,
+      "video": "video_004.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault\n• Frappe d'attaque délibérée à deux mains\n• Pas de double touche\n• Ballon droit/descendant\n• Forte accélération du ballon",
+        "en": "Fault\n• Deliberate two-handed attack hit\n• No double contact\n• Straight/descending ball\n• Strong acceleration of the ball"
+      }
+    },
+    {
+      "n": 5,
+      "video": "video_005.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Contact s'effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 6,
+      "video": "video_006.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 7,
+      "video": "video_007.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains\n• Bonne accélération\n• Pas de double touche\n• Ballon légèrement ascendant\nBallon limite – Dans le cadre d'une ligne technique appliquée jusqu'à présent dans le match, le ballon peut également être sifflé comme un ballon tenu.",
+        "en": "Legal Play\n• Two-handed overhand set\n• Good acceleration\n• No double contact\n• Slightly rising ball\nBorderline ball – Depending on the technical line applied so far in the match, the ball could also be whistled as a held ball."
+      }
+    },
+    {
+      "n": 8,
+      "video": "video_008.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action visant à repousser un ballon venant de l'adversaire\n• Joueuse proche du filet\n• Partie du corps située au-dessus du bord du filet au moment du contact avec le ballon\n• Bloc effectif\nBallon limite – Dans le cadre d'une ligne technique appliquée jusqu'à présent dans le match, le ballon peut également être sifflé comme un ballon tenu. La joueuse effectue un mouvement de rabattement avec les mains pour accélérer le ballon.",
+        "en": "Legal Play\n• Action aimed at pushing back a ball coming from the opponent\n• Player close to the net\n• Part of the body above the top of the net at the moment of contact with the ball\n• Completed block\nBorderline ball – Depending on the technical line applied so far in the match, the ball could also be whistled as a held ball. The player makes a downward pressing movement with her hands to accelerate the ball."
+      }
+    },
+    {
+      "n": 9,
+      "video": "video_009.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe est effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 10,
+      "video": "video_010.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 11,
+      "video": "video_011.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play (concerne l'attaque à deux mains)\n• Passe haute à deux mains\n• Bonne accélération\n• Pas de double touche\n• ballon légèrement ascendant",
+        "en": "Legal Play (concerns the two-handed attack)\n• Two-handed overhand set\n• Good acceleration\n• No double contact\n• Slightly rising ball"
+      }
+    },
+    {
+      "n": 12,
+      "video": "video_012.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains\n• Accélération présente\n• Pas de double touche\n• Ballone ascendant\n• Décision de correction prise uniquement après réaction de l'équipe adverse (ALB)",
+        "en": "Legal Play\n• Two-handed overhand set\n• Some acceleration\n• No double contact\n• Rising ball\n• Corrective decision taken only after the opposing team (ALB) reacted"
+      }
+    },
+    {
+      "n": 13,
+      "video": "video_013.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains\n• Pas de changement de direction pendant le contact du ballon\n• Accélération présente\n• Pas de double touche\n• Ballon ascendant",
+        "en": "Legal Play\n• Two-handed overhand set\n• No change of direction during the ball contact\n• Some acceleration\n• No double contact\n• Rising ball"
+      }
+    },
+    {
+      "n": 14,
+      "video": "video_014.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 15,
+      "video": "video_015.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 16,
+      "video": "video_016.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault\n• Contact prolongé\n• Frappe n'est pas effectuée en ligne droite\n• Ballon arrêté dans la main du joueur\n• Contact avec toute la paume de la main plutôt qu'avec les doigts uniquement",
+        "en": "Fault\n• Prolonged contact\n• Hit not made in a straight line\n• Ball stops in the player's hand\n• Contact with the whole palm instead of only the fingers"
+      }
+    },
+    {
+      "n": 17,
+      "video": "video_017.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite\n• Contact effectué avec les doigts",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line\n• Contact made with the fingers"
+      }
+    },
+    {
+      "n": 18,
+      "video": "video_018.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault\n• Contact prolongé\n• Frappe n'est pas effectuée en ligne droite\n• Ballon arrêté dans la main du joueur\n• Contact avec toute la paume de la main plutôt qu'avec les doigts uniquement",
+        "en": "Fault\n• Prolonged contact\n• Hit not made in a straight line\n• Ball stops in the player's hand\n• Contact with the whole palm instead of only the fingers"
+      }
+    },
+    {
+      "n": 19,
+      "video": "video_019.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault\n• Contact prolongé\n• Frappe effectuée en ligne droite\n• Ballon arrêté dans la main du joueur\n• Contact avec toute la paume de la main plutôt qu'avec les doigts uniquement",
+        "en": "Fault\n• Prolonged contact\n• Hit made in a straight line\n• Ball stops in the player's hand\n• Contact with the whole palm instead of only the fingers"
+      }
+    },
+    {
+      "n": 20,
+      "video": "video_020.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line"
+      }
+    },
+    {
+      "n": 21,
+      "video": "video_021.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains\n• Accélération quasi inexistante\n• Pas de double touche\n• ballon ascendant",
+        "en": "Legal Play\n• Two-handed overhand set\n• Almost no acceleration\n• No double contact\n• Rising ball"
+      }
+    },
+    {
+      "n": 22,
+      "video": "video_022.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault\n• Frappe d'attaque délibérée à deux mains\n• Double touche\n• ballon droit/descendant\n• Forte accélération du ballon",
+        "en": "Fault\n• Deliberate two-handed attack hit\n• Double contact\n• Straight/descending ball\n• Strong acceleration of the ball"
+      }
+    },
+    {
+      "n": 23,
+      "video": "video_023.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains (action de passe)\n• Pas de double touche\n• Ballon ascendant\n• Action visant à contrer un ballon venu de l'adversaire\n• Joueuse près du filet\n• Partie du corps située au-dessus du bord du filet au moment du contact avec le ballon\n• Bloc effectif",
+        "en": "Legal Play\n• Two-handed overhand set (setting action)\n• No double contact\n• Rising ball\n• Action aimed at countering a ball coming from the opponent\n• Player close to the net\n• Part of the body above the top of the net at the moment of contact with the ball\n• Completed block"
+      }
+    },
+    {
+      "n": 24,
+      "video": "video_024.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains (action de passe)\n• Pas de double touche\n• Ballon ascendant",
+        "en": "Legal Play\n• Two-handed overhand set (setting action)\n• No double contact\n• Rising ball"
+      }
+    },
+    {
+      "n": 25,
+      "video": "video_025.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains (action de passe)\n• Pas de double touche\n• Ballon ascendant",
+        "en": "Legal Play\n• Two-handed overhand set (setting action)\n• No double contact\n• Rising ball"
+      }
+    },
+    {
+      "n": 26,
+      "video": "video_026.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault (première attaque de Näfels)\n• Frappe d'attaque délibérée à deux mains\n• Pas de double touche\n• ballon droit/descendant\n• Forte accélération du ballon",
+        "en": "Fault (first attack by Näfels)\n• Deliberate two-handed attack hit\n• No double contact\n• Straight/descending ball\n• Strong acceleration of the ball"
+      }
+    },
+    {
+      "n": 27,
+      "video": "video_027.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line"
+      }
+    },
+    {
+      "n": 28,
+      "video": "video_028.mp4",
+      "correct": "b",
+      "ruling": {
+        "fr": "Fault (deuxième action de l'attaquant Näfels)\n• Ballon immobilisé dans les mains du joueur\n• Le ballon est amorti lors d'une première action, puis poussé contre le bloc lors d'une deuxième action.",
+        "en": "Fault (second action by the Näfels attacker)\n• Ball comes to rest in the player's hands\n• The ball is cushioned in a first action, then pushed against the block in a second action."
+      }
+    },
+    {
+      "n": 29,
+      "video": "video_029.mp4",
+      "correct": "a",
+      "ruling": {
+        "fr": "Legal Play\n• Action effectuée d'une seule main\n• Contact bref\n• Frappe effectuée en ligne droite",
+        "en": "Legal Play\n• One-handed action\n• Short contact\n• Hit in a straight line"
+      }
+    },
+    {
+      "n": 30,
+      "video": "video_030.mp4",
+      "correct": "a",
+      "action": {
+        "fr": "1. Action (feinte de la passeuse Kanti)",
+        "en": "1st action (feint by the Kanti setter)"
+      },
+      "ruling": {
+        "fr": "Legal Play\n• Passe haute à deux mains (action de passe)\n• Pas de double touche\n• Ballon ascendant",
+        "en": "Legal Play\n• Two-handed overhand set (setting action)\n• No double contact\n• Rising ball"
+      }
+    },
+    {
+      "n": 31,
+      "video": "video_030.mp4",
+      "correct": "b",
+      "action": {
+        "fr": "2. Action (attaque à l’aile NUC)",
+        "en": "2nd action (outside attack by NUC)"
+      },
+      "ruling": {
+        "fr": "Fault\n• Frappe d'attaque délibérée à deux mains\n• Pas de double touche\n• ballon droit/descendant\n• Forte accélération du ballon",
+        "en": "Fault\n• Deliberate two-handed attack hit\n• No double contact\n• Straight/descending ball\n• Strong acceleration of the ball"
+      }
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Test Rule 9.2.2 - SSK ZK Prep</title>
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f4">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c1917">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            var t = localStorage.getItem('selectedTheme');
+            var stored = t === 'light' || t === 'dark';
+            if (!stored) {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+            if (stored) {
+                var color = t === 'dark' ? '#1c1917' : '#f5f5f4';
+                document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+                    m.setAttribute('content', color);
+                });
+            }
+        })();
+    </script>
+    <style>
+        /* --- Video Test Specific --- */
+        .clip-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .clip-label svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .clip-action {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .clip-video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: var(--radius-sm);
+            margin-bottom: 16px;
+        }
+
+        .question-text {
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        /* Two fixed verdicts, side by side: the clip stays in view above them. */
+        .answers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 16px 0 0;
+        }
+
+        .answers .answer-option {
+            margin: 0;
+            width: 100%;
+            font: inherit;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .controls .btn {
+            min-width: 140px;
+        }
+
+        .feedback {
+            margin-top: 20px;
+        }
+
+        .feedback-verdict {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .ruling {
+            color: var(--text-primary);
+        }
+
+        .ruling-note {
+            margin-top: 8px;
+            font-size: 0.75rem;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        /* Progress indicator */
+        .progress-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .progress-text {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .progress-text svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .progress-bar-wrap {
+            flex: 1;
+            max-width: 200px;
+            height: 4px;
+            background: var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-left: 12px;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: width var(--transition);
+            width: 0%;
+        }
+
+        /* Completion card */
+        .completion-card {
+            text-align: center;
+            padding: 40px 24px;
+        }
+
+        .completion-card .completion-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: var(--correct-bg);
+            border-radius: 50%;
+            color: var(--correct);
+            margin-bottom: 16px;
+        }
+
+        .completion-card .completion-icon svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .completion-card h2 {
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .score-line {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 12px 0 4px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .score-pct {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 24px;
+        }
+
+        .missed-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            margin: 0 0 24px;
+        }
+
+        .missed-list .btn {
+            padding: 6px 12px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .missed-title {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .completion-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .source-note {
+            margin-top: 16px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        .source-note a {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+
+        <!-- Header -->
+        <header class="page-header">
+            <a href="index.html" class="back-btn" aria-label="Back to home">
+                <i data-lucide="arrow-left"></i>
+            </a>
+            <h1 id="page-title">Video Test Rule 9.2.2</h1>
+            <button class="back-btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+                <i data-lucide="moon" class="icon-moon"></i>
+                <i data-lucide="sun" class="icon-sun"></i>
+            </button>
+        </header>
+
+        <!-- Progress -->
+        <div class="progress-row" id="progress-row">
+            <span class="progress-text">
+                <i data-lucide="clapperboard"></i>
+                <span id="progress-label">0 / 0</span>
+            </span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Clip Card -->
+        <div class="card" id="clip-card">
+            <div class="clip-label" id="clip-label">
+                <i data-lucide="clapperboard"></i>
+                <span></span>
+            </div>
+            <div class="clip-action hidden" id="clip-action"></div>
+            <video id="clip-video" class="clip-video" controls playsinline preload="metadata"></video>
+            <div class="question-text" id="question-text">Loading...</div>
+            <div class="answers" id="answers"></div>
+
+            <div class="controls">
+                <button class="btn btn-primary" id="check-btn" onclick="checkAnswer()" disabled>
+                    <i data-lucide="check-circle"></i>
+                    Check Answer
+                </button>
+                <button class="btn btn-success hidden" id="next-btn" onclick="nextClip()">
+                    <i data-lucide="arrow-right"></i>
+                    <span id="next-btn-text">Next</span>
+                </button>
+            </div>
+
+            <div class="feedback hidden" id="feedback"></div>
+        </div>
+
+        <!-- Completion Card -->
+        <div class="card completion-card hidden" id="completion-card">
+            <div class="completion-icon">
+                <i data-lucide="trophy"></i>
+            </div>
+            <h2 id="completion-title"></h2>
+            <div class="score-line" id="score-line"></div>
+            <div class="score-pct" id="score-pct"></div>
+            <div id="missed-wrap" class="hidden">
+                <p class="missed-title" id="missed-title"></p>
+                <div class="missed-list" id="missed-list"></div>
+            </div>
+            <div class="completion-actions">
+                <button class="btn btn-primary" id="restart-btn" onclick="startTest()"></button>
+                <a class="btn btn-outline" id="home-btn" href="index.html"></a>
+            </div>
+        </div>
+
+        <p class="source-note" id="source-note"></p>
+
+    </div>
+
+    <script src="shared.js"></script>
+    <script src="lucide.min.js"></script>
+    <script>
+        createIconsSafe();
+
+        // The quiz exists on triagonal in French only. FR shows the platform
+        // text verbatim; every other language gets the English translation.
+        var lang = getSelectedLang();
+        var contentLang = lang === 'fr' ? 'fr' : 'en';
+
+        var PAGE_STRINGS = {
+            de: {
+                clip: 'Szene', review: 'Szene nochmals ansehen', done: 'Videotest abgeschlossen',
+                missed: 'Falsch beantwortete Szenen:', restart: 'Test neu starten',
+                translated: 'Englische Übersetzung des französischen Originals (triagonal).',
+                source: 'Quelle: Swiss Volley e-Learning, «Suivi de l\'atelier ZK 2026 “Règle 9.2.2” (Test)». Inoffizielle Kopie zum persönlichen Training.',
+            },
+            en: {
+                clip: 'Clip', review: 'Review clip', done: 'Video test completed',
+                missed: 'Clips you got wrong:', restart: 'Restart test',
+                translated: 'English translation of the French original on triagonal.',
+                source: 'Source: Swiss Volley e-learning, “Suivi de l\'atelier ZK 2026 “Règle 9.2.2” (Test)”. Unofficial copy for personal training.',
+            },
+            fr: {
+                clip: 'Séquence', review: 'Revoir la séquence', done: 'Test vidéo terminé',
+                missed: 'Séquences manquées :', restart: 'Recommencer le test',
+                translated: '',
+                source: 'Source : e-learning Swiss Volley, « Suivi de l\'atelier ZK 2026 “Règle 9.2.2” (Test) ». Copie non officielle pour l\'entraînement personnel.',
+            },
+            it: {
+                clip: 'Clip', review: 'Rivedi la clip', done: 'Test video completato',
+                missed: 'Clip sbagliate:', restart: 'Ricomincia il test',
+                translated: 'Traduzione inglese dell\'originale francese (triagonal).',
+                source: 'Fonte: e-learning Swiss Volley, «Suivi de l\'atelier ZK 2026 “Règle 9.2.2” (Test)». Copia non ufficiale per l\'allenamento personale.',
+            },
+        };
+
+        function p(key) {
+            return (PAGE_STRINGS[lang] && PAGE_STRINGS[lang][key]) || PAGE_STRINGS.en[key];
+        }
+
+        function applyTranslations() {
+            document.getElementById('page-title').textContent = t('videoTest');
+            document.title = t('videoTest') + ' - SSK ZK Prep';
+            document.querySelector('#check-btn').innerHTML = '<i data-lucide="check-circle"></i> ' + t('checkAnswer');
+            document.getElementById('next-btn-text').textContent = t('next');
+            document.getElementById('completion-title').textContent = p('done');
+            document.getElementById('missed-title').textContent = p('missed');
+            document.getElementById('restart-btn').innerHTML = '<i data-lucide="refresh-cw"></i> ' + p('restart');
+            document.getElementById('home-btn').innerHTML = '<i data-lucide="home"></i> ' + t('home');
+            document.getElementById('source-note').textContent = p('source');
+            createIconsSafe();
+        }
+        applyTranslations();
+
+        // --- State ---
+        var data = null;
+        var index = 0;
+        var selected = null;
+        var results = {}; // item.n -> true/false
+        var reviewing = false; // a clip reopened from the results card
+
+        async function loadTest() {
+            try {
+                var res = await fetch('video_test_922.json', { cache: 'no-cache' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                data = await res.json();
+                startTest();
+            } catch (error) {
+                console.error('Error loading video test:', error);
+                document.getElementById('question-text').textContent = t('errorLoading');
+            }
+        }
+
+        // Clips keep the platform order: 30 and 31 are two actions of one clip.
+        function startTest() {
+            results = {};
+            reviewing = false;
+            showClip(0);
+        }
+
+        function updateProgress() {
+            var total = data.items.length;
+            document.getElementById('progress-label').textContent = (index + 1) + ' / ' + total;
+            document.getElementById('progress-bar').style.width = (index / total) * 100 + '%';
+        }
+
+        function showClip(i) {
+            index = i;
+            selected = null;
+            var item = data.items[index];
+
+            document.getElementById('clip-card').classList.remove('hidden');
+            document.getElementById('progress-row').classList.remove('hidden');
+            document.getElementById('completion-card').classList.add('hidden');
+
+            document.querySelector('#clip-label span').textContent = p('clip') + ' ' + item.n;
+
+            var action = document.getElementById('clip-action');
+            if (item.action) {
+                action.textContent = item.action[contentLang];
+                action.classList.remove('hidden');
+            } else {
+                action.classList.add('hidden');
+            }
+
+            var base = data.videoBase + item.video.replace(/\.mp4$/, '');
+            var video = document.getElementById('clip-video');
+            // Same clip twice in a row (30/31): keep the player where it is.
+            if (video.dataset.src !== base) {
+                video.dataset.src = base;
+                video.poster = base + '.jpg';
+                video.src = base + '.mp4';
+            }
+
+            document.getElementById('question-text').textContent = data.prompt[contentLang];
+
+            var answers = document.getElementById('answers');
+            answers.innerHTML = '';
+            Object.keys(data.answers).forEach(function (key) {
+                var option = document.createElement('button');
+                option.type = 'button';
+                option.className = 'answer-option';
+                option.dataset.answer = key;
+                option.textContent = data.answers[key];
+                option.addEventListener('click', function () { selectAnswer(key); });
+                answers.appendChild(option);
+            });
+
+            var checkBtn = document.getElementById('check-btn');
+            checkBtn.classList.remove('hidden');
+            checkBtn.disabled = true;
+            document.getElementById('next-btn').classList.add('hidden');
+            var feedback = document.getElementById('feedback');
+            feedback.className = 'feedback hidden';
+            feedback.innerHTML = '';
+
+            updateProgress();
+            createIconsSafe();
+            scrollToElementTop(document.getElementById('clip-card'));
+        }
+
+        function selectAnswer(key) {
+            if (!document.getElementById('next-btn').classList.contains('hidden')) return;
+            selected = key;
+            document.querySelectorAll('#answers .answer-option').forEach(function (el) {
+                el.classList.toggle('selected', el.dataset.answer === key);
+            });
+            document.getElementById('check-btn').disabled = false;
+        }
+
+        function checkAnswer() {
+            if (!selected) return;
+            var item = data.items[index];
+            var isCorrect = selected === item.correct;
+            results[item.n] = isCorrect;
+
+            document.querySelectorAll('#answers .answer-option').forEach(function (el) {
+                el.classList.remove('selected');
+                if (el.dataset.answer === item.correct) el.classList.add('correct');
+                else if (el.dataset.answer === selected) el.classList.add('incorrect');
+            });
+
+            var feedback = document.getElementById('feedback');
+            feedback.className = 'feedback ' + (isCorrect ? 'correct' : 'incorrect');
+            feedback.innerHTML =
+                '<div class="feedback-verdict">' + escapeHtml(isCorrect ? t('correct') : t('incorrectSingle') + ' ' + data.answers[item.correct]) + '</div>' +
+                '<div class="ruling">' + escapeHtml(item.ruling[contentLang]) + '</div>' +
+                (contentLang === 'en' && lang !== 'fr' && p('translated') ? '<div class="ruling-note">' + escapeHtml(p('translated')) + '</div>' : '');
+
+            document.getElementById('check-btn').classList.add('hidden');
+            var nextBtn = document.getElementById('next-btn');
+            nextBtn.classList.remove('hidden');
+            document.getElementById('next-btn-text').textContent = !reviewing && index + 1 < data.items.length ? t('next') : t('results');
+            createIconsSafe();
+        }
+
+        function nextClip() {
+            if (!reviewing && index + 1 < data.items.length) {
+                showClip(index + 1);
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            var video = document.getElementById('clip-video');
+            video.pause();
+            document.getElementById('clip-card').classList.add('hidden');
+            document.getElementById('progress-row').classList.add('hidden');
+            document.getElementById('completion-card').classList.remove('hidden');
+
+            var total = data.items.length;
+            var right = data.items.filter(function (item) { return results[item.n]; }).length;
+            document.getElementById('score-line').textContent = right + ' / ' + total;
+            document.getElementById('score-pct').textContent = t('score') + ': ' + Math.round(right / total * 100) + '%';
+
+            var missed = data.items.filter(function (item) { return results[item.n] === false; });
+            var list = document.getElementById('missed-list');
+            list.innerHTML = '';
+            missed.forEach(function (item) {
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'btn btn-outline';
+                btn.textContent = item.n;
+                btn.setAttribute('aria-label', p('review') + ' ' + item.n);
+                btn.addEventListener('click', function () {
+                    reviewing = true;
+                    showClip(data.items.indexOf(item));
+                });
+                list.appendChild(btn);
+            });
+            document.getElementById('missed-wrap').classList.toggle('hidden', missed.length === 0);
+            createIconsSafe();
+            scrollToElementTop(document.getElementById('completion-card'));
+        }
+
+        loadTest();
+    </script>
+</body>
+</html>
